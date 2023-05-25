@@ -1,0 +1,17 @@
+1. When the word is clicked, move from one part of the page to another
+<a name="jump">Jump target</a>
+<a href="#jump">Local jump within document</a>
+2. When the word is clicked, open the mail page
+<a href="mailto:fakeid@democompany.com">Send mail</a>
+3. add abbreviation and acronym to a word pf paragraph
+<p><abbr title="California">Calif</abbr></p>
+<p>Isn't <abbr title="WWW">WWW</abbr> an acronym? Oh what trouble!</p>
+<p><acronym title="Extensible Markup Language">XML</acronym>
+<acronym lang="fr" title="Soci&eacute;t&eacute; Nationale de Chemins de 
+Fer">SNCF</acronym></p>
+4. Use map tag in html
+5. Create article with header and paragraph
+6. Use <b> in html file
+7. Base url
+8. Type text written from right to left, in a browser
+9. 

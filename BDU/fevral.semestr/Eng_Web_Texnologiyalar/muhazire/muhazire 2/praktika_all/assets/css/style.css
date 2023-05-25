@@ -1,0 +1,52 @@
+a:hover{
+background-color: red;
+color: white;
+}
+body{
+	color: darkblue;
+}
+b:hover{
+	cursor: zoom-in;
+	font-size: 20px;
+	color: white;
+	background-color: green 
+}
+big:active{
+color: violet;
+background-color: darkblue;
+}
+
+blockquote:hover{
+text-decoration: underline overline dotted orange 50%;
+
+}
+
+table{
+	color:pink;
+
+}
+table:hover{
+	background-color: red;
+	text-decoration-line: underline;
+
+}
+
+cite:hover{
+color: white;
+	background-color: rgba(255,120,120);
+}
+
+code:hover{
+background-color: red;
+color: white;
+}
+
+dl:hover{
+background-color: pink;
+color: blue;
+}
+button:hover{
+	background-color: pink;
+	color: red;
+	size: 40px;
+}

@@ -1,0 +1,10662 @@
+1
+00:00:00,120 --> 00:00:02,460
+The following content is
+provided under a Creative
+
+2
+00:00:02,460 --> 00:00:03,880
+Commons license.
+
+3
+00:00:03,880 --> 00:00:06,090
+Your support will help
+MIT OpenCourseWare
+
+4
+00:00:06,090 --> 00:00:10,180
+continue to offer high-quality
+educational resources for free.
+
+5
+00:00:10,180 --> 00:00:12,720
+To make a donation or to
+view additional materials
+
+6
+00:00:12,720 --> 00:00:16,680
+from hundreds of MIT courses,
+visit MIT OpenCourseWare
+
+7
+00:00:16,680 --> 00:00:17,880
+at ocw.mit.edu.
+
+8
+00:00:25,150 --> 00:00:28,170
+OLIVER DE WECK: So let me start.
+
+9
+00:00:28,170 --> 00:00:31,080
+Session 3 is about system
+modeling languages.
+
+10
+00:00:31,080 --> 00:00:37,950
+But before I start, I'd like
+to remind you that A1 is due
+
+11
+00:00:37,950 --> 00:00:38,940
+today.
+
+12
+00:00:38,940 --> 00:00:41,910
+The first assignment
+is due today.
+
+13
+00:00:41,910 --> 00:00:46,620
+And I think neither [? Yuanna ?]
+or I or [INAUDIBLE],,
+
+14
+00:00:46,620 --> 00:00:48,850
+did you get a lot of
+questions about A1?
+
+15
+00:00:53,870 --> 00:00:54,620
+GUEST SPEAKER: No.
+
+16
+00:00:54,620 --> 00:00:55,745
+I didn't get any questions.
+
+17
+00:00:55,745 --> 00:00:56,619
+OLIVER DE WECK: Yeah.
+
+18
+00:00:56,619 --> 00:00:58,250
+So we didn't get many questions.
+
+19
+00:00:58,250 --> 00:01:02,060
+So I interpret
+that as a positive,
+
+20
+00:01:02,060 --> 00:01:05,150
+but I guess we'll find out.
+
+21
+00:01:05,150 --> 00:01:06,740
+Everybody submitted.
+
+22
+00:01:06,740 --> 00:01:12,220
+Well, so we're hoping to have
+these graded in about a week,
+
+23
+00:01:12,220 --> 00:01:13,330
+give you feedback.
+
+24
+00:01:13,330 --> 00:01:16,900
+And we'll also post
+a master solution.
+
+25
+00:01:16,900 --> 00:01:20,170
+And A2 is out right now.
+
+26
+00:01:20,170 --> 00:01:22,990
+And the other good news is
+there is no new assignment
+
+27
+00:01:22,990 --> 00:01:24,430
+today that's being--
+
+28
+00:01:24,430 --> 00:01:26,700
+the next A3 is going
+to go out next week.
+
+29
+00:01:29,620 --> 00:01:31,890
+Any questions about A1?
+
+30
+00:01:31,890 --> 00:01:35,500
+Was there something
+that was particularly
+
+31
+00:01:35,500 --> 00:01:37,120
+difficult or confusing?
+
+32
+00:01:37,120 --> 00:01:38,710
+Or was it straightforward?
+
+33
+00:01:38,710 --> 00:01:40,150
+Anybody want to comment on A1?
+
+34
+00:01:44,774 --> 00:01:47,630
+Wow.
+
+35
+00:01:47,630 --> 00:01:49,550
+Sam.
+
+36
+00:01:49,550 --> 00:01:52,082
+Do you want me--
+push the button.
+
+37
+00:01:52,082 --> 00:01:53,540
+GUEST SPEAKER: No,
+our team thought
+
+38
+00:01:53,540 --> 00:01:56,000
+it was fairly clear
+on what we had
+
+39
+00:01:56,000 --> 00:01:57,809
+to do based on the lectures.
+
+40
+00:01:57,809 --> 00:01:58,600
+OLIVER DE WECK: OK.
+
+41
+00:01:58,600 --> 00:01:59,870
+GUEST SPEAKER: We
+didn't have any trouble.
+
+42
+00:01:59,870 --> 00:02:01,190
+OLIVER DE WECK: Good.
+
+43
+00:02:01,190 --> 00:02:02,770
+All right.
+
+44
+00:02:02,770 --> 00:02:05,330
+Well, let's keep going then.
+
+45
+00:02:05,330 --> 00:02:08,900
+So the V-Model is our
+roadmap for the class.
+
+46
+00:02:08,900 --> 00:02:10,759
+We're starting to
+fill in the V. We're
+
+47
+00:02:10,759 --> 00:02:12,290
+still in the upper left corner.
+
+48
+00:02:12,290 --> 00:02:15,320
+And today's lecture is
+actually a little different.
+
+49
+00:02:15,320 --> 00:02:18,410
+It's sort of in the center
+of the V, system modeling
+
+50
+00:02:18,410 --> 00:02:22,070
+languages, as a
+precondition or precursor
+
+51
+00:02:22,070 --> 00:02:26,600
+to what we've been calling MBSE,
+Model-Based System Engineering.
+
+52
+00:02:26,600 --> 00:02:32,490
+So what I'd like to cover
+today is why do we need--
+
+53
+00:02:32,490 --> 00:02:35,960
+or why have these system
+modeling languages emerged,
+
+54
+00:02:35,960 --> 00:02:39,320
+particularly, what do we
+mean by ontology, semantics,
+
+55
+00:02:39,320 --> 00:02:40,730
+and syntax?
+
+56
+00:02:40,730 --> 00:02:43,550
+And then we're going
+to give you a--
+
+57
+00:02:43,550 --> 00:02:46,220
+I would characterize
+this as a sampler
+
+58
+00:02:46,220 --> 00:02:48,710
+of three different
+system modeling
+
+59
+00:02:48,710 --> 00:02:50,690
+languages that
+have emerged really
+
+60
+00:02:50,690 --> 00:02:53,910
+within the last 10, 15 years.
+
+61
+00:02:53,910 --> 00:02:58,370
+The first one is called OPM,
+Object Process Methodology.
+
+62
+00:02:58,370 --> 00:03:02,270
+The second one is called SySML,
+System Modeling Language.
+
+63
+00:03:02,270 --> 00:03:05,510
+And then the third one
+is called Modelica.
+
+64
+00:03:05,510 --> 00:03:09,080
+And then we'll sort of quickly
+wrap up with the question,
+
+65
+00:03:09,080 --> 00:03:12,090
+you know, what does this mean
+now for system engineering
+
+66
+00:03:12,090 --> 00:03:15,460
+today, and tomorrow
+in the future?
+
+67
+00:03:15,460 --> 00:03:19,000
+So I'd like to motivate
+this with a little exercise.
+
+68
+00:03:19,000 --> 00:03:22,120
+So you remember Mr.
+Sticky from last time?
+
+69
+00:03:22,120 --> 00:03:23,700
+You came up with
+some requirements.
+
+70
+00:03:23,700 --> 00:03:27,430
+So it's kind of the simplest
+system I could think of here.
+
+71
+00:03:27,430 --> 00:03:32,140
+So what we'd like to do is
+have you work in pairs again.
+
+72
+00:03:32,140 --> 00:03:38,690
+And the assignment here
+is to describe this system
+
+73
+00:03:38,690 --> 00:03:42,730
+as clearly as you can,
+provide a description.
+
+74
+00:03:42,730 --> 00:03:46,390
+So last time the assignment
+was right, a requirement,
+
+75
+00:03:46,390 --> 00:03:50,440
+come up with some requirements
+that led to this design.
+
+76
+00:03:50,440 --> 00:03:52,930
+But today I would
+like you to describe
+
+77
+00:03:52,930 --> 00:03:54,880
+what the system is,
+how it functions,
+
+78
+00:03:54,880 --> 00:03:57,970
+and so forth, as
+clearly as you can.
+
+79
+00:03:57,970 --> 00:03:59,720
+And I would like
+you to do this--
+
+80
+00:03:59,720 --> 00:04:04,450
+so hopefully you're on the
+Webex, logged into the Webex.
+
+81
+00:04:04,450 --> 00:04:07,000
+I would like you to do
+this in teams of two.
+
+82
+00:04:07,000 --> 00:04:09,100
+And as you're
+doing this, I don't
+
+83
+00:04:09,100 --> 00:04:11,680
+know if you've noticed but
+on the Webex there's actually
+
+84
+00:04:11,680 --> 00:04:18,160
+a Notepad feature.
+
+85
+00:04:18,160 --> 00:04:19,112
+Where is it?
+
+86
+00:04:30,940 --> 00:04:32,700
+Tell me.
+
+87
+00:04:32,700 --> 00:04:33,200
+Left?
+
+88
+00:04:33,200 --> 00:04:33,998
+Right?
+
+89
+00:04:33,998 --> 00:04:43,270
+AUDIENCE: [INAUDIBLE]
+
+90
+00:04:43,270 --> 00:04:46,240
+OLIVER DE WECK: Oh, I see.
+
+91
+00:04:46,240 --> 00:04:49,310
+So I can't share and use the
+Notepad at the same time.
+
+92
+00:04:49,310 --> 00:04:53,747
+AUDIENCE: [INAUDIBLE]
+
+93
+00:04:53,747 --> 00:04:54,788
+OLIVER DE WECK: Annotate.
+
+94
+00:04:54,788 --> 00:04:56,165
+AUDIENCE: [INAUDIBLE]
+
+95
+00:04:56,165 --> 00:04:57,290
+OLIVER DE WECK: Yeah, yeah.
+
+96
+00:04:57,290 --> 00:05:01,980
+AUDIENCE: [INAUDIBLE]
+
+97
+00:05:01,980 --> 00:05:04,540
+OLIVER DE WECK: Stop sharing.
+
+98
+00:05:04,540 --> 00:05:07,870
+But then they can't see it.
+
+99
+00:05:07,870 --> 00:05:09,144
+AUDIENCE: [INAUDIBLE]
+
+100
+00:05:09,144 --> 00:05:10,560
+OLIVER DE WECK:
+Can they see this?
+
+101
+00:05:10,560 --> 00:05:13,832
+AUDIENCE: [INAUDIBLE]
+
+102
+00:05:13,832 --> 00:05:15,415
+OLIVER DE WECK: So
+you can write text.
+
+103
+00:05:32,760 --> 00:05:34,995
+You can draw shapes.
+
+104
+00:05:41,990 --> 00:05:45,230
+So the reason I want you to
+do this on the whiteboard
+
+105
+00:05:45,230 --> 00:05:48,620
+is such that we can
+then go around and look
+
+106
+00:05:48,620 --> 00:05:51,020
+at some examples.
+
+107
+00:05:51,020 --> 00:05:56,430
+So the assignment is take five
+minutes, turn to your partner
+
+108
+00:05:56,430 --> 00:05:59,990
+and try to describe this system.
+
+109
+00:05:59,990 --> 00:06:02,180
+And then we'll go around
+and look at some--
+
+110
+00:06:02,180 --> 00:06:05,386
+we'll sample people's
+descriptions.
+
+111
+00:06:05,386 --> 00:06:08,271
+Go for it.
+
+112
+00:06:08,271 --> 00:06:08,770
+All right.
+
+113
+00:06:08,770 --> 00:06:12,250
+So keep working
+on the assignment
+
+114
+00:06:12,250 --> 00:06:14,080
+but do it locally
+on your computer,
+
+115
+00:06:14,080 --> 00:06:16,420
+not on the whiteboard.
+
+116
+00:06:16,420 --> 00:06:21,190
+And then we'll sort of discuss
+it and share it and maybe
+
+117
+00:06:21,190 --> 00:06:22,720
+not use the
+whiteboard, because I
+
+118
+00:06:22,720 --> 00:06:26,170
+didn't realize there's only one
+whiteboard that we all share.
+
+119
+00:06:26,170 --> 00:06:28,420
+I thought that you have
+individually the whiteboard
+
+120
+00:06:28,420 --> 00:06:31,300
+and then you can sort of pass
+it on to different people.
+
+121
+00:06:31,300 --> 00:06:35,210
+So if you do it locally
+on your machine,
+
+122
+00:06:35,210 --> 00:06:37,200
+then we can share the
+screen so it'll work.
+
+123
+00:06:37,200 --> 00:06:42,850
+So do it in do it in PowerPoint,
+or Word, or sketchpad,
+
+124
+00:06:42,850 --> 00:06:44,352
+or anything you want.
+
+125
+00:06:44,352 --> 00:06:45,060
+Sorry about that.
+
+126
+00:06:50,950 --> 00:06:51,450
+All right.
+
+127
+00:06:51,450 --> 00:06:53,234
+So let's do this.
+
+128
+00:06:53,234 --> 00:06:54,900
+We're going to sort
+of go back and forth
+
+129
+00:06:54,900 --> 00:06:58,170
+between here and EPFL.
+
+130
+00:06:58,170 --> 00:07:02,960
+Let's start maybe
+over here with Narek.
+
+131
+00:07:02,960 --> 00:07:04,430
+Are you ready?
+
+132
+00:07:04,430 --> 00:07:07,690
+So I'm going to
+give you the ball,
+
+133
+00:07:07,690 --> 00:07:10,480
+and then you can
+sort of explain how
+
+134
+00:07:10,480 --> 00:07:13,690
+you guys describe the system.
+
+135
+00:07:13,690 --> 00:07:16,090
+NAREK SHOUGARIAN: So
+what we decided to do
+
+136
+00:07:16,090 --> 00:07:23,470
+was identify the primary
+function of Mr. Sticky.
+
+137
+00:07:23,470 --> 00:07:28,510
+So the primary function is
+to trap the fly, we thought.
+
+138
+00:07:28,510 --> 00:07:30,730
+This is enabled by a
+couple of other functions
+
+139
+00:07:30,730 --> 00:07:33,560
+that are sort of at a
+lower layer of abstraction.
+
+140
+00:07:33,560 --> 00:07:36,220
+It's attracting the fly,
+immobilizing the fly,
+
+141
+00:07:36,220 --> 00:07:39,010
+transporting the
+objects to where
+
+142
+00:07:39,010 --> 00:07:42,880
+you need to immobilize the
+fly, and deploying Mr. Sticky.
+
+143
+00:07:42,880 --> 00:07:45,790
+And we mapped this
+to the physical forms
+
+144
+00:07:45,790 --> 00:07:46,960
+that enable the function.
+
+145
+00:07:46,960 --> 00:07:49,210
+So the canister, the
+physical form of the canister
+
+146
+00:07:49,210 --> 00:07:51,880
+is helping with the
+transporting function.
+
+147
+00:07:51,880 --> 00:07:54,860
+The sticky tape is helping
+with the immobilizing function.
+
+148
+00:07:54,860 --> 00:07:56,650
+The scented
+material, we thought,
+
+149
+00:07:56,650 --> 00:07:58,690
+would be helping for
+the attracting function.
+
+150
+00:07:58,690 --> 00:08:01,510
+And the hook maybe on top
+that you use to hang it
+
+151
+00:08:01,510 --> 00:08:03,040
+would help with the deploying.
+
+152
+00:08:03,040 --> 00:08:03,860
+OLIVER DE WECK: OK.
+
+153
+00:08:03,860 --> 00:08:04,360
+Good.
+
+154
+00:08:04,360 --> 00:08:07,420
+So nice function
+form separation.
+
+155
+00:08:07,420 --> 00:08:11,830
+And you used primarily text,
+human language to describe it.
+
+156
+00:08:11,830 --> 00:08:14,710
+So let's see, at EPFL,
+who would like to share?
+
+157
+00:08:18,704 --> 00:08:19,870
+And we'll give you the ball.
+
+158
+00:08:22,059 --> 00:08:22,600
+AUDIENCE: OK.
+
+159
+00:08:22,600 --> 00:08:25,610
+We can try maybe.
+
+160
+00:08:25,610 --> 00:08:27,650
+OLIVER DE WECK: Who is speaking?
+
+161
+00:08:27,650 --> 00:08:28,650
+AUDIENCE: Maxim.
+
+162
+00:08:28,650 --> 00:08:29,733
+OLIVER DE WECK: Maxim, OK.
+
+163
+00:08:29,733 --> 00:08:32,550
+Can we give the ball to Maxim?
+
+164
+00:08:32,550 --> 00:08:33,390
+AUDIENCE: Yes.
+
+165
+00:08:33,390 --> 00:08:34,299
+Do you see something?
+
+166
+00:08:34,299 --> 00:08:35,623
+OLIVER DE WECK: Yeah, its good.
+
+167
+00:08:35,623 --> 00:08:36,539
+AUDIENCE: Oh, perfect.
+
+168
+00:08:36,539 --> 00:08:42,710
+So we draw like the same system
+when deployed and undeployed.
+
+169
+00:08:42,710 --> 00:08:45,720
+So we begin with a container
+containing basically
+
+170
+00:08:45,720 --> 00:08:47,940
+the sticky setup rolled.
+
+171
+00:08:47,940 --> 00:08:49,980
+Then when unrolled,
+we have the container
+
+172
+00:08:49,980 --> 00:08:54,056
+that should be linked to the
+sticky setup, the [INAUDIBLE]
+
+173
+00:08:54,056 --> 00:08:55,190
+whatever.
+
+174
+00:08:55,190 --> 00:08:59,670
+And then we have like an
+external input from the insects
+
+175
+00:08:59,670 --> 00:09:01,995
+that were, that come to--
+
+176
+00:09:01,995 --> 00:09:03,415
+we it sticked onto the--
+
+177
+00:09:07,076 --> 00:09:11,870
+OLIVER DE WECK: Yeah, go ahead
+
+178
+00:09:11,870 --> 00:09:12,730
+AUDIENCE: OK.
+
+179
+00:09:12,730 --> 00:09:14,920
+So that's all.
+
+180
+00:09:14,920 --> 00:09:17,420
+OLIVER DE WECK:
+So I'll note here
+
+181
+00:09:17,420 --> 00:09:19,250
+that you guys used graphics.
+
+182
+00:09:19,250 --> 00:09:20,960
+You used some kind of
+graphical language.
+
+183
+00:09:20,960 --> 00:09:23,570
+And at the highest
+level, you have--
+
+184
+00:09:23,570 --> 00:09:26,360
+it's like a state
+diagram, rolled, unrolled.
+
+185
+00:09:26,360 --> 00:09:28,940
+So you showed the system
+in two different states.
+
+186
+00:09:28,940 --> 00:09:30,680
+Very nice.
+
+187
+00:09:30,680 --> 00:09:32,750
+Somebody else here
+on the MIT side,
+
+188
+00:09:32,750 --> 00:09:34,620
+and then we'll go
+back one more time.
+
+189
+00:09:34,620 --> 00:09:36,790
+Who would like to share here?
+
+190
+00:09:36,790 --> 00:09:38,010
+Lucille?
+
+191
+00:09:38,010 --> 00:09:39,730
+OK.
+
+192
+00:09:39,730 --> 00:09:42,130
+So let's--
+
+193
+00:09:42,130 --> 00:09:48,580
+AUDIENCE: So we did a diagram
+showing the use of Mr. Sticky.
+
+194
+00:09:48,580 --> 00:09:50,560
+So we have a user
+because Mr. Sticky
+
+195
+00:09:50,560 --> 00:09:54,330
+has to be rolled and
+unrolled-- well, unrolled.
+
+196
+00:09:54,330 --> 00:09:59,110
+The user installs or
+disposes of Mr. Sticky.
+
+197
+00:09:59,110 --> 00:10:02,500
+The flies are attracted to-- or
+Mr. Sticky attracts the flies,
+
+198
+00:10:02,500 --> 00:10:04,540
+and the flies stick
+to Mr. Sticky.
+
+199
+00:10:04,540 --> 00:10:06,250
+And then we did
+compose Mr. Sticky
+
+200
+00:10:06,250 --> 00:10:08,890
+into the different
+components that
+
+201
+00:10:08,890 --> 00:10:11,800
+are below at a lower level.
+
+202
+00:10:11,800 --> 00:10:14,710
+And yeah, so it's basically at
+a higher level of use diagram.
+
+203
+00:10:14,710 --> 00:10:15,670
+OLIVER DE WECK: OK.
+
+204
+00:10:15,670 --> 00:10:19,150
+So here we have, again,
+a graphical description.
+
+205
+00:10:19,150 --> 00:10:20,890
+The states are sort of implied.
+
+206
+00:10:20,890 --> 00:10:25,680
+But you're focusing on
+decomposition, the elements.
+
+207
+00:10:25,680 --> 00:10:26,950
+Very nice.
+
+208
+00:10:26,950 --> 00:10:28,250
+Anybody else at EPFL?
+
+209
+00:10:28,250 --> 00:10:32,215
+Did anybody just write a
+paragraph of text, or more
+
+210
+00:10:32,215 --> 00:10:33,610
+of, like, sentences?
+
+211
+00:10:36,406 --> 00:10:39,670
+AUDIENCE: [INAUDIBLE]
+
+212
+00:10:39,670 --> 00:10:41,620
+OLIVER DE WECK: At EPFL,
+who wants to share?
+
+213
+00:10:44,810 --> 00:10:45,820
+AUDIENCE: Chris here.
+
+214
+00:10:45,820 --> 00:10:47,540
+OLIVER DE WECK: Chris, OK.
+
+215
+00:10:47,540 --> 00:10:49,630
+AUDIENCE: So we
+didn't write the text.
+
+216
+00:10:49,630 --> 00:10:55,150
+The text seems a bit heavy
+to convey a description
+
+217
+00:10:55,150 --> 00:10:57,070
+in efficient terms.
+
+218
+00:10:57,070 --> 00:11:01,120
+What we prefer to do is
+decompose in elements
+
+219
+00:11:01,120 --> 00:11:09,680
+and for each element
+give some properties.
+
+220
+00:11:09,680 --> 00:11:10,890
+OLIVER DE WECK: OK.
+
+221
+00:11:10,890 --> 00:11:13,700
+And did you do this
+in the form of a list,
+
+222
+00:11:13,700 --> 00:11:15,790
+or in the form of a table?
+
+223
+00:11:15,790 --> 00:11:19,371
+Or how did you
+actually describe it?
+
+224
+00:11:19,371 --> 00:11:20,120
+AUDIENCE: So wait.
+
+225
+00:11:20,120 --> 00:11:21,860
+I'm trying to share the screen.
+
+226
+00:11:21,860 --> 00:11:22,747
+OLIVER DE WECK: OK.
+
+227
+00:11:22,747 --> 00:11:23,580
+AUDIENCE: All right.
+
+228
+00:11:23,580 --> 00:11:26,520
+So we just worked on
+the first half here.
+
+229
+00:11:26,520 --> 00:11:28,030
+We have the band.
+
+230
+00:11:28,030 --> 00:11:29,790
+And we give here properties.
+
+231
+00:11:29,790 --> 00:11:33,180
+Those that have to be made
+of paper or soft material
+
+232
+00:11:33,180 --> 00:11:40,720
+has to be 1 to 1.5 meters
+long, 3 to 5 centimeters large.
+
+233
+00:11:40,720 --> 00:11:46,320
+It needs to have a coating which
+itself is a sticky material,
+
+234
+00:11:46,320 --> 00:11:49,125
+and be centered in
+order to attract flies.
+
+235
+00:11:49,125 --> 00:11:51,300
+It needs to have visible color.
+
+236
+00:11:51,300 --> 00:11:57,960
+And then, well, the other part
+here, which I'm highlighting,
+
+237
+00:11:57,960 --> 00:12:04,100
+would be related to
+the packaging, so
+
+238
+00:12:04,100 --> 00:12:08,430
+a self-sealing linear container
+with a single-use opening,
+
+239
+00:12:08,430 --> 00:12:10,820
+including a hanger.
+
+240
+00:12:10,820 --> 00:12:14,530
+We'd possibly give
+branding on the packaging
+
+241
+00:12:14,530 --> 00:12:16,620
+and, well, the
+non-toxic material
+
+242
+00:12:16,620 --> 00:12:20,685
+would refer to the
+sticky material.
+
+243
+00:12:20,685 --> 00:12:21,810
+OLIVER DE WECK: Good, good.
+
+244
+00:12:21,810 --> 00:12:22,710
+Thank you very much.
+
+245
+00:12:22,710 --> 00:12:23,830
+This is great.
+
+246
+00:12:23,830 --> 00:12:26,880
+So what you showed,
+that's more like a list.
+
+247
+00:12:26,880 --> 00:12:28,290
+And I would
+describe-- this looks
+
+248
+00:12:28,290 --> 00:12:31,770
+like what I would call
+a bill of materials.
+
+249
+00:12:31,770 --> 00:12:35,970
+It's essentially a list
+of the primary elements
+
+250
+00:12:35,970 --> 00:12:37,500
+of form of the system.
+
+251
+00:12:37,500 --> 00:12:41,470
+But there are some attributes
+that are associated.
+
+252
+00:12:41,470 --> 00:12:46,530
+So this is a list format in
+the form of a bill of materials
+
+253
+00:12:46,530 --> 00:12:47,990
+with attributes attached.
+
+254
+00:12:47,990 --> 00:12:49,570
+So thank you very much.
+
+255
+00:12:49,570 --> 00:12:50,770
+That's great.
+
+256
+00:12:50,770 --> 00:12:54,720
+So I'm going to
+share here again.
+
+257
+00:12:54,720 --> 00:12:59,180
+And you're probably
+wondering what the heck?
+
+258
+00:12:59,180 --> 00:13:01,150
+Why did we do this?
+
+259
+00:13:01,150 --> 00:13:03,470
+Why did we do this exercise?
+
+260
+00:13:03,470 --> 00:13:10,450
+And that's the point
+I want to make next.
+
+261
+00:13:10,450 --> 00:13:12,400
+So here's a very simple system.
+
+262
+00:13:12,400 --> 00:13:15,340
+And we have four
+examples of descriptions
+
+263
+00:13:15,340 --> 00:13:17,470
+that were quite different.
+
+264
+00:13:17,470 --> 00:13:19,960
+And of course, if
+you had more time,
+
+265
+00:13:19,960 --> 00:13:21,380
+they'd become more complete.
+
+266
+00:13:21,380 --> 00:13:23,170
+But they would be
+really different.
+
+267
+00:13:23,170 --> 00:13:27,010
+So this is
+fundamentally the issue
+
+268
+00:13:27,010 --> 00:13:28,690
+that we've been
+facing in systems
+
+269
+00:13:28,690 --> 00:13:30,520
+engineering for a long time.
+
+270
+00:13:30,520 --> 00:13:32,980
+The means for describing
+our artifacts,
+
+271
+00:13:32,980 --> 00:13:35,230
+whether it's something
+as simple as a Mr.
+
+272
+00:13:35,230 --> 00:13:38,560
+Sticky, or an airplane,
+or a spacecraft,
+
+273
+00:13:38,560 --> 00:13:41,440
+or a medical device,
+or even a service,
+
+274
+00:13:41,440 --> 00:13:42,510
+how would we describe it?
+
+275
+00:13:42,510 --> 00:13:44,530
+Well, first of all,
+natural language,
+
+276
+00:13:44,530 --> 00:13:46,670
+the human natural language.
+
+277
+00:13:46,670 --> 00:13:50,440
+And as we know, the human
+natural language is very rich.
+
+278
+00:13:50,440 --> 00:13:53,140
+There's very different
+ways in which
+
+279
+00:13:53,140 --> 00:13:56,710
+we can express, essentially,
+the same facts, the same things.
+
+280
+00:13:56,710 --> 00:14:01,760
+That's a wonderful thing if
+you're a poet or a writer.
+
+281
+00:14:01,760 --> 00:14:04,610
+But it makes system
+engineering challenging,
+
+282
+00:14:04,610 --> 00:14:08,270
+because it gets
+confusing when we're
+
+283
+00:14:08,270 --> 00:14:11,510
+describing the same thing
+in very different ways.
+
+284
+00:14:11,510 --> 00:14:14,210
+Or graphical, so
+we saw some boxes,
+
+285
+00:14:14,210 --> 00:14:18,050
+and we saw some great
+examples, sketches, drawings.
+
+286
+00:14:18,050 --> 00:14:22,340
+So fundamentally, the
+way we describe systems--
+
+287
+00:14:22,340 --> 00:14:25,670
+and this gets to the left half
+and right half of the brain--
+
+288
+00:14:25,670 --> 00:14:31,400
+is using language, words,
+sentences, lists, or graphical.
+
+289
+00:14:31,400 --> 00:14:35,010
+Those are the two fundamental
+ways of describing systems.
+
+290
+00:14:35,010 --> 00:14:38,270
+And then we put all these
+descriptions together
+
+291
+00:14:38,270 --> 00:14:41,480
+in what we've been
+calling documents.
+
+292
+00:14:41,480 --> 00:14:43,130
+We aggregate this in documents.
+
+293
+00:14:43,130 --> 00:14:46,880
+So examples of documents would
+be a requirements document.
+
+294
+00:14:46,880 --> 00:14:49,910
+That's what, essentially,
+you're doing in Assignment 2.
+
+295
+00:14:49,910 --> 00:14:55,130
+Or a drawing package,
+even if it's in CAD,
+
+296
+00:14:55,130 --> 00:14:59,150
+it's still essentially
+a document.
+
+297
+00:14:59,150 --> 00:15:01,670
+So typically in system
+engineering all of this
+
+298
+00:15:01,670 --> 00:15:06,660
+gets assembled into what we call
+a TDP, Technical Data Package.
+
+299
+00:15:06,660 --> 00:15:09,620
+And fundamentally, when
+you're designing a new system,
+
+300
+00:15:09,620 --> 00:15:11,450
+you're producing
+a technical data
+
+301
+00:15:11,450 --> 00:15:16,340
+package that has software
+drawings, descriptions.
+
+302
+00:15:16,340 --> 00:15:19,560
+And that's the deliverable
+from the design process,
+
+303
+00:15:19,560 --> 00:15:22,440
+is this TDP, Technical
+Data Package.
+
+304
+00:15:22,440 --> 00:15:25,040
+And from that, you should then
+be able to build and operate
+
+305
+00:15:25,040 --> 00:15:29,450
+the system with as few errors,
+mistakes, misunderstandings
+
+306
+00:15:29,450 --> 00:15:30,830
+as possible.
+
+307
+00:15:30,830 --> 00:15:33,590
+And fundamentally,
+as our systems
+
+308
+00:15:33,590 --> 00:15:35,780
+have been getting more
+and more complex--
+
+309
+00:15:35,780 --> 00:15:38,180
+we're now talking
+about the systems
+
+310
+00:15:38,180 --> 00:15:42,050
+that need the three, four,
+five layers of decomposition--
+
+311
+00:15:42,050 --> 00:15:45,770
+it's very easy to have
+errors, omissions,
+
+312
+00:15:45,770 --> 00:15:48,780
+different interpretations
+of this information.
+
+313
+00:15:48,780 --> 00:15:53,060
+So that's fundamentally--
+but there are advantages.
+
+314
+00:15:53,060 --> 00:15:56,540
+I don't want to say
+it's categorically
+
+315
+00:15:56,540 --> 00:16:00,140
+bad to use natural
+language and graphics.
+
+316
+00:16:00,140 --> 00:16:03,080
+They're definitely an advantage,
+familiarity to the creator
+
+317
+00:16:03,080 --> 00:16:03,950
+of the description.
+
+318
+00:16:03,950 --> 00:16:05,180
+So it's easy.
+
+319
+00:16:05,180 --> 00:16:05,960
+It's comfortable.
+
+320
+00:16:05,960 --> 00:16:07,430
+It feels familiar.
+
+321
+00:16:07,430 --> 00:16:09,500
+And also it's not
+confining, so you
+
+322
+00:16:09,500 --> 00:16:13,190
+can be quite creative
+by creating descriptions
+
+323
+00:16:13,190 --> 00:16:14,240
+in this way.
+
+324
+00:16:14,240 --> 00:16:16,670
+But the list of
+disadvantages is quite
+
+325
+00:16:16,670 --> 00:16:21,080
+long for allowing an
+arbitrary description, room
+
+326
+00:16:21,080 --> 00:16:23,930
+for ambiguous
+interpretations and errors.
+
+327
+00:16:23,930 --> 00:16:25,830
+It's quite difficult to update.
+
+328
+00:16:25,830 --> 00:16:27,950
+So if you make a change
+in one description,
+
+329
+00:16:27,950 --> 00:16:30,020
+that change will
+not automatically
+
+330
+00:16:30,020 --> 00:16:32,960
+propagate to the
+other descriptions.
+
+331
+00:16:32,960 --> 00:16:35,900
+Handing off these descriptions
+from one lifecycle phase
+
+332
+00:16:35,900 --> 00:16:38,480
+to another, there's
+discontinuities
+
+333
+00:16:38,480 --> 00:16:40,340
+in these hand-offs.
+
+334
+00:16:40,340 --> 00:16:44,300
+Uneven level of abstraction,
+so what I mean by that is you
+
+335
+00:16:44,300 --> 00:16:47,990
+may describe one part of the
+system, and very detailed.
+
+336
+00:16:47,990 --> 00:16:52,945
+So the last example
+we saw with the list,
+
+337
+00:16:52,945 --> 00:16:54,320
+with the bill of
+materials, there
+
+338
+00:16:54,320 --> 00:16:56,810
+was quite a bit of
+detail there on the scent
+
+339
+00:16:56,810 --> 00:16:59,320
+and the attributes of the tape.
+
+340
+00:16:59,320 --> 00:17:01,670
+But one of the other--
+at least a couple
+
+341
+00:17:01,670 --> 00:17:04,250
+of the other descriptions
+didn't have that level of detail
+
+342
+00:17:04,250 --> 00:17:05,750
+when it came to the tape.
+
+343
+00:17:05,750 --> 00:17:08,359
+So the level of
+abstraction could
+
+344
+00:17:08,359 --> 00:17:13,010
+be quite different in the
+different ways to describe it.
+
+345
+00:17:13,010 --> 00:17:15,470
+And then for a
+complex system, you
+
+346
+00:17:15,470 --> 00:17:19,099
+can imagine that the amount
+of volume of information
+
+347
+00:17:19,099 --> 00:17:20,000
+grows a lot.
+
+348
+00:17:20,000 --> 00:17:24,380
+And so you can walk into any
+program manager and systems
+
+349
+00:17:24,380 --> 00:17:27,260
+engineers office
+and see bookshelves
+
+350
+00:17:27,260 --> 00:17:30,500
+full of binders, dozens
+and dozens of binders
+
+351
+00:17:30,500 --> 00:17:33,860
+with documents, thousands
+and thousands of pages.
+
+352
+00:17:33,860 --> 00:17:36,380
+And many of them are never read.
+
+353
+00:17:36,380 --> 00:17:38,240
+That's the big issue.
+
+354
+00:17:38,240 --> 00:17:40,880
+So that's been the
+kind of way in which
+
+355
+00:17:40,880 --> 00:17:44,330
+we've been doing system
+engineering traditionally.
+
+356
+00:17:44,330 --> 00:17:47,990
+So the idea here
+is that in order
+
+357
+00:17:47,990 --> 00:17:51,893
+to mitigate-- yes, Justice.
+
+358
+00:17:51,893 --> 00:17:58,759
+AUDIENCE: [INAUDIBLE]
+
+359
+00:17:58,759 --> 00:18:00,550
+OLIVER DE WECK: Phase
+A, conceptual design.
+
+360
+00:18:00,550 --> 00:18:03,760
+Phase B, preliminary
+and detail design.
+
+361
+00:18:03,760 --> 00:18:08,260
+Phase C is testing and launch.
+
+362
+00:18:08,260 --> 00:18:09,460
+Phase E is operation.
+
+363
+00:18:09,460 --> 00:18:14,590
+So usually not the same
+people do conceptual design,
+
+364
+00:18:14,590 --> 00:18:16,180
+preliminary design testing.
+
+365
+00:18:16,180 --> 00:18:18,580
+So all the technical
+data package,
+
+366
+00:18:18,580 --> 00:18:21,940
+these artifacts have to be
+transferred and handed off
+
+367
+00:18:21,940 --> 00:18:25,360
+to new people who then
+work on the next phase.
+
+368
+00:18:25,360 --> 00:18:27,850
+That's what I mean by hand-offs.
+
+369
+00:18:27,850 --> 00:18:33,380
+And, yeah, so the
+idea is in order
+
+370
+00:18:33,380 --> 00:18:35,630
+to mitigate some of
+these disadvantages
+
+371
+00:18:35,630 --> 00:18:40,960
+of natural language and
+graphical description,
+
+372
+00:18:40,960 --> 00:18:42,940
+there has been, and
+this has been recognized
+
+373
+00:18:42,940 --> 00:18:47,710
+for a long time, a need to
+be more precise, perhaps more
+
+374
+00:18:47,710 --> 00:18:50,650
+confining, but to
+create languages
+
+375
+00:18:50,650 --> 00:18:56,120
+that allow us to describe
+systems much more precisely.
+
+376
+00:18:56,120 --> 00:18:58,690
+And so I'll mention a
+couple of the past efforts.
+
+377
+00:18:58,690 --> 00:19:02,090
+And you can read about these.
+
+378
+00:19:02,090 --> 00:19:03,130
+Each of these has--
+
+379
+00:19:03,130 --> 00:19:06,920
+so I'll mention bond
+graphs first, 1960.
+
+380
+00:19:06,920 --> 00:19:09,800
+This was actually
+invented here at MIT
+
+381
+00:19:09,800 --> 00:19:13,850
+by a professor in
+mechanical engineering.
+
+382
+00:19:13,850 --> 00:19:15,320
+His name was Henry Paynter.
+
+383
+00:19:15,320 --> 00:19:18,320
+Professor Paynter
+created bond graphs.
+
+384
+00:19:18,320 --> 00:19:20,840
+You can think of bond
+graphs as block diagrams
+
+385
+00:19:20,840 --> 00:19:24,920
+where different blocks have
+ports or interfaces where
+
+386
+00:19:24,920 --> 00:19:28,160
+information, material,
+energy flows in and out.
+
+387
+00:19:28,160 --> 00:19:31,670
+And you can compose a
+system out of these blocks.
+
+388
+00:19:31,670 --> 00:19:33,860
+These bond graphs
+are essentially--
+
+389
+00:19:33,860 --> 00:19:38,030
+and Narik will talk
+about Modelica,
+
+390
+00:19:38,030 --> 00:19:40,970
+which is sort of a modern
+version of bond graphs.
+
+391
+00:19:40,970 --> 00:19:42,820
+It has other features, too.
+
+392
+00:19:42,820 --> 00:19:46,430
+But this has been
+sort of one attempt.
+
+393
+00:19:46,430 --> 00:19:50,880
+Another one that's very
+well-known is IDEF, I-D-E-F,
+
+394
+00:19:50,880 --> 00:19:52,470
+about 20 years later.
+
+395
+00:19:52,470 --> 00:19:56,630
+This was created by the Air
+Force, the US Air Force.
+
+396
+00:19:56,630 --> 00:19:58,640
+And this is essentially
+a description
+
+397
+00:19:58,640 --> 00:20:01,190
+of systems that's very
+functionally oriented.
+
+398
+00:20:01,190 --> 00:20:03,500
+So it shows you what
+functions are involved.
+
+399
+00:20:03,500 --> 00:20:05,000
+And we saw one of
+the descriptions
+
+400
+00:20:05,000 --> 00:20:07,790
+was very functionally
+oriented, and how
+
+401
+00:20:07,790 --> 00:20:12,660
+the functions of the system
+relate to each other.
+
+402
+00:20:12,660 --> 00:20:16,580
+But generally these
+system languages
+
+403
+00:20:16,580 --> 00:20:19,070
+have not fully been deployed.
+
+404
+00:20:19,070 --> 00:20:21,890
+Some organizations use
+them, others don't use them.
+
+405
+00:20:21,890 --> 00:20:23,830
+And the main reason
+for that is twofold.
+
+406
+00:20:23,830 --> 00:20:27,750
+First of all, some of these
+languages were incomplete.
+
+407
+00:20:27,750 --> 00:20:30,530
+They would focus only on
+one aspect, like functions
+
+408
+00:20:30,530 --> 00:20:34,940
+or the block nature of the
+system, the block diagrams.
+
+409
+00:20:34,940 --> 00:20:38,040
+And a lot of them
+were not executable.
+
+410
+00:20:38,040 --> 00:20:40,580
+So they would be graphical,
+but you couldn't actually
+
+411
+00:20:40,580 --> 00:20:43,670
+simulate and actually check
+whether that description was
+
+412
+00:20:43,670 --> 00:20:45,800
+complete or accurate.
+
+413
+00:20:45,800 --> 00:20:49,260
+So since then-- and
+the other thing,
+
+414
+00:20:49,260 --> 00:20:52,100
+of course, important
+is domain agnostic.
+
+415
+00:20:52,100 --> 00:20:55,490
+So what I mean by this is that
+the system modeling language
+
+416
+00:20:55,490 --> 00:20:59,360
+should be applicable for any
+kind of cyber physical system.
+
+417
+00:20:59,360 --> 00:21:03,590
+Again, if you're designing
+a spacecraft, an aircraft,
+
+418
+00:21:03,590 --> 00:21:06,410
+medical device, any
+kind of product,
+
+419
+00:21:06,410 --> 00:21:08,330
+the language shouldn't
+have to be adapted.
+
+420
+00:21:08,330 --> 00:21:10,970
+The language sort of covers
+all these applications.
+
+421
+00:21:10,970 --> 00:21:12,500
+That's the idea.
+
+422
+00:21:12,500 --> 00:21:17,780
+So whatever language it is that
+you're using or developing,
+
+423
+00:21:17,780 --> 00:21:20,480
+it has to have
+these three things.
+
+424
+00:21:20,480 --> 00:21:22,200
+Any language has
+these three things.
+
+425
+00:21:22,200 --> 00:21:24,230
+So the first is ontology.
+
+426
+00:21:24,230 --> 00:21:27,264
+And I reference here
+the Wikipedia articles
+
+427
+00:21:27,264 --> 00:21:27,930
+on these things.
+
+428
+00:21:27,930 --> 00:21:31,010
+Some of my colleagues-- in
+academia it's a big debate
+
+429
+00:21:31,010 --> 00:21:35,120
+is Wikipedia a legitimate source
+of information or is it not?
+
+430
+00:21:35,120 --> 00:21:37,040
+My position on
+this is that it is.
+
+431
+00:21:37,040 --> 00:21:40,340
+I think Wikipedia is
+definitely not perfect,
+
+432
+00:21:40,340 --> 00:21:42,620
+depending on what topic
+you're looking at,
+
+433
+00:21:42,620 --> 00:21:45,440
+but it's a sort of
+self-correcting system.
+
+434
+00:21:45,440 --> 00:21:48,800
+So I actually go to Wikipedia,
+and then there's references.
+
+435
+00:21:48,800 --> 00:21:50,310
+And you can dive deeper.
+
+436
+00:21:50,310 --> 00:21:51,890
+So I give you the
+Wikipedia links
+
+437
+00:21:51,890 --> 00:21:53,190
+here for these three things.
+
+438
+00:21:53,190 --> 00:21:55,110
+First, ontology.
+
+439
+00:21:55,110 --> 00:21:59,520
+So ontology is a
+very fancy word.
+
+440
+00:21:59,520 --> 00:22:01,430
+What ontology actually is--
+
+441
+00:22:01,430 --> 00:22:03,820
+Mark, why don't
+you come up here?
+
+442
+00:22:03,820 --> 00:22:06,110
+You're an instructor today.
+
+443
+00:22:06,110 --> 00:22:11,510
+Ontology, fundamentally,
+is describing the entities
+
+444
+00:22:11,510 --> 00:22:16,430
+that are allowed to exist in
+the language, subjects, nouns,
+
+445
+00:22:16,430 --> 00:22:21,870
+adverbs, what are the objects,
+the entities, that can exist.
+
+446
+00:22:21,870 --> 00:22:25,010
+So it's a kind of
+very abstract thing.
+
+447
+00:22:25,010 --> 00:22:28,310
+But it's essentially the
+library of words and objects
+
+448
+00:22:28,310 --> 00:22:31,850
+that are allowed to
+exist in that language
+
+449
+00:22:31,850 --> 00:22:35,240
+and then how these entities
+can be grouped perhaps
+
+450
+00:22:35,240 --> 00:22:37,290
+in a hierarchy and subdivided.
+
+451
+00:22:37,290 --> 00:22:40,160
+So it essentially
+constrains the universe
+
+452
+00:22:40,160 --> 00:22:42,430
+of things you can
+describe in that language.
+
+453
+00:22:42,430 --> 00:22:45,860
+The shorter, the smaller
+your ontology is,
+
+454
+00:22:45,860 --> 00:22:48,740
+the more confined the language.
+
+455
+00:22:48,740 --> 00:22:50,330
+Semantics.
+
+456
+00:22:50,330 --> 00:22:57,800
+Semantics is basically a branch
+of science of philosophy, which
+
+457
+00:22:57,800 --> 00:23:01,430
+is fundamentally assigning
+meaning to those objects that
+
+458
+00:23:01,430 --> 00:23:03,380
+are described in the ontology.
+
+459
+00:23:03,380 --> 00:23:06,980
+And so the way
+that we say this is
+
+460
+00:23:06,980 --> 00:23:10,360
+that it's the relationship
+between the signifiers,
+
+461
+00:23:10,360 --> 00:23:14,270
+so the signifiers are
+words, letters, symbols,
+
+462
+00:23:14,270 --> 00:23:16,070
+graphical symbols.
+
+463
+00:23:16,070 --> 00:23:18,380
+So how do we describe a
+resistor, for example,
+
+464
+00:23:18,380 --> 00:23:21,080
+in electrical engineering?
+
+465
+00:23:21,080 --> 00:23:22,010
+A squiggly line.
+
+466
+00:23:22,010 --> 00:23:24,000
+It's the zigzag line.
+
+467
+00:23:24,000 --> 00:23:27,140
+Well, if you don't know
+electrical engineering,
+
+468
+00:23:27,140 --> 00:23:28,850
+you just see a squiggly line.
+
+469
+00:23:28,850 --> 00:23:30,650
+It's meaningless to you.
+
+470
+00:23:30,650 --> 00:23:33,710
+But if you know that
+semantically that
+
+471
+00:23:33,710 --> 00:23:36,830
+means that's a resistor,
+that's the symbol for resistor,
+
+472
+00:23:36,830 --> 00:23:38,930
+that's what we
+mean by semantics.
+
+473
+00:23:38,930 --> 00:23:41,150
+And then the third is syntax.
+
+474
+00:23:41,150 --> 00:23:42,090
+What is syntax?
+
+475
+00:23:42,090 --> 00:23:46,340
+It's the set of rules, the set
+of principles and processes
+
+476
+00:23:46,340 --> 00:23:51,710
+by which the objects or the
+entities in the ontology
+
+477
+00:23:51,710 --> 00:23:54,320
+can be combined to
+build up higher level
+
+478
+00:23:54,320 --> 00:23:59,460
+information, like sentences,
+paragraphs, and so forth.
+
+479
+00:23:59,460 --> 00:24:02,900
+And so that's essentially
+the construction rules
+
+480
+00:24:02,900 --> 00:24:03,770
+for the language.
+
+481
+00:24:03,770 --> 00:24:07,580
+So every language has
+these three things.
+
+482
+00:24:07,580 --> 00:24:10,040
+So any questions
+about this before we
+
+483
+00:24:10,040 --> 00:24:12,610
+move into our first language?
+
+484
+00:24:12,610 --> 00:24:15,000
+So we're going to give three
+examples of system modeling
+
+485
+00:24:15,000 --> 00:24:18,090
+languages, and you'll see the
+similarities and differences.
+
+486
+00:24:18,090 --> 00:24:21,030
+But as you see these
+languages, keep in mind they
+
+487
+00:24:21,030 --> 00:24:25,990
+all have ontology,
+semantics, and syntax.
+
+488
+00:24:25,990 --> 00:24:27,330
+Any questions about that?
+
+489
+00:24:30,270 --> 00:24:32,490
+So OPM.
+
+490
+00:24:32,490 --> 00:24:34,200
+Let me describe to you OPM.
+
+491
+00:24:34,200 --> 00:24:38,160
+This is one of the
+younger languages.
+
+492
+00:24:38,160 --> 00:24:41,970
+And so OPM stands for
+Object Process Methodology.
+
+493
+00:24:41,970 --> 00:24:47,970
+And it was created by
+Professor Dov Dori at Technion,
+
+494
+00:24:47,970 --> 00:24:49,620
+a colleague of mine.
+
+495
+00:24:49,620 --> 00:24:52,920
+Dov is essentially a computer
+scientist by training.
+
+496
+00:24:52,920 --> 00:24:56,340
+And you'll see the
+heritage here of OPM.
+
+497
+00:24:56,340 --> 00:25:00,090
+And the big news
+here about OPM is
+
+498
+00:25:00,090 --> 00:25:02,580
+OPM is not that well-known yet.
+
+499
+00:25:02,580 --> 00:25:06,870
+If you ask around, not
+too many people know OPM.
+
+500
+00:25:06,870 --> 00:25:09,060
+But I predict that
+in the next decade
+
+501
+00:25:09,060 --> 00:25:11,170
+that will change very quickly.
+
+502
+00:25:11,170 --> 00:25:13,800
+And one of the reasons
+is that OPM was just
+
+503
+00:25:13,800 --> 00:25:17,590
+now adopted as an ISO standard.
+
+504
+00:25:17,590 --> 00:25:19,800
+And if you know ISO, the
+International Standards
+
+505
+00:25:19,800 --> 00:25:22,160
+Organization, they're
+located in Geneva,
+
+506
+00:25:22,160 --> 00:25:24,910
+it's a big deal to
+become an ISO standard.
+
+507
+00:25:24,910 --> 00:25:26,880
+It took like five years,
+the whole process,
+
+508
+00:25:26,880 --> 00:25:28,830
+with committees and reviews.
+
+509
+00:25:28,830 --> 00:25:32,280
+And so the ISO
+standard is actually--
+
+510
+00:25:32,280 --> 00:25:35,070
+OPM was adopted
+as an ISO standard
+
+511
+00:25:35,070 --> 00:25:39,630
+as a means to describe and
+develop other standards.
+
+512
+00:25:39,630 --> 00:25:43,380
+So it's kind of a metalanguage
+because, as you can imagine,
+
+513
+00:25:43,380 --> 00:25:45,870
+when you read different
+standards which, by the way,
+
+514
+00:25:45,870 --> 00:25:48,480
+have a lot of
+influence, they're also
+
+515
+00:25:48,480 --> 00:25:50,760
+written in natural
+language and graphics
+
+516
+00:25:50,760 --> 00:25:52,210
+and lots of inconsistencies.
+
+517
+00:25:52,210 --> 00:25:55,170
+So the idea is that future
+ISO standards should
+
+518
+00:25:55,170 --> 00:25:59,310
+be written using OPM such that
+they're clear and consistent,
+
+519
+00:25:59,310 --> 00:26:01,420
+and so forth.
+
+520
+00:26:01,420 --> 00:26:07,170
+So the history here is
+that if we go back further,
+
+521
+00:26:07,170 --> 00:26:09,960
+UML, which is Unified Modeling
+Language which I'm not
+
+522
+00:26:09,960 --> 00:26:12,810
+going to talk about
+today, is a software--
+
+523
+00:26:12,810 --> 00:26:15,060
+this is a language that
+was developed primarily
+
+524
+00:26:15,060 --> 00:26:18,780
+for software engineering
+to consistently describe
+
+525
+00:26:18,780 --> 00:26:22,080
+use cases, to
+consistently describe
+
+526
+00:26:22,080 --> 00:26:27,420
+activity and flows in software,
+the structure of software.
+
+527
+00:26:27,420 --> 00:26:29,400
+But it's really
+software centric.
+
+528
+00:26:29,400 --> 00:26:32,970
+So from UML 2.0, we then
+sort of branched off
+
+529
+00:26:32,970 --> 00:26:37,050
+into SysML, which Mark
+Chodas, who just joined us
+
+530
+00:26:37,050 --> 00:26:41,550
+will talk about, and then OPM.
+
+531
+00:26:41,550 --> 00:26:43,740
+So these are sort of
+derivatives of UML.
+
+532
+00:26:43,740 --> 00:26:47,250
+And there's a book, it's not
+one of the mandatory books
+
+533
+00:26:47,250 --> 00:26:50,400
+for this class, OPM 2002.
+
+534
+00:26:50,400 --> 00:26:52,170
+If you're really
+interested in OPM,
+
+535
+00:26:52,170 --> 00:26:54,420
+I recommend you
+invest in that book.
+
+536
+00:26:54,420 --> 00:26:57,420
+It's really very well written.
+
+537
+00:26:57,420 --> 00:27:03,990
+So let me give you an example
+of how OPM can be used.
+
+538
+00:27:03,990 --> 00:27:06,720
+So like we said, typical
+product representations
+
+539
+00:27:06,720 --> 00:27:09,660
+are sketches, engineering
+drawings, or UML diagrams
+
+540
+00:27:09,660 --> 00:27:14,880
+and software, but the need
+for a unified representation.
+
+541
+00:27:14,880 --> 00:27:19,560
+And fundamentally,
+we have functions
+
+542
+00:27:19,560 --> 00:27:23,190
+and then we have objects,
+form and function, in systems.
+
+543
+00:27:23,190 --> 00:27:27,270
+And so what we would like to
+do, and the premise of OPM,
+
+544
+00:27:27,270 --> 00:27:33,120
+is that we can show everything
+in one diagram type,
+
+545
+00:27:33,120 --> 00:27:38,370
+so the functions, the functional
+attributes, the objects,
+
+546
+00:27:38,370 --> 00:27:40,830
+and there's different
+types of objects, operands,
+
+547
+00:27:40,830 --> 00:27:44,130
+system components,
+consumables, the attributes
+
+548
+00:27:44,130 --> 00:27:46,410
+of those objects,
+and then the links.
+
+549
+00:27:46,410 --> 00:27:48,000
+And I'll show you
+the different types
+
+550
+00:27:48,000 --> 00:27:51,000
+of links between these
+that exist in OPM.
+
+551
+00:27:51,000 --> 00:27:53,220
+So it's a generic
+modeling language.
+
+552
+00:27:53,220 --> 00:27:55,140
+And it has been
+successfully applied
+
+553
+00:27:55,140 --> 00:27:57,930
+to system architecting
+of complex products
+
+554
+00:27:57,930 --> 00:27:59,730
+in different organizations.
+
+555
+00:27:59,730 --> 00:28:02,320
+I'm going to try to give you
+a pretty simple example here,
+
+556
+00:28:02,320 --> 00:28:03,820
+which is a refrigerator.
+
+557
+00:28:03,820 --> 00:28:06,750
+So we're going to
+look at a small kind
+
+558
+00:28:06,750 --> 00:28:11,860
+of household-level refrigerator
+through the eyes of OPM.
+
+559
+00:28:11,860 --> 00:28:12,360
+All right.
+
+560
+00:28:12,360 --> 00:28:16,050
+So here's the basic
+ontology of OPM.
+
+561
+00:28:16,050 --> 00:28:18,030
+It's very, very simple.
+
+562
+00:28:18,030 --> 00:28:24,180
+And that's the idea, is to have
+as few objects, as few entities
+
+563
+00:28:24,180 --> 00:28:27,450
+as possible in the
+language to keep it simple.
+
+564
+00:28:27,450 --> 00:28:31,350
+So the first one is
+the idea of an object.
+
+565
+00:28:31,350 --> 00:28:32,790
+What is an object?
+
+566
+00:28:32,790 --> 00:28:35,820
+Objects are drawn
+as these rectangles.
+
+567
+00:28:35,820 --> 00:28:39,840
+Objects are defined
+as entities that
+
+568
+00:28:39,840 --> 00:28:44,490
+have the potential for stable,
+unconditional existence
+
+569
+00:28:44,490 --> 00:28:47,160
+for some positive
+duration of time.
+
+570
+00:28:47,160 --> 00:28:49,710
+And objects have
+states within them.
+
+571
+00:28:49,710 --> 00:28:55,360
+So what would be an
+example of an object
+
+572
+00:28:55,360 --> 00:28:57,206
+that we've talked about today?
+
+573
+00:28:57,206 --> 00:28:58,095
+Go ahead.
+
+574
+00:28:58,095 --> 00:28:59,640
+AUDIENCE: Maybe the sticky tape.
+
+575
+00:28:59,640 --> 00:29:01,230
+OLIVIER DE WECK: Yeah, so
+the sticky tape itself.
+
+576
+00:29:01,230 --> 00:29:01,950
+That's an object.
+
+577
+00:29:01,950 --> 00:29:03,990
+It exists unconditionally.
+
+578
+00:29:03,990 --> 00:29:05,010
+It's there.
+
+579
+00:29:05,010 --> 00:29:09,040
+And what's important is it
+could be a physical object.
+
+580
+00:29:09,040 --> 00:29:11,280
+So it has a physical existence.
+
+581
+00:29:11,280 --> 00:29:16,120
+But it could also be a sort
+of informational object.
+
+582
+00:29:16,120 --> 00:29:21,750
+So for example, if you
+have an idea or a vision,
+
+583
+00:29:21,750 --> 00:29:22,920
+that's an object, too.
+
+584
+00:29:22,920 --> 00:29:25,560
+It's not physical in that
+sense, but it does exist
+
+585
+00:29:25,560 --> 00:29:29,010
+as an informational object.
+
+586
+00:29:29,010 --> 00:29:30,600
+What are states?
+
+587
+00:29:30,600 --> 00:29:31,860
+Let's see at EPFL.
+
+588
+00:29:31,860 --> 00:29:34,500
+What would be an example
+of a state that's
+
+589
+00:29:34,500 --> 00:29:35,850
+associated with an object?
+
+590
+00:29:43,770 --> 00:29:46,340
+Yeah, that's OK.
+
+591
+00:29:46,340 --> 00:29:49,040
+Can somebody give an
+example of a state?
+
+592
+00:29:49,040 --> 00:29:50,515
+AUDIENCE: Yeah.
+
+593
+00:29:50,515 --> 00:29:52,469
+Rolled and unrolled
+for the sticky tape.
+
+594
+00:29:52,469 --> 00:29:54,010
+OLIVIER DE WECK:
+Rolled and unrolled.
+
+595
+00:29:54,010 --> 00:29:55,310
+Exactly.
+
+596
+00:29:55,310 --> 00:29:56,790
+Or furled and unfurled.
+
+597
+00:29:56,790 --> 00:30:01,100
+So that's kind of a binary state
+that could be halfway unrolled,
+
+598
+00:30:01,100 --> 00:30:06,830
+or the sticky tape is full of
+flies, or it's kind of empty.
+
+599
+00:30:06,830 --> 00:30:10,190
+Those would be describing the
+object in terms of what state
+
+600
+00:30:10,190 --> 00:30:10,850
+it is in.
+
+601
+00:30:10,850 --> 00:30:11,930
+Exactly.
+
+602
+00:30:11,930 --> 00:30:14,930
+So the form is then the
+sum of all these objects.
+
+603
+00:30:17,560 --> 00:30:19,560
+So that's one building block.
+
+604
+00:30:19,560 --> 00:30:21,800
+And then processes
+are the other.
+
+605
+00:30:21,800 --> 00:30:23,362
+So what are processes?
+
+606
+00:30:23,362 --> 00:30:24,570
+Oh, is there another example?
+
+607
+00:30:24,570 --> 00:30:25,190
+Yeah, go ahead.
+
+608
+00:30:25,190 --> 00:30:26,481
+AUDIENCE: May I ask a question?
+
+609
+00:30:26,481 --> 00:30:28,670
+OLIVIER DE WECK: Is
+this [INAUDIBLE]??
+
+610
+00:30:28,670 --> 00:30:28,970
+AUDIENCE: Yeah,
+it's [INAUDIBLE]..
+
+611
+00:30:28,970 --> 00:30:30,300
+OLIVIER DE WECK: Go ahead.
+
+612
+00:30:30,300 --> 00:30:33,630
+AUDIENCE: What do you mean
+by positive duration of time?
+
+613
+00:30:33,630 --> 00:30:36,020
+OLIVIER DE WECK: Well,
+meaning that the object
+
+614
+00:30:36,020 --> 00:30:37,880
+could be created.
+
+615
+00:30:37,880 --> 00:30:39,450
+It didn't exist before.
+
+616
+00:30:39,450 --> 00:30:41,450
+It's created, and it exists.
+
+617
+00:30:41,450 --> 00:30:43,640
+And then it could
+be destroyed again.
+
+618
+00:30:43,640 --> 00:30:46,520
+It could disappear, or
+it could be consumed.
+
+619
+00:30:46,520 --> 00:30:48,260
+But it means that
+the object needs
+
+620
+00:30:48,260 --> 00:30:53,000
+to exist for a non-zero
+period of time in order
+
+621
+00:30:53,000 --> 00:30:58,980
+for it to be called
+an object, so objects
+
+622
+00:30:58,980 --> 00:31:02,640
+in the world that can
+be described with OPM,
+
+623
+00:31:02,640 --> 00:31:06,610
+fundamentally, objects
+can be created.
+
+624
+00:31:06,610 --> 00:31:09,970
+Objects can be modified,
+particularly their states
+
+625
+00:31:09,970 --> 00:31:11,420
+can be modified.
+
+626
+00:31:11,420 --> 00:31:14,610
+And they can be
+destroyed or consumed.
+
+627
+00:31:14,610 --> 00:31:16,120
+That's basically it.
+
+628
+00:31:16,120 --> 00:31:18,760
+That's a complete set.
+
+629
+00:31:18,760 --> 00:31:21,770
+Does that make sense?
+
+630
+00:31:21,770 --> 00:31:24,510
+So processes are--
+what are processes?
+
+631
+00:31:24,510 --> 00:31:26,180
+Processes are
+really fundamentally
+
+632
+00:31:26,180 --> 00:31:27,290
+different from objects.
+
+633
+00:31:27,290 --> 00:31:30,560
+Processes are shown
+as these ellipses.
+
+634
+00:31:30,560 --> 00:31:33,740
+And they're the patterns
+of transformation
+
+635
+00:31:33,740 --> 00:31:35,510
+applied to one or more objects.
+
+636
+00:31:35,510 --> 00:31:37,430
+And processes change states.
+
+637
+00:31:37,430 --> 00:31:42,170
+So processes, unlike objects,
+cannot exist on their own.
+
+638
+00:31:42,170 --> 00:31:46,220
+Processes only make sense
+if they're associated
+
+639
+00:31:46,220 --> 00:31:48,860
+with at least one object.
+
+640
+00:31:48,860 --> 00:31:51,470
+So processes are essentially--
+
+641
+00:31:51,470 --> 00:31:53,720
+the functions that
+we develop in systems
+
+642
+00:31:53,720 --> 00:31:57,500
+are processes that transform
+or create, destroy,
+
+643
+00:31:57,500 --> 00:31:59,440
+or transform objects.
+
+644
+00:31:59,440 --> 00:32:02,910
+So function emerges from
+one or more processes.
+
+645
+00:32:02,910 --> 00:32:06,770
+And then we have different links
+between objects and processes.
+
+646
+00:32:06,770 --> 00:32:08,130
+I'll show you two examples here.
+
+647
+00:32:08,130 --> 00:32:11,240
+One is the arrow
+with a pointy head.
+
+648
+00:32:11,240 --> 00:32:18,800
+That could be a consumption
+or production type link,
+
+649
+00:32:18,800 --> 00:32:23,450
+or a link with this
+little lollipop symbol.
+
+650
+00:32:23,450 --> 00:32:25,780
+This is known as
+an instrument link.
+
+651
+00:32:25,780 --> 00:32:29,690
+And so the difference there
+is that if an object is linked
+
+652
+00:32:29,690 --> 00:32:32,990
+to a process using an arrow,
+it means that something's
+
+653
+00:32:32,990 --> 00:32:34,460
+happening to that object.
+
+654
+00:32:34,460 --> 00:32:37,370
+It's being created, or
+destroyed, or modified.
+
+655
+00:32:37,370 --> 00:32:40,610
+If an object is linked to a
+process using the lollipop
+
+656
+00:32:40,610 --> 00:32:43,130
+symbol, the instrument
+link, it means
+
+657
+00:32:43,130 --> 00:32:47,450
+that in order for that process
+to happen this object is
+
+658
+00:32:47,450 --> 00:32:49,310
+needed, it's an instrument.
+
+659
+00:32:49,310 --> 00:32:51,350
+But the object itself,
+the instrument,
+
+660
+00:32:51,350 --> 00:32:55,200
+does not get modified in
+any way by the process.
+
+661
+00:32:55,200 --> 00:32:59,530
+But the process couldn't happen
+if that object didn't exist.
+
+662
+00:32:59,530 --> 00:33:01,180
+Do you see the difference?
+
+663
+00:33:01,180 --> 00:33:03,490
+And so one of the really,
+I think, important things
+
+664
+00:33:03,490 --> 00:33:06,360
+about OPM, but any
+of the languages,
+
+665
+00:33:06,360 --> 00:33:10,000
+is that every box,
+every arrow, every link
+
+666
+00:33:10,000 --> 00:33:12,640
+has precise semantics.
+
+667
+00:33:12,640 --> 00:33:14,917
+And usually when
+we kind of doodle,
+
+668
+00:33:14,917 --> 00:33:16,000
+when we just think about--
+
+669
+00:33:16,000 --> 00:33:19,000
+we put arrows and
+links between boxes,
+
+670
+00:33:19,000 --> 00:33:20,920
+we often don't
+really deeply think
+
+671
+00:33:20,920 --> 00:33:23,990
+when I put a link in here, what
+does that link actually mean?
+
+672
+00:33:23,990 --> 00:33:25,780
+What does that link imply?
+
+673
+00:33:25,780 --> 00:33:28,840
+So when you do system modeling
+using these languages,
+
+674
+00:33:28,840 --> 00:33:31,420
+you become much,
+much more precise.
+
+675
+00:33:31,420 --> 00:33:32,410
+Yes, please.
+
+676
+00:33:32,410 --> 00:33:34,431
+And would you push
+the mic button?
+
+677
+00:33:34,431 --> 00:33:34,930
+Yeah.
+
+678
+00:33:34,930 --> 00:33:36,400
+Mark, go ahead.
+
+679
+00:33:36,400 --> 00:33:38,680
+AUDIENCE: Can an object
+be a process or a process
+
+680
+00:33:38,680 --> 00:33:39,520
+be an object?
+
+681
+00:33:39,520 --> 00:33:40,780
+OLIVIER DE WECK: No.
+
+682
+00:33:40,780 --> 00:33:44,580
+AUDIENCE: So what
+about if you have--
+
+683
+00:33:44,580 --> 00:33:48,670
+I guess I'm thinking
+in terms of if there's
+
+684
+00:33:48,670 --> 00:33:50,410
+some process for
+doing some procedure
+
+685
+00:33:50,410 --> 00:33:53,770
+and like you're assembling
+a satellite or whatnot.
+
+686
+00:33:53,770 --> 00:33:55,390
+You need to modify that process.
+
+687
+00:33:55,390 --> 00:33:58,990
+So how is that sort of
+thing represented in OPM?
+
+688
+00:33:58,990 --> 00:34:01,870
+OLIVIER DE WECK: The
+process modifies objects,
+
+689
+00:34:01,870 --> 00:34:05,260
+but processes cannot
+modify other processes
+
+690
+00:34:05,260 --> 00:34:08,739
+because processes are
+fundamentally, in OPM,
+
+691
+00:34:08,739 --> 00:34:11,159
+acting upon the objects.
+
+692
+00:34:11,159 --> 00:34:13,389
+Now, processes can
+invoke each other.
+
+693
+00:34:13,389 --> 00:34:16,010
+So if there's a
+sequence of processes--
+
+694
+00:34:16,010 --> 00:34:19,389
+you have to do this assembly
+step before this other assembly
+
+695
+00:34:19,389 --> 00:34:19,989
+step--
+
+696
+00:34:19,989 --> 00:34:24,139
+you can have what's
+called an invocation link.
+
+697
+00:34:24,139 --> 00:34:26,540
+But that's a logical
+dependency between processes.
+
+698
+00:34:26,540 --> 00:34:30,348
+But fundamentally, the processes
+act through the objects in OPM.
+
+699
+00:34:30,348 --> 00:34:30,889
+AUDIENCE: OK.
+
+700
+00:34:35,186 --> 00:34:37,310
+OLIVIER DE WECK: So let's
+go into some more detail.
+
+701
+00:34:37,310 --> 00:34:42,190
+So at a high level when you
+look at the economy, products--
+
+702
+00:34:42,190 --> 00:34:44,814
+yes, go ahead.
+
+703
+00:34:44,814 --> 00:34:45,980
+AUDIENCE: I have a question.
+
+704
+00:34:45,980 --> 00:34:50,788
+Why create another language
+and not just stick with UML?
+
+705
+00:34:50,788 --> 00:34:52,204
+OLIVIER DE WECK:
+So good question.
+
+706
+00:34:54,770 --> 00:34:59,630
+So we'll talk about SysML,
+which is very similar to UML.
+
+707
+00:34:59,630 --> 00:35:02,660
+It's sort of generalized for
+cyber-physical systems, not
+
+708
+00:35:02,660 --> 00:35:05,020
+just software.
+
+709
+00:35:05,020 --> 00:35:08,630
+So the reason that OPM
+was created, because UML
+
+710
+00:35:08,630 --> 00:35:11,450
+was found to be
+somewhat too confining.
+
+711
+00:35:11,450 --> 00:35:14,690
+This is more general
+and also the idea
+
+712
+00:35:14,690 --> 00:35:20,030
+of a unified representation, one
+type of diagram and description
+
+713
+00:35:20,030 --> 00:35:22,460
+for any application.
+
+714
+00:35:22,460 --> 00:35:27,110
+So it's basically a kind of a
+more general version of UML.
+
+715
+00:35:27,110 --> 00:35:29,600
+But the other really
+important thing about OPM
+
+716
+00:35:29,600 --> 00:35:32,480
+is that objects and
+processes are sort of--
+
+717
+00:35:32,480 --> 00:35:36,890
+the processes are often in
+object-oriented thinking.
+
+718
+00:35:36,890 --> 00:35:40,020
+Processes are embedded
+inside objects.
+
+719
+00:35:40,020 --> 00:35:43,700
+And in OPM, the
+processes have been
+
+720
+00:35:43,700 --> 00:35:47,640
+emancipated to stand at
+the same level as objects.
+
+721
+00:35:47,640 --> 00:35:49,640
+Those are the main differences.
+
+722
+00:35:49,640 --> 00:35:53,140
+So let me go in a
+little bit more detail.
+
+723
+00:35:53,140 --> 00:35:58,340
+So if you think about the
+economy in general, goods
+
+724
+00:35:58,340 --> 00:36:04,100
+and services, goods are objects,
+and services are processes.
+
+725
+00:36:04,100 --> 00:36:13,730
+So if you buy a new iPad, or a
+new pencil, or whatever it is,
+
+726
+00:36:13,730 --> 00:36:16,070
+you're actually
+buying an object.
+
+727
+00:36:16,070 --> 00:36:17,390
+You're purchasing an object.
+
+728
+00:36:17,390 --> 00:36:19,430
+That's obvious.
+
+729
+00:36:19,430 --> 00:36:21,660
+But why are you
+purchasing that object?
+
+730
+00:36:24,380 --> 00:36:28,340
+So let's say you're
+buying a new tablet.
+
+731
+00:36:28,340 --> 00:36:30,400
+You're buying the tablet.
+
+732
+00:36:30,400 --> 00:36:34,310
+But why are you
+buying the tablet?
+
+733
+00:36:34,310 --> 00:36:35,552
+Sam, go ahead.
+
+734
+00:36:39,124 --> 00:36:40,540
+AUDIENCE: You're
+buying the tablet
+
+735
+00:36:40,540 --> 00:36:44,500
+to perform an action for a
+process on something else,
+
+736
+00:36:44,500 --> 00:36:45,450
+to do something.
+
+737
+00:36:45,450 --> 00:36:45,670
+OLIVIER DE WECK: Right.
+
+738
+00:36:45,670 --> 00:36:46,840
+So what do tablets do?
+
+739
+00:36:46,840 --> 00:36:52,560
+I mean, not stone tablets,
+but modern tablets.
+
+740
+00:36:52,560 --> 00:36:56,530
+AUDIENCE: They allow you to
+work with software, communicate.
+
+741
+00:36:56,530 --> 00:36:59,260
+OLIVIER DE WECK: Yeah, so
+they're information processing.
+
+742
+00:36:59,260 --> 00:37:01,330
+They're information-processing
+devices.
+
+743
+00:37:01,330 --> 00:37:03,970
+And there's an
+argument with tablets
+
+744
+00:37:03,970 --> 00:37:05,660
+are great for
+consuming information.
+
+745
+00:37:05,660 --> 00:37:09,640
+They're maybe not as good for
+generating new information.
+
+746
+00:37:09,640 --> 00:37:13,490
+So fundamentally, you're
+purchasing the tablet,
+
+747
+00:37:13,490 --> 00:37:16,780
+which is an object,
+in order to be
+
+748
+00:37:16,780 --> 00:37:19,600
+able to do information
+processing and information
+
+749
+00:37:19,600 --> 00:37:20,680
+consumption.
+
+750
+00:37:20,680 --> 00:37:22,630
+So the process is then implicit.
+
+751
+00:37:25,210 --> 00:37:28,300
+What's an example-- if you
+purchase a service, what would
+
+752
+00:37:28,300 --> 00:37:30,002
+be an example of a service?
+
+753
+00:37:33,306 --> 00:37:37,480
+What would be an
+example of a service?
+
+754
+00:37:37,480 --> 00:37:38,590
+Let's see at EPFL.
+
+755
+00:37:38,590 --> 00:37:40,270
+What would be an
+example of a service
+
+756
+00:37:40,270 --> 00:37:41,270
+that you could purchase?
+
+757
+00:37:47,249 --> 00:37:48,540
+AUDIENCE: Going to the dentist.
+
+758
+00:37:48,540 --> 00:37:50,123
+OLIVIER DE WECK:
+Going to the dentist.
+
+759
+00:37:50,123 --> 00:37:53,852
+Yeah, one of our
+favorite things to do.
+
+760
+00:37:53,852 --> 00:37:55,060
+Have you been there recently?
+
+761
+00:37:58,454 --> 00:38:00,280
+AUDIENCE: Yeah, one month ago.
+
+762
+00:38:00,280 --> 00:38:02,340
+OLIVIER DE WECK: So
+I don't want to be--
+
+763
+00:38:02,340 --> 00:38:04,320
+I don't want to
+violate your privacy,
+
+764
+00:38:04,320 --> 00:38:09,710
+but can you share with us
+what happened at the dentist?
+
+765
+00:38:09,710 --> 00:38:11,460
+AUDIENCE: It's the
+yearly checkup.
+
+766
+00:38:11,460 --> 00:38:16,140
+You have to check that
+there's no hidden--
+
+767
+00:38:16,140 --> 00:38:19,207
+I don't know how you call
+that in English, carries?
+
+768
+00:38:19,207 --> 00:38:20,540
+OLIVIER DE WECK: Yeah, cavities.
+
+769
+00:38:20,540 --> 00:38:21,315
+Yeah.
+
+770
+00:38:21,315 --> 00:38:22,740
+AUDIENCE: Yeah, cavities.
+
+771
+00:38:22,740 --> 00:38:25,470
+Check that wisdom
+tooth don't mess up
+
+772
+00:38:25,470 --> 00:38:28,710
+what you've been working
+on tirelessly when
+
+773
+00:38:28,710 --> 00:38:30,370
+you were younger with braces.
+
+774
+00:38:30,370 --> 00:38:34,605
+And [INAUDIBLE] get checked.
+
+775
+00:38:34,605 --> 00:38:35,730
+OLIVIER DE WECK: Very good.
+
+776
+00:38:35,730 --> 00:38:37,985
+So going to the dentist.
+
+777
+00:38:37,985 --> 00:38:39,810
+The dentist provides
+a service which
+
+778
+00:38:39,810 --> 00:38:42,810
+is either checking
+your teeth or filling
+
+779
+00:38:42,810 --> 00:38:45,240
+cavities, which is a process.
+
+780
+00:38:45,240 --> 00:38:47,520
+And all the objects, the
+chair on which you sit,
+
+781
+00:38:47,520 --> 00:38:49,200
+the instruments--
+
+782
+00:38:49,200 --> 00:38:53,130
+I guess we still use gold
+sometimes in some places--
+
+783
+00:38:53,130 --> 00:38:56,490
+those are objects that are
+used in the performance
+
+784
+00:38:56,490 --> 00:38:57,450
+of the service.
+
+785
+00:38:57,450 --> 00:38:59,610
+You see the relationship?
+
+786
+00:38:59,610 --> 00:39:02,700
+So objects and processes
+always come in pairs.
+
+787
+00:39:02,700 --> 00:39:04,650
+Thank you for that example.
+
+788
+00:39:04,650 --> 00:39:08,670
+So let me talk about the
+links in OPM briefly.
+
+789
+00:39:08,670 --> 00:39:09,790
+So there are two types.
+
+790
+00:39:09,790 --> 00:39:13,800
+There's the structural links,
+which link objects to objects.
+
+791
+00:39:13,800 --> 00:39:16,740
+And we typically use arrows,
+you know, is related to
+
+792
+00:39:16,740 --> 00:39:19,030
+or we can tag these as well.
+
+793
+00:39:19,030 --> 00:39:21,960
+So for example, something
+powers something else.
+
+794
+00:39:21,960 --> 00:39:23,730
+This is known as a tagged link.
+
+795
+00:39:23,730 --> 00:39:26,170
+It suppresses the processes.
+
+796
+00:39:26,170 --> 00:39:29,370
+And then there's these
+triangles that are--
+
+797
+00:39:29,370 --> 00:39:31,800
+essentially, there's a
+kind of hierarchy implied
+
+798
+00:39:31,800 --> 00:39:34,910
+there and slightly
+different meanings.
+
+799
+00:39:34,910 --> 00:39:38,640
+So the solid triangle
+means decomposition.
+
+800
+00:39:38,640 --> 00:39:41,730
+So the higher level
+object is composed
+
+801
+00:39:41,730 --> 00:39:43,860
+of lower-level objects.
+
+802
+00:39:43,860 --> 00:39:46,350
+So that's, Mark, you
+mentioned assembly, you know,
+
+803
+00:39:46,350 --> 00:39:49,230
+are you creating the bus of
+the spacecraft and it has
+
+804
+00:39:49,230 --> 00:39:51,090
+a whole bunch of stuff in it?
+
+805
+00:39:51,090 --> 00:39:53,640
+Well, you would use
+this filled in triangle
+
+806
+00:39:53,640 --> 00:39:55,440
+to show that decomposition.
+
+807
+00:39:55,440 --> 00:39:59,260
+The second example is the
+characterization link.
+
+808
+00:39:59,260 --> 00:40:02,820
+So this is essentially
+relating an attribute
+
+809
+00:40:02,820 --> 00:40:05,150
+to its kind of master object.
+
+810
+00:40:05,150 --> 00:40:07,290
+Specialization
+and generalization
+
+811
+00:40:07,290 --> 00:40:09,150
+is the empty triangle.
+
+812
+00:40:09,150 --> 00:40:12,390
+And then this funny symbol
+here is instantiation.
+
+813
+00:40:12,390 --> 00:40:17,544
+So essentially, you
+have a general object.
+
+814
+00:40:17,544 --> 00:40:18,960
+And then you can
+instantiate that.
+
+815
+00:40:18,960 --> 00:40:22,560
+So I have two children.
+
+816
+00:40:22,560 --> 00:40:25,140
+I have two children,
+which is general.
+
+817
+00:40:25,140 --> 00:40:27,760
+And there's two
+instantiations of them.
+
+818
+00:40:27,760 --> 00:40:29,130
+One of them is called Gabrielle.
+
+819
+00:40:29,130 --> 00:40:30,629
+And one of them is
+called Christian.
+
+820
+00:40:30,629 --> 00:40:32,550
+And they're actual people.
+
+821
+00:40:32,550 --> 00:40:35,880
+So that's the idea
+of instantiation.
+
+822
+00:40:35,880 --> 00:40:37,740
+Processes.
+
+823
+00:40:37,740 --> 00:40:41,520
+Processes are these
+patterns of transformation.
+
+824
+00:40:41,520 --> 00:40:42,600
+They're tricky.
+
+825
+00:40:42,600 --> 00:40:45,570
+Processes are trickier to
+understand than the objects
+
+826
+00:40:45,570 --> 00:40:48,060
+because we cannot hold
+or touch a process.
+
+827
+00:40:48,060 --> 00:40:49,730
+It's fleeting.
+
+828
+00:40:49,730 --> 00:40:53,520
+And the creating change
+or destruction of objects
+
+829
+00:40:53,520 --> 00:40:55,770
+is what processes do.
+
+830
+00:40:55,770 --> 00:40:58,650
+They rely on at least
+one object in what
+
+831
+00:40:58,650 --> 00:41:00,770
+we call the preprocess set.
+
+832
+00:41:00,770 --> 00:41:03,690
+A process transforms
+at least one object.
+
+833
+00:41:03,690 --> 00:41:06,840
+And the time is implied.
+
+834
+00:41:06,840 --> 00:41:09,330
+So processes take
+along a timeline.
+
+835
+00:41:09,330 --> 00:41:12,180
+And in terms of the
+description, in English
+
+836
+00:41:12,180 --> 00:41:14,670
+we use the so-called
+Gerund form.
+
+837
+00:41:14,670 --> 00:41:17,220
+So all the processes,
+there's some examples
+
+838
+00:41:17,220 --> 00:41:22,050
+on the right side, use
+the "ing" form of a verb.
+
+839
+00:41:22,050 --> 00:41:25,190
+So we can then put
+these together, objects
+
+840
+00:41:25,190 --> 00:41:26,550
+and processes.
+
+841
+00:41:26,550 --> 00:41:29,010
+So here's an example
+of a machine.
+
+842
+00:41:29,010 --> 00:41:31,890
+This happens to be like a
+printer or copy machine.
+
+843
+00:41:31,890 --> 00:41:33,470
+It has a main switch.
+
+844
+00:41:33,470 --> 00:41:36,290
+The main switch has an
+attribute called Main Switch
+
+845
+00:41:36,290 --> 00:41:39,680
+State, which can be on or off.
+
+846
+00:41:39,680 --> 00:41:42,800
+The process of
+switching transforms,
+
+847
+00:41:42,800 --> 00:41:46,490
+in this case, the Main
+Switch State from on to off.
+
+848
+00:41:46,490 --> 00:41:48,290
+Or we could go the other way.
+
+849
+00:41:48,290 --> 00:41:52,280
+And in order for this to
+happen, we have here--
+
+850
+00:41:52,280 --> 00:41:54,691
+this is actually slightly
+different than the instrument
+
+851
+00:41:54,691 --> 00:41:55,190
+link.
+
+852
+00:41:55,190 --> 00:41:57,350
+This is a filled
+in lollipop, which
+
+853
+00:41:57,350 --> 00:41:59,300
+is known as an agent link.
+
+854
+00:41:59,300 --> 00:42:01,580
+So the operator
+is an active agent
+
+855
+00:42:01,580 --> 00:42:04,070
+to carry out the
+switching process which
+
+856
+00:42:04,070 --> 00:42:07,970
+changes the main switch state
+from on to off or off to on,
+
+857
+00:42:07,970 --> 00:42:13,430
+and the Main Switch State is an
+attribute of the main switch.
+
+858
+00:42:13,430 --> 00:42:14,720
+So transporting.
+
+859
+00:42:14,720 --> 00:42:16,310
+This is another example.
+
+860
+00:42:16,310 --> 00:42:20,600
+Transporting changes the state
+of a person from being here,
+
+861
+00:42:20,600 --> 00:42:27,260
+Location A, to being
+there, Location B.
+
+862
+00:42:27,260 --> 00:42:34,950
+So there are seven-- huh,
+coincidence, seven, seven--
+
+863
+00:42:34,950 --> 00:42:37,890
+object process links in OPM.
+
+864
+00:42:37,890 --> 00:42:42,660
+So P changes-- the process
+changes the object,
+
+865
+00:42:42,660 --> 00:42:46,800
+say from State A to B. That's
+the example we just looked at.
+
+866
+00:42:46,800 --> 00:42:48,090
+You can actually hide that.
+
+867
+00:42:48,090 --> 00:42:51,810
+If you're really not interested
+in all the states and details,
+
+868
+00:42:51,810 --> 00:42:53,070
+you hide the states.
+
+869
+00:42:53,070 --> 00:42:54,600
+You don't want to see them.
+
+870
+00:42:54,600 --> 00:42:56,400
+And then you can
+replace that with what's
+
+871
+00:42:56,400 --> 00:43:00,540
+called the affectee link,
+which is this two-sided arrow.
+
+872
+00:43:00,540 --> 00:43:03,450
+And all you know is
+that this process
+
+873
+00:43:03,450 --> 00:43:05,670
+is affecting that object.
+
+874
+00:43:05,670 --> 00:43:07,500
+And it's a two-sided arrow.
+
+875
+00:43:07,500 --> 00:43:11,730
+But you don't know exactly how
+but you know it's affected.
+
+876
+00:43:11,730 --> 00:43:15,900
+A resultee link-- so this is an
+arrow pointing from the process
+
+877
+00:43:15,900 --> 00:43:17,280
+to the object--
+
+878
+00:43:17,280 --> 00:43:20,130
+means that the process
+of transporting
+
+879
+00:43:20,130 --> 00:43:23,160
+produces emissions that
+weren't there before.
+
+880
+00:43:23,160 --> 00:43:24,930
+So that's a resultee link.
+
+881
+00:43:24,930 --> 00:43:29,160
+But the process of transporting
+requires or consumes energy.
+
+882
+00:43:29,160 --> 00:43:31,440
+So the arrow is
+pointing from energy
+
+883
+00:43:31,440 --> 00:43:36,060
+into the transporting process
+because it's being consumed.
+
+884
+00:43:36,060 --> 00:43:37,560
+I did mention the agent link.
+
+885
+00:43:37,560 --> 00:43:39,570
+So there's an
+operator of a vehicle.
+
+886
+00:43:39,570 --> 00:43:43,470
+And when we talk about
+autonomously driving vehicles,
+
+887
+00:43:43,470 --> 00:43:46,380
+a big topic right now,
+actually, it was cool.
+
+888
+00:43:46,380 --> 00:43:50,520
+At EPA this summer, there's
+the autonomous shuttle
+
+889
+00:43:50,520 --> 00:43:52,260
+on the campus, the
+electric shuttle.
+
+890
+00:43:52,260 --> 00:43:53,850
+Did anybody take that?
+
+891
+00:43:53,850 --> 00:43:56,125
+Did you guys try that
+shuttle this summer?
+
+892
+00:43:56,125 --> 00:43:57,000
+AUDIENCE: [INAUDIBLE]
+
+893
+00:43:57,000 --> 00:43:57,630
+OLIVIER DE WECK: Yeah?
+
+894
+00:43:57,630 --> 00:43:58,320
+Did you like it?
+
+895
+00:44:01,032 --> 00:44:01,990
+AUDIENCE: No, I didn't.
+
+896
+00:44:01,990 --> 00:44:04,570
+But a friend is working
+in this kind of shuttle,
+
+897
+00:44:04,570 --> 00:44:09,280
+like sitting for hours waiting
+for people [INAUDIBLE]..
+
+898
+00:44:09,280 --> 00:44:11,200
+OLIVIER DE WECK:
+So fundamentally, I
+
+899
+00:44:11,200 --> 00:44:14,460
+mean, if you want to think
+of this in OPM language,
+
+900
+00:44:14,460 --> 00:44:18,100
+a driverless vehicle is
+basically eliminating this,
+
+901
+00:44:18,100 --> 00:44:21,580
+no longer needing an
+operator with an agent link
+
+902
+00:44:21,580 --> 00:44:24,430
+and replacing this with
+a piece of software,
+
+903
+00:44:24,430 --> 00:44:28,670
+which would be an
+instrument link.
+
+904
+00:44:28,670 --> 00:44:31,100
+So the instrument, the
+transporting process
+
+905
+00:44:31,100 --> 00:44:32,330
+requires a vehicle.
+
+906
+00:44:32,330 --> 00:44:35,850
+And then we have what's
+known as a conditional link.
+
+907
+00:44:35,850 --> 00:44:39,020
+So this process can only
+occur if this object
+
+908
+00:44:39,020 --> 00:44:40,950
+is in that particular state.
+
+909
+00:44:40,950 --> 00:44:43,940
+So this example here,
+obviously, ignores the existence
+
+910
+00:44:43,940 --> 00:44:46,040
+of credit cards.
+
+911
+00:44:46,040 --> 00:44:49,920
+So you can do the purchasing.
+
+912
+00:44:49,920 --> 00:44:55,230
+The process of purchasing is
+conditional upon the state
+
+913
+00:44:55,230 --> 00:44:59,347
+of the object money being
+in a state of enough
+
+914
+00:44:59,347 --> 00:45:00,305
+for doing the purchase.
+
+915
+00:45:03,030 --> 00:45:07,150
+So here's an example of a
+little bit more complicated.
+
+916
+00:45:07,150 --> 00:45:11,830
+This is a Level 0 OPM diagram
+of a car, of a vehicle.
+
+917
+00:45:11,830 --> 00:45:13,650
+So you can see in
+the upper right is
+
+918
+00:45:13,650 --> 00:45:16,650
+sort of a sketch of a vehicle.
+
+919
+00:45:16,650 --> 00:45:18,680
+And it has these
+different attributes.
+
+920
+00:45:18,680 --> 00:45:23,190
+ED is engine displacement,
+height, ground clearance,
+
+921
+00:45:23,190 --> 00:45:25,860
+overall length, wheelbase.
+
+922
+00:45:25,860 --> 00:45:28,740
+There's a trailer here
+with a towing capacity.
+
+923
+00:45:28,740 --> 00:45:31,470
+So the way the way you
+would interpret this
+
+924
+00:45:31,470 --> 00:45:34,080
+is that we have a
+transporting process.
+
+925
+00:45:34,080 --> 00:45:37,710
+That's our master, sort of
+the highest level process.
+
+926
+00:45:37,710 --> 00:45:41,670
+And it changes the attribute
+location for driver passengers
+
+927
+00:45:41,670 --> 00:45:45,640
+and cargo from A to B.
+And that's, fundamentally,
+
+928
+00:45:45,640 --> 00:45:49,330
+where the value is for
+the owner of the vehicle.
+
+929
+00:45:49,330 --> 00:45:52,000
+And then we can zoom in to
+the transporting process
+
+930
+00:45:52,000 --> 00:45:54,850
+and look at subprocesses,
+towing, propelling,
+
+931
+00:45:54,850 --> 00:45:55,960
+and housing.
+
+932
+00:45:55,960 --> 00:45:58,420
+And if you think about what
+a vehicle does at the highest
+
+933
+00:45:58,420 --> 00:46:04,870
+level, it protects you, it
+houses you, and it propels you.
+
+934
+00:46:04,870 --> 00:46:07,810
+And then you can break
+those into more detail.
+
+935
+00:46:07,810 --> 00:46:11,050
+And then on the left side
+here we have, essentially,
+
+936
+00:46:11,050 --> 00:46:13,180
+the elements of form.
+
+937
+00:46:13,180 --> 00:46:15,340
+So the automobile,
+which is an instrument
+
+938
+00:46:15,340 --> 00:46:17,410
+of the transporting
+process, can be
+
+939
+00:46:17,410 --> 00:46:20,770
+decomposed into its major
+subsystems, powertrain,
+
+940
+00:46:20,770 --> 00:46:22,740
+chassis, body, wheels.
+
+941
+00:46:22,740 --> 00:46:24,700
+And each of those
+are characterized--
+
+942
+00:46:24,700 --> 00:46:26,530
+you see those attribute links--
+
+943
+00:46:26,530 --> 00:46:31,630
+characterized by things
+like fuel capacity,
+
+944
+00:46:31,630 --> 00:46:33,190
+engine displacement.
+
+945
+00:46:33,190 --> 00:46:36,520
+This is the design domain
+we talked about last time.
+
+946
+00:46:36,520 --> 00:46:37,810
+Ground clearance.
+
+947
+00:46:37,810 --> 00:46:39,910
+And so those are the
+design variables.
+
+948
+00:46:39,910 --> 00:46:41,800
+Those are the parts
+and assemblies.
+
+949
+00:46:41,800 --> 00:46:43,990
+And then on the right
+side, the processes,
+
+950
+00:46:43,990 --> 00:46:48,460
+the internal processes can also
+be characterized by performance
+
+951
+00:46:48,460 --> 00:46:51,670
+or functional attributes
+like towing capacity,
+
+952
+00:46:51,670 --> 00:46:54,460
+fuel economy, acceleration.
+
+953
+00:46:54,460 --> 00:46:58,000
+PV stands for Passenger
+Volume and cargo volume.
+
+954
+00:46:58,000 --> 00:47:00,760
+And those are things when you're
+comparing different vehicles
+
+955
+00:47:00,760 --> 00:47:03,040
+to purchase, those
+are the things
+
+956
+00:47:03,040 --> 00:47:05,020
+you would compare
+vehicles against.
+
+957
+00:47:05,020 --> 00:47:07,330
+So they're the internal
+functions and then
+
+958
+00:47:07,330 --> 00:47:09,490
+the functional attributes.
+
+959
+00:47:09,490 --> 00:47:12,970
+And then up here there
+is the fuel and emissions
+
+960
+00:47:12,970 --> 00:47:15,520
+and safety-related
+issues, which that's often
+
+961
+00:47:15,520 --> 00:47:18,700
+where the governments
+intervene and then regulate.
+
+962
+00:47:18,700 --> 00:47:23,800
+And this is sort of a highest
+level OPM of a vehicle.
+
+963
+00:47:23,800 --> 00:47:25,750
+And then if you want
+to see more detail,
+
+964
+00:47:25,750 --> 00:47:27,940
+you would start drilling
+down into these.
+
+965
+00:47:27,940 --> 00:47:30,160
+And you'd have multiple
+levels of these,
+
+966
+00:47:30,160 --> 00:47:31,750
+like a hierarchy
+of these diagrams.
+
+967
+00:47:31,750 --> 00:47:33,210
+Yeah.
+
+968
+00:47:33,210 --> 00:47:35,620
+AUDIENCE: So here,
+what is the use
+
+969
+00:47:35,620 --> 00:47:39,290
+of the-- or the meaning
+of the open arrows?
+
+970
+00:47:39,290 --> 00:47:42,100
+And it looks like there's a
+couple of different arrows
+
+971
+00:47:42,100 --> 00:47:44,920
+here than what we had
+in the other diagram.
+
+972
+00:47:44,920 --> 00:47:48,064
+OLIVIER DE WECK: Are you
+talking about these guys?
+
+973
+00:47:48,064 --> 00:47:48,667
+AUDIENCE: No.
+
+974
+00:47:48,667 --> 00:47:50,000
+OLIVIER DE WECK: Oh, these here.
+
+975
+00:47:50,000 --> 00:47:50,330
+Yeah.
+
+976
+00:47:50,330 --> 00:47:50,955
+AUDIENCE: Yeah.
+
+977
+00:47:50,955 --> 00:47:52,840
+OLIVIER DE WECK: So
+it's just a visual
+
+978
+00:47:52,840 --> 00:47:55,250
+represent-- there's no
+distinction on the arrows
+
+979
+00:47:55,250 --> 00:47:56,780
+whether they're
+filled in or empty.
+
+980
+00:47:56,780 --> 00:47:58,730
+That's just a kind
+of graphical thing.
+
+981
+00:47:58,730 --> 00:47:59,230
+Yeah.
+
+982
+00:48:01,870 --> 00:48:04,300
+So one of the--
+
+983
+00:48:04,300 --> 00:48:04,810
+yes.
+
+984
+00:48:04,810 --> 00:48:08,260
+Veronica, do you
+want to push the--
+
+985
+00:48:08,260 --> 00:48:09,850
+AUDIENCE: How
+would you represent
+
+986
+00:48:09,850 --> 00:48:14,530
+a process that creates
+kind of a temporary state?
+
+987
+00:48:14,530 --> 00:48:17,210
+So if you're saying this
+is acted on an object,
+
+988
+00:48:17,210 --> 00:48:19,070
+and this changes the
+form of the object
+
+989
+00:48:19,070 --> 00:48:21,580
+but the object will ultimately
+return to its original state
+
+990
+00:48:21,580 --> 00:48:24,550
+kind of absent of a
+reversing process,
+
+991
+00:48:24,550 --> 00:48:28,270
+if it's a natural tendency
+for the object to return,
+
+992
+00:48:28,270 --> 00:48:30,305
+how would you
+represent that change?
+
+993
+00:48:30,305 --> 00:48:31,930
+Would you need to
+break it down as kind
+
+994
+00:48:31,930 --> 00:48:34,402
+of a subprocess
+within the object?
+
+995
+00:48:34,402 --> 00:48:35,360
+OLIVIER DE WECK: Right.
+
+996
+00:48:35,360 --> 00:48:38,240
+So I mean, and sometimes
+there's multiple,
+
+997
+00:48:38,240 --> 00:48:41,110
+there's non-uniqueness in sort
+of representing the same thing.
+
+998
+00:48:41,110 --> 00:48:43,540
+But there's one
+process that brings you
+
+999
+00:48:43,540 --> 00:48:44,679
+to the temporary state.
+
+1000
+00:48:44,679 --> 00:48:45,220
+AUDIENCE: OK.
+
+1001
+00:48:45,220 --> 00:48:45,790
+OLIVIER DE WECK:
+And then there would
+
+1002
+00:48:45,790 --> 00:48:48,310
+be a restoring process
+that restores you back
+
+1003
+00:48:48,310 --> 00:48:49,390
+to the original state.
+
+1004
+00:48:49,390 --> 00:48:52,390
+AUDIENCE: Does the process
+have to be a separate plan
+
+1005
+00:48:52,390 --> 00:48:53,810
+within the system?
+
+1006
+00:48:53,810 --> 00:48:56,770
+Because there are certain
+objects that have a tendency--
+
+1007
+00:48:56,770 --> 00:48:59,050
+I'm thinking primarily of
+kind of chemical states
+
+1008
+00:48:59,050 --> 00:49:01,601
+where reactions would
+happen naturally.
+
+1009
+00:49:01,601 --> 00:49:03,100
+It's kind of a
+specific thing, but I
+
+1010
+00:49:03,100 --> 00:49:05,110
+was thinking about how you
+might model different systems.
+
+1011
+00:49:05,110 --> 00:49:06,568
+And I was thinking
+about the engine
+
+1012
+00:49:06,568 --> 00:49:09,550
+of the car, just kind of how
+things might naturally return.
+
+1013
+00:49:09,550 --> 00:49:12,580
+So do you have to describe
+the process explicitly
+
+1014
+00:49:12,580 --> 00:49:17,650
+if it's not something that's
+inherently designed in,
+
+1015
+00:49:17,650 --> 00:49:18,930
+if it's kind of a--
+
+1016
+00:49:18,930 --> 00:49:21,550
+if it will happen anyway.
+
+1017
+00:49:21,550 --> 00:49:23,380
+OLIVIER DE WECK: I
+think, I want to say you
+
+1018
+00:49:23,380 --> 00:49:24,699
+have to explicitly define that.
+
+1019
+00:49:24,699 --> 00:49:25,240
+AUDIENCE: OK.
+
+1020
+00:49:25,240 --> 00:49:28,840
+OLIVIER DE WECK: So if it's a
+man-made process, so to speak,
+
+1021
+00:49:28,840 --> 00:49:30,990
+then that's a process
+you want to happen.
+
+1022
+00:49:30,990 --> 00:49:33,910
+And then if the restoring
+it back to some other state
+
+1023
+00:49:33,910 --> 00:49:37,080
+is a natural process,
+well, it exists.
+
+1024
+00:49:37,080 --> 00:49:40,360
+So it will restore the
+system to a prior state.
+
+1025
+00:49:40,360 --> 00:49:42,280
+That process would also
+have to be modeled.
+
+1026
+00:49:42,280 --> 00:49:43,450
+AUDIENCE: Is there a
+distinction between how
+
+1027
+00:49:43,450 --> 00:49:45,940
+you would indicate a man-made
+process or a natural process?
+
+1028
+00:49:45,940 --> 00:49:46,960
+OLIVIER DE WECK:
+Not fundamentally.
+
+1029
+00:49:46,960 --> 00:49:47,350
+AUDIENCE: OK.
+
+1030
+00:49:47,350 --> 00:49:48,724
+OLIVIER DE WECK:
+And in fact, OPM
+
+1031
+00:49:48,724 --> 00:49:51,200
+has been applied to modeling
+how a cell functions.
+
+1032
+00:49:51,200 --> 00:49:53,260
+So there's been some
+pretty recent work on--
+
+1033
+00:49:53,260 --> 00:49:56,770
+cells are incredibly-- the
+biological engineering is just
+
+1034
+00:49:56,770 --> 00:49:58,114
+really complex.
+
+1035
+00:49:58,114 --> 00:49:59,530
+So there's some
+really recent work
+
+1036
+00:49:59,530 --> 00:50:03,100
+on describing even the
+RNA and cell division,
+
+1037
+00:50:03,100 --> 00:50:04,569
+using very much this language.
+
+1038
+00:50:04,569 --> 00:50:05,110
+AUDIENCE: OK.
+
+1039
+00:50:05,110 --> 00:50:06,651
+OLIVIER DE WECK: So
+it doesn't matter
+
+1040
+00:50:06,651 --> 00:50:09,857
+whether it's an artificial
+process or a natural process.
+
+1041
+00:50:09,857 --> 00:50:10,690
+AUDIENCE: Thank you.
+
+1042
+00:50:10,690 --> 00:50:12,070
+OLIVIER DE WECK: Let me
+go a couple more minutes,
+
+1043
+00:50:12,070 --> 00:50:13,486
+and then we'll
+take a short break.
+
+1044
+00:50:13,486 --> 00:50:16,480
+And then we'll talk
+about SysML and Modelica.
+
+1045
+00:50:16,480 --> 00:50:19,120
+So the key thing
+in OPM is there's
+
+1046
+00:50:19,120 --> 00:50:21,550
+only one type of diagram.
+
+1047
+00:50:21,550 --> 00:50:23,290
+And there's also
+natural language
+
+1048
+00:50:23,290 --> 00:50:24,820
+that gets auto-generated.
+
+1049
+00:50:24,820 --> 00:50:27,130
+And I'll show you this
+very quickly in the tool.
+
+1050
+00:50:27,130 --> 00:50:29,620
+So as you can imagine,
+as you're working
+
+1051
+00:50:29,620 --> 00:50:32,560
+on real systems, these
+diagrams, if you'd showed them
+
+1052
+00:50:32,560 --> 00:50:37,210
+on one sort of level, you'd have
+thousands of objects and links.
+
+1053
+00:50:37,210 --> 00:50:38,830
+It would be a mess.
+
+1054
+00:50:38,830 --> 00:50:41,050
+So how does OPM
+handle complexity?
+
+1055
+00:50:41,050 --> 00:50:43,090
+There's three
+fundamental mechanisms.
+
+1056
+00:50:43,090 --> 00:50:45,880
+One is known as
+folding and unfolding.
+
+1057
+00:50:45,880 --> 00:50:46,780
+What does that mean?
+
+1058
+00:50:46,780 --> 00:50:50,980
+It's basically related
+to the structure.
+
+1059
+00:50:50,980 --> 00:50:54,760
+So folding/unfolding means
+that higher level objects, you
+
+1060
+00:50:54,760 --> 00:50:58,430
+can show the decomposition of
+the objects or you can hide it.
+
+1061
+00:50:58,430 --> 00:51:00,610
+That's known as
+folding and unfolding.
+
+1062
+00:51:00,610 --> 00:51:04,810
+Then the second one is
+in-zooming or out-zooming.
+
+1063
+00:51:04,810 --> 00:51:09,160
+And so here's an example of
+a process and an instrument
+
+1064
+00:51:09,160 --> 00:51:12,150
+and an affectee that's
+affected by the process.
+
+1065
+00:51:12,150 --> 00:51:17,000
+And I want to know, what are the
+subprocesses in that process?
+
+1066
+00:51:17,000 --> 00:51:19,100
+So you can zoom
+into this process,
+
+1067
+00:51:19,100 --> 00:51:22,030
+and it will expose
+the subprocesses
+
+1068
+00:51:22,030 --> 00:51:23,560
+that are happening inside.
+
+1069
+00:51:23,560 --> 00:51:24,860
+That's known as in-zooming.
+
+1070
+00:51:24,860 --> 00:51:28,544
+And then going back the other
+way is called out-zooming.
+
+1071
+00:51:28,544 --> 00:51:30,460
+And then the third one
+I've already mentioned,
+
+1072
+00:51:30,460 --> 00:51:33,630
+which is that states
+can be expressed
+
+1073
+00:51:33,630 --> 00:51:37,020
+or suppressed or hidden
+depending on your interest
+
+1074
+00:51:37,020 --> 00:51:40,970
+and what states of the
+system you want to look at.
+
+1075
+00:51:40,970 --> 00:51:44,510
+So here's the sort of Level
+0 OPM of our refrigerator.
+
+1076
+00:51:44,510 --> 00:51:46,940
+I said that was kind
+of our case study.
+
+1077
+00:51:46,940 --> 00:51:50,600
+So how does the refrigerator
+work at the sort of--
+
+1078
+00:51:50,600 --> 00:51:53,690
+Level 0, that's what the
+stakeholder, what the customer
+
+1079
+00:51:53,690 --> 00:51:54,650
+sees.
+
+1080
+00:51:54,650 --> 00:51:56,480
+Don't care about the
+details of what's
+
+1081
+00:51:56,480 --> 00:51:58,670
+happening in the refrigerator.
+
+1082
+00:51:58,670 --> 00:52:00,530
+So we have food--
+
+1083
+00:52:00,530 --> 00:52:03,800
+and we'll get back to
+this I think next week
+
+1084
+00:52:03,800 --> 00:52:06,920
+in the kind of creativity
+concept generation.
+
+1085
+00:52:06,920 --> 00:52:10,640
+Why do we have
+refrigerators fundamentally?
+
+1086
+00:52:10,640 --> 00:52:14,180
+If you've heard this
+before, you keep quiet.
+
+1087
+00:52:14,180 --> 00:52:15,650
+Maybe EPFL.
+
+1088
+00:52:15,650 --> 00:52:17,406
+Why do we have refrigerators?
+
+1089
+00:52:21,970 --> 00:52:22,520
+Any ideas?
+
+1090
+00:52:27,210 --> 00:52:28,920
+Go ahead.
+
+1091
+00:52:28,920 --> 00:52:30,150
+AUDIENCE: Keep food cold.
+
+1092
+00:52:30,150 --> 00:52:33,930
+OLIVIER DE WECK: Yeah, well,
+if you're a beer drinker,
+
+1093
+00:52:33,930 --> 00:52:36,240
+you want cold beer.
+
+1094
+00:52:36,240 --> 00:52:39,000
+But if you really
+think about it deeply,
+
+1095
+00:52:39,000 --> 00:52:41,490
+that's not really
+the primary reason.
+
+1096
+00:52:41,490 --> 00:52:46,470
+The primary reason is this
+state change, their shelf life.
+
+1097
+00:52:46,470 --> 00:52:48,840
+So the primary reason why
+you have refrigerators
+
+1098
+00:52:48,840 --> 00:52:53,100
+is to extend the shelf
+life of the food.
+
+1099
+00:52:53,100 --> 00:52:57,450
+So speaking as a systems
+architect, system engineer,
+
+1100
+00:52:57,450 --> 00:53:03,830
+a refrigerator is a food
+spoilage rate reduction device.
+
+1101
+00:53:03,830 --> 00:53:04,760
+You see that?
+
+1102
+00:53:04,760 --> 00:53:08,390
+So the attribute of the
+food is the shelf life,
+
+1103
+00:53:08,390 --> 00:53:11,830
+and we're going to extend
+the shelf life of the food.
+
+1104
+00:53:11,830 --> 00:53:14,300
+If you think about it
+sort of architecturally,
+
+1105
+00:53:14,300 --> 00:53:16,190
+that's why we have
+refrigerators.
+
+1106
+00:53:16,190 --> 00:53:19,280
+But I agree with you
+on the cold beer.
+
+1107
+00:53:19,280 --> 00:53:21,920
+We all agree we want
+cold beer, not warm beer.
+
+1108
+00:53:21,920 --> 00:53:23,060
+So you're right.
+
+1109
+00:53:23,060 --> 00:53:24,710
+You're right, too.
+
+1110
+00:53:24,710 --> 00:53:27,200
+So the refrigerator
+essentially is an instrument
+
+1111
+00:53:27,200 --> 00:53:30,020
+of extending the
+food shelf life.
+
+1112
+00:53:30,020 --> 00:53:32,510
+So the food is the operand.
+
+1113
+00:53:32,510 --> 00:53:34,310
+The food is the operand.
+
+1114
+00:53:34,310 --> 00:53:36,140
+The extending of
+shelf life is what
+
+1115
+00:53:36,140 --> 00:53:38,900
+we call the primary
+value delivering process.
+
+1116
+00:53:38,900 --> 00:53:40,610
+That's where the value is.
+
+1117
+00:53:40,610 --> 00:53:44,270
+The refrigerator itself
+is the product system.
+
+1118
+00:53:44,270 --> 00:53:48,440
+And then the operator sets
+the thermostat setting
+
+1119
+00:53:48,440 --> 00:53:51,200
+at which temperature the
+refrigerator should be.
+
+1120
+00:53:51,200 --> 00:53:53,870
+And then here we have the
+primary operating process,
+
+1121
+00:53:53,870 --> 00:53:58,340
+which is what allows us to keep
+the temperature of the food
+
+1122
+00:53:58,340 --> 00:53:59,690
+at that level.
+
+1123
+00:53:59,690 --> 00:54:02,450
+And in order to do this, we
+consume electrical power.
+
+1124
+00:54:02,450 --> 00:54:04,220
+We produce waste heat.
+
+1125
+00:54:04,220 --> 00:54:07,820
+And we also require, or
+we convect that waste heat
+
+1126
+00:54:07,820 --> 00:54:11,580
+to the exterior air at
+a certain temperature.
+
+1127
+00:54:11,580 --> 00:54:14,573
+How well do refrigerators
+work in a vacuum chamber?
+
+1128
+00:54:20,000 --> 00:54:21,610
+They don't.
+
+1129
+00:54:21,610 --> 00:54:22,180
+They don't.
+
+1130
+00:54:22,180 --> 00:54:24,220
+There's no way
+to-- well, I guess
+
+1131
+00:54:24,220 --> 00:54:25,930
+you could radiate the
+heat a little bit.
+
+1132
+00:54:25,930 --> 00:54:28,170
+But they're not going
+to work very well.
+
+1133
+00:54:28,170 --> 00:54:29,740
+You're not going
+to have conduction
+
+1134
+00:54:29,740 --> 00:54:32,200
+because you're sort of in the
+middle of the vacuum chamber.
+
+1135
+00:54:32,200 --> 00:54:33,490
+You're not going
+to have convection.
+
+1136
+00:54:33,490 --> 00:54:34,750
+So you only have radiation.
+
+1137
+00:54:34,750 --> 00:54:37,040
+And that's not going
+to work very well.
+
+1138
+00:54:37,040 --> 00:54:42,310
+So the exterior air is important
+for the refrigerator to work.
+
+1139
+00:54:42,310 --> 00:54:43,720
+So then you say, well, OK.
+
+1140
+00:54:43,720 --> 00:54:44,560
+That's fine.
+
+1141
+00:54:44,560 --> 00:54:45,580
+I buy that.
+
+1142
+00:54:45,580 --> 00:54:48,520
+But now I want to really
+know, how does it really work?
+
+1143
+00:54:48,520 --> 00:54:50,050
+So you say operating.
+
+1144
+00:54:50,050 --> 00:54:51,820
+The refrigerator is operating.
+
+1145
+00:54:51,820 --> 00:54:54,760
+But I want to do
+in-zooming and understand,
+
+1146
+00:54:54,760 --> 00:54:56,740
+how is it operating?
+
+1147
+00:54:56,740 --> 00:55:00,070
+So what's the key
+to refrigeration?
+
+1148
+00:55:00,070 --> 00:55:03,182
+What's the magic word
+there, or two magic words?
+
+1149
+00:55:03,182 --> 00:55:07,232
+AUDIENCE: [INAUDIBLE]
+
+1150
+00:55:07,232 --> 00:55:08,940
+OLIVIER DE WECK: Yeah,
+that's part of it.
+
+1151
+00:55:08,940 --> 00:55:11,720
+That's just a sliver of it.
+
+1152
+00:55:11,720 --> 00:55:13,220
+Heat exchange is part of it.
+
+1153
+00:55:13,220 --> 00:55:17,570
+So the magic word
+is Carnot cycle.
+
+1154
+00:55:17,570 --> 00:55:20,690
+So here's a little graphic
+that sort of gets into it.
+
+1155
+00:55:20,690 --> 00:55:25,490
+So the Carnot cycle is actually
+a thermodynamic concept
+
+1156
+00:55:25,490 --> 00:55:30,220
+where you're compressing
+essentially a refrigerant.
+
+1157
+00:55:30,220 --> 00:55:34,340
+A coolant is being
+compressed, absorbs the heat
+
+1158
+00:55:34,340 --> 00:55:39,470
+from the inside and then expands
+and condenses and radiates that
+
+1159
+00:55:39,470 --> 00:55:42,410
+or convects that
+heat to the outside.
+
+1160
+00:55:42,410 --> 00:55:43,295
+So here's a--
+
+1161
+00:55:43,295 --> 00:55:45,710
+I don't know if you remember
+your thermodynamics.
+
+1162
+00:55:45,710 --> 00:55:48,230
+This is a classic PV diagram.
+
+1163
+00:55:48,230 --> 00:55:50,780
+You've got the four legs
+of the Carnot cycle.
+
+1164
+00:55:50,780 --> 00:55:52,730
+And actually, what's
+really nice here--
+
+1165
+00:55:52,730 --> 00:55:55,340
+so we're going through
+this counter-clockwise.
+
+1166
+00:55:55,340 --> 00:55:59,060
+What's really nice about it is
+that every leg of the Carnot
+
+1167
+00:55:59,060 --> 00:56:01,970
+cycle is one of our processes.
+
+1168
+00:56:01,970 --> 00:56:07,040
+So compressing is this leg
+here from D to B. Condensing
+
+1169
+00:56:07,040 --> 00:56:10,010
+is from B to A.
+Expanding from A to E.
+
+1170
+00:56:10,010 --> 00:56:12,740
+And then evaporation
+happens from E to D.
+
+1171
+00:56:12,740 --> 00:56:17,930
+So the Carnot cycle
+can be decomposed
+
+1172
+00:56:17,930 --> 00:56:20,630
+into four subprocesses.
+
+1173
+00:56:20,630 --> 00:56:23,870
+These are the internal
+processes in the system
+
+1174
+00:56:23,870 --> 00:56:26,280
+that are governed by physics.
+
+1175
+00:56:26,280 --> 00:56:29,120
+So if we take that
+operating process
+
+1176
+00:56:29,120 --> 00:56:31,370
+that we looked at
+before, we can actually
+
+1177
+00:56:31,370 --> 00:56:35,460
+zoom in and see the
+subprocesses emerging.
+
+1178
+00:56:35,460 --> 00:56:38,720
+And so in cooling we have
+those four expanding,
+
+1179
+00:56:38,720 --> 00:56:40,910
+evaporating,
+compressing, condensing.
+
+1180
+00:56:40,910 --> 00:56:42,886
+But I'm adding the
+absorbing process,
+
+1181
+00:56:42,886 --> 00:56:44,510
+which is that the
+heat then needs to be
+
+1182
+00:56:44,510 --> 00:56:47,360
+absorbed by the exterior air.
+
+1183
+00:56:47,360 --> 00:56:48,770
+We have to power the device.
+
+1184
+00:56:48,770 --> 00:56:51,080
+You can decompose
+that into grounding,
+
+1185
+00:56:51,080 --> 00:56:52,850
+protecting, supplying.
+
+1186
+00:56:52,850 --> 00:56:55,820
+Regulation, keeping
+it at the set point,
+
+1187
+00:56:55,820 --> 00:56:59,750
+you can decompose that process
+into sensing, switching,
+
+1188
+00:56:59,750 --> 00:57:02,030
+and setting the set point.
+
+1189
+00:57:02,030 --> 00:57:03,470
+And then we have
+supporting, which
+
+1190
+00:57:03,470 --> 00:57:06,950
+is we need to be opening and
+closing the refrigerator,
+
+1191
+00:57:06,950 --> 00:57:09,490
+retaining it, and then
+connecting all the pieces.
+
+1192
+00:57:09,490 --> 00:57:14,120
+So at Level -1, we had
+one process at Level 0,
+
+1193
+00:57:14,120 --> 00:57:15,470
+which was operating.
+
+1194
+00:57:15,470 --> 00:57:17,630
+The refrigerator was operating.
+
+1195
+00:57:17,630 --> 00:57:20,105
+And then as we
+zoom into Level -1,
+
+1196
+00:57:20,105 --> 00:57:23,450
+four processes appear,
+powering, regulating, cooling,
+
+1197
+00:57:23,450 --> 00:57:24,560
+and supporting.
+
+1198
+00:57:24,560 --> 00:57:28,850
+And then at Level -2,
+we have 15 subprocesses.
+
+1199
+00:57:28,850 --> 00:57:33,700
+So this is sort of
+a view at Level -1,
+
+1200
+00:57:33,700 --> 00:57:37,160
+our four subprocesses,
+cooling, powering, regulating,
+
+1201
+00:57:37,160 --> 00:57:38,210
+supporting.
+
+1202
+00:57:38,210 --> 00:57:40,880
+And then we can zoom in more.
+
+1203
+00:57:40,880 --> 00:57:44,870
+So here's the general idea, and
+we've looked at many systems
+
+1204
+00:57:44,870 --> 00:57:48,500
+over the years, that most
+cyber-physical systems--
+
+1205
+00:57:48,500 --> 00:57:51,680
+or it says optomechanical
+here, but I really
+
+1206
+00:57:51,680 --> 00:57:55,670
+mean it more generally-- have
+this kind of OPM structure.
+
+1207
+00:57:55,670 --> 00:57:58,130
+On the right side,
+we have the output
+
+1208
+00:57:58,130 --> 00:58:00,290
+that the customer,
+the stakeholder cares
+
+1209
+00:58:00,290 --> 00:58:02,160
+about, the operand.
+
+1210
+00:58:02,160 --> 00:58:04,890
+We have a set of
+specialized processes,
+
+1211
+00:58:04,890 --> 00:58:07,610
+and these can be often
+organized in a cascade.
+
+1212
+00:58:07,610 --> 00:58:09,230
+And then we have
+supporting processes,
+
+1213
+00:58:09,230 --> 00:58:11,870
+like powering,
+connecting, controlling,
+
+1214
+00:58:11,870 --> 00:58:15,920
+that provide support for
+the specialized processes.
+
+1215
+00:58:15,920 --> 00:58:22,920
+Most systems that we've seen
+have this generic architecture.
+
+1216
+00:58:22,920 --> 00:58:24,740
+How do you generate an OPM?
+
+1217
+00:58:24,740 --> 00:58:27,050
+Fundamentally, you
+can do a top-down.
+
+1218
+00:58:27,050 --> 00:58:29,280
+So you start with
+your stakeholders.
+
+1219
+00:58:29,280 --> 00:58:31,610
+That's what we did
+in the first lecture.
+
+1220
+00:58:31,610 --> 00:58:33,980
+Where's the value?
+
+1221
+00:58:33,980 --> 00:58:35,780
+You start thinking
+about requirements,
+
+1222
+00:58:35,780 --> 00:58:40,050
+what functions, how well the
+functions should be performed.
+
+1223
+00:58:40,050 --> 00:58:41,570
+And you sort of go down.
+
+1224
+00:58:41,570 --> 00:58:43,520
+Or if you already
+have a system, you
+
+1225
+00:58:43,520 --> 00:58:46,010
+can actually reverse
+engineer that system
+
+1226
+00:58:46,010 --> 00:58:49,370
+and from bottom
+up, like we started
+
+1227
+00:58:49,370 --> 00:58:52,160
+doing for the Mr. Sticky,
+and that's fundamentally
+
+1228
+00:58:52,160 --> 00:58:54,890
+reverse engineering.
+
+1229
+00:58:54,890 --> 00:58:59,360
+So just for time, I'm
+going to skip this demo.
+
+1230
+00:58:59,360 --> 00:59:01,610
+But what I will do is
+I will post a video.
+
+1231
+00:59:01,610 --> 00:59:04,490
+I'm going to make a little
+video with the OPCAT demo
+
+1232
+00:59:04,490 --> 00:59:07,970
+and post that to Stellar so
+you can sort of watch that.
+
+1233
+00:59:07,970 --> 00:59:11,690
+So this is one of the--
+it's still not super mature,
+
+1234
+00:59:11,690 --> 00:59:13,640
+but it's a Java-based
+program called
+
+1235
+00:59:13,640 --> 00:59:18,890
+OPCAT that allows you to
+generate object process
+
+1236
+00:59:18,890 --> 00:59:23,180
+diagrams in a
+computer-supported environment
+
+1237
+00:59:23,180 --> 00:59:27,080
+and store them in an XML
+format, and so forth.
+
+1238
+00:59:27,080 --> 00:59:29,030
+It allows you to
+create a hierarchy.
+
+1239
+00:59:29,030 --> 00:59:32,880
+And the other thing that's very
+cool, it autogenerates text.
+
+1240
+00:59:32,880 --> 00:59:36,710
+So the text is called OPL,
+Object Process Language.
+
+1241
+00:59:36,710 --> 00:59:40,140
+And right now you can go from
+the graphics to the text,
+
+1242
+00:59:40,140 --> 00:59:42,290
+but you can't go the other way.
+
+1243
+00:59:42,290 --> 00:59:44,240
+So they're complete sentences.
+
+1244
+00:59:44,240 --> 00:59:47,150
+It's not like an exciting
+novel when you read it.
+
+1245
+00:59:47,150 --> 00:59:50,430
+But it is semantically precise.
+
+1246
+00:59:50,430 --> 00:59:53,940
+So we're going to
+switch to SysML.
+
+1247
+00:59:53,940 --> 00:59:55,770
+We're going to take
+a very short break.
+
+1248
+00:59:55,770 --> 00:59:57,850
+Are there any
+questions about OPM?
+
+1249
+00:59:57,850 --> 00:59:59,610
+In the system
+architecture class,
+
+1250
+00:59:59,610 --> 01:00:02,970
+we spend like five,
+six lectures on OPM
+
+1251
+01:00:02,970 --> 01:00:05,280
+and you get to do
+detailed exercises.
+
+1252
+01:00:05,280 --> 01:00:07,750
+We kind of don't have time
+for this in this class.
+
+1253
+01:00:07,750 --> 01:00:10,120
+But hopefully you've
+seen what it is.
+
+1254
+01:00:10,120 --> 01:00:13,380
+And if I've whetted
+your appetite for OPM,
+
+1255
+01:00:13,380 --> 01:00:16,190
+then the goal has been met.
+
+1256
+01:00:16,190 --> 01:00:17,853
+Any questions about OPM?
+
+1257
+01:00:21,030 --> 01:00:22,770
+Is it pretty clear?
+
+1258
+01:00:22,770 --> 01:00:23,270
+All right.
+
+1259
+01:00:23,270 --> 01:00:26,160
+So let's take-- yes.
+
+1260
+01:00:26,160 --> 01:00:28,520
+AUDIENCE: Compared to
+Modelica, because I've
+
+1261
+01:00:28,520 --> 01:00:31,800
+seen one of the
+links that OPM is
+
+1262
+01:00:31,800 --> 01:00:33,680
+just for describing
+the system, though.
+
+1263
+01:00:33,680 --> 01:00:37,200
+It's not for making
+calculations or simulations.
+
+1264
+01:00:37,200 --> 01:00:38,880
+OLIVIER DE WECK: That's correct.
+
+1265
+01:00:38,880 --> 01:00:40,710
+The latest versions
+of OPM you can
+
+1266
+01:00:40,710 --> 01:00:42,760
+do like a logical simulation.
+
+1267
+01:00:42,760 --> 01:00:46,170
+So you can say, OK, this process
+enables and does this state,
+
+1268
+01:00:46,170 --> 01:00:48,000
+so it's kind of a
+discrete logical.
+
+1269
+01:00:48,000 --> 01:00:53,070
+But usually it's not used for
+any mathematical calculations.
+
+1270
+01:00:53,070 --> 01:00:56,760
+The purpose of OPM is really
+to support conceptual design,
+
+1271
+01:00:56,760 --> 01:00:58,020
+early conceptual design.
+
+1272
+01:00:58,020 --> 01:00:59,006
+That's correct.
+
+1273
+01:01:03,260 --> 01:01:04,130
+Mark.
+
+1274
+01:01:04,130 --> 01:01:07,590
+So just a couple of
+words about Mark.
+
+1275
+01:01:07,590 --> 01:01:10,830
+He's a doctoral student right
+now in the Space Systems Lab.
+
+1276
+01:01:10,830 --> 01:01:15,300
+He's been working a lot on
+an instrument called REXIS.
+
+1277
+01:01:15,300 --> 01:01:17,600
+I guess you're the chief
+system engineer for REXIS.
+
+1278
+01:01:17,600 --> 01:01:18,600
+MARK CHODAS: Yeah, yeah.
+
+1279
+01:01:18,600 --> 01:01:20,190
+OLIVIER DE WECK: And
+that was also the topic
+
+1280
+01:01:20,190 --> 01:01:21,300
+of his master's thesis.
+
+1281
+01:01:21,300 --> 01:01:24,940
+So Mark really knows
+what he's talking about.
+
+1282
+01:01:24,940 --> 01:01:27,250
+He knows SysML quite well.
+
+1283
+01:01:27,250 --> 01:01:29,287
+And thanks for doing this.
+
+1284
+01:01:29,287 --> 01:01:30,870
+MARK CHODAS: So let
+me start by giving
+
+1285
+01:01:30,870 --> 01:01:33,270
+kind of a high-level
+overview of what SysML is
+
+1286
+01:01:33,270 --> 01:01:34,410
+and what it aims to do.
+
+1287
+01:01:34,410 --> 01:01:37,170
+So it's similar to OPM,
+but there are a couple
+
+1288
+01:01:37,170 --> 01:01:39,080
+important differences.
+
+1289
+01:01:39,080 --> 01:01:42,360
+SysML, as Olly said, it
+kind of is an extension
+
+1290
+01:01:42,360 --> 01:01:44,625
+or inherits a lot from UML.
+
+1291
+01:01:44,625 --> 01:01:48,510
+And its aim is to really
+provide a language that
+
+1292
+01:01:48,510 --> 01:01:50,760
+enables you to capture
+all the different aspects
+
+1293
+01:01:50,760 --> 01:01:54,270
+of information about
+a system in one place.
+
+1294
+01:01:54,270 --> 01:01:56,146
+And this concept
+of Single Source
+
+1295
+01:01:56,146 --> 01:01:58,520
+Of Truth is something that
+I'll kind of try and emphasize
+
+1296
+01:01:58,520 --> 01:01:59,670
+during my presentation.
+
+1297
+01:01:59,670 --> 01:02:01,710
+The idea is if all
+your information
+
+1298
+01:02:01,710 --> 01:02:05,770
+is in this one model, then
+communication is easy.
+
+1299
+01:02:05,770 --> 01:02:08,675
+There's no ambiguity
+between versions.
+
+1300
+01:02:08,675 --> 01:02:10,050
+Everyone knows
+where to go to get
+
+1301
+01:02:10,050 --> 01:02:13,150
+the most up-to-date and
+correct piece of information.
+
+1302
+01:02:13,150 --> 01:02:17,140
+So that's one of the
+emphases of SysML.
+
+1303
+01:02:17,140 --> 01:02:20,460
+SysML is a graphical
+language, similar to OPM.
+
+1304
+01:02:20,460 --> 01:02:22,260
+It's defined in terms
+of diagram types
+
+1305
+01:02:22,260 --> 01:02:23,550
+that I'll go into in a second.
+
+1306
+01:02:23,550 --> 01:02:25,380
+It has more than just
+one diagram type,
+
+1307
+01:02:25,380 --> 01:02:27,000
+as compared to OPM.
+
+1308
+01:02:27,000 --> 01:02:28,470
+But basically it
+aims to do things
+
+1309
+01:02:28,470 --> 01:02:31,170
+like capture functional
+behavioral models,
+
+1310
+01:02:31,170 --> 01:02:34,144
+capture performance models,
+capture the structural topology
+
+1311
+01:02:34,144 --> 01:02:35,810
+of your system, the
+parts of your system
+
+1312
+01:02:35,810 --> 01:02:37,690
+and how they're
+all interconnected,
+
+1313
+01:02:37,690 --> 01:02:39,450
+and any other engineering
+analysis model
+
+1314
+01:02:39,450 --> 01:02:41,520
+is one of the big
+emphases with SysML,
+
+1315
+01:02:41,520 --> 01:02:44,130
+is integration with
+external analysis tools.
+
+1316
+01:02:44,130 --> 01:02:48,410
+So if you have a thermal tool, a
+structural tool, an electronics
+
+1317
+01:02:48,410 --> 01:02:50,250
+tool, or something
+like that, integrating
+
+1318
+01:02:50,250 --> 01:02:52,560
+this informational,
+descriptional model
+
+1319
+01:02:52,560 --> 01:02:55,550
+with that analysis
+model and enabling,
+
+1320
+01:02:55,550 --> 01:02:58,230
+making it easy to
+transfer information
+
+1321
+01:02:58,230 --> 01:03:00,379
+from your description model
+to your analysis model,
+
+1322
+01:03:00,379 --> 01:03:02,670
+do an analysis, and then
+incorporate those results back
+
+1323
+01:03:02,670 --> 01:03:05,670
+into your descriptive
+model is one of the things
+
+1324
+01:03:05,670 --> 01:03:07,360
+that SysML really is all about.
+
+1325
+01:03:07,360 --> 01:03:08,943
+Then another thing,
+another difference
+
+1326
+01:03:08,943 --> 01:03:11,340
+compared to SysML from
+OPM is it incorporates
+
+1327
+01:03:11,340 --> 01:03:12,967
+requirements pretty explicitly.
+
+1328
+01:03:12,967 --> 01:03:15,300
+And that's one of the other
+areas that people are really
+
+1329
+01:03:15,300 --> 01:03:17,970
+interested in is if you have
+good modeling of requirements,
+
+1330
+01:03:17,970 --> 01:03:20,340
+what sort of information can
+you glean about your system
+
+1331
+01:03:20,340 --> 01:03:22,791
+that you couldn't otherwise?
+
+1332
+01:03:22,791 --> 01:03:26,607
+How do I advance the slide?
+
+1333
+01:03:26,607 --> 01:03:29,450
+Oh, there we go.
+
+1334
+01:03:29,450 --> 01:03:32,420
+So as I said, SysML is
+composed of diagrams.
+
+1335
+01:03:32,420 --> 01:03:34,100
+I'll go into in a
+second kind of what
+
+1336
+01:03:34,100 --> 01:03:35,790
+each diagram, what all
+the diagram types are
+
+1337
+01:03:35,790 --> 01:03:37,164
+and what kind of
+their intent is.
+
+1338
+01:03:37,164 --> 01:03:39,249
+But here's kind of a
+high-level overview.
+
+1339
+01:03:39,249 --> 01:03:41,040
+It might be a little
+bit difficult to read.
+
+1340
+01:03:41,040 --> 01:03:42,623
+So at the top you
+have a system model.
+
+1341
+01:03:42,623 --> 01:03:45,350
+You have requirements,
+diagrams, behavior, structure
+
+1342
+01:03:45,350 --> 01:03:46,579
+and parametrics.
+
+1343
+01:03:46,579 --> 01:03:48,120
+Within requirements,
+there's actually
+
+1344
+01:03:48,120 --> 01:03:50,300
+a specific requirements
+diagram that's
+
+1345
+01:03:50,300 --> 01:03:52,040
+supposed to represent
+the relationship
+
+1346
+01:03:52,040 --> 01:03:53,539
+between requirements
+in your system.
+
+1347
+01:03:53,539 --> 01:03:55,060
+And I'll show an
+example of that.
+
+1348
+01:03:55,060 --> 01:03:58,310
+In behavior, there are
+diagrams to describe
+
+1349
+01:03:58,310 --> 01:04:01,310
+kind of the activity of your
+system, the sequence of events
+
+1350
+01:04:01,310 --> 01:04:02,577
+that may happen.
+
+1351
+01:04:02,577 --> 01:04:04,160
+There's a state
+machine diagram if you
+
+1352
+01:04:04,160 --> 01:04:05,810
+want to model your
+system as a state
+
+1353
+01:04:05,810 --> 01:04:08,950
+and transition between those
+states, things like that.
+
+1354
+01:04:08,950 --> 01:04:11,124
+In the structure,
+there's diagrams
+
+1355
+01:04:11,124 --> 01:04:13,040
+that go over the
+decomposition of your system.
+
+1356
+01:04:13,040 --> 01:04:13,873
+What is your system?
+
+1357
+01:04:13,873 --> 01:04:15,860
+And what parts make
+up your system?
+
+1358
+01:04:15,860 --> 01:04:19,700
+Both the logical decomposition
+and the physical decomposition.
+
+1359
+01:04:19,700 --> 01:04:21,230
+And then there's topology.
+
+1360
+01:04:21,230 --> 01:04:23,022
+How are they all connected?
+
+1361
+01:04:23,022 --> 01:04:24,980
+What are the characteristics
+of the interfaces?
+
+1362
+01:04:24,980 --> 01:04:26,180
+Things like that.
+
+1363
+01:04:26,180 --> 01:04:28,700
+And then parametrics,
+which is kind
+
+1364
+01:04:28,700 --> 01:04:32,660
+of adding constraints and
+numbers to all these things,
+
+1365
+01:04:32,660 --> 01:04:34,160
+whether they be
+logical constraints,
+
+1366
+01:04:34,160 --> 01:04:36,140
+mathematical constraints,
+things like that.
+
+1367
+01:04:36,140 --> 01:04:39,980
+Similar to OPM, SysML has no
+built-in analysis capabilities,
+
+1368
+01:04:39,980 --> 01:04:45,389
+so you can't like run a model or
+calculate an equation in SysML.
+
+1369
+01:04:45,389 --> 01:04:46,430
+You can't really do that.
+
+1370
+01:04:46,430 --> 01:04:53,470
+But very frequently the
+tools that implement system
+
+1371
+01:04:53,470 --> 01:04:55,320
+that I'll show
+you have that kind
+
+1372
+01:04:55,320 --> 01:04:57,380
+of analysis capability
+built into the tools,
+
+1373
+01:04:57,380 --> 01:04:58,630
+as opposed to the language.
+
+1374
+01:04:58,630 --> 01:05:03,270
+So you can do things like use a
+parametric diagram with a bunch
+
+1375
+01:05:03,270 --> 01:05:05,760
+of equations to create
+a system of equations
+
+1376
+01:05:05,760 --> 01:05:08,066
+that you then can solve,
+whether it be in the tool,
+
+1377
+01:05:08,066 --> 01:05:09,690
+or you can move it
+to an external tool,
+
+1378
+01:05:09,690 --> 01:05:11,856
+like Mathematica or something
+and solve it, and then
+
+1379
+01:05:11,856 --> 01:05:14,910
+bring that information
+back into your system.
+
+1380
+01:05:14,910 --> 01:05:19,920
+You also can do kind of
+sequence-based computation.
+
+1381
+01:05:19,920 --> 01:05:22,957
+If you have an activity
+diagram that says first you
+
+1382
+01:05:22,957 --> 01:05:24,540
+have to build this
+part of your system
+
+1383
+01:05:24,540 --> 01:05:25,590
+and then this part
+of your system,
+
+1384
+01:05:25,590 --> 01:05:27,630
+there's things in sequence,
+things in parallel.
+
+1385
+01:05:27,630 --> 01:05:30,840
+You can run simulations like
+that where it's all about,
+
+1386
+01:05:30,840 --> 01:05:32,370
+have you done
+everything you need
+
+1387
+01:05:32,370 --> 01:05:34,170
+to do to get to the next step?
+
+1388
+01:05:34,170 --> 01:05:36,510
+Things in a more logical
+flow, as opposed to actually
+
+1389
+01:05:36,510 --> 01:05:38,760
+mathematical equations, you can
+do those sorts of computations
+
+1390
+01:05:38,760 --> 01:05:39,260
+as well.
+
+1391
+01:05:41,830 --> 01:05:45,040
+One note is that these diagrams,
+although they are the main way
+
+1392
+01:05:45,040 --> 01:05:48,130
+to define your system and
+interface with the model,
+
+1393
+01:05:48,130 --> 01:05:49,990
+are not the model themselves.
+
+1394
+01:05:49,990 --> 01:05:53,080
+So you can create
+links between diagrams.
+
+1395
+01:05:53,080 --> 01:05:56,110
+If an element shows up in
+one diagram and that element
+
+1396
+01:05:56,110 --> 01:05:59,362
+shows up in another diagram,
+that's the same element.
+
+1397
+01:05:59,362 --> 01:06:00,820
+If you make changes
+in one diagram,
+
+1398
+01:06:00,820 --> 01:06:02,740
+that's going to propagate
+to all your diagrams.
+
+1399
+01:06:02,740 --> 01:06:04,281
+So there's kind of
+a database backend
+
+1400
+01:06:04,281 --> 01:06:06,957
+to this whole model
+that encompasses
+
+1401
+01:06:06,957 --> 01:06:07,790
+all the information.
+
+1402
+01:06:07,790 --> 01:06:10,280
+So instead of having a bunch
+of isolated block diagrams,
+
+1403
+01:06:10,280 --> 01:06:12,730
+they're really just views
+into this model that's
+
+1404
+01:06:12,730 --> 01:06:14,920
+hidden in a backend database.
+
+1405
+01:06:20,480 --> 01:06:23,354
+So we'll talk a little bit
+about the applications of SysML.
+
+1406
+01:06:23,354 --> 01:06:24,770
+First is requirements
+engineering.
+
+1407
+01:06:24,770 --> 01:06:27,160
+As I said, when you can
+explicitly model requirements
+
+1408
+01:06:27,160 --> 01:06:29,540
+in the relationship between
+requirements and your system,
+
+1409
+01:06:29,540 --> 01:06:31,280
+you can do a lot more.
+
+1410
+01:06:31,280 --> 01:06:32,990
+The way that it's
+typically done nowadays
+
+1411
+01:06:32,990 --> 01:06:34,317
+is with tons of documents--
+
+1412
+01:06:34,317 --> 01:06:36,650
+I'm not sure if you've ever
+actually developed a system,
+
+1413
+01:06:36,650 --> 01:06:39,200
+but there's an ungodly
+amount of documents.
+
+1414
+01:06:39,200 --> 01:06:41,180
+I've experienced that firsthand.
+
+1415
+01:06:41,180 --> 01:06:42,209
+It's a real pain.
+
+1416
+01:06:42,209 --> 01:06:44,000
+There are tools like
+DOORS that will enable
+
+1417
+01:06:44,000 --> 01:06:46,010
+you to link requirements
+to other requirements,
+
+1418
+01:06:46,010 --> 01:06:48,540
+and things like that that help
+you manage your requirements.
+
+1419
+01:06:48,540 --> 01:06:50,290
+But what if you had
+a really explicit tie
+
+1420
+01:06:50,290 --> 01:06:52,040
+between your requirements
+and your system?
+
+1421
+01:06:52,040 --> 01:06:53,420
+You can actually
+represent in SysML.
+
+1422
+01:06:53,420 --> 01:06:55,170
+And I'll show you a
+little bit about this.
+
+1423
+01:06:55,170 --> 01:06:57,860
+You can represent in SysML a
+textural requirement, you know,
+
+1424
+01:06:57,860 --> 01:07:00,560
+the mass of your system must
+be less than 5 kilograms,
+
+1425
+01:07:00,560 --> 01:07:01,580
+or something like that.
+
+1426
+01:07:01,580 --> 01:07:03,121
+You can tie that
+requirement directly
+
+1427
+01:07:03,121 --> 01:07:04,790
+to the mass property
+of your system.
+
+1428
+01:07:04,790 --> 01:07:05,660
+You can [INAUDIBLE].
+
+1429
+01:07:05,660 --> 01:07:08,059
+You can start
+building constraints.
+
+1430
+01:07:08,059 --> 01:07:10,100
+Your requirements aren't
+just textual statements,
+
+1431
+01:07:10,100 --> 01:07:12,210
+they're actually constraints
+upon properties of your system.
+
+1432
+01:07:12,210 --> 01:07:14,840
+Those are the types of things
+you can start to do with SysML.
+
+1433
+01:07:14,840 --> 01:07:16,298
+Do you have a question?
+
+1434
+01:07:16,298 --> 01:07:25,690
+AUDIENCE: [INAUDIBLE]
+
+1435
+01:07:25,690 --> 01:07:26,440
+MARK CHODAS: Yeah.
+
+1436
+01:07:26,440 --> 01:07:28,981
+Yeah, so that isn't something
+that's built into the language.
+
+1437
+01:07:28,981 --> 01:07:31,030
+But that is something
+you can do with--
+
+1438
+01:07:31,030 --> 01:07:33,809
+basically there's a whole API.
+
+1439
+01:07:33,809 --> 01:07:35,350
+And you can interface
+with the model.
+
+1440
+01:07:35,350 --> 01:07:37,150
+I'll show you this,
+actually, in my demo.
+
+1441
+01:07:37,150 --> 01:07:39,890
+But you can build in rules and
+constraints that say, check,
+
+1442
+01:07:39,890 --> 01:07:42,240
+for example, that all my
+requirements, at least how
+
+1443
+01:07:42,240 --> 01:07:43,840
+they've been defined,
+are satisfied.
+
+1444
+01:07:43,840 --> 01:07:44,830
+You can run that
+check, and it will
+
+1445
+01:07:44,830 --> 01:07:46,510
+tell you have they
+been satisfied or not.
+
+1446
+01:07:46,510 --> 01:07:48,301
+And that's something
+that's really powerful
+
+1447
+01:07:48,301 --> 01:07:51,060
+that you can't really do with
+existing kind of techniques.
+
+1448
+01:07:51,060 --> 01:07:51,560
+Yeah.
+
+1449
+01:07:51,560 --> 01:07:53,185
+AUDIENCE: Thank you.
+
+1450
+01:07:53,185 --> 01:07:58,170
+And can you also, for
+example, requirement changes,
+
+1451
+01:07:58,170 --> 01:08:00,460
+like the master system
+has to be this much,
+
+1452
+01:08:00,460 --> 01:08:03,370
+as opposed to this much, then
+would it go through and check
+
+1453
+01:08:03,370 --> 01:08:06,400
+until you have to now look
+at this, this, and this,
+
+1454
+01:08:06,400 --> 01:08:07,910
+and then that affect like-
+
+1455
+01:08:07,910 --> 01:08:10,300
+MARK CHODAS: So you're
+getting down in the weeds.
+
+1456
+01:08:10,300 --> 01:08:13,362
+That's something that would
+be awesome if you could do.
+
+1457
+01:08:13,362 --> 01:08:15,070
+That really-- again,
+that's not something
+
+1458
+01:08:15,070 --> 01:08:17,260
+that SysML enables
+you to do natively.
+
+1459
+01:08:17,260 --> 01:08:19,479
+But it gives you the
+language and the syntax
+
+1460
+01:08:19,479 --> 01:08:21,499
+to be able to write
+queries that give you
+
+1461
+01:08:21,499 --> 01:08:22,540
+that type of information.
+
+1462
+01:08:22,540 --> 01:08:24,859
+That's kind of where the
+cutting edge is right now is,
+
+1463
+01:08:24,859 --> 01:08:25,569
+can we do that?
+
+1464
+01:08:25,569 --> 01:08:28,240
+Can we get that type of
+information from a SysML model?
+
+1465
+01:08:28,240 --> 01:08:29,979
+That's something I'm really
+interested in for my PhD
+
+1466
+01:08:29,979 --> 01:08:30,399
+thesis.
+
+1467
+01:08:30,399 --> 01:08:31,982
+So yeah, that's
+something that I think
+
+1468
+01:08:31,982 --> 01:08:34,086
+is possible and would
+be really great to have
+
+1469
+01:08:34,086 --> 01:08:35,710
+in the development
+process of a system.
+
+1470
+01:08:38,665 --> 01:08:40,790
+So the next bullet here is
+on a system description.
+
+1471
+01:08:40,790 --> 01:08:43,010
+So actually one of the
+fundamental questions
+
+1472
+01:08:43,010 --> 01:08:46,069
+is, how do you describe
+a domain-specific system
+
+1473
+01:08:46,069 --> 01:08:47,240
+within SysML?
+
+1474
+01:08:47,240 --> 01:08:50,000
+I'll show you that SysML
+has a pretty strong notion
+
+1475
+01:08:50,000 --> 01:08:51,920
+of inheritance, and
+classes, and things like.
+
+1476
+01:08:51,920 --> 01:08:53,580
+It's object-oriented.
+
+1477
+01:08:53,580 --> 01:08:55,670
+And so one of the questions is--
+
+1478
+01:08:55,670 --> 01:08:56,689
+I'm in the space system.
+
+1479
+01:08:56,689 --> 01:08:59,330
+So how do you describe
+a spacecraft in SysML?
+
+1480
+01:08:59,330 --> 01:09:00,410
+SysML is very general.
+
+1481
+01:09:00,410 --> 01:09:02,460
+But how do you
+actually represent,
+
+1482
+01:09:02,460 --> 01:09:04,910
+for example, a CNDH
+system in SysML?
+
+1483
+01:09:04,910 --> 01:09:09,680
+What are the types of attributes
+that are typically found?
+
+1484
+01:09:09,680 --> 01:09:11,180
+How do you represent that?
+
+1485
+01:09:11,180 --> 01:09:12,859
+How does it interface with
+other parts of your system?
+
+1486
+01:09:12,859 --> 01:09:13,858
+Those type of questions.
+
+1487
+01:09:13,858 --> 01:09:15,800
+That's another active
+area of research,
+
+1488
+01:09:15,800 --> 01:09:17,450
+domain-specific modeling.
+
+1489
+01:09:17,450 --> 01:09:19,910
+And then finally, as
+I said, integration
+
+1490
+01:09:19,910 --> 01:09:21,127
+with external analysis tools.
+
+1491
+01:09:21,127 --> 01:09:23,210
+So there's quite a lot of
+papers in the literature
+
+1492
+01:09:23,210 --> 01:09:26,930
+about going from a
+SysML model to MATLAB
+
+1493
+01:09:26,930 --> 01:09:32,680
+to SDK to Thermal Desktop,
+external modeling tools,
+
+1494
+01:09:32,680 --> 01:09:35,180
+taking that information out of
+the model, doing an analysis,
+
+1495
+01:09:35,180 --> 01:09:36,939
+putting it back in the model.
+
+1496
+01:09:36,939 --> 01:09:38,960
+And actually, I
+think there I was
+
+1497
+01:09:38,960 --> 01:09:42,620
+going to talk about Simscape,
+which is a kind of analysis
+
+1498
+01:09:42,620 --> 01:09:43,950
+tool, external analysis tool.
+
+1499
+01:09:43,950 --> 01:09:45,270
+And there's actually
+been papers written on,
+
+1500
+01:09:45,270 --> 01:09:47,620
+how do you take SysML
+information from a SysML model,
+
+1501
+01:09:47,620 --> 01:09:49,210
+pull it into
+Simscape process it,
+
+1502
+01:09:49,210 --> 01:09:50,890
+and put it back in the model?
+
+1503
+01:09:54,360 --> 01:09:56,680
+So let's talk
+about the diagrams.
+
+1504
+01:09:56,680 --> 01:09:59,010
+There are nine types
+of diagrams in SysML.
+
+1505
+01:09:59,010 --> 01:10:01,174
+And I'll try and just give
+you a brief explanation
+
+1506
+01:10:01,174 --> 01:10:01,840
+of what they do.
+
+1507
+01:10:01,840 --> 01:10:03,370
+I won't go into the
+syntax for all of them
+
+1508
+01:10:03,370 --> 01:10:05,536
+because there's quite a bit
+of detail in the syntax.
+
+1509
+01:10:05,536 --> 01:10:07,969
+But I'll show you some
+examples of a couple of them.
+
+1510
+01:10:07,969 --> 01:10:09,260
+So we'll go from left to right.
+
+1511
+01:10:09,260 --> 01:10:12,410
+So there's two main classes,
+behavior and structure,
+
+1512
+01:10:12,410 --> 01:10:14,050
+similar to OPM.
+
+1513
+01:10:14,050 --> 01:10:17,620
+In the behavior diagram, in
+the behavior diagram category
+
+1514
+01:10:17,620 --> 01:10:19,900
+you have activity
+diagrams, which basically
+
+1515
+01:10:19,900 --> 01:10:21,610
+represent flows of activities.
+
+1516
+01:10:21,610 --> 01:10:24,850
+So you do this, then you
+do this, then you do this.
+
+1517
+01:10:24,850 --> 01:10:26,890
+Those can be tied
+to system elements.
+
+1518
+01:10:26,890 --> 01:10:29,830
+If this system element has this
+sort of function or property
+
+1519
+01:10:29,830 --> 01:10:32,710
+or performs this operation on
+another part of the system,
+
+1520
+01:10:32,710 --> 01:10:35,050
+you can represent
+that link as well.
+
+1521
+01:10:35,050 --> 01:10:39,680
+There's a sequence diagram,
+which is more about logical
+
+1522
+01:10:39,680 --> 01:10:40,180
+ordering.
+
+1523
+01:10:40,180 --> 01:10:43,732
+So if you have, for example, a
+multi-threaded software system,
+
+1524
+01:10:43,732 --> 01:10:45,190
+and you have
+different threads that
+
+1525
+01:10:45,190 --> 01:10:48,262
+may need different other
+threads to communicate with them
+
+1526
+01:10:48,262 --> 01:10:50,470
+or finish their computation
+before that, that way you
+
+1527
+01:10:50,470 --> 01:10:51,850
+can execute things
+like that, you
+
+1528
+01:10:51,850 --> 01:10:56,830
+can do that sort of interfacing
+between different threads
+
+1529
+01:10:56,830 --> 01:10:59,680
+of activities in a
+sequence diagram.
+
+1530
+01:10:59,680 --> 01:11:03,070
+This is one of the diagram
+types that was kind of inherited
+
+1531
+01:11:03,070 --> 01:11:03,950
+directly from UML.
+
+1532
+01:11:03,950 --> 01:11:05,740
+So there is a very
+kind of strong software
+
+1533
+01:11:05,740 --> 01:11:06,990
+element to that diagram.
+
+1534
+01:11:11,400 --> 01:11:13,072
+There's a state machine diagram.
+
+1535
+01:11:13,072 --> 01:11:15,030
+So obviously, state
+machines are very powerful.
+
+1536
+01:11:15,030 --> 01:11:16,410
+If your system has
+various states,
+
+1537
+01:11:16,410 --> 01:11:18,030
+if things in your system
+have various states,
+
+1538
+01:11:18,030 --> 01:11:20,160
+you can represent that in
+a state machine diagram
+
+1539
+01:11:20,160 --> 01:11:22,830
+and then talk about, what are
+the criteria for transitioning
+
+1540
+01:11:22,830 --> 01:11:23,490
+between states?
+
+1541
+01:11:23,490 --> 01:11:26,550
+What would trigger or cause
+a transition between states?
+
+1542
+01:11:26,550 --> 01:11:28,724
+What are guards that
+must be met before you
+
+1543
+01:11:28,724 --> 01:11:29,640
+can transition states?
+
+1544
+01:11:29,640 --> 01:11:30,348
+Things like that.
+
+1545
+01:11:30,348 --> 01:11:32,850
+That's where you represent
+the state machine diagram.
+
+1546
+01:11:32,850 --> 01:11:36,000
+These type of diagrams are very
+powerful for describing things
+
+1547
+01:11:36,000 --> 01:11:38,220
+like concept of operations.
+
+1548
+01:11:38,220 --> 01:11:39,900
+So there has been some work--
+
+1549
+01:11:39,900 --> 01:11:42,390
+I did an internship at JPL
+a couple of summers ago.
+
+1550
+01:11:42,390 --> 01:11:44,670
+And they were trying to
+build up this capability
+
+1551
+01:11:44,670 --> 01:11:46,980
+to model a concept of
+operations for a spacecraft.
+
+1552
+01:11:46,980 --> 01:11:50,096
+So what are all the power
+modes of everything?
+
+1553
+01:11:50,096 --> 01:11:51,720
+What are the time--
+you know, it spends
+
+1554
+01:11:51,720 --> 01:11:53,344
+this amount of time
+in this power mode,
+
+1555
+01:11:53,344 --> 01:11:54,899
+then it transitions here.
+
+1556
+01:11:54,899 --> 01:11:56,940
+For example, I can give
+an orbit of a spacecraft.
+
+1557
+01:11:56,940 --> 01:11:58,315
+That's sort of
+the thing that you
+
+1558
+01:11:58,315 --> 01:12:01,200
+can do with this set
+of behavior diagrams.
+
+1559
+01:12:01,200 --> 01:12:02,340
+And then use case analysis.
+
+1560
+01:12:02,340 --> 01:12:04,770
+Again, it's mostly focused
+on early concept development,
+
+1561
+01:12:04,770 --> 01:12:05,527
+stakeholders.
+
+1562
+01:12:05,527 --> 01:12:07,110
+How do they interface
+with the system?
+
+1563
+01:12:07,110 --> 01:12:08,790
+Where do they derive value?
+
+1564
+01:12:08,790 --> 01:12:11,002
+How does the user
+interact with the system?
+
+1565
+01:12:11,002 --> 01:12:11,710
+Things like that.
+
+1566
+01:12:11,710 --> 01:12:14,610
+That's where you put
+a use case diagram.
+
+1567
+01:12:14,610 --> 01:12:18,010
+Going over to structure,
+the block definition diagram
+
+1568
+01:12:18,010 --> 01:12:21,070
+is where you define the
+structure of your system.
+
+1569
+01:12:21,070 --> 01:12:23,250
+So the logical or
+physical decomposition,
+
+1570
+01:12:23,250 --> 01:12:24,714
+I'll show you an
+example of this.
+
+1571
+01:12:24,714 --> 01:12:26,130
+So if your system
+is a spacecraft,
+
+1572
+01:12:26,130 --> 01:12:28,350
+it has various
+subsystems, if you
+
+1573
+01:12:28,350 --> 01:12:30,600
+want to decompose it logically
+as a thermal subsystem,
+
+1574
+01:12:30,600 --> 01:12:33,211
+a structure subsystem,
+ADCS subsystem,
+
+1575
+01:12:33,211 --> 01:12:35,460
+things like that, you can
+also decompose it physically
+
+1576
+01:12:35,460 --> 01:12:38,590
+so your spacecraft has solar
+arrays, it has instruments,
+
+1577
+01:12:38,590 --> 01:12:40,119
+it has thrusters,
+things like that.
+
+1578
+01:12:40,119 --> 01:12:42,660
+You can represent those types
+of things in a block definition
+
+1579
+01:12:42,660 --> 01:12:43,520
+diagram.
+
+1580
+01:12:43,520 --> 01:12:44,940
+And then internal
+block diagram is
+
+1581
+01:12:44,940 --> 01:12:47,398
+where you describe the ties
+with the interfaces between all
+
+1582
+01:12:47,398 --> 01:12:48,870
+the components of your system.
+
+1583
+01:12:48,870 --> 01:12:50,661
+And this can be at
+varying different levels
+
+1584
+01:12:50,661 --> 01:12:53,340
+of abstraction,
+as I'll show you.
+
+1585
+01:12:53,340 --> 01:12:55,710
+Parametric diagram is
+kind of a subdiagram type
+
+1586
+01:12:55,710 --> 01:12:57,060
+of the internal block diagram.
+
+1587
+01:12:57,060 --> 01:12:58,620
+So you can, again,
+put constraints,
+
+1588
+01:12:58,620 --> 01:13:01,260
+mathematical, logical, things
+like that, on your interfaces
+
+1589
+01:13:01,260 --> 01:13:04,650
+and begin to build up the
+infrastructure for doing
+
+1590
+01:13:04,650 --> 01:13:06,420
+computation in the model.
+
+1591
+01:13:06,420 --> 01:13:09,990
+And then a packaging diagram
+is not terribly important.
+
+1592
+01:13:09,990 --> 01:13:12,240
+It's really focused on the
+organization of your model.
+
+1593
+01:13:12,240 --> 01:13:13,240
+How do you scope things?
+
+1594
+01:13:13,240 --> 01:13:15,780
+It's kind of a modeling
+diagram as opposed
+
+1595
+01:13:15,780 --> 01:13:17,434
+to a representation
+of your system.
+
+1596
+01:13:17,434 --> 01:13:19,600
+Then last of all is the
+requirements diagram up top.
+
+1597
+01:13:19,600 --> 01:13:21,150
+So again, I'll show you
+a good example of this.
+
+1598
+01:13:21,150 --> 01:13:23,525
+But that's where you represent,
+how are your requirements
+
+1599
+01:13:23,525 --> 01:13:25,170
+related to your system?
+
+1600
+01:13:25,170 --> 01:13:27,100
+And then you can see
+here what's been modified
+
+1601
+01:13:27,100 --> 01:13:30,000
+and what's been taken from
+UML and the new diagram types
+
+1602
+01:13:30,000 --> 01:13:32,020
+of requirement and parametric.
+
+1603
+01:13:32,020 --> 01:13:33,520
+There were a couple
+of diagram types
+
+1604
+01:13:33,520 --> 01:13:34,936
+that were eliminated
+from UML that
+
+1605
+01:13:34,936 --> 01:13:37,600
+were pretty software-specific.
+
+1606
+01:13:37,600 --> 01:13:40,120
+I think there is one called the
+deployment diagram, like how
+
+1607
+01:13:40,120 --> 01:13:43,120
+has your software been
+deployed across various servers
+
+1608
+01:13:43,120 --> 01:13:43,622
+or users?
+
+1609
+01:13:43,622 --> 01:13:44,330
+Things like that.
+
+1610
+01:13:44,330 --> 01:13:47,230
+That's not really-- that's a
+pretty software-specific thing,
+
+1611
+01:13:47,230 --> 01:13:48,800
+so in a general
+system you might not
+
+1612
+01:13:48,800 --> 01:13:50,050
+care about that all that much.
+
+1613
+01:13:50,050 --> 01:13:53,270
+So that diagram was removed.
+
+1614
+01:13:53,270 --> 01:13:56,580
+So let me quickly go
+over some of the syntax.
+
+1615
+01:13:56,580 --> 01:13:59,110
+So this is an Interface
+Block Diagram, an IBD.
+
+1616
+01:13:59,110 --> 01:14:00,710
+And this is the type
+of diagram that I
+
+1617
+01:14:00,710 --> 01:14:06,270
+find is really interesting
+representing these interfaces.
+
+1618
+01:14:06,270 --> 01:14:08,120
+So here's the system
+engineering ontology
+
+1619
+01:14:08,120 --> 01:14:09,140
+we typically talk about.
+
+1620
+01:14:09,140 --> 01:14:12,200
+So this is basically a
+model of an avionics board.
+
+1621
+01:14:12,200 --> 01:14:14,870
+So you have things like
+voltage converters.
+
+1622
+01:14:14,870 --> 01:14:17,230
+You have memory,
+volatile, nonvolatile.
+
+1623
+01:14:17,230 --> 01:14:21,430
+We have an FPGA, which is
+our main computational unit.
+
+1624
+01:14:21,430 --> 01:14:24,080
+We talk about these as being
+parts of a system in terms
+
+1625
+01:14:24,080 --> 01:14:25,430
+of system engineering ontology.
+
+1626
+01:14:25,430 --> 01:14:28,930
+Then these are these interfaces
+or these lines right here.
+
+1627
+01:14:28,930 --> 01:14:31,600
+So in SysML, the way we
+talk about it is these
+
+1628
+01:14:31,600 --> 01:14:35,540
+are part properties
+of the system.
+
+1629
+01:14:35,540 --> 01:14:38,270
+It's kind of like an
+instantiation type of thing.
+
+1630
+01:14:38,270 --> 01:14:40,730
+What we're saying is all of
+these parts can represent
+
+1631
+01:14:40,730 --> 01:14:42,270
+independent of each other.
+
+1632
+01:14:42,270 --> 01:14:44,840
+And then you define a
+property of that part
+
+1633
+01:14:44,840 --> 01:14:46,850
+as being part of
+a different part,
+
+1634
+01:14:46,850 --> 01:14:48,930
+if that makes any sense at all.
+
+1635
+01:14:48,930 --> 01:14:50,550
+So for example, this is a board.
+
+1636
+01:14:50,550 --> 01:14:53,150
+This main electronics
+board is this whole block.
+
+1637
+01:14:53,150 --> 01:14:55,580
+And then that has some
+blocks within this block,
+
+1638
+01:14:55,580 --> 01:14:57,870
+which represent the subparts
+that make up the board.
+
+1639
+01:14:57,870 --> 01:14:59,630
+And these are called
+part properties
+
+1640
+01:14:59,630 --> 01:15:02,775
+of this overall block.
+
+1641
+01:15:02,775 --> 01:15:05,150
+We have these green little
+boxes, which are called ports.
+
+1642
+01:15:05,150 --> 01:15:06,733
+And again, that's
+to support this kind
+
+1643
+01:15:06,733 --> 01:15:08,960
+of system-independent modeling.
+
+1644
+01:15:08,960 --> 01:15:11,480
+So you can model like a
+voltage converter independent
+
+1645
+01:15:11,480 --> 01:15:14,150
+of any type of system
+as maybe an input
+
+1646
+01:15:14,150 --> 01:15:15,290
+voltage and output voltage.
+
+1647
+01:15:15,290 --> 01:15:17,581
+You can define what ranges
+those are, things like that.
+
+1648
+01:15:17,581 --> 01:15:20,000
+And you can model those
+interfaces using ports.
+
+1649
+01:15:20,000 --> 01:15:23,630
+And then these connectors, which
+are called connectors in SysML
+
+1650
+01:15:23,630 --> 01:15:25,850
+which represent the
+interfaces, represent
+
+1651
+01:15:25,850 --> 01:15:28,490
+how each part is tied into
+the kind of larger system.
+
+1652
+01:15:28,490 --> 01:15:30,350
+And you could, for
+example, check that you
+
+1653
+01:15:30,350 --> 01:15:31,820
+don't have any empty ports.
+
+1654
+01:15:31,820 --> 01:15:34,340
+If a part needs
+an input voltage,
+
+1655
+01:15:34,340 --> 01:15:36,380
+you could run a
+script that checks
+
+1656
+01:15:36,380 --> 01:15:39,800
+that all the parts have all
+their ports kind of satisfied.
+
+1657
+01:15:39,800 --> 01:15:41,450
+That's something you
+can do with SysML.
+
+1658
+01:15:44,021 --> 01:15:45,520
+So before I get
+into the case study,
+
+1659
+01:15:45,520 --> 01:15:47,980
+I want to talk a little bit
+about what you're going to see.
+
+1660
+01:15:47,980 --> 01:15:49,938
+As Olly said, I work on
+something called REXIS,
+
+1661
+01:15:49,938 --> 01:15:52,240
+which is the REgolith
+X-Ray Imaging Spectrometer.
+
+1662
+01:15:52,240 --> 01:15:53,920
+It's an x-ray
+spectrometer that's
+
+1663
+01:15:53,920 --> 01:15:57,370
+flying on NASA's OSIRIS-REx
+asteroid sample return mission.
+
+1664
+01:15:57,370 --> 01:15:59,290
+I've been working
+on it since 2011,
+
+1665
+01:15:59,290 --> 01:16:02,180
+when I was a senior here
+all throughout my master's,
+
+1666
+01:16:02,180 --> 01:16:03,725
+and then now for my PhD.
+
+1667
+01:16:03,725 --> 01:16:05,350
+Basically we're going
+to measure x-rays
+
+1668
+01:16:05,350 --> 01:16:07,599
+that are fluoresced from the
+asteroid surface in order
+
+1669
+01:16:07,599 --> 01:16:10,660
+to tell what the elemental
+composition of the asteroid is.
+
+1670
+01:16:10,660 --> 01:16:12,616
+So that's our main science goal.
+
+1671
+01:16:12,616 --> 01:16:13,990
+And that will
+basically enable us
+
+1672
+01:16:13,990 --> 01:16:17,172
+to categorize where
+the asteroid is
+
+1673
+01:16:17,172 --> 01:16:18,880
+within the different
+meteorite types that
+
+1674
+01:16:18,880 --> 01:16:21,520
+have been defined on the ground
+based upon existing meteorite
+
+1675
+01:16:21,520 --> 01:16:23,350
+samples.
+
+1676
+01:16:23,350 --> 01:16:25,740
+So what I did for
+my master's thesis
+
+1677
+01:16:25,740 --> 01:16:28,410
+was modeled the design
+history of REXIS.
+
+1678
+01:16:28,410 --> 01:16:31,860
+So how has our design evolved
+from the very beginning
+
+1679
+01:16:31,860 --> 01:16:35,460
+where it was very open
+ended, very abstract,
+
+1680
+01:16:35,460 --> 01:16:38,340
+and you'll see this,
+to the current design,
+
+1681
+01:16:38,340 --> 01:16:42,300
+which current in this case
+was CDR which was over a year
+
+1682
+01:16:42,300 --> 01:16:44,281
+ago now.
+
+1683
+01:16:44,281 --> 01:16:45,780
+Right now the current
+state of REXIS
+
+1684
+01:16:45,780 --> 01:16:48,130
+is we're almost ready to
+mount to the spacecraft.
+
+1685
+01:16:48,130 --> 01:16:50,670
+So it's very exciting.
+
+1686
+01:16:50,670 --> 01:16:53,116
+Just to give you an
+idea of a timeline,
+
+1687
+01:16:53,116 --> 01:16:55,740
+this is something I'm sure Olly
+will talk about in this course,
+
+1688
+01:16:55,740 --> 01:16:58,180
+is the flow through the
+system development lifecycles.
+
+1689
+01:16:58,180 --> 01:17:00,013
+So we have a system
+requirements review back
+
+1690
+01:17:00,013 --> 01:17:02,120
+in January of 2012, system--
+
+1691
+01:17:02,120 --> 01:17:05,730
+I think it's definition
+review, April 2012,
+
+1692
+01:17:05,730 --> 01:17:08,130
+preliminary design
+review January of 2013,
+
+1693
+01:17:08,130 --> 01:17:11,040
+and then critical design
+review February of 2014.
+
+1694
+01:17:11,040 --> 01:17:13,924
+So I created models at each of
+these design points in SysML
+
+1695
+01:17:13,924 --> 01:17:16,340
+and looked at, what are the
+lessons we could have learned?
+
+1696
+01:17:16,340 --> 01:17:17,904
+We didn't use the
+SysML in REXIS.
+
+1697
+01:17:17,904 --> 01:17:19,570
+I was kind of looking
+back historically,
+
+1698
+01:17:19,570 --> 01:17:20,920
+what if we had used it?
+
+1699
+01:17:20,920 --> 01:17:22,620
+Could we have designed
+our system better
+
+1700
+01:17:22,620 --> 01:17:25,840
+in any sort of way?
+
+1701
+01:17:25,840 --> 01:17:27,801
+So here is kind of
+a CAD representation
+
+1702
+01:17:27,801 --> 01:17:28,800
+of how a design evolved.
+
+1703
+01:17:28,800 --> 01:17:30,600
+And I think you can
+kind of get the idea.
+
+1704
+01:17:30,600 --> 01:17:32,939
+Back at SRR, a lot of
+things we didn't really
+
+1705
+01:17:32,939 --> 01:17:34,230
+know what they would look like.
+
+1706
+01:17:34,230 --> 01:17:36,063
+We didn't know what the
+interfaces would be.
+
+1707
+01:17:36,063 --> 01:17:38,340
+We didn't know what
+all the parts would be.
+
+1708
+01:17:38,340 --> 01:17:40,260
+We had a little more
+development for SDR.
+
+1709
+01:17:40,260 --> 01:17:42,180
+You can see there's more arrows.
+
+1710
+01:17:42,180 --> 01:17:44,250
+The CAD is a little
+bit more detailed.
+
+1711
+01:17:44,250 --> 01:17:46,861
+PDR, we had even more detail.
+
+1712
+01:17:46,861 --> 01:17:48,610
+This was actually like
+a buildable design.
+
+1713
+01:17:48,610 --> 01:17:50,760
+This turned out to
+not even be buildable.
+
+1714
+01:17:50,760 --> 01:17:54,620
+And then we had more
+evolution between PDR and CDR
+
+1715
+01:17:54,620 --> 01:17:56,670
+to get to pretty much
+where the design is.
+
+1716
+01:17:56,670 --> 01:17:58,170
+There's actually
+been some evolution
+
+1717
+01:17:58,170 --> 01:18:02,299
+after this as well, as sometimes
+happens with a new system.
+
+1718
+01:18:02,299 --> 01:18:03,840
+But you can see just
+graphically kind
+
+1719
+01:18:03,840 --> 01:18:05,730
+of the increase in level
+of detail and level
+
+1720
+01:18:05,730 --> 01:18:08,255
+of fidelity of the
+state of our system
+
+1721
+01:18:08,255 --> 01:18:09,630
+throughout its
+development cycle.
+
+1722
+01:18:09,630 --> 01:18:12,745
+And I'll show you that and how
+that looks in the SysML model
+
+1723
+01:18:12,745 --> 01:18:14,584
+as well.
+
+1724
+01:18:14,584 --> 01:18:17,000
+So one of the things you can
+do if you have a SysML model,
+
+1725
+01:18:17,000 --> 01:18:18,820
+is as I talked about,
+you can run queries on it
+
+1726
+01:18:18,820 --> 01:18:21,319
+and pull out information that's
+very difficult or impossible
+
+1727
+01:18:21,319 --> 01:18:23,330
+to get with our current
+deployment practices.
+
+1728
+01:18:23,330 --> 01:18:26,510
+So this is just looking at
+the different subassemblies
+
+1729
+01:18:26,510 --> 01:18:27,154
+within REXIS.
+
+1730
+01:18:27,154 --> 01:18:29,570
+What are the number of parts
+in each of the subassemblies?
+
+1731
+01:18:29,570 --> 01:18:31,861
+So you can see the general
+trend is up for all of them,
+
+1732
+01:18:31,861 --> 01:18:33,350
+as you would expect.
+
+1733
+01:18:33,350 --> 01:18:35,510
+Some jump up very high.
+
+1734
+01:18:35,510 --> 01:18:37,694
+Some kind of stay
+basically where they were.
+
+1735
+01:18:37,694 --> 01:18:39,110
+But in general,
+they all increase.
+
+1736
+01:18:39,110 --> 01:18:40,526
+And this is something
+you might be
+
+1737
+01:18:40,526 --> 01:18:42,577
+able to do with looking
+at like a parts list
+
+1738
+01:18:42,577 --> 01:18:44,660
+or something like that
+with current methodologies.
+
+1739
+01:18:44,660 --> 01:18:46,460
+But it would be very hard to
+get this information, which
+
+1740
+01:18:46,460 --> 01:18:48,440
+is the number of
+ports per assembly.
+
+1741
+01:18:48,440 --> 01:18:49,920
+So each interface has two ports.
+
+1742
+01:18:49,920 --> 01:18:51,795
+So these numbers divided
+by 2 basically equal
+
+1743
+01:18:51,795 --> 01:18:54,250
+the number of interfaces that
+we have in each subassembly.
+
+1744
+01:18:54,250 --> 01:18:56,208
+And you can see, again,
+there's a general trend
+
+1745
+01:18:56,208 --> 01:18:59,750
+of increasing number of ports
+as you go through the lifecycle.
+
+1746
+01:18:59,750 --> 01:19:01,949
+So this is a piece
+of information
+
+1747
+01:19:01,949 --> 01:19:03,740
+you might want to use
+if you want to manage
+
+1748
+01:19:03,740 --> 01:19:04,860
+the complexity of your system.
+
+1749
+01:19:04,860 --> 01:19:06,660
+And you say, this
+subassembly is getting--
+
+1750
+01:19:06,660 --> 01:19:09,220
+it's way too many interfaces,
+way too many parts.
+
+1751
+01:19:09,220 --> 01:19:10,150
+It's way too complex.
+
+1752
+01:19:10,150 --> 01:19:11,900
+We need to think about
+how we've logically
+
+1753
+01:19:11,900 --> 01:19:13,700
+arranged our system
+and maybe how can we
+
+1754
+01:19:13,700 --> 01:19:15,950
+rearrange it to make it more
+understandable and easier
+
+1755
+01:19:15,950 --> 01:19:16,920
+to work with.
+
+1756
+01:19:16,920 --> 01:19:18,632
+And then you can divide the two.
+
+1757
+01:19:18,632 --> 01:19:20,340
+And you end up looking
+at how many-- this
+
+1758
+01:19:20,340 --> 01:19:24,020
+is ports per part in
+each subassembly at each
+
+1759
+01:19:24,020 --> 01:19:25,370
+of the design reviews.
+
+1760
+01:19:25,370 --> 01:19:27,740
+And you can see trends here,
+too, which are interesting.
+
+1761
+01:19:27,740 --> 01:19:29,510
+So you can see in the
+beginning we didn't really
+
+1762
+01:19:29,510 --> 01:19:30,140
+know what we were doing.
+
+1763
+01:19:30,140 --> 01:19:32,360
+Some of these had a lot
+of parts, ports per part.
+
+1764
+01:19:32,360 --> 01:19:33,860
+Some of these had very few.
+
+1765
+01:19:33,860 --> 01:19:35,860
+They all ended up
+stabilizing kind
+
+1766
+01:19:35,860 --> 01:19:38,505
+of in between the three and
+five ports per part range.
+
+1767
+01:19:38,505 --> 01:19:40,130
+And then you can look
+at the literature
+
+1768
+01:19:40,130 --> 01:19:42,680
+and say, well,
+typically systems tend
+
+1769
+01:19:42,680 --> 01:19:45,332
+to be between five and
+six ports per part.
+
+1770
+01:19:45,332 --> 01:19:46,290
+So what does that mean?
+
+1771
+01:19:46,290 --> 01:19:48,742
+Does that mean that our system
+didn't model it correctly?
+
+1772
+01:19:48,742 --> 01:19:49,700
+That's one possibility.
+
+1773
+01:19:49,700 --> 01:19:53,030
+It didn't model it to the lowest
+level of fidelity possible.
+
+1774
+01:19:53,030 --> 01:19:55,552
+Does it mean that our
+system is too simple?
+
+1775
+01:19:55,552 --> 01:19:57,260
+Does it mean that
+we're missing something
+
+1776
+01:19:57,260 --> 01:19:58,580
+that we haven't thought about?
+
+1777
+01:19:58,580 --> 01:20:00,740
+Does it mean that
+our system, which
+
+1778
+01:20:00,740 --> 01:20:03,110
+was intended to be simple
+and cheap and implementable
+
+1779
+01:20:03,110 --> 01:20:05,330
+by students is actually
+achieving that goal
+
+1780
+01:20:05,330 --> 01:20:07,460
+because it's beneath what
+you typically expect?
+
+1781
+01:20:07,460 --> 01:20:09,960
+Those are the types of questions
+you can ask with this data.
+
+1782
+01:20:09,960 --> 01:20:12,680
+But this data is not easy to get
+with the current methodologies.
+
+1783
+01:20:12,680 --> 01:20:15,140
+So this kind of very
+simple queries you can do
+
+1784
+01:20:15,140 --> 01:20:19,490
+gives you power on managing
+complexity in your system.
+
+1785
+01:20:19,490 --> 01:20:24,340
+So let me now transition
+quickly to the demo.
+
+1786
+01:20:24,340 --> 01:20:25,330
+Let's see.
+
+1787
+01:20:45,650 --> 01:20:46,515
+There's no sound.
+
+1788
+01:20:46,515 --> 01:20:48,265
+AUDIENCE: I know, but
+I need to sync it up
+
+1789
+01:20:48,265 --> 01:20:49,450
+to make it [INAUDIBLE].
+
+1790
+01:21:00,730 --> 01:21:03,190
+OLIVIER DE WECK: So while Mark
+is setting up for the demo,
+
+1791
+01:21:03,190 --> 01:21:06,185
+are there any questions
+about SysML so far,
+
+1792
+01:21:06,185 --> 01:21:07,476
+any observations you guys have?
+
+1793
+01:21:11,450 --> 01:21:12,860
+Maybe at EPFL.
+
+1794
+01:21:12,860 --> 01:21:15,140
+Do you see the similarities
+and differences
+
+1795
+01:21:15,140 --> 01:21:16,070
+between OPM and SysML?
+
+1796
+01:21:18,850 --> 01:21:22,570
+What's the biggest
+difference between the two?
+
+1797
+01:21:22,570 --> 01:21:24,404
+There's two really
+important differences.
+
+1798
+01:21:27,204 --> 01:21:28,370
+GUEST SPEAKER: No questions?
+
+1799
+01:21:28,370 --> 01:21:29,023
+Yes.
+
+1800
+01:21:29,023 --> 01:21:30,010
+AUDIENCE: I was going to ask--
+
+1801
+01:21:30,010 --> 01:21:30,230
+OLIVIER DE WECK: Hang on.
+
+1802
+01:21:30,230 --> 01:21:31,030
+Hang on.
+
+1803
+01:21:31,030 --> 01:21:34,920
+Is there anybody at EPFL who
+wants to comment on this?
+
+1804
+01:21:40,570 --> 01:21:42,577
+AUDIENCE: No, there is
+no comment from EPFL.
+
+1805
+01:21:42,577 --> 01:21:43,410
+OLIVIER DE WECK: OK.
+
+1806
+01:21:43,410 --> 01:21:43,910
+Good.
+
+1807
+01:21:43,910 --> 01:21:45,330
+That's fine.
+
+1808
+01:21:45,330 --> 01:21:46,770
+That's fine.
+
+1809
+01:21:46,770 --> 01:21:48,016
+Mark, are you set up?
+
+1810
+01:21:48,016 --> 01:21:48,932
+GUEST SPEAKER: Almost.
+
+1811
+01:21:54,077 --> 01:21:55,660
+OLIVIER DE WECK:
+What I would say is--
+
+1812
+01:21:55,660 --> 01:21:59,890
+so first of all, OPM has
+only one type of diagram,
+
+1813
+01:21:59,890 --> 01:22:02,965
+and then you go really deep,
+sort of a deep hierarchy.
+
+1814
+01:22:02,965 --> 01:22:05,880
+SysML has nine different
+types of diagrams
+
+1815
+01:22:05,880 --> 01:22:08,520
+split between behavioral
+and structural.
+
+1816
+01:22:08,520 --> 01:22:10,190
+So that's one difference.
+
+1817
+01:22:10,190 --> 01:22:12,490
+And then the other is that
+the SysML is fundamentally
+
+1818
+01:22:12,490 --> 01:22:16,420
+object-oriented because it comes
+from object-oriented thinking
+
+1819
+01:22:16,420 --> 01:22:20,140
+and software, whereas OPM
+has objects and processes
+
+1820
+01:22:20,140 --> 01:22:22,180
+sort of at the same level.
+
+1821
+01:22:22,180 --> 01:22:24,976
+Those are two of the most
+important differences.
+
+1822
+01:22:27,522 --> 01:22:28,480
+MARK CHODAS: All right.
+
+1823
+01:22:28,480 --> 01:22:30,730
+So what I'm showing you--
+can everyone see the screen?
+
+1824
+01:22:30,730 --> 01:22:33,160
+Just let me know if you
+can't see the screen.
+
+1825
+01:22:33,160 --> 01:22:36,530
+What I'm showing you right now
+is a tool called MagicDraw.
+
+1826
+01:22:36,530 --> 01:22:38,530
+There are basically a
+variety of tools provided
+
+1827
+01:22:38,530 --> 01:22:41,440
+by commercial vendors that
+enable you to build and work
+
+1828
+01:22:41,440 --> 01:22:42,350
+with a SysML model.
+
+1829
+01:22:42,350 --> 01:22:45,130
+So SysML is a language, and
+then it's implemented in tools.
+
+1830
+01:22:45,130 --> 01:22:48,220
+And this just happens to be
+one that's fairly well, fairly
+
+1831
+01:22:48,220 --> 01:22:49,900
+widely utilized.
+
+1832
+01:22:49,900 --> 01:22:51,680
+Unfortunately, it's
+quite expensive.
+
+1833
+01:22:51,680 --> 01:22:53,737
+But anyway, so what I'm
+showing you right now,
+
+1834
+01:22:53,737 --> 01:22:56,320
+and this is going to be a little
+bit difficult because, as you
+
+1835
+01:22:56,320 --> 01:22:59,070
+can see, you need a big screen.
+
+1836
+01:22:59,070 --> 01:23:01,510
+What I'm showing you right
+now is a requirements diagram.
+
+1837
+01:23:01,510 --> 01:23:02,801
+So you can see that right here.
+
+1838
+01:23:02,801 --> 01:23:04,540
+It's a requirements diagram.
+
+1839
+01:23:04,540 --> 01:23:08,920
+And each of these blocks, as
+you can see by the tag here,
+
+1840
+01:23:08,920 --> 01:23:10,090
+is a requirement.
+
+1841
+01:23:10,090 --> 01:23:12,991
+So this is one of our
+operating criterias.
+
+1842
+01:23:12,991 --> 01:23:14,990
+Well operating temperature
+of all our components
+
+1843
+01:23:14,990 --> 01:23:17,380
+shall be maintained
+within operability limits.
+
+1844
+01:23:17,380 --> 01:23:19,210
+Straightforward requirement.
+
+1845
+01:23:19,210 --> 01:23:21,760
+And you can create these
+satisfy relationships
+
+1846
+01:23:21,760 --> 01:23:24,340
+between that requirement
+and the components
+
+1847
+01:23:24,340 --> 01:23:27,160
+in the system that must
+satisfy that requirement.
+
+1848
+01:23:27,160 --> 01:23:30,840
+So right now, this is being done
+at SRR, as you can see up here.
+
+1849
+01:23:30,840 --> 01:23:34,040
+So this is very
+early in the design.
+
+1850
+01:23:34,040 --> 01:23:37,030
+So we don't have it broken down
+fully to all the components.
+
+1851
+01:23:37,030 --> 01:23:39,160
+But we have-- here is our
+main electronics board.
+
+1852
+01:23:39,160 --> 01:23:40,826
+It has to satisfy
+that requirement.
+
+1853
+01:23:40,826 --> 01:23:41,950
+Here's our radiation cover.
+
+1854
+01:23:41,950 --> 01:23:43,480
+It has to satisfy
+that requirement.
+
+1855
+01:23:43,480 --> 01:23:45,550
+So you can tie these two
+things, the requirement
+
+1856
+01:23:45,550 --> 01:23:48,091
+and the part of the system that
+must satisfy the requirement.
+
+1857
+01:23:48,091 --> 01:23:50,110
+And here I've tied it to parts.
+
+1858
+01:23:50,110 --> 01:23:51,850
+So these are called
+blocks, which
+
+1859
+01:23:51,850 --> 01:23:54,545
+are the fundamental unit
+in SysML, is a block.
+
+1860
+01:23:54,545 --> 01:23:56,170
+So these represent
+parts of our system.
+
+1861
+01:23:56,170 --> 01:23:58,128
+But you could tie it to
+a property of that part
+
+1862
+01:23:58,128 --> 01:23:59,144
+if you wanted to.
+
+1863
+01:23:59,144 --> 01:24:00,560
+So then you get
+into the situation
+
+1864
+01:24:00,560 --> 01:24:02,290
+I talked about
+earlier where you have
+
+1865
+01:24:02,290 --> 01:24:05,210
+the requirement is on the mass
+of it must be less than this.
+
+1866
+01:24:05,210 --> 01:24:07,210
+You can tie it to the
+mass of the system itself,
+
+1867
+01:24:07,210 --> 01:24:08,251
+as opposed to the system.
+
+1868
+01:24:08,251 --> 01:24:12,850
+You can tie it to the actual
+property, which is very useful.
+
+1869
+01:24:12,850 --> 01:24:19,810
+So let me quickly show you
+one of the cool things.
+
+1870
+01:24:19,810 --> 01:24:21,894
+If I delete these requirements,
+I'm not actually--
+
+1871
+01:24:21,894 --> 01:24:23,393
+you can see there's
+no requirements.
+
+1872
+01:24:23,393 --> 01:24:25,800
+I'm not actually deleting
+them from the system itself,
+
+1873
+01:24:25,800 --> 01:24:28,610
+but I'm just doing it as I'm
+removing it from the diagram.
+
+1874
+01:24:28,610 --> 01:24:32,160
+But if you wanted
+to, you should be
+
+1875
+01:24:32,160 --> 01:24:39,200
+able to look at related elements
+of the different blocks.
+
+1876
+01:24:39,200 --> 01:24:40,990
+So I just clicked
+on a block, and I
+
+1877
+01:24:40,990 --> 01:24:44,620
+can choose to show all the
+requirements, all the things
+
+1878
+01:24:44,620 --> 01:24:48,280
+that are satisfied, the
+requirements of that component
+
+1879
+01:24:48,280 --> 01:24:49,870
+of the system satisfies.
+
+1880
+01:24:49,870 --> 01:24:53,150
+And these requirements pop up.
+
+1881
+01:24:53,150 --> 01:24:56,422
+So this is showing how
+the diagrams themselves
+
+1882
+01:24:56,422 --> 01:24:57,130
+aren't the model.
+
+1883
+01:24:57,130 --> 01:24:59,016
+There's actually
+backend to the model.
+
+1884
+01:24:59,016 --> 01:25:00,640
+And you can kind of
+work in the diagram
+
+1885
+01:25:00,640 --> 01:25:02,960
+and show or hide things
+however you want.
+
+1886
+01:25:02,960 --> 01:25:06,940
+But the information is actually
+kept behind the diagram,
+
+1887
+01:25:06,940 --> 01:25:09,120
+so to speak.
+
+1888
+01:25:09,120 --> 01:25:11,970
+So my research looked
+into typologies.
+
+1889
+01:25:11,970 --> 01:25:15,300
+So let me just kind of show you
+a little bit about what I did.
+
+1890
+01:25:15,300 --> 01:25:17,610
+So this is a block definition
+diagram, again, defining
+
+1891
+01:25:17,610 --> 01:25:18,660
+all the parts of your system.
+
+1892
+01:25:18,660 --> 01:25:20,660
+And I just want to give
+you kind of a high level
+
+1893
+01:25:20,660 --> 01:25:24,410
+idea of the type of
+things that we saw.
+
+1894
+01:25:24,410 --> 01:25:32,110
+So it's big, first
+of all, very big.
+
+1895
+01:25:32,110 --> 01:25:33,940
+These are all the
+parts of the system.
+
+1896
+01:25:33,940 --> 01:25:35,950
+So we start high like
+the mission context,
+
+1897
+01:25:35,950 --> 01:25:37,574
+and the mission
+context contains things
+
+1898
+01:25:37,574 --> 01:25:40,294
+like the environment and the
+spacecraft and then REXIS.
+
+1899
+01:25:40,294 --> 01:25:41,710
+And then you can
+break down REXIS.
+
+1900
+01:25:41,710 --> 01:25:43,820
+We have these various
+subassemblies broken down
+
+1901
+01:25:43,820 --> 01:25:44,680
+to parts.
+
+1902
+01:25:44,680 --> 01:25:47,020
+And that's how you get
+this tree structure.
+
+1903
+01:25:47,020 --> 01:25:50,470
+And then this tree structure
+can be tied together.
+
+1904
+01:25:50,470 --> 01:25:52,780
+I can zoom in, but
+it's big again.
+
+1905
+01:25:52,780 --> 01:25:55,430
+So these are all the
+parts of our system.
+
+1906
+01:25:55,430 --> 01:25:58,320
+Let me give you an example.
+
+1907
+01:25:58,320 --> 01:26:00,410
+So we have a couple
+of boards that we
+
+1908
+01:26:00,410 --> 01:26:02,200
+call our detector electronics.
+
+1909
+01:26:02,200 --> 01:26:05,327
+And those detector electronics
+have various ports.
+
+1910
+01:26:05,327 --> 01:26:07,160
+One thing they had to
+do, they had this port
+
+1911
+01:26:07,160 --> 01:26:10,850
+in here and this interface here,
+which connects to our CCDs.
+
+1912
+01:26:10,850 --> 01:26:14,360
+So this is showing how you can
+build interfaces and SysML.
+
+1913
+01:26:14,360 --> 01:26:16,700
+So here are the green
+boxes, again, or the ports.
+
+1914
+01:26:16,700 --> 01:26:18,408
+The lines are the
+connectors, and they're
+
+1915
+01:26:18,408 --> 01:26:19,700
+defining all the interfaces.
+
+1916
+01:26:19,700 --> 01:26:23,660
+And you can see at a high
+level how complicated things
+
+1917
+01:26:23,660 --> 01:26:24,900
+get very quickly.
+
+1918
+01:26:24,900 --> 01:26:28,250
+This is the earliest, most
+abstract version of our design.
+
+1919
+01:26:28,250 --> 01:26:30,920
+And it already has a
+lot of complication.
+
+1920
+01:26:30,920 --> 01:26:32,740
+One thing you can do--
+
+1921
+01:26:32,740 --> 01:26:34,375
+I talked about running scripts.
+
+1922
+01:26:34,375 --> 01:26:35,730
+I'll show you how that works.
+
+1923
+01:26:35,730 --> 01:26:36,860
+It's quite easy.
+
+1924
+01:26:40,080 --> 01:26:42,000
+So I just ran a script
+on the model that
+
+1925
+01:26:42,000 --> 01:26:45,120
+told me to find the number
+of parts in the scope
+
+1926
+01:26:45,120 --> 01:26:47,542
+that I defined and
+the number of ports.
+
+1927
+01:26:47,542 --> 01:26:49,500
+And here's the output of
+that model right here.
+
+1928
+01:26:49,500 --> 01:26:53,170
+So the script itself is
+not even very complicated.
+
+1929
+01:26:53,170 --> 01:26:55,940
+It's like 50, 60 lines of code.
+
+1930
+01:26:55,940 --> 01:26:58,620
+And immediately I can pull out
+how many ports, how many parts,
+
+1931
+01:26:58,620 --> 01:27:01,574
+things like that,
+information down my system.
+
+1932
+01:27:01,574 --> 01:27:03,990
+So let me kind of take you
+briefly through the development
+
+1933
+01:27:03,990 --> 01:27:05,280
+process.
+
+1934
+01:27:05,280 --> 01:27:07,590
+So that was, again, the
+highest, the most abstract,
+
+1935
+01:27:07,590 --> 01:27:09,620
+the earliest version
+of our system, SRR.
+
+1936
+01:27:09,620 --> 01:27:12,000
+This is SDR.
+
+1937
+01:27:12,000 --> 01:27:16,830
+You can see it's starting
+to get a bit more complex.
+
+1938
+01:27:16,830 --> 01:27:20,265
+And then you can go
+over to PDR, and it
+
+1939
+01:27:20,265 --> 01:27:21,690
+starts to get really scary.
+
+1940
+01:27:25,700 --> 01:27:29,800
+And you can go to CDR,
+and it's just a nightmare.
+
+1941
+01:27:29,800 --> 01:27:32,430
+So I created all these systems,
+all these models by hand.
+
+1942
+01:27:32,430 --> 01:27:34,950
+You can actually build
+the model with the script,
+
+1943
+01:27:34,950 --> 01:27:37,240
+if you would like.
+
+1944
+01:27:37,240 --> 01:27:39,690
+You can basically do things
+like define a pattern
+
+1945
+01:27:39,690 --> 01:27:42,810
+and then apply that pattern
+to all the parts of that type.
+
+1946
+01:27:42,810 --> 01:27:45,180
+That's all possible
+through the API.
+
+1947
+01:27:45,180 --> 01:27:48,060
+And just to show you how much
+of a nightmare it was at CDR,
+
+1948
+01:27:48,060 --> 01:27:54,470
+let me run the same
+script on the CDR model.
+
+1949
+01:27:54,470 --> 01:27:57,617
+You have 230 parts
+and 900 interfaces.
+
+1950
+01:27:57,617 --> 01:27:59,450
+And this was not even
+modeling to the lowest
+
+1951
+01:27:59,450 --> 01:28:00,500
+level of fidelity possible.
+
+1952
+01:28:00,500 --> 01:28:02,499
+I didn't, for example,
+model all the components,
+
+1953
+01:28:02,499 --> 01:28:04,880
+all the capacitors,
+resistors, op amps, and stuff
+
+1954
+01:28:04,880 --> 01:28:06,360
+on the board.
+
+1955
+01:28:06,360 --> 01:28:09,980
+And now you can already
+see it's quite large.
+
+1956
+01:28:09,980 --> 01:28:12,080
+Kind of the idea
+behind these models
+
+1957
+01:28:12,080 --> 01:28:15,830
+would be to extend this to the
+lowest level in a real system
+
+1958
+01:28:15,830 --> 01:28:18,260
+and use this, basically use
+all the capabilities that you
+
+1959
+01:28:18,260 --> 01:28:19,718
+had with the model
+to really manage
+
+1960
+01:28:19,718 --> 01:28:22,310
+your complexity in a way that
+is just not possible currently.
+
+1961
+01:28:22,310 --> 01:28:23,685
+And there's no
+way you can really
+
+1962
+01:28:23,685 --> 01:28:25,566
+mentally keep track of
+all these interfaces
+
+1963
+01:28:25,566 --> 01:28:27,440
+and understanding how
+your system is working.
+
+1964
+01:28:27,440 --> 01:28:28,856
+So having this
+modeling capability
+
+1965
+01:28:28,856 --> 01:28:31,700
+and querying capability is
+really, really powerful.
+
+1966
+01:28:31,700 --> 01:28:33,020
+Yeah?
+
+1967
+01:28:33,020 --> 01:28:37,350
+AUDIENCE: What was used
+during REXIS for the systems
+
+1968
+01:28:37,350 --> 01:28:38,690
+engineering?
+
+1969
+01:28:38,690 --> 01:28:41,240
+You had applied
+this after the fact.
+
+1970
+01:28:41,240 --> 01:28:46,257
+So what was used to create these
+block diagram or [INAUDIBLE]..
+
+1971
+01:28:46,257 --> 01:28:48,840
+MARK CHODAS: Do you mean during
+when we were developing REXIS?
+
+1972
+01:28:48,840 --> 01:28:49,580
+AUDIENCE: Yeah.
+
+1973
+01:28:49,580 --> 01:28:51,500
+MARK CHODAS: We basically
+didn't have this.
+
+1974
+01:28:51,500 --> 01:28:53,150
+So we were relying--
+
+1975
+01:28:53,150 --> 01:28:56,060
+as you would typically do upon
+the capabilities of the system
+
+1976
+01:28:56,060 --> 01:28:58,070
+engineer or the team--
+you'd to have documents.
+
+1977
+01:28:58,070 --> 01:29:00,050
+We have a ton of documents.
+
+1978
+01:29:00,050 --> 01:29:02,360
+But I was talking about how
+things weren't buildable.
+
+1979
+01:29:02,360 --> 01:29:05,264
+I found a situation
+where because of the way
+
+1980
+01:29:05,264 --> 01:29:06,680
+we had done our
+thermal system, we
+
+1981
+01:29:06,680 --> 01:29:09,150
+were dumping spacecraft
+heat to space,
+
+1982
+01:29:09,150 --> 01:29:11,210
+which you don't want to do.
+
+1983
+01:29:11,210 --> 01:29:13,770
+I can explain why, but
+you don't want to do that.
+
+1984
+01:29:13,770 --> 01:29:16,329
+And that's something we
+didn't realize at the time.
+
+1985
+01:29:16,329 --> 01:29:17,870
+If we had tried to
+build it, we would
+
+1986
+01:29:17,870 --> 01:29:19,610
+have had this
+property of the system
+
+1987
+01:29:19,610 --> 01:29:21,281
+that we didn't know
+actually existed
+
+1988
+01:29:21,281 --> 01:29:23,030
+until I went back and
+looked at the model.
+
+1989
+01:29:23,030 --> 01:29:24,769
+So we definitely miss things.
+
+1990
+01:29:24,769 --> 01:29:26,810
+And this should have
+improved the design process,
+
+1991
+01:29:26,810 --> 01:29:29,460
+if we had been using it.
+
+1992
+01:29:29,460 --> 01:29:32,267
+OLIVIER DE WECK: Great, so
+Mark, sort of to wrap up,
+
+1993
+01:29:32,267 --> 01:29:34,600
+because we've got to switch
+over to [INAUDIBLE],, what's
+
+1994
+01:29:34,600 --> 01:29:38,140
+your recommendation for, let's
+say, students in the class
+
+1995
+01:29:38,140 --> 01:29:40,330
+got sort of intrigued by SysML.
+
+1996
+01:29:40,330 --> 01:29:41,985
+What's the next step?
+
+1997
+01:29:41,985 --> 01:29:43,860
+MARK CHODAS: There's a
+couple different ways.
+
+1998
+01:29:43,860 --> 01:29:45,318
+Certainly if you're
+interested, let
+
+1999
+01:29:45,318 --> 01:29:47,430
+me know, and I can
+give you resources
+
+2000
+01:29:47,430 --> 01:29:49,740
+to further your understanding.
+
+2001
+01:29:49,740 --> 01:29:51,980
+As I said, working
+with these tools
+
+2002
+01:29:51,980 --> 01:29:53,717
+can be expensive
+to get these tools.
+
+2003
+01:29:53,717 --> 01:29:55,800
+So I can help you understand
+what that would take.
+
+2004
+01:29:59,250 --> 01:30:03,060
+There are beginning to
+be some companies that
+
+2005
+01:30:03,060 --> 01:30:06,300
+will do like SysML training
+courses that will sit down
+
+2006
+01:30:06,300 --> 01:30:08,940
+for a day or a week
+and teach you SysML,
+
+2007
+01:30:08,940 --> 01:30:11,544
+basically, how to work with the
+model, how to build the model.
+
+2008
+01:30:11,544 --> 01:30:12,710
+I took one of those courses.
+
+2009
+01:30:12,710 --> 01:30:14,557
+It was really great.
+
+2010
+01:30:14,557 --> 01:30:16,140
+Yeah, talk to me if
+you're interested,
+
+2011
+01:30:16,140 --> 01:30:18,059
+and I can steer you
+down the right path.
+
+2012
+01:30:18,059 --> 01:30:19,600
+OLIVIER DE WECK:
+Great, thanks, Mark.
+
+2013
+01:30:19,600 --> 01:30:20,350
+MARK CHODAS: Sure.
+
+2014
+01:30:20,350 --> 01:30:22,400
+OLIVIER DE WECK: Very good.
+
+2015
+01:30:22,400 --> 01:30:25,440
+So we did in 20 minutes what
+usually takes about a week,
+
+2016
+01:30:25,440 --> 01:30:26,887
+right?
+
+2017
+01:30:26,887 --> 01:30:28,470
+MARK CHODAS: There's
+a lot more depth.
+
+2018
+01:30:28,470 --> 01:30:29,550
+There's a lot more depth.
+
+2019
+01:30:29,550 --> 01:30:31,925
+OLIVIER DE WECK: Great, so
+we're going to switch over now
+
+2020
+01:30:31,925 --> 01:30:35,190
+to Modelica, which I think is--
+
+2021
+01:30:35,190 --> 01:30:37,980
+we're going to maybe run a
+couple of minutes over today,
+
+2022
+01:30:37,980 --> 01:30:42,280
+but I think it's important
+we cover all three languages.
+
+2023
+01:30:42,280 --> 01:30:45,370
+So let's get the slides back up.
+
+2024
+01:30:45,370 --> 01:30:47,170
+And I'm going to
+switch here to Narek.
+
+2025
+01:30:47,170 --> 01:30:49,780
+He's another doctoral
+student in the group.
+
+2026
+01:30:49,780 --> 01:30:56,514
+And so introduce yourself and
+then tell us about Modelica.
+
+2027
+01:30:56,514 --> 01:30:58,700
+NAREK SHOUGARIAN: Thank you.
+
+2028
+01:30:58,700 --> 01:30:59,304
+OLIVIER DE WECK: Are
+you using this computer
+
+2029
+01:30:59,304 --> 01:31:00,470
+for slides or this computer?
+
+2030
+01:31:00,470 --> 01:31:03,707
+NAREK SHOUGARIAN: For the demo,
+I'm going to use this one.
+
+2031
+01:31:03,707 --> 01:31:04,790
+OLIVIER DE WECK: This one?
+
+2032
+01:31:04,790 --> 01:31:05,283
+NAREK SHOUGARIAN: This one.
+
+2033
+01:31:05,283 --> 01:31:06,366
+OLIVIER DE WECK: This one.
+
+2034
+01:31:15,054 --> 01:31:16,220
+NAREK SHOUGARIAN: Thank you.
+
+2035
+01:31:16,220 --> 01:31:16,980
+So hello, everyone.
+
+2036
+01:31:16,980 --> 01:31:17,688
+My name is Narek.
+
+2037
+01:31:17,688 --> 01:31:20,720
+I'm a doctoral student
+at AeroAstro here.
+
+2038
+01:31:20,720 --> 01:31:22,964
+My background is in
+gas turbine engines,
+
+2039
+01:31:22,964 --> 01:31:24,380
+and specifically
+I've been looking
+
+2040
+01:31:24,380 --> 01:31:27,110
+at concept generation of gas
+turbine engines, automated
+
+2041
+01:31:27,110 --> 01:31:28,820
+concept generation.
+
+2042
+01:31:28,820 --> 01:31:31,370
+And the way I got
+acquainted with Modelica
+
+2043
+01:31:31,370 --> 01:31:34,490
+was that I needed to be
+able to rapidly reconfigure
+
+2044
+01:31:34,490 --> 01:31:38,120
+different concepts and
+simulate them mathematically,
+
+2045
+01:31:38,120 --> 01:31:39,890
+do physics-based simulations.
+
+2046
+01:31:39,890 --> 01:31:42,440
+So in contrast to the
+first two languages,
+
+2047
+01:31:42,440 --> 01:31:46,100
+Modelica is a lot
+more about rapidly
+
+2048
+01:31:46,100 --> 01:31:48,860
+being able to build
+physical models of systems
+
+2049
+01:31:48,860 --> 01:31:51,660
+and reconfiguring them and
+reusing them for later on.
+
+2050
+01:31:54,400 --> 01:31:57,600
+So like I mentioned,
+Modelica is primarily
+
+2051
+01:31:57,600 --> 01:32:00,390
+about modeling physics-based
+modeling of systems
+
+2052
+01:32:00,390 --> 01:32:04,560
+and rapidly being able to reuse
+models and reconfigure them.
+
+2053
+01:32:04,560 --> 01:32:05,790
+It's a language, again.
+
+2054
+01:32:05,790 --> 01:32:09,519
+It's not a tool like the first
+two that you heard about.
+
+2055
+01:32:09,519 --> 01:32:12,060
+There are many different tools
+which implement this language.
+
+2056
+01:32:12,060 --> 01:32:14,069
+But I'm going to start
+off with just describing
+
+2057
+01:32:14,069 --> 01:32:16,110
+how the language works
+and then go on to describe
+
+2058
+01:32:16,110 --> 01:32:17,700
+which tools that you can use.
+
+2059
+01:32:17,700 --> 01:32:19,950
+In contrast to SysML,
+there are a couple
+
+2060
+01:32:19,950 --> 01:32:22,260
+of really good free tools
+that you can use and rapidly
+
+2061
+01:32:22,260 --> 01:32:22,950
+get into.
+
+2062
+01:32:22,950 --> 01:32:25,440
+And there are a lot
+of libraries that you
+
+2063
+01:32:25,440 --> 01:32:27,450
+can use with hundreds,
+even thousands,
+
+2064
+01:32:27,450 --> 01:32:31,020
+of actually basic components
+that you can use for modeling.
+
+2065
+01:32:31,020 --> 01:32:32,670
+So it's a declarative language.
+
+2066
+01:32:32,670 --> 01:32:35,010
+And what I mean
+by declarative is
+
+2067
+01:32:35,010 --> 01:32:38,700
+that in sequential
+sort of programming,
+
+2068
+01:32:38,700 --> 01:32:39,930
+you write commands.
+
+2069
+01:32:39,930 --> 01:32:42,820
+And you make assignments
+to various parameters.
+
+2070
+01:32:42,820 --> 01:32:45,750
+Here, you just describe
+the governing equations
+
+2071
+01:32:45,750 --> 01:32:48,690
+of the components
+you want to simulate.
+
+2072
+01:32:48,690 --> 01:32:51,300
+And there's no particular
+order in which you do this.
+
+2073
+01:32:51,300 --> 01:32:52,530
+The models are acausal.
+
+2074
+01:32:52,530 --> 01:32:54,480
+There's no direction to flows.
+
+2075
+01:32:54,480 --> 01:32:58,470
+All you really need to do is
+describe what ports, like Mark
+
+2076
+01:32:58,470 --> 01:32:59,376
+mentioned.
+
+2077
+01:32:59,376 --> 01:33:01,500
+It's similar in this
+situation-- what kind of ports
+
+2078
+01:33:01,500 --> 01:33:02,760
+you have, what
+kind of interfaces
+
+2079
+01:33:02,760 --> 01:33:04,710
+the components can have
+with other components,
+
+2080
+01:33:04,710 --> 01:33:08,160
+and the governing equations and
+the parameters and variables.
+
+2081
+01:33:08,160 --> 01:33:10,107
+It's a multi-domain
+modeling language,
+
+2082
+01:33:10,107 --> 01:33:11,940
+so it's like agnostic
+to what kind of domain
+
+2083
+01:33:11,940 --> 01:33:12,689
+you're working in.
+
+2084
+01:33:12,689 --> 01:33:14,640
+It's not particular to
+electrical engineering.
+
+2085
+01:33:14,640 --> 01:33:16,140
+For example, I'm
+going to be showing
+
+2086
+01:33:16,140 --> 01:33:17,820
+an electrical
+engineering example
+
+2087
+01:33:17,820 --> 01:33:20,130
+and also show a gas
+turbine engine example
+
+2088
+01:33:20,130 --> 01:33:22,534
+with aeroelastic vibrations.
+
+2089
+01:33:22,534 --> 01:33:24,450
+So you don't necessarily--
+you're not attached
+
+2090
+01:33:24,450 --> 01:33:26,340
+to any specific domain.
+
+2091
+01:33:26,340 --> 01:33:28,680
+It's also
+object-orientated, and it
+
+2092
+01:33:28,680 --> 01:33:33,390
+enables you to decompose
+systems into subsystems
+
+2093
+01:33:33,390 --> 01:33:36,570
+or recombine them and look
+at them at various levels
+
+2094
+01:33:36,570 --> 01:33:38,020
+of abstraction.
+
+2095
+01:33:38,020 --> 01:33:40,342
+It's designed to be efficient.
+
+2096
+01:33:40,342 --> 01:33:42,300
+So this is a quote from
+Professor Peter Fritzen
+
+2097
+01:33:42,300 --> 01:33:44,310
+at the Linkopings University.
+
+2098
+01:33:44,310 --> 01:33:47,610
+So these are just about
+the scale of problems
+
+2099
+01:33:47,610 --> 01:33:50,632
+that you can solve with
+the Modelica language.
+
+2100
+01:33:50,632 --> 01:33:52,590
+Obviously, it depends on
+what kind of equations
+
+2101
+01:33:52,590 --> 01:33:55,500
+you're talking about,
+but it's designed
+
+2102
+01:33:55,500 --> 01:34:00,540
+to be a very efficient
+way of simulating systems.
+
+2103
+01:34:00,540 --> 01:34:02,610
+So I really want to
+talk a little bit more
+
+2104
+01:34:02,610 --> 01:34:04,950
+about this idea of
+acausal modeling
+
+2105
+01:34:04,950 --> 01:34:06,640
+that I mentioned before.
+
+2106
+01:34:06,640 --> 01:34:09,880
+So on the left hand
+side is an assignment.
+
+2107
+01:34:09,880 --> 01:34:13,530
+And that's typically what you
+do when you program in MATLAB,
+
+2108
+01:34:13,530 --> 01:34:15,890
+just the MATLAB normal scripts.
+
+2109
+01:34:15,890 --> 01:34:19,380
+f is assigned to ma or p is
+assigned the value of rho rt
+
+2110
+01:34:19,380 --> 01:34:21,160
+for the equation
+of state of a gas.
+
+2111
+01:34:21,160 --> 01:34:22,950
+And what that means
+is that you know
+
+2112
+01:34:22,950 --> 01:34:24,780
+what the mass and
+acceleration are,
+
+2113
+01:34:24,780 --> 01:34:26,030
+and you figure out the force.
+
+2114
+01:34:26,030 --> 01:34:28,040
+You assign that
+value to the force.
+
+2115
+01:34:28,040 --> 01:34:30,505
+In Modelica, there's
+almost none of this.
+
+2116
+01:34:30,505 --> 01:34:32,340
+It's equations not assignments.
+
+2117
+01:34:32,340 --> 01:34:34,470
+And what I mean by
+that is this equation
+
+2118
+01:34:34,470 --> 01:34:36,840
+can be written in any which
+way, as long as your system
+
+2119
+01:34:36,840 --> 01:34:39,865
+has the same number of
+equations as unknowns.
+
+2120
+01:34:39,865 --> 01:34:43,230
+The tool that you're using
+will interpret the language
+
+2121
+01:34:43,230 --> 01:34:44,770
+and will solve your problem.
+
+2122
+01:34:44,770 --> 01:34:46,519
+So you can write this
+in any which way you
+
+2123
+01:34:46,519 --> 01:34:47,670
+want in any order.
+
+2124
+01:34:47,670 --> 01:34:51,150
+As long as your problem
+is properly constrained,
+
+2125
+01:34:51,150 --> 01:34:53,030
+the tool that you're
+using will interpret it
+
+2126
+01:34:53,030 --> 01:34:54,854
+and solve the problem for you.
+
+2127
+01:34:58,050 --> 01:35:04,230
+So just to go into a little bit
+more detail, all of Modelica's
+
+2128
+01:35:04,230 --> 01:35:06,810
+and also other acausal
+modeling language that I'll
+
+2129
+01:35:06,810 --> 01:35:08,350
+mention in a little bit--
+
+2130
+01:35:08,350 --> 01:35:11,460
+which one of them is Simscape--
+
+2131
+01:35:11,460 --> 01:35:12,850
+have essentially three parts.
+
+2132
+01:35:12,850 --> 01:35:15,880
+They're designed to
+be extremely simple.
+
+2133
+01:35:15,880 --> 01:35:19,810
+The first, like Mark
+mentioned, are ports.
+
+2134
+01:35:19,810 --> 01:35:24,630
+It's essentially identical
+to SysML in a way.
+
+2135
+01:35:24,630 --> 01:35:27,600
+Ports are the ways
+with which components
+
+2136
+01:35:27,600 --> 01:35:31,990
+can share information, material,
+or energy, for example.
+
+2137
+01:35:31,990 --> 01:35:33,752
+You can define any
+kind of port you want.
+
+2138
+01:35:33,752 --> 01:35:36,210
+All you need to really do is
+define what kind of parameters
+
+2139
+01:35:36,210 --> 01:35:38,793
+it carries-- like for gas, for
+example, temperature, pressure,
+
+2140
+01:35:38,793 --> 01:35:43,060
+and mass flow; or for electrical
+ports, voltage and current.
+
+2141
+01:35:43,060 --> 01:35:45,000
+The second part of
+any kind of model
+
+2142
+01:35:45,000 --> 01:35:47,640
+that you're building in
+Modelica or Simscape,
+
+2143
+01:35:47,640 --> 01:35:49,092
+which I'll mention
+a little later,
+
+2144
+01:35:49,092 --> 01:35:50,300
+are variables and parameters.
+
+2145
+01:35:50,300 --> 01:35:51,270
+So you just declare those.
+
+2146
+01:35:51,270 --> 01:35:53,061
+And the third part are
+governing equations.
+
+2147
+01:35:53,061 --> 01:35:55,380
+The point is that
+there's nothing else.
+
+2148
+01:35:55,380 --> 01:35:57,890
+It's just that.
+
+2149
+01:35:57,890 --> 01:36:00,350
+And I'll just brief briefly
+go through a very, very
+
+2150
+01:36:00,350 --> 01:36:01,640
+simple example.
+
+2151
+01:36:01,640 --> 01:36:04,860
+So for example, a capacitor.
+
+2152
+01:36:04,860 --> 01:36:06,710
+This is the entire
+code for a capacitor,
+
+2153
+01:36:06,710 --> 01:36:10,580
+and this is what will generate
+a visual image of a capacitor
+
+2154
+01:36:10,580 --> 01:36:13,640
+with the correct ports for you.
+
+2155
+01:36:13,640 --> 01:36:18,050
+First you have pins that
+carry voltage and current.
+
+2156
+01:36:18,050 --> 01:36:21,740
+So the key thing to notice here
+is that there are fundamentally
+
+2157
+01:36:21,740 --> 01:36:25,930
+two types of variables-- flow
+variables and normal variables
+
+2158
+01:36:25,930 --> 01:36:26,960
+here.
+
+2159
+01:36:26,960 --> 01:36:29,900
+Flow variables are ones
+for which the Kirchoff's
+
+2160
+01:36:29,900 --> 01:36:30,780
+current law applies.
+
+2161
+01:36:30,780 --> 01:36:33,620
+So mass flow, for
+example, every time
+
+2162
+01:36:33,620 --> 01:36:35,240
+you connect 15
+components together
+
+2163
+01:36:35,240 --> 01:36:37,910
+in a network, mass
+flow into that network
+
+2164
+01:36:37,910 --> 01:36:39,240
+needs to be conserved.
+
+2165
+01:36:39,240 --> 01:36:43,010
+So the sum of mass flows
+into any node has to be zero.
+
+2166
+01:36:43,010 --> 01:36:46,774
+That doesn't apply to
+the standard variables.
+
+2167
+01:36:49,560 --> 01:36:54,650
+So then you essentially define
+the parameters, the variables.
+
+2168
+01:36:54,650 --> 01:36:57,170
+And you need to define
+the governing equations.
+
+2169
+01:36:57,170 --> 01:36:58,940
+And that's the
+capacitor for you.
+
+2170
+01:36:58,940 --> 01:37:01,040
+There are slightly more
+complicated components
+
+2171
+01:37:01,040 --> 01:37:05,450
+that you can use, for example
+a pressure drop component.
+
+2172
+01:37:05,450 --> 01:37:06,760
+Did I lose my sharing?
+
+2173
+01:37:06,760 --> 01:37:08,820
+No.
+
+2174
+01:37:08,820 --> 01:37:12,170
+In this case, the main thing
+to take away from this one
+
+2175
+01:37:12,170 --> 01:37:14,480
+is that if you have
+complicated mathematics
+
+2176
+01:37:14,480 --> 01:37:16,940
+describing the fluid
+mechanics in a component,
+
+2177
+01:37:16,940 --> 01:37:19,490
+you can actually
+initialized with one model
+
+2178
+01:37:19,490 --> 01:37:21,890
+and then go to a full
+turbulent simulation.
+
+2179
+01:37:21,890 --> 01:37:25,220
+That's what this is doing here.
+
+2180
+01:37:25,220 --> 01:37:31,450
+So just to get to the tool side
+of the equation, the language I
+
+2181
+01:37:31,450 --> 01:37:33,754
+just showed you, it's the
+same across all the tools.
+
+2182
+01:37:33,754 --> 01:37:35,170
+But there are many
+different tools
+
+2183
+01:37:35,170 --> 01:37:38,710
+which you can use free and
+commercial to actually run
+
+2184
+01:37:38,710 --> 01:37:40,720
+these models.
+
+2185
+01:37:40,720 --> 01:37:44,770
+The main one that you'll be
+using if you want to get deeper
+
+2186
+01:37:44,770 --> 01:37:46,030
+into this is OpenModelica.
+
+2187
+01:37:46,030 --> 01:37:47,140
+It's free.
+
+2188
+01:37:47,140 --> 01:37:50,870
+It's actually become
+quite user-friendly.
+
+2189
+01:37:50,870 --> 01:37:55,650
+And there's a link in the slides
+from which you can download it.
+
+2190
+01:37:55,650 --> 01:37:57,130
+There's one from Wolfram.
+
+2191
+01:37:57,130 --> 01:38:00,204
+It's integrated
+with Mathematica,
+
+2192
+01:38:00,204 --> 01:38:01,120
+which is quite useful.
+
+2193
+01:38:01,120 --> 01:38:03,040
+And there's a free
+trial of it as well.
+
+2194
+01:38:03,040 --> 01:38:04,070
+There's Dymola.
+
+2195
+01:38:04,070 --> 01:38:05,860
+There are other ones.
+
+2196
+01:38:05,860 --> 01:38:07,780
+But mainly, I think
+OpenModelica is the one
+
+2197
+01:38:07,780 --> 01:38:09,544
+that you guys will be using.
+
+2198
+01:38:09,544 --> 01:38:11,660
+OLIVIER DE WECK: OK,
+so in other words,
+
+2199
+01:38:11,660 --> 01:38:14,020
+I think we're going to
+wrap up and then have you
+
+2200
+01:38:14,020 --> 01:38:14,760
+back next week.
+
+2201
+01:38:14,760 --> 01:38:15,225
+NAREK SHOUGARIAN: OK.
+
+2202
+01:38:15,225 --> 01:38:15,900
+OLIVIER DE WECK: Are
+you around next week?
+
+2203
+01:38:15,900 --> 01:38:17,358
+NAREK SHOUGARIAN:
+Yeah, yeah. sure.
+
+2204
+01:38:20,269 --> 01:38:21,810
+OLIVIER DE WECK:
+Just to stay around.
+
+2205
+01:38:21,810 --> 01:38:27,390
+So basically we're going to
+finish this lecture next week.
+
+2206
+01:38:27,390 --> 01:38:30,540
+I think it's important enough
+that you really see the demo
+
+2207
+01:38:30,540 --> 01:38:31,670
+and see sort of the--
+
+2208
+01:38:31,670 --> 01:38:35,250
+and it actually ties in kind of
+nicely with next week's topic
+
+2209
+01:38:35,250 --> 01:38:36,840
+is concept generation.
+
+2210
+01:38:36,840 --> 01:38:40,620
+This is the next step in the V.
+And since Narek, your research
+
+2211
+01:38:40,620 --> 01:38:44,470
+is also on concept generation,
+it'll tie in nicely.
+
+2212
+01:38:44,470 --> 01:38:47,110
+So I think we're going
+to stop here for today.
+
+2213
+01:38:47,110 --> 01:38:50,430
+So you heard about the general
+idea of system modeling
+
+2214
+01:38:50,430 --> 01:38:54,150
+languages that are rigorous,
+that have ontology, syntax
+
+2215
+01:38:54,150 --> 01:38:55,890
+and, semantics.
+
+2216
+01:38:55,890 --> 01:38:58,830
+There's different of these that
+have been proposed, developed.
+
+2217
+01:38:58,830 --> 01:39:00,700
+Some are used more than others.
+
+2218
+01:39:00,700 --> 01:39:03,130
+There's really important
+differences between them.
+
+2219
+01:39:03,130 --> 01:39:05,570
+So OPM is very conceptual.
+
+2220
+01:39:05,570 --> 01:39:09,900
+SysML is based on UML and
+has these different type
+
+2221
+01:39:09,900 --> 01:39:12,960
+of diagrams and can
+really help you flesh out
+
+2222
+01:39:12,960 --> 01:39:14,670
+your design in more detail.
+
+2223
+01:39:14,670 --> 01:39:17,100
+And then Modelica allows
+you to build these blocks.
+
+2224
+01:39:17,100 --> 01:39:20,190
+It's acausal or declarative.
+
+2225
+01:39:20,190 --> 01:39:23,520
+And you can actually simulate
+the physics of the system
+
+2226
+01:39:23,520 --> 01:39:25,920
+pretty readily.
+
+2227
+01:39:25,920 --> 01:39:29,250
+So the big picture here,
+just to wrap up here,
+
+2228
+01:39:29,250 --> 01:39:32,220
+the big picture
+is the following.
+
+2229
+01:39:32,220 --> 01:39:34,750
+And we'll come back
+to this next week.
+
+2230
+01:39:34,750 --> 01:39:39,690
+The big picture is basically
+that system engineering
+
+2231
+01:39:39,690 --> 01:39:41,880
+is in a transition phase.
+
+2232
+01:39:41,880 --> 01:39:44,280
+The classic way of doing
+system engineering really
+
+2233
+01:39:44,280 --> 01:39:48,630
+for the last 50 years is on
+the left, document-centric.
+
+2234
+01:39:48,630 --> 01:39:50,400
+Write your requirements.
+
+2235
+01:39:50,400 --> 01:39:51,870
+Do your drawings.
+
+2236
+01:39:51,870 --> 01:39:54,510
+Even CAD, you know,
+computer-aided design,
+
+2237
+01:39:54,510 --> 01:39:56,670
+is great, but it
+only essentially does
+
+2238
+01:39:56,670 --> 01:39:59,040
+the mechanical
+part of the design.
+
+2239
+01:39:59,040 --> 01:40:02,400
+And so the result of that
+is as you get-- even REXIS,
+
+2240
+01:40:02,400 --> 01:40:05,910
+REXIS is a box, like
+shoe-box size, basically.
+
+2241
+01:40:05,910 --> 01:40:08,910
+And it's going to fit on
+a much bigger spacecraft.
+
+2242
+01:40:08,910 --> 01:40:11,040
+And you saw how much
+complexity is there.
+
+2243
+01:40:11,040 --> 01:40:14,700
+And it gets very, very difficult
+to manage all this information,
+
+2244
+01:40:14,700 --> 01:40:19,440
+to prevent errors, oversights,
+any change that you make.
+
+2245
+01:40:19,440 --> 01:40:21,210
+It doesn't propagate
+automatically
+
+2246
+01:40:21,210 --> 01:40:22,920
+in these documents.
+
+2247
+01:40:22,920 --> 01:40:26,360
+So the transition is
+happening to the right side,
+
+2248
+01:40:26,360 --> 01:40:30,420
+a model-centric way to
+do system engineering.
+
+2249
+01:40:30,420 --> 01:40:33,090
+And think of
+paperless engineering.
+
+2250
+01:40:33,090 --> 01:40:35,730
+Everything you're
+doing is in a model.
+
+2251
+01:40:35,730 --> 01:40:37,110
+The models are linked.
+
+2252
+01:40:37,110 --> 01:40:38,940
+The models are executable.
+
+2253
+01:40:38,940 --> 01:40:42,210
+The models automatically
+propagate any changes
+
+2254
+01:40:42,210 --> 01:40:44,910
+that you make in
+requirements or design.
+
+2255
+01:40:44,910 --> 01:40:46,410
+We're not quite there yet.
+
+2256
+01:40:46,410 --> 01:40:48,960
+But that is where
+things are moving.
+
+2257
+01:40:48,960 --> 01:40:51,780
+And so keep that in mind.
+
+2258
+01:40:51,780 --> 01:40:53,580
+So there's no new
+assignment this week.
+
+2259
+01:40:53,580 --> 01:40:56,987
+So next week, we have A-2,
+which is do, the requirements.
+
+2260
+01:40:56,987 --> 01:40:59,320
+Please let us know if you
+have any-- we're here for you.
+
+2261
+01:40:59,320 --> 01:41:02,370
+So I'm going to have office
+hours now on the WebEx.
+
+2262
+01:41:02,370 --> 01:41:03,210
+You have the link.
+
+2263
+01:41:05,930 --> 01:41:07,600
+If you have any
+questions about A-2,
+
+2264
+01:41:07,600 --> 01:41:12,180
+don't be shy to email me or
+[? Yuanna ?] or [? Leislu ?]
+
+2265
+01:41:12,180 --> 01:41:13,529
+at EPFL.
+
+2266
+01:41:13,529 --> 01:41:15,320
+We're really here to
+answer your questions.
+
+2267
+01:41:15,320 --> 01:41:18,480
+So next week topic, we're
+going to finish on Modelica,
+
+2268
+01:41:18,480 --> 01:41:22,420
+and concept generation is going
+to be sort of our-- creativity
+
+2269
+01:41:22,420 --> 01:41:26,340
+concept generation is
+our main topic next week.

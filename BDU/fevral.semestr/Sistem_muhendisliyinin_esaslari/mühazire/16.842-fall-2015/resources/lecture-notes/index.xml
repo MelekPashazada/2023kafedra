@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Notes on MIT OpenCourseWare</title>
+    <link>/resources/lecture-notes/</link>
+    <description>Recent content in Lecture Notes on MIT OpenCourseWare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/resources/lecture-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fundamentals of Systems Engineering: Commissioning and Operations</title>
+      <link>/resources/mit16_842f15_ses_10_com_opr/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses_10_com_opr/data.json</guid>
+      <description>This resource contains information regarding commissioning and operations.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 1</title>
+      <link>/resources/mit16_842f15_question1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question1/data.json</guid>
+      <description>This resource contains information regarding concept question 1.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 10</title>
+      <link>/resources/mit16_842f15_question10/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question10/data.json</guid>
+      <description>This resource contains information regarding concept question 10.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 2</title>
+      <link>/resources/mit16_842f15_question2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question2/data.json</guid>
+      <description>This resource contains information regarding concept question 2.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 3</title>
+      <link>/resources/mit16_842f15_question3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question3/data.json</guid>
+      <description>This resource contains information regarding concept question 3.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 4</title>
+      <link>/resources/mit16_842f15_question4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question4/data.json</guid>
+      <description>This resource contains information regarding concept question 4.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 5</title>
+      <link>/resources/mit16_842f15_question5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question5/data.json</guid>
+      <description>This resource contains information regarding concept question 5.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 6</title>
+      <link>/resources/mit16_842f15_question6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question6/data.json</guid>
+      <description>This resource contains information regarding concept question 6.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 7</title>
+      <link>/resources/mit16_842f15_question7/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question7/data.json</guid>
+      <description>This resource contains information regarding concept question 7.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 8</title>
+      <link>/resources/mit16_842f15_question8/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question8/data.json</guid>
+      <description>This resource contains information regarding concept question 8.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Concept Question 9</title>
+      <link>/resources/mit16_842f15_question9/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_question9/data.json</guid>
+      <description>This resource contains information regarding concept question 9.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Design Definition and Multidisciplinary Optimization</title>
+      <link>/resources/mit16_842f15_ses_6_des_def/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses_6_des_def/data.json</guid>
+      <description>This resource contains information regarding design definition and multidisciplinary optimization.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Introduction to Systems Modeling Languages</title>
+      <link>/resources/mit16_842f15_ses3_sysmodlg/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses3_sysmodlg/data.json</guid>
+      <description>This resource contains information regarding introduction to systems modeling languages.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Lifecycle Management</title>
+      <link>/resources/mit16_842f15_ses11_life/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses11_life/data.json</guid>
+      <description>This resource contains information regarding verification and validation.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: MBSE and Introduction to CAD (Guest Lecture from Solidworks)</title>
+      <link>/resources/mit16_842f15_ses7mastr_sol/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses7mastr_sol/data.json</guid>
+      <description>This resource contains information regarding MBSE and introduction to CAD (Guest lecture from solidworks).</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Prototyping and Manufacturing</title>
+      <link>/resources/mti16_842f15_ses12_futofse/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mti16_842f15_ses12_futofse/data.json</guid>
+      <description>This resource contains information regarding prototyping and manufacturing.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Requirements Definition</title>
+      <link>/resources/mit16_842f15_ses2_req/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses2_req/data.json</guid>
+      <description>This resource contains information regarding requirements definition.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: SE Standards Question</title>
+      <link>/resources/mit16_842f15_standardsq/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_standardsq/data.json</guid>
+      <description>This resource contains information regarding SE standards question.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: System Architecture and Concept Generation</title>
+      <link>/resources/mti16_842f15_ses4_con_syn/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mti16_842f15_ses4_con_syn/data.json</guid>
+      <description>This resource contains information regarding system architecture and concept generation.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Systems Engineering Overview and Stakeholder Analysis</title>
+      <link>/resources/mit16_842f15_ses1se_ovr_vw/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses1se_ovr_vw/data.json</guid>
+      <description>This resource contains information regarding systems engineering overview and stakeholder analysis.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Systems Integration and Interface Management</title>
+      <link>/resources/mit16_842f15_ses_8_sys_int/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses_8_sys_int/data.json</guid>
+      <description>This resource contains information regarding systems integration and interface management.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Tradespace Exploration and Concept Selection</title>
+      <link>/resources/mit16_842f15_ses_5_design/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses_5_design/data.json</guid>
+      <description>This resource contains information regarding tradespace exploration and concept selection.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Systems Engineering: Verification and Validation</title>
+      <link>/resources/mit16_842f15_ses9_ver/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/mit16_842f15_ses9_ver/data.json</guid>
+      <description>This resource contains information regarding verification and validation.</description>
+    </item>
+    
+    <item>
+      <title>Lecture Notes</title>
+      <link>/pages/lecture-notes/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/lecture-notes/data.json</guid>
+      <description>SES # TOPICS SUPPLEMENTAL FILES 1 Systems Engineering Overview and Stakeholder Analysis (PDF - 4.8MB) SE Concept Question 1 (PDF)
+SE Concept Question 2 (PDF)
+2 Requirements Definition (PDF - 2.4MB) SE Concept Question 3 (PDF)
+SE Concept Question 4 (PDF)
+3 Systems Modeling Languages (PDF - 3.5MB) SE Concept Question 5 (PDF) 4 System Architecture and Concept Generation (PDF - 3.1MB) n/a 5 Concept Selection and Tradespace Exploration (PDF - 2.</description>
+    </item>
+    
+  </channel>
+</rss>

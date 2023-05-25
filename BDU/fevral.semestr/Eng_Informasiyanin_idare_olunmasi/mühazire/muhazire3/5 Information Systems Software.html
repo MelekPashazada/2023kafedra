@@ -1,0 +1,812 @@
+
+<!-- saved from url=(0048)https://www.umsl.edu/~joshik/msis480/chapt05.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>5 Information Systems Software</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<font size="7">
+
+</font><p align="center"><font size="7"></font><b><font size="5"><font color="#000000"><u>Chapter 5</u></font></font></b></p><b><font size="5">
+</font>
+
+<p align="center"><font size="5" color="#000000"><u>Information Systems Software</u></font></p>
+
+<p><font color="#000000"><big><big>5.1 Software Overview</big></big></font></p>
+</b>
+
+<p><font color="#000000"><big><big>Computer hardware is virtually useless without computer
+software. Software is the programs that are needed to accomplish the input, processing,
+output, storage, and control activities of information systems.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Computer software is typically classified into two
+major types of programs: system software and application software.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>System Software </big></big></font></p>
+<i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Systems software</big></big></font></i></b><font color="#000000"><big><big> are programs that manage the
+resources of the computer system and simplify applications programming. They include
+software such as the operating system, database management systems, networking software,
+translators, and software utilities.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Application Software</big></big></font><i></i></p><i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Application software</big></big></font></i></b><font color="#000000"><big><big> are programs that direct
+the performance of a particular use, or application, of computers to meet the information
+processing needs of end users. They include <font face="WP TypographicSymbols">A</font>off-the-shelf<font face="WP TypographicSymbols">@</font> software such as word processing and spreadsheet
+packages, as well as internally or externally developed software that is designed to meet
+the specific needs of an organization.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Software trends have been away from custom-designed
+one-of-kind programs developed by the professional programmers or end users of an
+organization toward the use of <font face="WP TypographicSymbols">A</font>off-the-shelf<font face="WP TypographicSymbols">@</font> software packages acquired by end users from
+software vendors.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Two types of packages are available: </big></big></font></p>
+<font face="Courier">
+
+</font><p><font face="Courier"></font><font color="#000000"><big><big>1. <i><b>Vertical packages</b></i> - assist
+users within a specific industry segment. Examples include packages that help to manage
+construction projects, keep track of inventory of hospitals, or fast-food outlets.</big></big></font></p>
+<font face="Courier">
+
+</font><p><font face="Courier"></font><font color="#000000"><big><big>2. <i><b>Horizontal packages</b></i> - can
+perform a certain general function, such as accounting, or office automation, for a range
+of businesses. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Relationships between Hardware and Software Components</big></big></font></b><font color="#000000"><big><big>
+[Figure 5.1][Slide 5-3]</big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Figure 5.1</big></big></font></b><font color="#000000"><big><big> is an excellent tool to use to explain
+the relationship that exists between computer systems hardware, systems software, and
+application software. This <font face="WP TypographicSymbols">A</font>onion-skin<font face="WP TypographicSymbols">@</font> model indicates that the outer layers rely on the
+facilities furnished by the inner ones.</big></big></font></p>
+
+<p><font color="#000000"><big><big><b>5.2 Operating Systems</b></big></big></font></p>
+
+<p><font color="#000000"><big><big>The most important system software package for any
+computer is its operating system. Every computer system runs under the control of an
+operating system. Operating systems for computers that are shared by many users are
+considerably more complex than operating systems for personal computers. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>What Does an Operating System Do?</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>The <i><b>operating system</b></i> is the software that
+controls all the resources of a computer system. For example it:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Assigns the needed
+  hardware to programs</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Schedules programs for
+  execution on the processor</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Allocates the memory
+  required for each program</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Assigns the necessary
+  input and output devices</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>5. Manages the data and
+  program files stored in secondary storage</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>6. Maintains file
+  directories and provides access to the data in the files</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>7. Interacts with the users</big></big></font></p>
+</blockquote>
+
+<p><i><b><font color="#000000">&nbsp;</font></b></i></p><i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Multiprogramming</big></big></font></b></i><font color="#000000"><big><big> is the capacity of a computer
+to executing several programs concurrently on the same processor by having one of the
+programs using the processor while others are performing input or output.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Multiprogramming requires that the active parts of the
+programs competing for the processor be available in main memory. <i><b>Virtual memory</b></i>
+is the seemingly expanded capacity of the main memory of the computer, and achieved by
+keeping in the main memory only the immediately needed parts of programs, with the
+complete programs kept in secondary storage.</big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Modes of Computer System Operation</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>Operating systems enable the system they manage to
+operate in various modes. These include batch processing, time sharing, and real-time
+processing.</big></big></font></p>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Batch processing</big></big></font></b></i><font color="#000000"><big><big> Processing programs or
+transactions in batches, without a user<font face="WP TypographicSymbols">'</font>s
+interaction.</big></big></font></p>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Time Sharing </big></big></font></b></i><font color="#000000"><big><big>Systems providing interactive
+processing by allocating a short time slice for the use of the server to each user in
+turn.</big></big></font></p>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Real-time Processing</big></big></font></b></i><font color="#000000"><big><big> Systems that respond to an
+event within a fixed time interval; used for example, in manufacturing plants or to
+collect data from several pieces of equipment in a laboratory.</big></big></font></p>
+
+<p><font color="#000000"><big><big>With the move toward multiprocessors, in which several
+(or even many) processors are configured in a single computer system, multiprocessing
+operating systems have been designed to allocate the work to the multiple processors.
+These systems also support multiprogramming, which allows many programs to compete for the
+processors. </big></big></font><b></b></p><b>
+
+</b><p><b><font color="#000000"><big><big>Operating Systems for Personal Computers</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>The operating systems of personal computers which are
+dedicated to a single user are vastly simpler than the operating systems running larger
+machines, to which hundreds or thousands of users may have simultaneous access. One
+important capability an operating system can offer in a personal computing environment is <i><b>multitasking</b></i>:
+the ability to run several tasks at once on behalf of a user.</big></big></font></p>
+
+<p><font color="#000000"><big><big>The most popular microcomputer operating systems are:</big></big></font></p>
+
+<p><font color="#000000"><big><big>Windows 95 - Windows 95 is an advanced operating system</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><font color="#000000"><big><big>- graphical user interface</big></big></font></p>
+      <p><font color="#000000"><big><big>- true multitasking</big></big></font></p>
+      <p><font color="#000000"><big><big>- network capabilities </big></big></font></p>
+      <p><font color="#000000"><big><big>- multimedia</big></big></font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p><font color="#000000"><big><big>DOS - is an older operating system which was used on
+microcomputers</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <p><font color="#000000"><big><big>- is a single user, single-tasking operating system</big></big></font></p>
+    <p><font color="#000000"><big><big>- can add a GUI interface and multitasking capabilities
+    by using an operating environment such as Microsoft Windows</big></big></font></p>
+  </blockquote>
+</blockquote>
+
+<p><font color="#000000"><big><big>OS/2 Warp - graphical user interface</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><font color="#000000"><big><big>- multitasking</big></big></font></p>
+      <p><font color="#000000"><big><big>- virtual memory capabilities</big></big></font></p>
+      <p><font color="#000000"><big><big>- telecommunications capabilities</big></big></font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p><font color="#000000"><big><big>Windows NT - multitasking network operating system</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <p><font color="#000000"><big><big>- multiuser network operating system</big></big></font></p>
+    <p><font color="#000000"><big><big>- installed on network servers to manage local area
+    networks with high-performance computing requirements</big></big></font></p>
+  </blockquote>
+</blockquote>
+
+<p><font color="#000000"><big><big>UNIX&nbsp;&nbsp;&nbsp;&nbsp; - popular operating system
+that is available for micros, minis, and mainframe computer systems</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <p><font color="#000000"><big><big>- multitasking and multiuser system</big></big></font></p>
+    <p><font color="#000000"><big><big>- installs on network servers</big></big></font></p>
+  </blockquote>
+</blockquote>
+
+<p><font color="#000000"><big><big>MacIntosh System 7 - multitasking</big></big></font></p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><font color="#000000"><big><big>- virtual memory capabilities</big></big></font></p>
+      <p><font color="#000000"><big><big>- graphical user interface</big></big></font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<b>
+
+</b><p><b><font color="#000000"><big><big>User Interface</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>A user interface is a combination of means by which a
+user interacts with the computer system. It allows the end user to communicate with the
+operating system so they can load programs, access files, and accomplish other tasks. The
+three main types of user interfaces are:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Command drive</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Menu drive</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Graphical User Interface
+  (GUI)</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>The most popular graphical user interface is that
+provided by Windows 95. The Windows environment has become a standard platform for
+computers. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>The Goal of Open Systems</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>A drive is to use open systems in organizational
+computing, so that the software and hardware of any vendor can operate with those of any
+other, calls for an operating system that would run on any hardware platform. The term <font face="WP TypographicSymbols">A</font>open system<font face="WP TypographicSymbols">@</font>
+is used as the opposite of proprietary systems of a specific manufacturer. </big></big></font></p>
+
+<p><font color="#000000"><big><big>In open systems, organizations want portability,
+scalability, and interoperability of applications software.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Portable application: can be moved from one computer
+system to another.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Scalable application: is one that can be moved without
+significant reprogramming.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Interoperability: means that machines of various
+vendors and capabilities can work together to produce needed information.</big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>5.3 Personal Productivity Software</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>Personal productivity software is the most common
+applications software. Run on personal computers, these programs assist the user in a
+certain range of tasks. Taken together with professional support systems and systems
+supporting groupwork, personal productivity software is a potent enabler of today's
+knowledge work. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Functions of Personal Productivity Software</big></big></font></b><font color="#000000"><big><big> [Figure
+5.3][Slide 5-4]</big></big></font></p>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Personal productivity software </big></big></font></b></i><font color="#000000"><big><big>enhances its
+user's performance on a specific range of common tasks. This software supports database
+management and analysis, authoring and presentation, and activity and notes tracking. All
+these are software applications. Data management is supported by database management
+systems, while spreadsheet software assists in data analysis. For the needs of authoring
+and presentation, users employ the applications software for word processing, desktop
+publishing, presentation, and multimedia authoring. Personal information management
+software is used to track activities and personal notes. Communications software enables
+the user to connect to a telecommunications network in order to exchange information with
+other users or systems. Web browsers are used to access the resources of the Internet's
+World Wide Web.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Spreadsheets</big></big></font><i></i></p><i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Electronic spreadsheet</big></big></font></i></b><font color="#000000"><big><big> packages are programs
+that are used for analysis, planning, and modelling. They provide electronic replacement
+for more traditional tools such as paper worksheets, pencils, and calculators. In a
+worksheet of rows and columns are stored in the computer's memory and displayed on the
+video screen. Data and formulas are entered into the worksheet and the computer performs
+the calculations based on the formulas entered. A spreadsheet package can also be used as
+a decision support tool to perform what-if analysis.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Database Management</big></big></font></p>
+<i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Database management</big></big></font></i></b><font color="#000000"><big><big> packages facilitate the
+storage, maintenance, and utilization of data in a database that is shared by many users.
+Microcomputer DBMs enables the users to:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Create and maintain a
+  database</big></big></font></p>
+</blockquote>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Query a database with a
+  query language</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Prepare formatted
+  reports</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>In addition, packages offer security features, network
+connectivity, and the ability to present graphical output, as well as to perform
+spreadsheet-type computations. </big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Word Processing</big></big></font><i></i></p><i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Word processing</big></big></font></i></b><font color="#000000"><big><big> packages are programs that
+computerize the creation, edition, and printing of documents by electronically processing
+text data. Word processing is an important application of office automation. Word
+processing is the most popular authoring and presentation activity. In fact, it is the
+most common personal computing application. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Desktop Publishing</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>Organizations use desktop publishing software to
+produce their own printed materials like newsletters, brochures, manuals, and books with
+several type styles, graphics, and colors on each page. The components required to set up
+a modest desktop publishing system include: a high-resolution display, a laser printer,
+desktop publishing software, and perhaps a scanner. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Presentation Software</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>The goal of presentation graphics is to provide
+information in a graphical form that helps end users and mangers understand business
+proposals and performance and make better decisions about them. It is important to note
+that presentation graphics does not replace reports and displays of numbers and text
+material. </big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Multimedia Authoring Software</big></big></font><i></i></p><i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Multimedia authoring software</big></big></font></i></b><font color="#000000"><big><big> enables its users
+to design multimedia presentations. Using these packages, you can develop attractive
+computer-based training (CBT) courseware or customer presentations. This software has
+superior graphic imagery, computer animation, and motion video which may be combined with
+high-fidelity sound in combination with the text.</big></big></font></p>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Hypermedia</big></big></font></b></i><font color="#000000"><big><big> are electronic documents that
+contain multiple forms of media, including text, graphics, video, voice messages, or other
+units of information such as worksheets. In the hypermedia method of information delivery,
+linkages may be established among various items in a large multimedia document. These
+linkages enable the user to move from one topic directly to a related one, instead of
+scanning the information sequentially. Hypertext is a methodology for the construction and
+interactive use of text databases. By definition, hypertext contains only text and a
+limited amount of graphics.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Personal Information Management</big></big></font></p>
+<i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Personal Information management</big></big></font></i></b><font color="#000000"><big><big> (PIM) packages
+are tools that help knowledge workers track tasks, people, projects, commitments, and
+ideas. These packages help end users store, organize, and retrieve text and numerical data
+in the form of notes, lists, clippings, tables, memos, letters, reports, and so on.</big></big></font></p>
+<b>
+
+<p><font color="#000000"><big><big>Communications Software and Web Browser</big></big></font></p>
+<i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Communications software </big></big></font></i></b><font color="#000000"><big><big>enables the user to
+connect to a telecommunications network in order to exchange information with other users
+or systems. The software provides the following capabilities:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Sending and receiving
+  electronic mail</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. File transfer. You can
+  download a program or a data file from a remote computer to your own workstation or upload
+  a file to the remote computer.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Terminal emulation -
+  enabling the personal computer to act as a terminal when required in a particular
+  application.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Sending and receiving a
+  fax</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>More and more frequently, the reason for connecting to
+a telecommunications network is to gain access to the resources of the Internet. Web
+browsers are rapidly becoming one of the most popular categories of software packages. A <i><b>browser</b></i>
+is a program that enables its user to access electronic documents in included in the
+Internet's World Wide Web, a collection of interlinked hypermedia databases distributed
+among remote sites. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>5.4 Programming Languages and their Translators</big></big></font></b><font color="#000000"><big><big>
+[Figure 5.8][Slide 5-5]</big></big></font></p>
+
+<p><font color="#000000"><big><big>Much of the applications software used in an
+organization needs to be programmed or customized. Programming languages are the languages
+which computer programs are written int. A programming language allows a programmer or end
+user to develop the sets of instructions that constitute a computer program. These
+languages have evolved over four generations and can be grouped into five major
+categories:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Machine languages</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Assembler languages</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. High-level languages</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Fourth generation
+  languages</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>5. Object-oriented
+  languages</big></big></font></p>
+</blockquote>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>Machine Languages</big></big></font></b></i><font color="#000000"><big><big>:</big></big></font></p>
+
+<p><font color="#000000"><big><big>Machine languages are the most basic level of
+programming languages. They were the first generation of machine languages.</big></big></font></p>
+<u>
+
+<p><font color="#000000"><big><big>Disadvantages of machine languages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Programs had to be written using binary codes
+  unique to each computer.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Programmers had to have a detailed knowledge of the
+  internal operations of the specific type of CPU they were using.</big></big></font></p>
+  <p><font color="#000000"><big><big>3. Programming was difficult and error-prone</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Programs are not
+  portable to other computers.</big></big></font></p>
+  <b>
+</b></blockquote><b>
+
+<p><i><font color="#000000">&nbsp;</font></i></p><i>
+
+</i></b><p><b><i><font color="#000000"><big><big>Assembler Languages</big></big></font></i></b><font color="#000000"><big><big>:</big></big></font></p>
+
+<p><font color="#000000"><big><big>Assembler languages are the second generation of
+machine languages. They were developed to reduce the difficulties in writing machine
+language programs. Assembly language is also a low-level language (refers to machine
+resources, such as registers and memory addresses), it is also specific to a computer
+model or a series of models.</big></big></font></p>
+
+<p><font color="#000000"><big><big>An assembly language program is translated into a
+machine language by a simple translator called an <i><b>assembler</b></i>. Assembly
+languages are used today only when tight control over computer hardware resources is
+required, such as in certain systems programs, particularly those for real-time computing.</big></big></font></p>
+<u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Uses symbolic coded instructions which are
+  easier to remember</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Programming is simplified as a programmer does not
+  need to know the exact storage location of data and instructions.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Efficient use of
+  computer resources is outweighted by the high costs of very tedious systems development
+  and by lock of program portability.</big></big></font></p>
+  <u>
+</u></blockquote><u>
+
+<p><font color="#000000"><big><big>Disadvantage:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Assembler languages are unique to specific types
+  of computers.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Programs are not
+  portable to other computers.</big></big></font></p>
+</blockquote>
+<i><b>
+
+</b></i><p><i><b><font color="#000000"><big><big>High-Level Languages</big></big></font></b></i><font color="#000000"><big><big> (procedural)</big></big></font></p>
+
+<p><font color="#000000"><big><big>High-level languages are the third generation
+programming languages. These languages provide statements, each of which is translated
+into several machine-language instructions. High-level languages include COBOL (business
+application programs), BASIC (microcomputer end users), FORTRAN (scientific and
+engineering applications), and more popular today are C, C++, and Visual Basic.</big></big></font></p>
+<u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Easier to learn and understand than an assembler
+  language as instructions (<u>statements)</u> that resemble human language or the standard
+  notation of mathematics.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Have less-rigid rules, forms, and syntaxes, so the
+  potential for error is reduced.</big></big></font></p>
+  <p><font color="#000000"><big><big>3. Are machine-independent programs therefore programs
+  written in a high-level language do not have to be reprogrammed when a new computer is
+  installed.</big></big></font></p>
+</blockquote>
+
+<blockquote>
+  <p><font color="#000000"><big><big>4. Programmers do not have to learn a new language for
+  each computer they program.</big></big></font></p>
+</blockquote>
+
+<p><u><font color="#000000">&nbsp;</font></u></p><u>
+
+<p><font color="#000000"><big><big>Disadvantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Less efficient than assembler language programs
+  and require a greater amount of computer time for translation into machine instructions.</big></big></font></p>
+</blockquote>
+
+<p><b><font color="#000000">&nbsp;</font></b></p><b>
+
+</b><p><b><font color="#000000"><big><big>Beyond High-Level Programming Languages</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>The fourth-generation languages (4GLs) specify what
+needs to be done rather than detailing steps to doing it. 4GLs include a variety of
+programming languages that are more nonprocedural and conversational than prior languages.
+</big></big></font></p>
+<u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Simplified the programming process.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Use nonprocedural languages that encourage users and
+  programmers to specify the results they want, while the computers determines the sequence
+  of instructions that will accomplish those results. </big></big></font></p>
+  <p><font color="#000000"><big><big>3. Use natural languages that impose no rigid
+  grammatical rules</big></big></font></p>
+</blockquote>
+<u>
+
+<p><font color="#000000"><big><big>Disadvantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Less flexible that other languages</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Less efficient (in terms of processing speeds and
+  amount of storage capacity needed).</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>A number of languages could lay claim to belonging to
+the fifth generation. The following types of programming languages are likely to influence
+the development of such a new paradigm:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Object-oriented
+  programming (OOP) languages tie data elements and the procedures or actions that will be
+  performed on them, together into objects. Examples include Smalltalk, C++, Visual Basic,
+  Java, Turbo C++, C++, Object C+</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Languages that
+  facilitate parallel processing in systems with a large number of processors.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Functional languages
+  (such as LISP), based on the mathematical concept of computation as an application of
+  functions.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Limited subsets of
+  natural languages which can be processed thanks to the progress in artificial
+  intelligence.</big></big></font></p>
+</blockquote>
+<u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. OOP languages are easier to use and more
+  efficient for programming the graphics-oriented user interface required by many
+  applications.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Programmed objects are reusable.</big></big></font></p>
+</blockquote>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Translators: Compilers and Interpreters</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>A variety of software packages are available to help
+programmers develop computer programs. For example, programming language translators are
+programs that translate other programs into machine language instruction codes that
+computers can execute. Other software packages called programming tools help programmers
+write programs by providing program creation and editing facilities.<b> </b>Language
+translator programs (language processors) are programs that translate other programs into
+machine language instruction codes the computer can execute. These programs allow you to
+write your own programs by providing program creation and editing facilities. </big></big></font></p>
+
+<p><font color="#000000"><big><big>Programming language translator programs are known by a
+variety of names.</big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Assembler: </big></big></font></b><font color="#000000"><big><big>translates the symbolic instruction
+codes of programs written in an assembler language into machine language instructions.</big></big></font><b></b></p><b>
+
+</b><p><b><font color="#000000"><big><big>Compiler:</big></big></font></b><font color="#000000"><big><big> translates (compiles) high-level language
+statements (source programs) to machine language programs.</big></big></font><b></b></p><b>
+
+</b><p><b><font color="#000000"><big><big>Interpreter: </big></big></font></b><font color="#000000"><big><big>translates and executes each program
+statement one at a time, instead of first producing a complete machine language program,
+like compilers and assemblers do.</big></big></font><b></b></p><b>
+
+</b><p><b><font color="#000000"><big><big>5.5 Fourth-Generation Languages: (4GL's)</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>4GL's include a variety of programming languages that
+are more nonprocedural and conversational than prior languages. The use of
+fourth-generation languages permits a severalfold increase in productivity in information
+systems development. </big></big></font></p>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Categories of Fourth-Generation Languages and their
+Role in End-User Computing</big></big></font></b><font color="#000000"><big><big> </big></big></font></p>
+
+<p><font color="#000000"><big><big>The distinguishing feature of 4GLs is that they specify
+<i>what is to be</i> done rather than <i>how to do it</i>. Characteristics of 4GL's
+include:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. The languages are
+  nonprocedural</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. They do not specify the
+  complete procedure for accomplishing the task (this is filled in by the software
+  translator for the 4GL).</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. About one-tenth of the
+  number of instructions are required in 4GL as compared to procedural languages. [Figure
+  5.12]</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Principal categories of
+  4GLs are query languages, report generators, and application generators - <b>Figure 5.13
+  [Slide 5-6]</b></big></big></font></p><b>
+  </b><font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>5. Query languages and
+  report generators make it unnecessary to develop certain applications by providing direct
+  access to a database. Application generators make it relatively easy to specify in
+  nonprocedural terms a system for such access.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>6. 4GLs also have software
+  generators for producing decision support and executive information systems.</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>Three categories of 4GLs are:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Query language</big></big></font></p>
+</blockquote>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Report generators</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Application generators</big></big></font></p>
+</blockquote>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Query Languages</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>Query languages enable end users to access databases
+directly. Characteristics of query language include:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Used online for ad-hoc
+  queries, that is, queries that are not predefined</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Result of the query is
+  generally not formatted since it is displayed in a default format selected by the system
+  itself.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Interaction is usually
+  simple, only very simple computations are involved.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Most query languages
+  also make it possible to update databases. With many query languages, it is possible to
+  request a graphical output to a query.</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>Six primary styles for querying a database:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Form fill-in</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Menu selection</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Command-type query
+  language, such as SQL</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Query by example (QBE)</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>5. Direct manipulation</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>6. Restricted natural
+  language</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>Query languages are appropriate for:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Automatic teller
+  machines</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Electronic kiosks</big></big></font></p>
+  <b>
+</b></blockquote><b>
+
+</b><p><b><font color="#000000"><big><big>Report Generators</big></big></font></b></p>
+
+<p><font color="#000000"><big><big>A report generator enables an end user or an
+information systems professional to produce a report without detailing all the necessary
+steps, such as formatting the document. </big></big></font></p>
+
+<p><font color="#000000"><big><big>Characteristics of report generators include:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Offer users greater
+  control over the content and appearance of the output than a query language.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Specified data may be
+  retrieved from the specified files or databases, grouped, ordered, and summarized in a
+  specified way, and formatted for printing as desired.</big></big></font></p>
+</blockquote>
+<b>
+
+</b><p><b><font color="#000000"><big><big>Application Generators</big></big></font></b><font color="#000000"><big><big> </big></big></font></p>
+
+<p><font color="#000000"><big><big>An application generator makes it possible to specify
+an entire application, consisting of several programs, without much detailed coding.
+Characteristics of application generators include:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Most generators produce
+  (generate) code in a procedural language. This code may then be modified to meet the
+  precise needs of the application.</big></big></font></p>
+</blockquote>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Generators targeted
+  toward end users are simple to use. They are targeted to a limited application domain.
+  They produce the code mostly from a specification of the structure of files and databases
+  and from the given layouts of screens and reports. The requisite processing is specified
+  in terms natural to the end users. </big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. A screen-painting
+  facility makes it possible to specify the graphical user interface for the system under
+  development. </big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>4. Powerful application
+  generators require the expertise of information systems professionals, and are
+  general-purpose tools. They often may run on mainframes and minicomputers. </big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>5. Application generators
+  are increasingly integrated into computer-aided software engineering (CASE) environments.</big></big></font></p>
+</blockquote>
+
+<p><u><font color="#000000">&nbsp;</font></u></p><u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Simplified the programming process.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Use nonprocedural languages that encourage users and
+  programmers to specify the results they want, while the computers determines the sequence
+  of instructions that will accomplish those results. </big></big></font></p>
+  <p><font color="#000000"><big><big>3. Use natural languages that impose no rigid
+  grammatical rules</big></big></font></p>
+</blockquote>
+
+<p><u><font color="#000000">&nbsp;</font></u></p><u>
+
+<p><font color="#000000"><big><big>Disadvantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. Less flexible that other languages</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Programs written in 4GLs are generally far less
+  efficient during program execution that programs in high-level languages. Therefore, their
+  use is limited to projects that do not call for such efficiency. </big></big></font></p>
+  <b><p><font color="#000000">&nbsp;</font></p>
+  </b>
+</blockquote>
+<b>
+
+<p><font color="#000000"><big><big>5.6 Object-Oriented Languages</big></big></font></p>
+</b>
+
+<p><font color="#000000"><big><big>The idea of object-oriented programming (OOP) is to
+build programs of software objects, in order to tie data elements and the procedures or
+actions that will be performed on them, together into objects. Examples include Smalltalk,
+C++, Turbo C++, Object C+, Java.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Characteristics of OOP include:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. OOP, objects combine
+  (encapsulate) the data with the operations that act on the data.</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. OOP support class
+  definition and inheritance, creating objects as instances of classes, sending messages to
+  the methods in these objects during program execution, and other features of OOP. </big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. OOP simplifies design of
+  multimedia systems and of graphical user interfaces.</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>Three fundamental concepts of object-oriented
+programming are:</big></big></font></p>
+
+<blockquote>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>1. Objects</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>2. Classes</big></big></font></p>
+  <font face="Courier"></font><p><font face="Courier"></font><font color="#000000"><big><big>3. Inheritance</big></big></font></p>
+</blockquote>
+
+<p><font color="#000000"><big><big>Objects: are the basic components of which programs are
+built. In software, a program component that models a real-world object by encapsulating
+data and instructions that work with these data.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Class: is a template from which objects are created.
+Classes can be defined in a hierarchy.</big></big></font></p>
+
+<p><font color="#000000"><big><big>Inheritance: in object-oriented programming, classes
+lower in the hierarchy inheriting properties (attributes and methods) of the classes
+higher in it.</big></big></font></p>
+<u>
+
+<p><font color="#000000"><big><big>Advantages:</big></big></font></p>
+
+</u><blockquote><u>
+  </u><p><font color="#000000"><big><big>1. OOP languages are easier to use and more
+  efficient for programming the graphics-oriented user interface required by many
+  applications.</big></big></font></p>
+  <p><font color="#000000"><big><big>2. Saves much programming, since inheriting properties
+  means programmed objects are reusable.</big></big></font></p>
+  <p><font color="#000000">&nbsp;</font></p>
+</blockquote>
+
+
+</body></html>

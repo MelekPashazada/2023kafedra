@@ -1,0 +1,8509 @@
+1
+00:00:00,120 --> 00:00:02,460
+The following content is
+provided under a Creative
+
+2
+00:00:02,460 --> 00:00:03,880
+Commons license.
+
+3
+00:00:03,880 --> 00:00:06,090
+Your support will help
+MIT OpenCourseWare
+
+4
+00:00:06,090 --> 00:00:10,180
+continue to offer high quality
+educational resources for free.
+
+5
+00:00:10,180 --> 00:00:12,720
+To make a donation or to
+view additional materials
+
+6
+00:00:12,720 --> 00:00:16,680
+from hundreds of MIT courses,
+visit MIT OpenCourseWare
+
+7
+00:00:16,680 --> 00:00:17,880
+at ocw.mit.edu.
+
+8
+00:00:25,180 --> 00:00:28,000
+OLIVIER DE WECK: So
+let's get to work.
+
+9
+00:00:28,000 --> 00:00:30,730
+The V-Model, well,
+believe it or not,
+
+10
+00:00:30,730 --> 00:00:33,430
+but we've arrived today
+at the bottom of it,
+
+11
+00:00:33,430 --> 00:00:37,660
+the pointy part of the V. We're
+arriving at the bottom of it,
+
+12
+00:00:37,660 --> 00:00:41,260
+and the bottom of
+it is basically you
+
+13
+00:00:41,260 --> 00:00:45,880
+driving down the design in all
+its glory and all its details.
+
+14
+00:00:45,880 --> 00:00:48,220
+And we call this
+design definition,
+
+15
+00:00:48,220 --> 00:00:52,090
+and then I want to talk about
+multidisciplinary optimization,
+
+16
+00:00:52,090 --> 00:00:55,780
+including what happens at
+the CDR, the critical design
+
+17
+00:00:55,780 --> 00:00:56,370
+review.
+
+18
+00:00:56,370 --> 00:00:57,092
+Yeah, go ahead.
+
+19
+00:00:57,092 --> 00:00:59,050
+AUDIENCE: All right, I
+do have a quick question
+
+20
+00:00:59,050 --> 00:01:00,910
+about A4 based to this.
+
+21
+00:01:00,910 --> 00:01:04,629
+Do you want a CAD drawing
+or a hand drawing?
+
+22
+00:01:04,629 --> 00:01:08,790
+OLIVIER DE WECK: I'm fine with
+a nice dimension hand drawing,
+
+23
+00:01:08,790 --> 00:01:13,270
+but we're gonna talk
+about CAD next week.
+
+24
+00:01:13,270 --> 00:01:17,430
+So I do think it would be
+good to have a CAD drawing,
+
+25
+00:01:17,430 --> 00:01:20,950
+but you know CAD drawings can
+come in very different levels
+
+26
+00:01:20,950 --> 00:01:22,420
+of detail, right?
+
+27
+00:01:22,420 --> 00:01:25,480
+So I think it would be
+good to have an idea,
+
+28
+00:01:25,480 --> 00:01:27,100
+if the PDR package--
+
+29
+00:01:27,100 --> 00:01:28,960
+most of the PDR
+packages that you
+
+30
+00:01:28,960 --> 00:01:32,230
+see that have been submitted
+in prior years at CanSat,
+
+31
+00:01:32,230 --> 00:01:34,060
+they do have a CAD
+drawing in there
+
+32
+00:01:34,060 --> 00:01:37,037
+for their sort of
+suggested configuration.
+
+33
+00:01:37,037 --> 00:01:38,620
+And you know, it is
+useful because you
+
+34
+00:01:38,620 --> 00:01:42,380
+get to see whether the
+packaging concept really works.
+
+35
+00:01:42,380 --> 00:01:44,200
+You know, the sketching,
+you can get away
+
+36
+00:01:44,200 --> 00:01:46,700
+with a lot just sketching.
+
+37
+00:01:46,700 --> 00:01:49,060
+So my answer would
+tend to be yes,
+
+38
+00:01:49,060 --> 00:01:51,670
+but if absolutely,
+you don't feel
+
+39
+00:01:51,670 --> 00:01:53,740
+like you need it or you
+don't want to do it,
+
+40
+00:01:53,740 --> 00:01:58,650
+then a nice hand drawing with
+dimensions will do as well.
+
+41
+00:01:58,650 --> 00:02:04,900
+OK, so let's talk about
+the bottom of the V.
+
+42
+00:02:04,900 --> 00:02:06,610
+The other thing I'm
+gonna cover today
+
+43
+00:02:06,610 --> 00:02:09,250
+is this idea of
+multidisciplinary design
+
+44
+00:02:09,250 --> 00:02:12,910
+optimization, and so
+where does that fit in?
+
+45
+00:02:12,910 --> 00:02:16,000
+So you remember we talked about
+concept synthesis, concept
+
+46
+00:02:16,000 --> 00:02:18,520
+generation, screening,
+and selection,
+
+47
+00:02:18,520 --> 00:02:21,430
+and then at the PDR
+stage, you know,
+
+48
+00:02:21,430 --> 00:02:23,590
+we picked one architecture.
+
+49
+00:02:23,590 --> 00:02:25,510
+So today's topic
+is really how do
+
+50
+00:02:25,510 --> 00:02:29,020
+you get this architecture,
+which is shown as this square
+
+51
+00:02:29,020 --> 00:02:31,360
+here to an optimal?
+
+52
+00:02:31,360 --> 00:02:34,060
+And I put optimal in
+quotes here because we're
+
+53
+00:02:34,060 --> 00:02:38,440
+gonna argue what that means, but
+you've refined the design, such
+
+54
+00:02:38,440 --> 00:02:40,510
+that you can go
+present it at the CDR.
+
+55
+00:02:40,510 --> 00:02:44,080
+So you take this box here,
+which is your concept,
+
+56
+00:02:44,080 --> 00:02:45,340
+and you open the box--
+
+57
+00:02:45,340 --> 00:02:46,900
+you can see this on the right--
+
+58
+00:02:46,900 --> 00:02:49,360
+and you really dive
+into the details
+
+59
+00:02:49,360 --> 00:02:51,880
+of the various
+subsystems and components
+
+60
+00:02:51,880 --> 00:02:53,440
+and how they're connected.
+
+61
+00:02:53,440 --> 00:02:57,200
+And what you're trying to
+do is fine tune your design.
+
+62
+00:02:57,200 --> 00:02:58,970
+So this is shown
+here schematically.
+
+63
+00:02:58,970 --> 00:03:01,840
+Let's say there's a
+design variable X1
+
+64
+00:03:01,840 --> 00:03:04,090
+and you want to find where
+is the optimal point?
+
+65
+00:03:04,090 --> 00:03:07,090
+This point here seems to
+be optimal to minimize
+
+66
+00:03:07,090 --> 00:03:10,390
+metric three and
+that's the design
+
+67
+00:03:10,390 --> 00:03:11,980
+that you're gonna propose.
+
+68
+00:03:11,980 --> 00:03:16,120
+So today's topic really is
+about fine tuning the design
+
+69
+00:03:16,120 --> 00:03:20,050
+and coming up with a
+CDR level design, that's
+
+70
+00:03:20,050 --> 00:03:21,790
+what we want to talk about.
+
+71
+00:03:21,790 --> 00:03:25,040
+And so what I'll cover
+is different topics.
+
+72
+00:03:25,040 --> 00:03:27,580
+So first of all, the
+NASA view of this.
+
+73
+00:03:27,580 --> 00:03:30,280
+It's called the design
+definition process.
+
+74
+00:03:30,280 --> 00:03:33,190
+Then I'll talk about MDO,
+multidisciplinary design
+
+75
+00:03:33,190 --> 00:03:36,730
+optimization, the use
+of so-called CDFs,
+
+76
+00:03:36,730 --> 00:03:39,280
+concurrent design
+facilities, and then
+
+77
+00:03:39,280 --> 00:03:43,220
+finally, what happens at CDR.
+
+78
+00:03:43,220 --> 00:03:47,120
+So the general idea of the
+design solution definition
+
+79
+00:03:47,120 --> 00:03:49,490
+process is that you
+start with something
+
+80
+00:03:49,490 --> 00:03:51,360
+like this on the left.
+
+81
+00:03:51,360 --> 00:03:55,310
+This is a product breakdown
+structure, essentially
+
+82
+00:03:55,310 --> 00:03:58,850
+your system architecture,
+your system decomposition.
+
+83
+00:03:58,850 --> 00:04:02,600
+And on the right side,
+you then translate this
+
+84
+00:04:02,600 --> 00:04:04,790
+to a detailed design, OK?
+
+85
+00:04:04,790 --> 00:04:07,924
+So for a launch
+vehicle, we have,
+
+86
+00:04:07,924 --> 00:04:10,340
+you know, the flight segment,
+this is what-- actually it's
+
+87
+00:04:10,340 --> 00:04:13,820
+gonna fly and it has a payload
+element, the spacecraft
+
+88
+00:04:13,820 --> 00:04:16,980
+bus, and then the launch and
+the launch accommodation.
+
+89
+00:04:16,980 --> 00:04:21,470
+So that's the general idea is
+you have high-level breakdown,
+
+90
+00:04:21,470 --> 00:04:23,630
+but then you need to
+design every piece.
+
+91
+00:04:23,630 --> 00:04:26,720
+You need to have
+chosen your materials.
+
+92
+00:04:26,720 --> 00:04:29,180
+You need to have
+chosen the dimensions.
+
+93
+00:04:29,180 --> 00:04:31,580
+You need to understand
+the interfaces.
+
+94
+00:04:31,580 --> 00:04:34,490
+And for every part, you
+also need to decide what?
+
+95
+00:04:34,490 --> 00:04:37,790
+What's a big decision
+that you need
+
+96
+00:04:37,790 --> 00:04:41,460
+to make when you go to
+the detailed design,
+
+97
+00:04:41,460 --> 00:04:45,850
+beside, you know, material,
+dimensions, software?
+
+98
+00:04:45,850 --> 00:04:50,580
+What is always a
+big decision to make
+
+99
+00:04:50,580 --> 00:04:52,000
+when you do a detailed design?
+
+100
+00:04:55,860 --> 00:04:56,367
+Go ahead.
+
+101
+00:04:56,367 --> 00:04:58,325
+AUDIENCE: Maybe the
+interfaces between the two.
+
+102
+00:04:58,325 --> 00:05:00,116
+OLIVIER DE WECK: Yep,
+interfaces, all that.
+
+103
+00:05:00,116 --> 00:05:03,410
+What I'm trying
+to get at is COTS.
+
+104
+00:05:03,410 --> 00:05:06,440
+Who knows this acronym, COTS?
+
+105
+00:05:06,440 --> 00:05:09,140
+Let's see if the, EPFL,
+anybody know COTS?
+
+106
+00:05:09,140 --> 00:05:09,890
+What does it mean?
+
+107
+00:05:17,030 --> 00:05:19,742
+I think we can't
+hear you right now.
+
+108
+00:05:19,742 --> 00:05:21,200
+AUDIENCE: Commercial
+off the shelf.
+
+109
+00:05:21,200 --> 00:05:23,330
+OLIVIER DE WECK:
+Commercial off the shelf.
+
+110
+00:05:23,330 --> 00:05:27,200
+So you have to decide
+in the detailed design
+
+111
+00:05:27,200 --> 00:05:32,030
+are you going to pick
+components from a catalog,
+
+112
+00:05:32,030 --> 00:05:36,290
+or are you going to custom
+design these components, right?
+
+113
+00:05:36,290 --> 00:05:39,350
+And so one of the
+things at the CDR, that
+
+114
+00:05:39,350 --> 00:05:41,150
+I always ask the question--
+
+115
+00:05:41,150 --> 00:05:43,310
+so you present your CDR design.
+
+116
+00:05:43,310 --> 00:05:47,510
+What percentage, what fraction
+of your parts at the lowest
+
+117
+00:05:47,510 --> 00:05:54,680
+level are COTS and what
+fraction did you custom design?
+
+118
+00:05:54,680 --> 00:05:59,030
+Mike, you've done a lot of
+these unmanned aerial vehicles
+
+119
+00:05:59,030 --> 00:05:59,600
+and so forth.
+
+120
+00:05:59,600 --> 00:06:01,730
+Can you talk a
+little bit about, you
+
+121
+00:06:01,730 --> 00:06:03,890
+know, what's the typical
+fraction of COTS,
+
+122
+00:06:03,890 --> 00:06:07,480
+and how do you make that
+decision when you design,
+
+123
+00:06:07,480 --> 00:06:08,540
+you know, a flying thing?
+
+124
+00:06:11,060 --> 00:06:14,510
+AUDIENCE: It really depends
+on the scale and how robust.
+
+125
+00:06:14,510 --> 00:06:16,490
+The problem with COTS
+in the unmanned world
+
+126
+00:06:16,490 --> 00:06:20,422
+is that you can easily
+go to hobby grade parts.
+
+127
+00:06:20,422 --> 00:06:22,880
+And so if you want to get into
+more of the commercial, kind
+
+128
+00:06:22,880 --> 00:06:26,510
+of more robust, almost
+more like defense
+
+129
+00:06:26,510 --> 00:06:29,510
+kind of, like,
+robustness and you know,
+
+130
+00:06:29,510 --> 00:06:31,010
+durability, you
+really have to start
+
+131
+00:06:31,010 --> 00:06:33,230
+going to custom designed parts.
+
+132
+00:06:33,230 --> 00:06:36,050
+Because you know, if you
+can do a whole design
+
+133
+00:06:36,050 --> 00:06:39,219
+space of, you know, all the
+COTS parts, but you know,
+
+134
+00:06:39,219 --> 00:06:40,760
+they're always just
+kind of, you now,
+
+135
+00:06:40,760 --> 00:06:43,580
+Chinese-made electric motors
+and batteries, and none of them
+
+136
+00:06:43,580 --> 00:06:46,640
+that will perform to,
+like, commercial spec,
+
+137
+00:06:46,640 --> 00:06:50,702
+but it just depends, really,
+what you need for the vehicle.
+
+138
+00:06:50,702 --> 00:06:51,660
+OLIVIER DE WECK: I see.
+
+139
+00:06:51,660 --> 00:06:54,410
+So what you're saying
+is there's a gap.
+
+140
+00:06:54,410 --> 00:06:58,440
+You can get a lot of COTS stuff
+at the hobby shop level, right?
+
+141
+00:06:58,440 --> 00:07:01,880
+So they're pretty affordable
+but low reliability.
+
+142
+00:07:01,880 --> 00:07:05,990
+Or you have really high end,
+very expensive, you know,
+
+143
+00:07:05,990 --> 00:07:07,120
+low production--
+
+144
+00:07:07,120 --> 00:07:09,410
+AUDIENCE: Like traditional
+aerospace grade, yeah.
+
+145
+00:07:09,410 --> 00:07:11,160
+OLIVIER DE WECK: But there's
+not much in the middle.
+
+146
+00:07:11,160 --> 00:07:12,010
+Is that what you're saying?
+
+147
+00:07:12,010 --> 00:07:12,950
+AUDIENCE: Yeah, for sure.
+
+148
+00:07:12,950 --> 00:07:13,220
+Yeah.
+
+149
+00:07:13,220 --> 00:07:14,303
+OLIVIER DE WECK: OK, good.
+
+150
+00:07:14,303 --> 00:07:18,322
+So you know, that's the
+reality of detailed design
+
+151
+00:07:18,322 --> 00:07:19,280
+that you're gonna face.
+
+152
+00:07:19,280 --> 00:07:23,000
+And surprisingly, in kind of
+the formal system engineering
+
+153
+00:07:23,000 --> 00:07:26,550
+methodology, there's not
+a lot of guidance on this.
+
+154
+00:07:26,550 --> 00:07:28,790
+There's not a lot of,
+you know, guidance
+
+155
+00:07:28,790 --> 00:07:31,010
+to say what's the
+optimal fraction
+
+156
+00:07:31,010 --> 00:07:33,260
+of commercial off
+the shelf parts?
+
+157
+00:07:33,260 --> 00:07:37,070
+This is really something you
+have to work out yourself,
+
+158
+00:07:37,070 --> 00:07:40,790
+and depending on, you know,
+whether you're in aerospace
+
+159
+00:07:40,790 --> 00:07:47,990
+or medical devices or automotive
+or making toothpaste, there's--
+
+160
+00:07:47,990 --> 00:07:49,580
+actually, yesterday
+there was also
+
+161
+00:07:49,580 --> 00:07:51,260
+a big case study on diapers.
+
+162
+00:07:51,260 --> 00:07:54,740
+Diapers is a $3 billion
+business, believe it or not.
+
+163
+00:07:54,740 --> 00:07:57,275
+And they were going
+for-- their solution
+
+164
+00:07:57,275 --> 00:08:01,550
+A was to go for a COTS solution,
+you know, a lot of vendors.
+
+165
+00:08:01,550 --> 00:08:03,500
+And then they said, no.
+
+166
+00:08:03,500 --> 00:08:05,990
+It's just gonna give
+us, sort of, average,
+
+167
+00:08:05,990 --> 00:08:07,340
+mediocre performance.
+
+168
+00:08:07,340 --> 00:08:08,990
+We want something much better.
+
+169
+00:08:08,990 --> 00:08:12,260
+So they went for a much
+higher custom design solution.
+
+170
+00:08:12,260 --> 00:08:14,650
+Took them took them
+a while to do it,
+
+171
+00:08:14,650 --> 00:08:16,290
+but it was worth it in the end.
+
+172
+00:08:16,290 --> 00:08:19,160
+So this is a big decision
+you have to make.
+
+173
+00:08:19,160 --> 00:08:22,050
+So the point here
+being, at the end,
+
+174
+00:08:22,050 --> 00:08:23,517
+you have a very detailed design.
+
+175
+00:08:23,517 --> 00:08:24,350
+You have blueprints.
+
+176
+00:08:24,350 --> 00:08:26,906
+You have something you
+can actually build.
+
+177
+00:08:26,906 --> 00:08:32,840
+So you know, this is a list of
+all the things you need to do.
+
+178
+00:08:32,840 --> 00:08:36,841
+You define the solution space,
+develop your alternatives.
+
+179
+00:08:36,841 --> 00:08:38,299
+All the things
+we've already talked
+
+180
+00:08:38,299 --> 00:08:41,360
+about at the conceptual level,
+but you do this at every-- you
+
+181
+00:08:41,360 --> 00:08:43,549
+do it at the subsystem
+level, and even
+
+182
+00:08:43,549 --> 00:08:45,200
+at the component level.
+
+183
+00:08:45,200 --> 00:08:46,670
+What are the alternate designs?
+
+184
+00:08:46,670 --> 00:08:48,760
+Cost performance and schedule.
+
+185
+00:08:48,760 --> 00:08:51,050
+Select your design
+solution, drive it down
+
+186
+00:08:51,050 --> 00:08:54,410
+to the lowest level of
+detail, and then identify
+
+187
+00:08:54,410 --> 00:08:57,890
+the enabling products, which
+would be like support equipment
+
+188
+00:08:57,890 --> 00:08:59,460
+and things like this.
+
+189
+00:08:59,460 --> 00:09:02,690
+So the best illustration
+I can give you
+
+190
+00:09:02,690 --> 00:09:07,550
+why this matters is these two
+pictures I'm gonna show you.
+
+191
+00:09:07,550 --> 00:09:10,040
+The top picture
+that you see here,
+
+192
+00:09:10,040 --> 00:09:14,420
+this is a picture that was drawn
+in the '70s to sell the space
+
+193
+00:09:14,420 --> 00:09:16,640
+shuttle program to US Congress.
+
+194
+00:09:16,640 --> 00:09:18,950
+This was the vision, right?
+
+195
+00:09:18,950 --> 00:09:21,500
+This is the orbiter,
+and you can see
+
+196
+00:09:21,500 --> 00:09:25,250
+it's sitting there in this
+pristine hangar, right, very
+
+197
+00:09:25,250 --> 00:09:28,820
+clean, shiny floors,
+maybe four or five people.
+
+198
+00:09:28,820 --> 00:09:31,550
+The payload bay is open.
+
+199
+00:09:31,550 --> 00:09:35,180
+There's, like, one or two carts
+of ground support equipment.
+
+200
+00:09:35,180 --> 00:09:37,970
+You just load up your new
+satellite, close the doors,
+
+201
+00:09:37,970 --> 00:09:40,250
+and off you go for
+your next mission.
+
+202
+00:09:40,250 --> 00:09:42,770
+That's a reusable vehicle.
+
+203
+00:09:42,770 --> 00:09:49,420
+That's what we wanted, and then
+what we actually got is this.
+
+204
+00:09:49,420 --> 00:09:52,900
+You can't even see
+the orbiter, right?
+
+205
+00:09:52,900 --> 00:09:54,550
+But I promise you,
+it's in there.
+
+206
+00:09:54,550 --> 00:09:56,830
+It's hidden in that scaffolding.
+
+207
+00:09:56,830 --> 00:09:58,570
+So this was the--
+it's retired now,
+
+208
+00:09:58,570 --> 00:10:01,750
+but this was the orbiter
+processing facility at the NASA
+
+209
+00:10:01,750 --> 00:10:03,640
+Kennedy Space Center.
+
+210
+00:10:03,640 --> 00:10:07,750
+And the reality was
+that to turn around
+
+211
+00:10:07,750 --> 00:10:12,190
+an orbiter between flights
+was almost like rebuilding it.
+
+212
+00:10:12,190 --> 00:10:16,990
+And the two subsystems that
+required the most person hours
+
+213
+00:10:16,990 --> 00:10:19,780
+of work were the main engine--
+
+214
+00:10:19,780 --> 00:10:23,200
+the main engine basically had
+to be disassembled and inspected
+
+215
+00:10:23,200 --> 00:10:24,045
+and so forth--
+
+216
+00:10:24,045 --> 00:10:25,295
+and what was the other system?
+
+217
+00:10:27,970 --> 00:10:28,974
+What's that?
+
+218
+00:10:28,974 --> 00:10:29,890
+AUDIENCE: Heat shield.
+
+219
+00:10:29,890 --> 00:10:31,880
+OLIVIER DE WECK: The
+heat shield, the TPS,
+
+220
+00:10:31,880 --> 00:10:33,890
+thermal protection system--
+
+221
+00:10:33,890 --> 00:10:35,160
+if you've ever seen--
+
+222
+00:10:35,160 --> 00:10:38,350
+who's seen the shuttle close up?
+
+223
+00:10:38,350 --> 00:10:40,420
+OK, about half, half here.
+
+224
+00:10:40,420 --> 00:10:42,700
+At EPFL, who's had a
+chance to see the space
+
+225
+00:10:42,700 --> 00:10:45,470
+shuttle, the orbiter, close up?
+
+226
+00:10:45,470 --> 00:10:48,850
+Anybody?
+
+227
+00:10:48,850 --> 00:10:51,730
+Go ahead.
+
+228
+00:10:51,730 --> 00:10:53,174
+AUDIENCE: One or two.
+
+229
+00:10:53,174 --> 00:10:54,340
+OLIVIER DE WECK: One or two.
+
+230
+00:10:54,340 --> 00:10:55,900
+So those of you
+that have seen it,
+
+231
+00:10:55,900 --> 00:10:58,300
+what did you notice
+about the heat shield?
+
+232
+00:10:58,300 --> 00:11:00,520
+Did you notice anything
+about the protection,
+
+233
+00:11:00,520 --> 00:11:03,927
+the thermal protection system?
+
+234
+00:11:03,927 --> 00:11:04,510
+Who's seen it?
+
+235
+00:11:08,820 --> 00:11:12,182
+AUDIENCE: We do not
+hear very well here.
+
+236
+00:11:12,182 --> 00:11:13,640
+OLIVIER DE WECK:
+You can't hear me?
+
+237
+00:11:18,580 --> 00:11:21,680
+So the point I want
+to make here is
+
+238
+00:11:21,680 --> 00:11:24,710
+that the thermal protection
+system, every tile
+
+239
+00:11:24,710 --> 00:11:25,880
+is different.
+
+240
+00:11:25,880 --> 00:11:30,480
+Every tile has a different
+shape, a different curvature,
+
+241
+00:11:30,480 --> 00:11:32,810
+and there were good
+thermodynamic reasons,
+
+242
+00:11:32,810 --> 00:11:36,060
+aerothermodynamic
+reasons for that,
+
+243
+00:11:36,060 --> 00:11:39,410
+but in terms of actually
+designing, manufacturing,
+
+244
+00:11:39,410 --> 00:11:43,340
+and turning around the vehicle,
+it was a nightmare, right?
+
+245
+00:11:43,340 --> 00:11:47,330
+So that it turned out to be
+not a very reusable vehicle
+
+246
+00:11:47,330 --> 00:11:48,350
+in the end, and why?
+
+247
+00:11:48,350 --> 00:11:50,180
+Because a lot of
+the detailed design
+
+248
+00:11:50,180 --> 00:11:53,870
+decisions ended
+up being critical,
+
+249
+00:11:53,870 --> 00:11:58,820
+in terms of not really
+giving us what we wanted,
+
+250
+00:11:58,820 --> 00:12:01,980
+in terms of macro level
+properties of the vehicle.
+
+251
+00:12:01,980 --> 00:12:04,880
+So detailed design
+really matters.
+
+252
+00:12:04,880 --> 00:12:07,040
+Did you get that point, at EPFL?
+
+253
+00:12:07,040 --> 00:12:07,610
+Is it clear?
+
+254
+00:12:13,640 --> 00:12:14,309
+AUDIENCE: It is.
+
+255
+00:12:14,309 --> 00:12:15,600
+OLIVIER DE WECK: OK, thank you.
+
+256
+00:12:15,600 --> 00:12:17,680
+So here's some--
+
+257
+00:12:17,680 --> 00:12:19,890
+I'm not going to go
+through this in detail,
+
+258
+00:12:19,890 --> 00:12:23,910
+but here's some flow diagrams,
+process flow diagrams,
+
+259
+00:12:23,910 --> 00:12:26,040
+from the System
+Engineering Handbook
+
+260
+00:12:26,040 --> 00:12:29,090
+that essentially describe,
+you know, how this works.
+
+261
+00:12:29,090 --> 00:12:34,530
+So your inputs are your baseline
+logical decomposition model,
+
+262
+00:12:34,530 --> 00:12:37,620
+which is essentially your
+system architecture, right?
+
+263
+00:12:37,620 --> 00:12:41,190
+And then your baseline derived,
+your detailed technical
+
+264
+00:12:41,190 --> 00:12:42,630
+requirements.
+
+265
+00:12:42,630 --> 00:12:44,779
+You go through all
+these processes,
+
+266
+00:12:44,779 --> 00:12:46,320
+through all these
+steps, and then you
+
+267
+00:12:46,320 --> 00:12:48,360
+end up with a whole
+bunch of outputs, which
+
+268
+00:12:48,360 --> 00:12:52,620
+are more detailed requirements.
+
+269
+00:12:52,620 --> 00:12:54,380
+The specifications,
+do you remember,
+
+270
+00:12:54,380 --> 00:12:58,200
+we teased apart requirements
+and specifications?
+
+271
+00:12:58,200 --> 00:13:00,930
+Requirements are what
+the system should do.
+
+272
+00:13:00,930 --> 00:13:04,470
+Requirement specifications are
+how the system's actually been
+
+273
+00:13:04,470 --> 00:13:06,600
+designed, right, blueprints.
+
+274
+00:13:06,600 --> 00:13:10,270
+So that's specifications
+at the subsystem level.
+
+275
+00:13:10,270 --> 00:13:13,590
+And then you get other things,
+like a verification, validation
+
+276
+00:13:13,590 --> 00:13:16,870
+plan, and then logistics
+and operating procedures.
+
+277
+00:13:16,870 --> 00:13:19,970
+So very, very detailed work.
+
+278
+00:13:19,970 --> 00:13:22,120
+The other thing that's
+important is all the design
+
+279
+00:13:22,120 --> 00:13:24,970
+considerations that go
+into making detailed design
+
+280
+00:13:24,970 --> 00:13:25,580
+decisions.
+
+281
+00:13:25,580 --> 00:13:28,390
+So here's a fairly
+long list of them,
+
+282
+00:13:28,390 --> 00:13:32,290
+and you can group them into
+performance, availability.
+
+283
+00:13:32,290 --> 00:13:34,480
+This is more related
+to reliability.
+
+284
+00:13:34,480 --> 00:13:38,710
+So you could have a system that
+has high nominal performance
+
+285
+00:13:38,710 --> 00:13:41,650
+but is poor reliability,
+right, so it's not available
+
+286
+00:13:41,650 --> 00:13:42,190
+very much.
+
+287
+00:13:42,190 --> 00:13:43,390
+That's not good.
+
+288
+00:13:43,390 --> 00:13:46,420
+We want high performance
+and high availability.
+
+289
+00:13:46,420 --> 00:13:49,000
+That gives you your
+technical effectiveness.
+
+290
+00:13:49,000 --> 00:13:51,280
+And then how do you
+actually operate the system?
+
+291
+00:13:51,280 --> 00:13:54,820
+So operations,
+maintenance, logistics,
+
+292
+00:13:54,820 --> 00:13:56,320
+so that's process efficiency.
+
+293
+00:13:56,320 --> 00:13:59,107
+Together, that gives you
+system effectiveness.
+
+294
+00:13:59,107 --> 00:14:00,940
+And then, of course,
+you have the total cost
+
+295
+00:14:00,940 --> 00:14:03,820
+of operating the system--
+lifecycle cost, total ownership
+
+296
+00:14:03,820 --> 00:14:04,660
+cost.
+
+297
+00:14:04,660 --> 00:14:06,610
+And then system
+effectiveness and cost
+
+298
+00:14:06,610 --> 00:14:09,610
+together, give you what's called
+here affordable operational
+
+299
+00:14:09,610 --> 00:14:10,960
+effectiveness.
+
+300
+00:14:10,960 --> 00:14:14,530
+So I would argue, in terms
+of the space shuttle program,
+
+301
+00:14:14,530 --> 00:14:17,170
+it had high system performance.
+
+302
+00:14:17,170 --> 00:14:21,175
+It had OK system availability.
+
+303
+00:14:21,175 --> 00:14:23,550
+They had-- definitely there
+were some reliability issues,
+
+304
+00:14:23,550 --> 00:14:26,980
+but it was manageable, but
+it had very poor process
+
+305
+00:14:26,980 --> 00:14:28,110
+efficiency--
+
+306
+00:14:28,110 --> 00:14:31,750
+operations, maintenance,
+logistics very, very difficult.
+
+307
+00:14:31,750 --> 00:14:35,830
+So system effectiveness wasn't
+that high, and as a result,
+
+308
+00:14:35,830 --> 00:14:38,580
+the lifecycle cost
+was also very high.
+
+309
+00:14:38,580 --> 00:14:41,400
+There's a very
+famous paper, where
+
+310
+00:14:41,400 --> 00:14:43,740
+after the shuttle
+program was ended,
+
+311
+00:14:43,740 --> 00:14:46,680
+a lifecycle cost
+analysis was done,
+
+312
+00:14:46,680 --> 00:14:52,080
+and it turned out that one
+launch cost about $1.5 billion.
+
+313
+00:14:52,080 --> 00:14:53,880
+So during the program,
+people would say,
+
+314
+00:14:53,880 --> 00:14:56,640
+oh, one launch is
+maybe $500 million,
+
+315
+00:14:56,640 --> 00:15:00,510
+you know, the variable cost,
+and the rest is fixed cost.
+
+316
+00:15:00,510 --> 00:15:03,270
+But once the program is done,
+it doesn't matter anymore
+
+317
+00:15:03,270 --> 00:15:05,160
+whether it was fixed
+or variable cost.
+
+318
+00:15:05,160 --> 00:15:08,370
+All you know is what was the
+total cost of the program,
+
+319
+00:15:08,370 --> 00:15:10,560
+how many launches
+did we actually do,
+
+320
+00:15:10,560 --> 00:15:12,180
+and you just take the ratio.
+
+321
+00:15:12,180 --> 00:15:16,200
+And it was $1.5 billion
+per launch of the shuttle.
+
+322
+00:15:16,200 --> 00:15:18,720
+And so I would say
+that's way off from what
+
+323
+00:15:18,720 --> 00:15:20,130
+the original target was.
+
+324
+00:15:20,130 --> 00:15:22,110
+Yeah, Veronica?
+
+325
+00:15:22,110 --> 00:15:24,550
+AUDIENCE: Does that number
+account for crew and crew
+
+326
+00:15:24,550 --> 00:15:25,050
+training?
+
+327
+00:15:27,539 --> 00:15:28,830
+OLIVIER DE WECK: Good question.
+
+328
+00:15:28,830 --> 00:15:29,670
+I think so.
+
+329
+00:15:29,670 --> 00:15:33,060
+I think it basically-- whatever
+was appropriated by Congress
+
+330
+00:15:33,060 --> 00:15:35,580
+for the shuttle
+program, and I think
+
+331
+00:15:35,580 --> 00:15:41,190
+that would include crew
+operations, as well, yeah.
+
+332
+00:15:41,190 --> 00:15:43,790
+So I'm happy to point you
+to that paper, actually.
+
+333
+00:15:43,790 --> 00:15:44,330
+Yes?
+
+334
+00:15:44,330 --> 00:15:46,719
+AUDIENCE: It also accounted
+for R&D costs as well, right?
+
+335
+00:15:46,719 --> 00:15:48,260
+OLIVIER DE WECK:
+Yes, that's correct.
+
+336
+00:15:48,260 --> 00:15:50,000
+It includes everything, all in.
+
+337
+00:15:50,000 --> 00:15:54,400
+R&D costs-- R&D
+took about 10 years
+
+338
+00:15:54,400 --> 00:15:56,540
+and then operations
+was about 30 years.
+
+339
+00:15:59,230 --> 00:16:01,080
+OK, so you see--
+
+340
+00:16:01,080 --> 00:16:04,570
+and of course, within
+these are budget limits.
+
+341
+00:16:04,570 --> 00:16:08,280
+So part of the reason
+why the shuttle didn't
+
+342
+00:16:08,280 --> 00:16:10,140
+have that high
+process efficiency
+
+343
+00:16:10,140 --> 00:16:14,520
+was because the R&D budget
+was capped pretty tightly.
+
+344
+00:16:14,520 --> 00:16:16,470
+So rather than
+optimizing, you know,
+
+345
+00:16:16,470 --> 00:16:19,470
+for maintainability
+and turnaround,
+
+346
+00:16:19,470 --> 00:16:22,560
+they said, we need to have
+the system performance.
+
+347
+00:16:22,560 --> 00:16:24,960
+We need to have reasonable
+system availability,
+
+348
+00:16:24,960 --> 00:16:29,230
+and then the rest, basically, is
+we're gonna deal with it later.
+
+349
+00:16:29,230 --> 00:16:32,160
+So what effectively
+happened is they capped
+
+350
+00:16:32,160 --> 00:16:36,900
+R&D cost, and as a result,
+the lifecycle cost ballooned.
+
+351
+00:16:36,900 --> 00:16:38,400
+I would argue if
+they had spent, you
+
+352
+00:16:38,400 --> 00:16:41,610
+know, two or three
+more years optimizing,
+
+353
+00:16:41,610 --> 00:16:43,200
+you know, maintenance
+and turn around,
+
+354
+00:16:43,200 --> 00:16:47,160
+really making it reusable,
+the lifecycle costs could
+
+355
+00:16:47,160 --> 00:16:52,190
+have been much better, but
+that's not how it worked.
+
+356
+00:16:52,190 --> 00:16:55,580
+So you have a lot of these
+competing requirements.
+
+357
+00:16:55,580 --> 00:16:57,770
+And so I want to
+just ask you this--
+
+358
+00:16:57,770 --> 00:17:00,800
+this is the first concept
+question today, OK?
+
+359
+00:17:00,800 --> 00:17:03,920
+So imagine you're-- this
+is a very detailed design.
+
+360
+00:17:03,920 --> 00:17:07,109
+This is just a bracket here, OK?
+
+361
+00:17:07,109 --> 00:17:11,990
+And this bracket was designed
+so it has, like, a tip load.
+
+362
+00:17:11,990 --> 00:17:15,109
+Think of this as
+a cantilever beam.
+
+363
+00:17:15,109 --> 00:17:18,510
+So it's attached on the
+right side or left side here.
+
+364
+00:17:18,510 --> 00:17:21,650
+You have a load, and then
+this is your displacement
+
+365
+00:17:21,650 --> 00:17:24,140
+under a given load.
+
+366
+00:17:24,140 --> 00:17:28,250
+And these three brackets
+all have the same mass.
+
+367
+00:17:28,250 --> 00:17:31,970
+They use the same
+amount of material, OK?
+
+368
+00:17:31,970 --> 00:17:36,980
+So you can think of this as you
+get from the very simple design
+
+369
+00:17:36,980 --> 00:17:39,830
+to the more intricate design,
+you have more design freedom.
+
+370
+00:17:39,830 --> 00:17:41,150
+So you get better performance.
+
+371
+00:17:41,150 --> 00:17:44,660
+You see the
+displacement goes down,
+
+372
+00:17:44,660 --> 00:17:46,710
+but you also have
+more complexity.
+
+373
+00:17:46,710 --> 00:17:48,680
+So it's more
+difficult to optimize.
+
+374
+00:17:48,680 --> 00:17:51,900
+It's more difficult to
+manufacture and so forth.
+
+375
+00:17:51,900 --> 00:17:55,940
+And so we can actually show
+these three choices here
+
+376
+00:17:55,940 --> 00:17:58,820
+on a manufacturing
+cost, per unit cost,
+
+377
+00:17:58,820 --> 00:18:01,760
+versus the displacement,
+structural displacement
+
+378
+00:18:01,760 --> 00:18:03,290
+under load chart.
+
+379
+00:18:03,290 --> 00:18:05,660
+So our simple design,
+our one bar design,
+
+380
+00:18:05,660 --> 00:18:09,440
+has a displacement of 2.5
+millimeters under load,
+
+381
+00:18:09,440 --> 00:18:13,090
+and it costs about $2 to make.
+
+382
+00:18:13,090 --> 00:18:16,160
+The two-bar design has
+much better performance,
+
+383
+00:18:16,160 --> 00:18:20,990
+like 0.75 or something like
+that, costs about $3 to make.
+
+384
+00:18:20,990 --> 00:18:23,570
+And then this 17-bar
+intricate design
+
+385
+00:18:23,570 --> 00:18:28,670
+has 0.6 millimeters, so the
+best structural performance,
+
+386
+00:18:28,670 --> 00:18:31,760
+but its cost is
+about $8 per piece.
+
+387
+00:18:31,760 --> 00:18:34,910
+So my question to you is
+which of these three designs
+
+388
+00:18:34,910 --> 00:18:39,210
+would you select and why?
+
+389
+00:18:39,210 --> 00:18:44,700
+So if you could go to that
+link, enter your answer,
+
+390
+00:18:44,700 --> 00:18:49,300
+and then we'll look
+at the distribution.
+
+391
+00:18:49,300 --> 00:18:51,180
+So we have 39 responses.
+
+392
+00:18:51,180 --> 00:18:52,750
+That's good.
+
+393
+00:18:52,750 --> 00:18:53,930
+Ah, interesting.
+
+394
+00:18:53,930 --> 00:18:56,700
+OK.
+
+395
+00:18:56,700 --> 00:18:59,430
+So one of you said
+you're gonna go
+
+396
+00:18:59,430 --> 00:19:03,940
+for the super-duper
+17-bar design.
+
+397
+00:19:03,940 --> 00:19:08,800
+Most of you, 74%, said
+the two-bar design.
+
+398
+00:19:08,800 --> 00:19:11,410
+And one of you said one bar.
+
+399
+00:19:11,410 --> 00:19:15,040
+And then eight of you,
+20%, said you're not sure.
+
+400
+00:19:15,040 --> 00:19:17,830
+I guess you need more
+information, right?
+
+401
+00:19:17,830 --> 00:19:22,930
+So who picked the one-bar
+design, the simple design?
+
+402
+00:19:22,930 --> 00:19:28,312
+OK, so please explain
+why you picked that.
+
+403
+00:19:28,312 --> 00:19:29,770
+AUDIENCE: Well,
+for my application.
+
+404
+00:19:29,770 --> 00:19:31,570
+I'm planning on
+mass producing them,
+
+405
+00:19:31,570 --> 00:19:33,280
+and it's for
+something that doesn't
+
+406
+00:19:33,280 --> 00:19:38,110
+need the degree of displacement
+that the other ones are doing,
+
+407
+00:19:38,110 --> 00:19:43,180
+and so I'm really only seeking
+to minimize manufacturing cost,
+
+408
+00:19:43,180 --> 00:19:46,180
+and the one bar is the
+easiest to manufacture
+
+409
+00:19:46,180 --> 00:19:47,910
+and also gives me
+room down the road
+
+410
+00:19:47,910 --> 00:19:50,490
+to iterate if it's not working.
+
+411
+00:19:50,490 --> 00:19:53,430
+OLIVIER DE WECK: OK, so So what
+would be an example, industry
+
+412
+00:19:53,430 --> 00:19:54,280
+or application?
+
+413
+00:19:54,280 --> 00:19:56,380
+AUDIENCE: Like a
+children's toy, perhaps,
+
+414
+00:19:56,380 --> 00:20:04,019
+where you don't need very strict
+requirements on displacement,
+
+415
+00:20:04,019 --> 00:20:05,560
+something that you're
+mass producing.
+
+416
+00:20:05,560 --> 00:20:07,685
+OLIVIER DE WECK: Something
+mass produced, you know,
+
+417
+00:20:07,685 --> 00:20:10,740
+for sort of lower requirements.
+
+418
+00:20:10,740 --> 00:20:14,170
+OK, I think that's
+a valid answer.
+
+419
+00:20:14,170 --> 00:20:16,390
+Most of you said
+the two-bar design.
+
+420
+00:20:16,390 --> 00:20:17,800
+So who said two bars?
+
+421
+00:20:17,800 --> 00:20:21,190
+Let's see at EPFL, who
+picked the two-bar design?
+
+422
+00:20:25,700 --> 00:20:26,400
+AUDIENCE: Sure.
+
+423
+00:20:26,400 --> 00:20:30,550
+It gives you the biggest
+biggest bang for your buck.
+
+424
+00:20:30,550 --> 00:20:35,600
+For not that much more cost, you
+get a much more sturdy design
+
+425
+00:20:35,600 --> 00:20:39,440
+and that's compared
+for the 17-bar one.
+
+426
+00:20:39,440 --> 00:20:41,420
+Really, it's still
+pretty sturdy,
+
+427
+00:20:41,420 --> 00:20:44,120
+but you're paying much
+less, so it seems optimal.
+
+428
+00:20:44,120 --> 00:20:47,390
+OLIVIER DE WECK: Yeah, so if
+you think about this in a Pareto
+
+429
+00:20:47,390 --> 00:20:50,870
+sense, I mean, they're
+all Pareto-optimal,
+
+430
+00:20:50,870 --> 00:20:53,330
+but this one is at the
+knee of the curve, right?
+
+431
+00:20:53,330 --> 00:20:57,310
+So you're getting, you said
+bang for your buck or value.
+
+432
+00:20:57,310 --> 00:21:01,970
+If you did, like, a displacement
+or one over displacement,
+
+433
+00:21:01,970 --> 00:21:07,040
+I guess, per manufacturing cost,
+this one would do pretty well.
+
+434
+00:21:07,040 --> 00:21:10,760
+So that's also a
+very sensible answer.
+
+435
+00:21:10,760 --> 00:21:16,740
+Who picked the 17-bar design,
+the really intricate one?
+
+436
+00:21:16,740 --> 00:21:17,640
+Who picked that?
+
+437
+00:21:17,640 --> 00:21:20,910
+Oh, I think I might have picked
+that when I tried out the form.
+
+438
+00:21:20,910 --> 00:21:25,090
+[LAUGHS] I think so.
+
+439
+00:21:25,090 --> 00:21:26,700
+I can't remember now.
+
+440
+00:21:26,700 --> 00:21:30,710
+It's been already a while ago.
+
+441
+00:21:30,710 --> 00:21:34,140
+So if, indeed, I was the one,
+so how would I justify this?
+
+442
+00:21:34,140 --> 00:21:37,830
+OK, so here this
+bracket will go--
+
+443
+00:21:41,360 --> 00:21:45,060
+this will go on the
+Mars 2020 Rover.
+
+444
+00:21:45,060 --> 00:21:50,280
+And the Rover will see a lot
+of different thermal gradients.
+
+445
+00:21:50,280 --> 00:21:53,160
+You know, it has
+to be very precise
+
+446
+00:21:53,160 --> 00:21:55,560
+because it holds
+scientific instruments that
+
+447
+00:21:55,560 --> 00:21:58,275
+need to be, you know,
+pointing very accurately.
+
+448
+00:22:01,020 --> 00:22:03,210
+Even though the mass here
+is identical, but I think
+
+449
+00:22:03,210 --> 00:22:04,110
+we could shrink this.
+
+450
+00:22:04,110 --> 00:22:06,840
+You know, we get the best
+performance structurally
+
+451
+00:22:06,840 --> 00:22:09,870
+for the mass constraint
+that we were allocated.
+
+452
+00:22:09,870 --> 00:22:12,770
+And cost, you know, this
+is all taxpayer dollars,
+
+453
+00:22:12,770 --> 00:22:15,510
+so this is a government program.
+
+454
+00:22:15,510 --> 00:22:17,220
+So we can spend the money.
+
+455
+00:22:17,220 --> 00:22:19,860
+Of course, I don't
+mean that really,
+
+456
+00:22:19,860 --> 00:22:22,820
+but it is a high-performance
+application.
+
+457
+00:22:22,820 --> 00:22:26,120
+Therefore, even though
+the benefit is only small,
+
+458
+00:22:26,120 --> 00:22:28,330
+that small benefit
+is worth it when
+
+459
+00:22:28,330 --> 00:22:29,580
+you look at the whole mission.
+
+460
+00:22:29,580 --> 00:22:31,950
+So we're we're going
+to pay for that,
+
+461
+00:22:31,950 --> 00:22:35,410
+and we're going to go for
+this high-performance design.
+
+462
+00:22:35,410 --> 00:22:36,900
+Do you see how that works?
+
+463
+00:22:36,900 --> 00:22:38,900
+So the right answer--
+
+464
+00:22:38,900 --> 00:22:41,780
+and I think a lot of you said,
+you know, you're not sure,
+
+465
+00:22:41,780 --> 00:22:43,250
+and it's because--
+
+466
+00:22:43,250 --> 00:22:45,930
+who said you're not sure?
+
+467
+00:22:45,930 --> 00:22:47,779
+Nathan.
+
+468
+00:22:47,779 --> 00:22:49,320
+AUDIENCE: I said
+not sure because you
+
+469
+00:22:49,320 --> 00:22:50,790
+don't know all
+the specifications
+
+470
+00:22:50,790 --> 00:22:53,790
+or what the tolerances are
+or any other information that
+
+471
+00:22:53,790 --> 00:22:55,532
+would lead you to
+make that decision.
+
+472
+00:22:55,532 --> 00:22:57,240
+OLIVIER DE WECK: Right,
+so you know, what
+
+473
+00:22:57,240 --> 00:22:58,500
+are the requirements, right?
+
+474
+00:22:58,500 --> 00:23:00,000
+We don't know the
+requirements here.
+
+475
+00:23:00,000 --> 00:23:02,520
+Are the requirements shall
+or should requirements?
+
+476
+00:23:02,520 --> 00:23:05,520
+If it's a shall
+requirement, what it means
+
+477
+00:23:05,520 --> 00:23:09,135
+is there would be some
+hard limit here, right?
+
+478
+00:23:09,135 --> 00:23:12,570
+The displacement shall be
+less than one millimeter.
+
+479
+00:23:12,570 --> 00:23:16,530
+If that's a hard requirement,
+then this solution falls out,
+
+480
+00:23:16,530 --> 00:23:17,850
+does not satisfy.
+
+481
+00:23:17,850 --> 00:23:19,770
+And if it's a
+should requirement,
+
+482
+00:23:19,770 --> 00:23:22,410
+then it's a goal that
+you're gonna trade off.
+
+483
+00:23:22,410 --> 00:23:24,750
+The point I want to
+make here, this lecture
+
+484
+00:23:24,750 --> 00:23:26,460
+is about detailed design.
+
+485
+00:23:26,460 --> 00:23:28,920
+This is detailed design, right?
+
+486
+00:23:28,920 --> 00:23:32,400
+And you're gonna make hundreds
+or thousands of detailed design
+
+487
+00:23:32,400 --> 00:23:35,580
+decisions just like this
+bracket and together,
+
+488
+00:23:35,580 --> 00:23:37,890
+they're gonna give you, you
+know, the performance cost
+
+489
+00:23:37,890 --> 00:23:40,140
+of your whole system.
+
+490
+00:23:40,140 --> 00:23:42,330
+And so every detailed
+design decision
+
+491
+00:23:42,330 --> 00:23:46,020
+you make needs to be informed
+by the requirements but also
+
+492
+00:23:46,020 --> 00:23:49,590
+the trade-offs between
+these properties.
+
+493
+00:23:49,590 --> 00:23:51,520
+Does that make sense?
+
+494
+00:23:51,520 --> 00:23:52,980
+OK.
+
+495
+00:23:52,980 --> 00:23:55,050
+So and that leads
+us-- and so you
+
+496
+00:23:55,050 --> 00:23:57,240
+want to make sure you
+optimize your system.
+
+497
+00:23:57,240 --> 00:23:58,680
+You want to make sure you get--
+
+498
+00:23:58,680 --> 00:24:00,900
+and I liked, Katya, the
+way you said it-- get
+
+499
+00:24:00,900 --> 00:24:02,280
+the bang for your buck, right?
+
+500
+00:24:02,280 --> 00:24:07,590
+You want to make sure you don't
+have a lot of inefficiencies
+
+501
+00:24:07,590 --> 00:24:08,470
+in your design.
+
+502
+00:24:08,470 --> 00:24:10,290
+So that's what MDO is about.
+
+503
+00:24:10,290 --> 00:24:14,860
+So let me go to MDO
+here, what it is.
+
+504
+00:24:14,860 --> 00:24:18,900
+So there's a technical committee
+in AIAA, the American Institute
+
+505
+00:24:18,900 --> 00:24:22,340
+for Aeronautics
+and Astronautics,
+
+506
+00:24:22,340 --> 00:24:25,620
+that was founded
+about 20 years ago.
+
+507
+00:24:25,620 --> 00:24:28,780
+So it's defined as an evolving
+methodology, a body of methods,
+
+508
+00:24:28,780 --> 00:24:32,430
+techniques, algorithms,
+and related application
+
+509
+00:24:32,430 --> 00:24:35,040
+practices for the design
+of engineering systems,
+
+510
+00:24:35,040 --> 00:24:37,650
+coupled by physical
+phenomena and involving
+
+511
+00:24:37,650 --> 00:24:40,740
+many interacting
+subsystems and parts.
+
+512
+00:24:40,740 --> 00:24:43,050
+So the main things
+you need to do MDO
+
+513
+00:24:43,050 --> 00:24:48,330
+are a mathematical model of the
+system, analysis capability,
+
+514
+00:24:48,330 --> 00:24:50,850
+and in some cases,
+approximation concepts.
+
+515
+00:24:50,850 --> 00:24:52,500
+So what that means is not--
+
+516
+00:24:52,500 --> 00:24:55,500
+if you put all this together,
+it could be very, very slow
+
+517
+00:24:55,500 --> 00:24:56,780
+and computationally heavy.
+
+518
+00:24:56,780 --> 00:24:59,250
+So you might approximate
+some of these things,
+
+519
+00:24:59,250 --> 00:25:01,560
+and I'll explain
+a couple examples.
+
+520
+00:25:01,560 --> 00:25:05,490
+Sensitivity analysis,
+optimization processes,
+
+521
+00:25:05,490 --> 00:25:08,670
+and a human interface-- those
+are the main ingredients
+
+522
+00:25:08,670 --> 00:25:09,240
+of MDO.
+
+523
+00:25:12,250 --> 00:25:14,610
+Who's seen this chart before?
+
+524
+00:25:14,610 --> 00:25:16,800
+OK, about three or four of you.
+
+525
+00:25:16,800 --> 00:25:23,030
+Who's seen this chart before at
+EPFL, this particular graphic?
+
+526
+00:25:23,030 --> 00:25:26,510
+Anybody seen this before?
+
+527
+00:25:26,510 --> 00:25:27,890
+AUDIENCE: Apparently, no one.
+
+528
+00:25:27,890 --> 00:25:29,514
+OLIVIER DE WECK: OK,
+so let me explain.
+
+529
+00:25:29,514 --> 00:25:33,590
+This is a cartoon, OK, and
+I've experienced this myself
+
+530
+00:25:33,590 --> 00:25:36,440
+working at McDonnell
+Douglas in the '90s.
+
+531
+00:25:36,440 --> 00:25:40,430
+So each of these
+airplanes shown here
+
+532
+00:25:40,430 --> 00:25:42,500
+is what the airplane
+would look like
+
+533
+00:25:42,500 --> 00:25:46,400
+if that particular
+discipline or group could
+
+534
+00:25:46,400 --> 00:25:49,160
+call all the shots, OK?
+
+535
+00:25:49,160 --> 00:25:52,720
+So let's look at
+a couple of these.
+
+536
+00:25:52,720 --> 00:25:56,890
+So the controls group is
+all about controllability.
+
+537
+00:25:56,890 --> 00:26:02,030
+So you see the flight control
+surfaces are very big.
+
+538
+00:26:02,030 --> 00:26:03,860
+Now, the problem
+is the linkages,
+
+539
+00:26:03,860 --> 00:26:07,010
+you know, these control
+linkages are on the outside.
+
+540
+00:26:07,010 --> 00:26:08,870
+That's really bad
+for aerodynamics,
+
+541
+00:26:08,870 --> 00:26:14,260
+but the controls people say,
+I don't care about drag.
+
+542
+00:26:14,260 --> 00:26:17,090
+I need to make sure my
+control surfaces are
+
+543
+00:26:17,090 --> 00:26:18,790
+deflecting appropriately.
+
+544
+00:26:18,790 --> 00:26:20,480
+Here's the hydraulics
+group, right?
+
+545
+00:26:20,480 --> 00:26:24,470
+It's all about the
+hydraulic pump, the filters,
+
+546
+00:26:24,470 --> 00:26:26,480
+and getting hydraulic
+pressure to all
+
+547
+00:26:26,480 --> 00:26:28,040
+the different subsystems.
+
+548
+00:26:28,040 --> 00:26:30,650
+You know, the big engine
+here, the power plant group,
+
+549
+00:26:30,650 --> 00:26:32,990
+the engine is the
+most important thing.
+
+550
+00:26:32,990 --> 00:26:35,090
+The loft group-- loft means--
+
+551
+00:26:35,090 --> 00:26:37,100
+lofting is surfaces.
+
+552
+00:26:37,100 --> 00:26:39,630
+You're dealing with
+the shape of surfaces.
+
+553
+00:26:39,630 --> 00:26:41,030
+So let's keep this simple.
+
+554
+00:26:41,030 --> 00:26:43,310
+So we have a little,
+you know, balsa airplane
+
+555
+00:26:43,310 --> 00:26:48,500
+with little straight
+surfaces, very easy for loft.
+
+556
+00:26:48,500 --> 00:26:50,770
+Production is kind of similar.
+
+557
+00:26:50,770 --> 00:26:55,490
+The aerodynamics group wants
+a very nice high aspect ratio
+
+558
+00:26:55,490 --> 00:26:59,120
+wing, very thin, very low drag.
+
+559
+00:26:59,120 --> 00:27:02,810
+Problem is, there's no room
+for passengers or cargo here.
+
+560
+00:27:02,810 --> 00:27:05,360
+You see this, the stress group?
+
+561
+00:27:05,360 --> 00:27:08,950
+They have a nice wing here
+in the shape of an I-beam.
+
+562
+00:27:08,950 --> 00:27:11,930
+I-beams are great, you know,
+this is good if you're a civil
+
+563
+00:27:11,930 --> 00:27:14,390
+engineer but not so much--
+
+564
+00:27:14,390 --> 00:27:16,800
+none of these things
+would work on their own.
+
+565
+00:27:16,800 --> 00:27:19,400
+So what we really
+want is something
+
+566
+00:27:19,400 --> 00:27:23,540
+like this, where all
+these considerations are
+
+567
+00:27:23,540 --> 00:27:28,340
+blended and optimized so we get
+a high-performance system not
+
+568
+00:27:28,340 --> 00:27:30,620
+just a high-performance
+subsystem.
+
+569
+00:27:30,620 --> 00:27:34,250
+Said another way, a
+high-performance system
+
+570
+00:27:34,250 --> 00:27:38,720
+is not the same as just a
+sum of individually optimized
+
+571
+00:27:38,720 --> 00:27:40,100
+subsystems.
+
+572
+00:27:40,100 --> 00:27:44,010
+That's, in a nutshell,
+what MDO is about.
+
+573
+00:27:44,010 --> 00:27:47,000
+So one of the readings
+for today, post readings,
+
+574
+00:27:47,000 --> 00:27:49,415
+is this paper, 6A.
+
+575
+00:27:49,415 --> 00:27:53,420
+And this is based on a big
+workshop we had in Germany
+
+576
+00:27:53,420 --> 00:27:56,302
+about five years ago.
+
+577
+00:27:56,302 --> 00:27:57,260
+That's actually longer.
+
+578
+00:27:57,260 --> 00:27:58,850
+It's probably seven
+years ago by now,
+
+579
+00:27:58,850 --> 00:28:01,190
+but the paper came
+out five years ago
+
+580
+00:28:01,190 --> 00:28:05,074
+called, "MDO, Assessment and
+Direction for Advancement."
+
+581
+00:28:05,074 --> 00:28:06,740
+And this is a pretty
+international group
+
+582
+00:28:06,740 --> 00:28:08,480
+that put this together.
+
+583
+00:28:08,480 --> 00:28:11,360
+And what we do in the paper,
+we describe the history
+
+584
+00:28:11,360 --> 00:28:14,690
+of multidisciplinary
+optimization, where
+
+585
+00:28:14,690 --> 00:28:18,330
+it is today, where it's heading,
+and some of the key milestones.
+
+586
+00:28:18,330 --> 00:28:23,240
+So this chart is essentially
+a kind of history of MDO.
+
+587
+00:28:23,240 --> 00:28:25,520
+I'm just gonna point
+out a few things.
+
+588
+00:28:25,520 --> 00:28:29,460
+The roots of MDO are in
+structural optimization.
+
+589
+00:28:29,460 --> 00:28:32,520
+So you saw the bracket
+with all those--
+
+590
+00:28:32,520 --> 00:28:35,840
+so there's actually a field
+called structural optimization
+
+591
+00:28:35,840 --> 00:28:39,590
+or topology optimization,
+and it's very mature now.
+
+592
+00:28:39,590 --> 00:28:43,290
+So you can buy, in some
+of the CAD packages,
+
+593
+00:28:43,290 --> 00:28:47,450
+there's some specialized tools
+for optimizing structures.
+
+594
+00:28:47,450 --> 00:28:50,600
+And when you look at it,
+it looks like Swiss cheese
+
+595
+00:28:50,600 --> 00:28:53,720
+with big holes, an
+Emmentaler, big holes.
+
+596
+00:28:53,720 --> 00:28:55,760
+You don't need a
+lot of structure
+
+597
+00:28:55,760 --> 00:28:57,180
+that doesn't do work for you.
+
+598
+00:28:57,180 --> 00:29:01,020
+So a lot of these
+structures look like webs,
+
+599
+00:29:01,020 --> 00:29:02,930
+and the reason is
+because the load
+
+600
+00:29:02,930 --> 00:29:05,090
+path has been highly optimized.
+
+601
+00:29:05,090 --> 00:29:09,302
+For example, if you
+look at the A380--
+
+602
+00:29:09,302 --> 00:29:10,760
+I don't have a
+picture right here--
+
+603
+00:29:10,760 --> 00:29:17,320
+but you can look at an A380 wing
+spars and different structures.
+
+604
+00:29:20,000 --> 00:29:22,390
+They have more
+holes than structure
+
+605
+00:29:22,390 --> 00:29:24,680
+because they've been
+highly optimized.
+
+606
+00:29:24,680 --> 00:29:29,930
+So that's the roots of
+MDO, starting in the 1960s.
+
+607
+00:29:29,930 --> 00:29:33,770
+Then, I would say, in the '80s,
+mid-'80s, we started having
+
+608
+00:29:33,770 --> 00:29:36,680
+more complex
+decomposition techniques,
+
+609
+00:29:36,680 --> 00:29:41,180
+and I will describe one
+of these to you today.
+
+610
+00:29:41,180 --> 00:29:43,220
+Optimization
+algorithms were started
+
+611
+00:29:43,220 --> 00:29:46,280
+to be built into
+mainstream programs
+
+612
+00:29:46,280 --> 00:29:50,610
+like Excel, MATLAB, Mathematica.
+
+613
+00:29:50,610 --> 00:29:56,010
+And then more recently,
+you know, in the 2000s,
+
+614
+00:29:56,010 --> 00:29:59,655
+we had commercialization
+of multilevel algorithms,
+
+615
+00:29:59,655 --> 00:30:01,905
+and the one that I'll describe
+to you is called BLISS.
+
+616
+00:30:06,250 --> 00:30:10,040
+So let's talk through a very
+specific example, and then
+
+617
+00:30:10,040 --> 00:30:11,100
+one of those techniques.
+
+618
+00:30:11,100 --> 00:30:13,380
+So here's the example.
+
+619
+00:30:13,380 --> 00:30:17,690
+You're designing a wing,
+and in designing a wing,
+
+620
+00:30:17,690 --> 00:30:22,520
+the two main considerations
+are structural and aerodynamic.
+
+621
+00:30:22,520 --> 00:30:25,970
+So here's a simplified wing.
+
+622
+00:30:25,970 --> 00:30:30,020
+It has a wing area,
+it has a sweep angle,
+
+623
+00:30:30,020 --> 00:30:33,120
+it has an aspect
+ratio, and so forth.
+
+624
+00:30:33,120 --> 00:30:36,110
+And there's loads
+acting on the wing
+
+625
+00:30:36,110 --> 00:30:38,510
+as you're flying
+because of the pressure
+
+626
+00:30:38,510 --> 00:30:40,770
+differential between the
+upper and lower surface.
+
+627
+00:30:40,770 --> 00:30:45,950
+So there's some net force,
+P, acting on this wing.
+
+628
+00:30:45,950 --> 00:30:49,700
+And as a result of that,
+the wing will warp.
+
+629
+00:30:49,700 --> 00:30:53,690
+So you will have some
+twist angle in the wing,
+
+630
+00:30:53,690 --> 00:30:56,570
+and that's just due to the
+structural deformation.
+
+631
+00:30:56,570 --> 00:31:01,640
+So that twist angle and
+the displacements, in turn,
+
+632
+00:31:01,640 --> 00:31:04,990
+will change the drag that
+the wing experiences.
+
+633
+00:31:04,990 --> 00:31:08,120
+So the lift and drag
+of the wing will change
+
+634
+00:31:08,120 --> 00:31:10,180
+as a function of twist angle.
+
+635
+00:31:10,180 --> 00:31:15,800
+But as the lift and drag
+change, the loads, of course,
+
+636
+00:31:15,800 --> 00:31:20,190
+then change as well, and it
+feeds back into the structure.
+
+637
+00:31:20,190 --> 00:31:23,780
+And in this case, what we're
+looking for is maximum range.
+
+638
+00:31:23,780 --> 00:31:27,050
+We want to maximize the
+range of the airplane.
+
+639
+00:31:27,050 --> 00:31:30,410
+And this is a sort
+of simplified version
+
+640
+00:31:30,410 --> 00:31:33,260
+of the range equation, the
+so-called Breguet range
+
+641
+00:31:33,260 --> 00:31:34,530
+equation.
+
+642
+00:31:34,530 --> 00:31:38,450
+And you can see that
+the structure influences
+
+643
+00:31:38,450 --> 00:31:41,450
+the range in two ways--
+directly by weight,
+
+644
+00:31:41,450 --> 00:31:43,430
+the actual weight
+of the structure
+
+645
+00:31:43,430 --> 00:31:48,170
+enters here twice in the range
+equation, and then indirectly
+
+646
+00:31:48,170 --> 00:31:50,510
+through its stiffness, right?
+
+647
+00:31:50,510 --> 00:31:53,000
+The softer it is, the more
+displacements, the more
+
+648
+00:31:53,000 --> 00:31:54,780
+you affect the drag.
+
+649
+00:31:54,780 --> 00:31:59,600
+So it's not so clear then
+what is an optimal wing?
+
+650
+00:31:59,600 --> 00:32:01,700
+Is it the lightest
+wing possible?
+
+651
+00:32:01,700 --> 00:32:05,330
+But the lightest wing possible
+will have a larger twist
+
+652
+00:32:05,330 --> 00:32:09,740
+and may have more drag, which
+will reduce your range, right?
+
+653
+00:32:09,740 --> 00:32:13,600
+So should you optimize
+the wing for lightness
+
+654
+00:32:13,600 --> 00:32:18,350
+or for this minimum
+displacement or some combination
+
+655
+00:32:18,350 --> 00:32:19,880
+or mix of the two?
+
+656
+00:32:19,880 --> 00:32:22,670
+And the answer, of course,
+is it's a mix of the two.
+
+657
+00:32:22,670 --> 00:32:25,010
+There will be a
+sweet spot somewhere,
+
+658
+00:32:25,010 --> 00:32:27,470
+you know, between a very
+stiff and very heavy
+
+659
+00:32:27,470 --> 00:32:31,330
+wing and a very, very
+flexible, lightweight wing.
+
+660
+00:32:31,330 --> 00:32:34,250
+There will be some
+optimal mix of the two,
+
+661
+00:32:34,250 --> 00:32:36,860
+and that's the key here.
+
+662
+00:32:36,860 --> 00:32:40,430
+So let me discuss
+with you briefly--
+
+663
+00:32:40,430 --> 00:32:41,820
+this is just one of the methods.
+
+664
+00:32:41,820 --> 00:32:45,110
+There are several methods for
+doing multidisciplinary design
+
+665
+00:32:45,110 --> 00:32:46,880
+optimization, but
+this is one of them
+
+666
+00:32:46,880 --> 00:32:51,320
+called BLISS, Bi-Level
+Integrated Systems Synthesis.
+
+667
+00:32:51,320 --> 00:32:54,170
+And the general idea
+here in this method
+
+668
+00:32:54,170 --> 00:32:59,420
+is that we have a lower level
+optimization of each subsystem
+
+669
+00:32:59,420 --> 00:33:02,840
+but it's coupled through a
+system level optimization.
+
+670
+00:33:02,840 --> 00:33:05,600
+And what you want is, you
+know, an optimal design
+
+671
+00:33:05,600 --> 00:33:09,110
+at the system level, not
+just optimal subsystems.
+
+672
+00:33:09,110 --> 00:33:11,870
+So the context
+here is we're gonna
+
+673
+00:33:11,870 --> 00:33:15,740
+design a high speed, a
+supersonic business jet.
+
+674
+00:33:15,740 --> 00:33:19,110
+It's kind of shown
+in this gray picture.
+
+675
+00:33:19,110 --> 00:33:22,200
+And we have four
+major subsystems
+
+676
+00:33:22,200 --> 00:33:25,640
+we're gonna consider--
+propulsion, aerodynamics,
+
+677
+00:33:25,640 --> 00:33:28,100
+structures, and then
+the performance, which,
+
+678
+00:33:28,100 --> 00:33:30,890
+in this case, is range, OK?
+
+679
+00:33:30,890 --> 00:33:35,120
+And what's important here in
+decomposing the problem is
+
+680
+00:33:35,120 --> 00:33:37,280
+the x's and the y's.
+
+681
+00:33:37,280 --> 00:33:39,194
+Now, the x's are the
+design variables.
+
+682
+00:33:39,194 --> 00:33:41,360
+Do you remember, we talk
+about the design variables,
+
+683
+00:33:41,360 --> 00:33:44,090
+the knobs you can
+turn as a designer?
+
+684
+00:33:44,090 --> 00:33:46,940
+And so these here
+are-- the upper ones,
+
+685
+00:33:46,940 --> 00:33:49,730
+we call them local design
+variables, you know,
+
+686
+00:33:49,730 --> 00:33:53,360
+like the throttle setting, the
+tail sweep, the wing moment
+
+687
+00:33:53,360 --> 00:34:00,080
+arm, the thickness of the
+wings, the taper ratio.
+
+688
+00:34:00,080 --> 00:34:02,630
+So the idea of a
+local design variable
+
+689
+00:34:02,630 --> 00:34:07,010
+is that design variable only is
+used in one of the subsystems.
+
+690
+00:34:07,010 --> 00:34:10,610
+It's local to that subsystem.
+
+691
+00:34:10,610 --> 00:34:16,429
+So you basically can choose
+that in each of the subsystems,
+
+692
+00:34:16,429 --> 00:34:19,159
+and it doesn't really
+affect directly
+
+693
+00:34:19,159 --> 00:34:21,620
+any of the other
+subsystems-- indirectly, yes,
+
+694
+00:34:21,620 --> 00:34:23,600
+but not directly.
+
+695
+00:34:23,600 --> 00:34:25,130
+And then we have the y's here.
+
+696
+00:34:25,130 --> 00:34:30,000
+The y's are the outputs from
+one subsystem to another.
+
+697
+00:34:30,000 --> 00:34:34,940
+So drag, lift, NZ is
+your maximum load factor,
+
+698
+00:34:34,940 --> 00:34:38,360
+your range, your specific fuel
+consumption, your wing twist,
+
+699
+00:34:38,360 --> 00:34:39,510
+and so forth.
+
+700
+00:34:39,510 --> 00:34:43,250
+So those are outputs from a
+subsystem or discipline that
+
+701
+00:34:43,250 --> 00:34:45,170
+either matter at
+the system level
+
+702
+00:34:45,170 --> 00:34:49,550
+or are required as inputs
+by another subsystem.
+
+703
+00:34:49,550 --> 00:34:52,580
+And then finally, the
+last group here, these
+
+704
+00:34:52,580 --> 00:34:55,010
+are known as the shared
+design variables,
+
+705
+00:34:55,010 --> 00:34:57,470
+so the wing aspect
+ratio, the altitude,
+
+706
+00:34:57,470 --> 00:35:01,460
+mach number, wing sweep.
+
+707
+00:35:01,460 --> 00:35:05,920
+Those are basically required
+by more than one subsystem, so
+
+708
+00:35:05,920 --> 00:35:09,050
+two, three, or
+four, in this case.
+
+709
+00:35:09,050 --> 00:35:11,980
+Then they are considered
+as shared variables,
+
+710
+00:35:11,980 --> 00:35:15,970
+and they would be considered
+system level variables
+
+711
+00:35:15,970 --> 00:35:19,540
+because they matter for
+more than one subsystem.
+
+712
+00:35:19,540 --> 00:35:22,750
+So what this
+particular method does
+
+713
+00:35:22,750 --> 00:35:25,450
+is essentially
+decompose the problem
+
+714
+00:35:25,450 --> 00:35:28,900
+into the various subsystems,
+so in this case, again,
+
+715
+00:35:28,900 --> 00:35:32,330
+aerodynamics, propulsion,
+structures, and range.
+
+716
+00:35:32,330 --> 00:35:36,610
+And these subsystems are sending
+this information to each other
+
+717
+00:35:36,610 --> 00:35:39,430
+and are all tied together
+at the highest level
+
+718
+00:35:39,430 --> 00:35:41,560
+through the shared
+variables, the shared design
+
+719
+00:35:41,560 --> 00:35:45,760
+variables that are shared
+by at least two subsystems.
+
+720
+00:35:45,760 --> 00:35:47,590
+So again, local
+variables are only
+
+721
+00:35:47,590 --> 00:35:51,490
+unique to a specific subsystem,
+and then for the wise,
+
+722
+00:35:51,490 --> 00:35:54,520
+these outputs, internal
+outputs, there's
+
+723
+00:35:54,520 --> 00:35:58,300
+a distinction between
+the Y stars, which
+
+724
+00:35:58,300 --> 00:36:01,750
+are coupling variables that are
+input to a particular subsystem
+
+725
+00:36:01,750 --> 00:36:04,360
+and then the Y hats
+are coupling variables
+
+726
+00:36:04,360 --> 00:36:07,990
+that are output from a
+particular subsystem.
+
+727
+00:36:07,990 --> 00:36:12,610
+So let's zoom in now on
+just one of the subsystems,
+
+728
+00:36:12,610 --> 00:36:17,000
+let's say, aerodynamics,
+and see how this works.
+
+729
+00:36:17,000 --> 00:36:20,800
+So here we're zooming
+in on one subsystem,
+
+730
+00:36:20,800 --> 00:36:22,750
+and that's the aerodynamics.
+
+731
+00:36:22,750 --> 00:36:24,700
+And the idea that
+you can actually
+
+732
+00:36:24,700 --> 00:36:29,480
+optimize just the aerodynamic
+subsystem by itself.
+
+733
+00:36:29,480 --> 00:36:31,930
+So what are the inputs into it?
+
+734
+00:36:31,930 --> 00:36:40,390
+We have aspect ratio, wing
+twist, and W. So what is W?
+
+735
+00:36:40,390 --> 00:36:42,480
+And this is key to this
+particular method--
+
+736
+00:36:42,480 --> 00:36:45,430
+the W are the
+weights, the weights
+
+737
+00:36:45,430 --> 00:36:47,750
+that you give to the outputs.
+
+738
+00:36:47,750 --> 00:36:52,600
+So what you're optimizing here
+is some objective function, f,
+
+739
+00:36:52,600 --> 00:37:01,780
+shown here below, which is W1,
+Y1, plus W2, Y2 plus W3, Y3.
+
+740
+00:37:01,780 --> 00:37:04,460
+So you're either maximizing
+or minimizing that.
+
+741
+00:37:04,460 --> 00:37:05,410
+And what is this here?
+
+742
+00:37:05,410 --> 00:37:09,460
+It's lift, drag, and
+the lift to drag ratio.
+
+743
+00:37:09,460 --> 00:37:12,100
+So what's really cool
+about this method is
+
+744
+00:37:12,100 --> 00:37:17,050
+that what it essentially
+is telling the subsystem
+
+745
+00:37:17,050 --> 00:37:21,340
+is how to properly weight these
+different outputs in order
+
+746
+00:37:21,340 --> 00:37:23,890
+to optimize the
+subsystem, taking into
+
+747
+00:37:23,890 --> 00:37:27,140
+account the system
+level objective.
+
+748
+00:37:27,140 --> 00:37:29,350
+So the weights are
+not pre-defined,
+
+749
+00:37:29,350 --> 00:37:33,310
+but the weights themselves
+are a design variable.
+
+750
+00:37:33,310 --> 00:37:35,950
+And so you can see the
+formulation on the right side.
+
+751
+00:37:35,950 --> 00:37:41,960
+So given Q, which is
+your shared variables,
+
+752
+00:37:41,960 --> 00:37:43,930
+the Y stars, which
+are the inputs
+
+753
+00:37:43,930 --> 00:37:46,780
+from the other subsystems,
+and the weights,
+
+754
+00:37:46,780 --> 00:37:51,820
+minimize your objective function
+by varying your local design
+
+755
+00:37:51,820 --> 00:37:56,660
+variables subject to a
+bunch of constraints, OK?
+
+756
+00:37:56,660 --> 00:38:00,490
+And so what is one
+of the consequences
+
+757
+00:38:00,490 --> 00:38:02,830
+of being able to formulate
+the problem this way?
+
+758
+00:38:02,830 --> 00:38:07,330
+So this could be a very high
+fidelity, aerodynamics model,
+
+759
+00:38:07,330 --> 00:38:11,800
+computational fluid dynamics,
+or it could be what?
+
+760
+00:38:15,410 --> 00:38:18,710
+Or it could be a lower
+fidelity code, right?
+
+761
+00:38:18,710 --> 00:38:22,100
+As long as the inputs and
+the outputs are the same,
+
+762
+00:38:22,100 --> 00:38:27,200
+you can now plug in, you know,
+different fidelity levels
+
+763
+00:38:27,200 --> 00:38:31,010
+of analysis, you know
+something simple or something
+
+764
+00:38:31,010 --> 00:38:33,470
+based on experimental
+results, you
+
+765
+00:38:33,470 --> 00:38:36,890
+know, panel method,
+very high fidelity CFD.
+
+766
+00:38:36,890 --> 00:38:38,960
+This becomes very modular.
+
+767
+00:38:38,960 --> 00:38:40,550
+The other thing
+you can do is you
+
+768
+00:38:40,550 --> 00:38:44,700
+can pre-compute a lot of
+these responses, right?
+
+769
+00:38:44,700 --> 00:38:47,160
+So for a given
+set of inputs, you
+
+770
+00:38:47,160 --> 00:38:53,190
+can pre-compute over a whole
+range of input variables
+
+771
+00:38:53,190 --> 00:38:56,040
+what the response of
+that subsystem will be,
+
+772
+00:38:56,040 --> 00:38:58,290
+and you can store
+that information
+
+773
+00:38:58,290 --> 00:39:00,840
+and then use what are
+known approximation
+
+774
+00:39:00,840 --> 00:39:03,570
+methods, like response
+surface models,
+
+775
+00:39:03,570 --> 00:39:06,900
+to save that information,
+such that when
+
+776
+00:39:06,900 --> 00:39:08,980
+you do the full
+system optimization,
+
+777
+00:39:08,980 --> 00:39:12,090
+you don't have to rerun,
+you know, the detailed codes
+
+778
+00:39:12,090 --> 00:39:12,810
+every time.
+
+779
+00:39:12,810 --> 00:39:16,040
+You can just pull
+from the approximation
+
+780
+00:39:16,040 --> 00:39:18,390
+you've pre-computed already.
+
+781
+00:39:18,390 --> 00:39:20,520
+So that's one of the
+really powerful things
+
+782
+00:39:20,520 --> 00:39:23,120
+about this method.
+
+783
+00:39:23,120 --> 00:39:26,880
+And that's what's shown
+here, is you substitute--
+
+784
+00:39:26,880 --> 00:39:29,700
+you have a series of
+approximation models, one
+
+785
+00:39:29,700 --> 00:39:31,710
+for each of the
+outputs of the system.
+
+786
+00:39:31,710 --> 00:39:32,580
+You see that?
+
+787
+00:39:32,580 --> 00:39:34,860
+So these little
+wiggly things here
+
+788
+00:39:34,860 --> 00:39:37,200
+are essentially an
+approximation of
+
+789
+00:39:37,200 --> 00:39:41,100
+that input/output relationship
+at the subsystem level.
+
+790
+00:39:41,100 --> 00:39:44,730
+Could be an empirical function,
+a neural network, a response
+
+791
+00:39:44,730 --> 00:39:48,540
+surface method, or you
+know, simplified engineering
+
+792
+00:39:48,540 --> 00:39:49,860
+analysis.
+
+793
+00:39:49,860 --> 00:39:53,400
+So you do a lot of this
+work offline ahead of time
+
+794
+00:39:53,400 --> 00:39:55,590
+for each of the subsystems.
+
+795
+00:39:55,590 --> 00:39:57,060
+Does that make sense?
+
+796
+00:39:57,060 --> 00:39:58,980
+Any questions at EPFL?
+
+797
+00:39:58,980 --> 00:40:02,340
+Is that clear how this
+works, at least in theory?
+
+798
+00:40:05,960 --> 00:40:07,520
+AUDIENCE: Everything's
+fine, thanks.
+
+799
+00:40:07,520 --> 00:40:12,500
+OLIVIER DE WECK: OK, so what
+we have now is essentially
+
+800
+00:40:12,500 --> 00:40:17,570
+these subsystem approximations,
+and now we can use them
+
+801
+00:40:17,570 --> 00:40:20,470
+for system level optimization.
+
+802
+00:40:20,470 --> 00:40:23,770
+So now let's look at the
+system level optimization.
+
+803
+00:40:23,770 --> 00:40:27,430
+So that's essentially
+given approximation
+
+804
+00:40:27,430 --> 00:40:30,970
+models for optimized
+subsystem outputs,
+
+805
+00:40:30,970 --> 00:40:34,070
+we want to minimize
+some objective function.
+
+806
+00:40:34,070 --> 00:40:38,920
+So F, here in this case, which
+is a function of our shared
+
+807
+00:40:38,920 --> 00:40:45,820
+variables, our relevant outputs,
+Y star, and the weighting
+
+808
+00:40:45,820 --> 00:40:48,370
+factors, right, the omega--
+
+809
+00:40:48,370 --> 00:40:51,760
+not the omegas, the W's, which
+are the weighting factors given
+
+810
+00:40:51,760 --> 00:40:53,920
+to each of the subsystems.
+
+811
+00:40:53,920 --> 00:40:57,670
+And we of course, have
+to satisfy constraints
+
+812
+00:40:57,670 --> 00:41:00,080
+at the system level.
+
+813
+00:41:00,080 --> 00:41:04,780
+So let me show you an example
+then of what this looks like.
+
+814
+00:41:04,780 --> 00:41:09,250
+So here's our supersonic jet.
+
+815
+00:41:09,250 --> 00:41:12,590
+This is our cycle zero,
+our initial condition.
+
+816
+00:41:12,590 --> 00:41:14,890
+Here's the planned
+form of the jet,
+
+817
+00:41:14,890 --> 00:41:16,900
+and I'm going to show
+you down here range
+
+818
+00:41:16,900 --> 00:41:21,160
+and just one of the design
+variables, or a set of design
+
+819
+00:41:21,160 --> 00:41:24,200
+variables, which is our
+wing box sheet thickness.
+
+820
+00:41:24,200 --> 00:41:29,320
+So you go through this, and
+it converges after 10 cycles
+
+821
+00:41:29,320 --> 00:41:30,340
+already.
+
+822
+00:41:30,340 --> 00:41:34,660
+So this is what our business
+jet looks like after 10 cycles.
+
+823
+00:41:34,660 --> 00:41:37,050
+And you know, you see there's
+a pretty big difference.
+
+824
+00:41:37,050 --> 00:41:40,360
+So the fuselage is much longer.
+
+825
+00:41:40,360 --> 00:41:42,810
+This by the way, this is
+the same in ships, right?
+
+826
+00:41:42,810 --> 00:41:46,900
+Your speed that you can
+reach, your max speed
+
+827
+00:41:46,900 --> 00:41:51,040
+is driven by your fuselage
+length, your water length.
+
+828
+00:41:51,040 --> 00:41:54,430
+You can see the wings have
+a pretty high sweep angle.
+
+829
+00:41:54,430 --> 00:41:58,060
+This is a supersonic jet.
+
+830
+00:41:58,060 --> 00:42:00,370
+And if we look at
+the details, we
+
+831
+00:42:00,370 --> 00:42:03,520
+see that the range
+here, the range
+
+832
+00:42:03,520 --> 00:42:07,960
+is about 3,000 nautical
+miles, and what
+
+833
+00:42:07,960 --> 00:42:11,920
+you see is that the exact
+range that can be achieved
+
+834
+00:42:11,920 --> 00:42:14,210
+and the approximate range merge.
+
+835
+00:42:14,210 --> 00:42:18,850
+So the approximation models
+that you have in this method
+
+836
+00:42:18,850 --> 00:42:19,900
+are only approximate.
+
+837
+00:42:19,900 --> 00:42:21,430
+There's some error.
+
+838
+00:42:21,430 --> 00:42:23,950
+And you know, as you run
+the model several times,
+
+839
+00:42:23,950 --> 00:42:26,050
+several iterations,
+the difference
+
+840
+00:42:26,050 --> 00:42:29,710
+between the approximation and
+the actual high fidelity result
+
+841
+00:42:29,710 --> 00:42:33,310
+gets less and less, so that
+it's actually a feasible design.
+
+842
+00:42:33,310 --> 00:42:36,340
+And then over here, we see
+the different thicknesses
+
+843
+00:42:36,340 --> 00:42:39,770
+for the inner wing
+box, the mid span wing
+
+844
+00:42:39,770 --> 00:42:41,900
+box, and the outer wing box.
+
+845
+00:42:41,900 --> 00:42:44,320
+And you can see that early
+on in the first four or five
+
+846
+00:42:44,320 --> 00:42:47,840
+six iterations, things
+are kind of moving around,
+
+847
+00:42:47,840 --> 00:42:49,570
+but then they're settling out.
+
+848
+00:42:49,570 --> 00:42:54,190
+And so for this maximum
+objective of range,
+
+849
+00:42:54,190 --> 00:42:59,290
+you can see that the inner, mid,
+and outer wing box thicknesses
+
+850
+00:42:59,290 --> 00:43:01,160
+are quite different.
+
+851
+00:43:01,160 --> 00:43:04,930
+So that's the general idea
+here is that this result--
+
+852
+00:43:04,930 --> 00:43:10,630
+this is a fairly detailed design
+was produced based on a system
+
+853
+00:43:10,630 --> 00:43:13,450
+level optimization that
+included consideration
+
+854
+00:43:13,450 --> 00:43:18,370
+of aerodynamic structures,
+propulsion, and so forth.
+
+855
+00:43:18,370 --> 00:43:19,870
+And there are several
+other methods,
+
+856
+00:43:19,870 --> 00:43:23,170
+but this is just one
+of the methods that's
+
+857
+00:43:23,170 --> 00:43:27,010
+been actually quite helpful.
+
+858
+00:43:27,010 --> 00:43:30,130
+The challenges now in MDO,
+in this multidisciplinary
+
+859
+00:43:30,130 --> 00:43:32,530
+optimization are
+different trade-offs.
+
+860
+00:43:32,530 --> 00:43:35,920
+So one trade-off is between
+fidelity versus how expensive
+
+861
+00:43:35,920 --> 00:43:38,290
+is it computationally.
+
+862
+00:43:38,290 --> 00:43:39,760
+So fidelity is over here.
+
+863
+00:43:39,760 --> 00:43:42,580
+So high fidelity
+means, you know,
+
+864
+00:43:42,580 --> 00:43:45,970
+3D finite element model
+analysis, computational fluid
+
+865
+00:43:45,970 --> 00:43:46,999
+dynamics.
+
+866
+00:43:46,999 --> 00:43:48,790
+Then you have sort of
+intermediate fidelity
+
+867
+00:43:48,790 --> 00:43:51,610
+or low fidelity
+empirical models.
+
+868
+00:43:51,610 --> 00:43:55,060
+And then on this axis, we
+have just doing trade studies,
+
+869
+00:43:55,060 --> 00:43:57,070
+meaning you have sort
+of a baseline design
+
+870
+00:43:57,070 --> 00:43:59,960
+and you just explore from
+that baseline design.
+
+871
+00:43:59,960 --> 00:44:03,460
+You do limited optimization
+or iteration or full MDO,
+
+872
+00:44:03,460 --> 00:44:05,770
+exploring the full space.
+
+873
+00:44:05,770 --> 00:44:08,230
+And traditionally,
+you had to choose,
+
+874
+00:44:08,230 --> 00:44:11,300
+am I gonna use high
+fidelity models?
+
+875
+00:44:11,300 --> 00:44:13,850
+But then I can only
+look at a few points.
+
+876
+00:44:13,850 --> 00:44:16,210
+So then the question
+is can you do better?
+
+877
+00:44:16,210 --> 00:44:18,730
+Is there a better
+solution out there?
+
+878
+00:44:18,730 --> 00:44:21,760
+Or you can do lower
+fidelity models
+
+879
+00:44:21,760 --> 00:44:24,610
+and explore the design
+space very widely,
+
+880
+00:44:24,610 --> 00:44:26,050
+and then the
+question is, can you
+
+881
+00:44:26,050 --> 00:44:28,510
+believe the results
+because you've done
+
+882
+00:44:28,510 --> 00:44:31,360
+this with approximate models?
+
+883
+00:44:31,360 --> 00:44:34,840
+So the real challenge here is we
+would like to do high fidelity
+
+884
+00:44:34,840 --> 00:44:37,370
+and explore the
+full design space.
+
+885
+00:44:37,370 --> 00:44:40,750
+So that's one of the big
+research areas in MDO
+
+886
+00:44:40,750 --> 00:44:45,730
+is high fidelity but also very
+computationally efficient.
+
+887
+00:44:45,730 --> 00:44:49,160
+And then the other
+challenge is quite similar.
+
+888
+00:44:49,160 --> 00:44:52,150
+So it's again the
+fidelity here, but then
+
+889
+00:44:52,150 --> 00:44:54,730
+should you just focus
+on one subsystem?
+
+890
+00:44:54,730 --> 00:44:57,070
+How many of the subsystems,
+including, you know,
+
+891
+00:44:57,070 --> 00:45:01,150
+the financial, operations,
+manufacturing considerations,
+
+892
+00:45:01,150 --> 00:45:02,950
+so how many of those
+subsystems do you
+
+893
+00:45:02,950 --> 00:45:06,130
+include in your optimization?
+
+894
+00:45:06,130 --> 00:45:10,930
+And so you know, ideally, you'd
+like to do the complete system,
+
+895
+00:45:10,930 --> 00:45:13,600
+but then you may
+have to sacrifice
+
+896
+00:45:13,600 --> 00:45:14,740
+on some of the fidelity.
+
+897
+00:45:14,740 --> 00:45:19,440
+So that's the breadth
+versus depth trade-off.
+
+898
+00:45:19,440 --> 00:45:22,860
+OK so any questions about--
+
+899
+00:45:22,860 --> 00:45:24,640
+I know this was very fast.
+
+900
+00:45:24,640 --> 00:45:30,450
+I do not expect you, by the
+way, for assignment four or five
+
+901
+00:45:30,450 --> 00:45:33,840
+to do MDO on your CanSat.
+
+902
+00:45:33,840 --> 00:45:37,950
+This is really more to give
+you a feeling for, you know,
+
+903
+00:45:37,950 --> 00:45:40,860
+how far things
+have come and some
+
+904
+00:45:40,860 --> 00:45:42,420
+of the computational
+frameworks that
+
+905
+00:45:42,420 --> 00:45:46,980
+exist to get you to a really
+fine tuned optimized design.
+
+906
+00:45:46,980 --> 00:45:49,050
+If you are interested
+in this, you know,
+
+907
+00:45:49,050 --> 00:45:50,910
+we have the spring class.
+
+908
+00:45:50,910 --> 00:45:56,400
+And you know, I hadn't offered
+this class at EPFL in the past,
+
+909
+00:45:56,400 --> 00:45:59,100
+but we actually do
+offer a distance version
+
+910
+00:45:59,100 --> 00:46:00,810
+with the SDM program.
+
+911
+00:46:00,810 --> 00:46:03,890
+So there may be an option to
+do this at a distance as well.
+
+912
+00:46:03,890 --> 00:46:05,190
+We'll discuss it.
+
+913
+00:46:05,190 --> 00:46:07,860
+But any questions about MDO?
+
+914
+00:46:07,860 --> 00:46:11,550
+What it is, how it works,
+at least in principle?
+
+915
+00:46:11,550 --> 00:46:14,160
+Has anybody done
+MDO kind of work?
+
+916
+00:46:14,160 --> 00:46:16,347
+Sam, go ahead
+
+917
+00:46:16,347 --> 00:46:18,180
+AUDIENCE: I just had
+one question about if--
+
+918
+00:46:18,180 --> 00:46:21,920
+so here, we're looking at
+optimizing on one attribute, so
+
+919
+00:46:21,920 --> 00:46:25,850
+range, but if we have
+multiple attributes,
+
+920
+00:46:25,850 --> 00:46:28,280
+it's still up to
+someone to decide
+
+921
+00:46:28,280 --> 00:46:31,340
+how important those
+attributes are in the end.
+
+922
+00:46:31,340 --> 00:46:33,000
+OLIVIER DE WECK: That's correct.
+
+923
+00:46:33,000 --> 00:46:35,630
+That is exactly
+right, unless you
+
+924
+00:46:35,630 --> 00:46:40,040
+have a way to combine all these
+into one objective function.
+
+925
+00:46:40,040 --> 00:46:43,180
+And to be blatant
+about it, to be-- you
+
+926
+00:46:43,180 --> 00:46:47,080
+know, in the commercial
+world, that's actually clear.
+
+927
+00:46:47,080 --> 00:46:50,550
+It's profit or
+net present value.
+
+928
+00:46:50,550 --> 00:46:53,740
+So if you're designing
+a commercial product
+
+929
+00:46:53,740 --> 00:46:58,220
+in a competitive
+industry, you can actually
+
+930
+00:46:58,220 --> 00:47:00,880
+pretty easily combine
+all this into a long--
+
+931
+00:47:00,880 --> 00:47:05,780
+you know, as long as you include
+sort of the key drivers of,
+
+932
+00:47:05,780 --> 00:47:07,880
+you know, your
+manufacturing costs.
+
+933
+00:47:07,880 --> 00:47:10,970
+If the product is not as
+optimal and not as performant,
+
+934
+00:47:10,970 --> 00:47:14,640
+well, probably, you're not
+gonna be as successful.
+
+935
+00:47:14,640 --> 00:47:16,304
+Your market share
+might be lower.
+
+936
+00:47:16,304 --> 00:47:17,720
+So in the commercial
+world, people
+
+937
+00:47:17,720 --> 00:47:21,800
+are doing MDO with profitability
+as the ultimate objective
+
+938
+00:47:21,800 --> 00:47:23,000
+function.
+
+939
+00:47:23,000 --> 00:47:30,470
+Now, for situations where it's
+not about profit necessarily,
+
+940
+00:47:30,470 --> 00:47:32,626
+but it's about a bunch
+of other considerations,
+
+941
+00:47:32,626 --> 00:47:34,000
+then you can't
+easily combine it.
+
+942
+00:47:34,000 --> 00:47:35,960
+You can still do utility.
+
+943
+00:47:35,960 --> 00:47:38,650
+You can do a utility, you
+know, combine it in utility.
+
+944
+00:47:38,650 --> 00:47:42,020
+But I agree with you, I think
+a good practice is then,
+
+945
+00:47:42,020 --> 00:47:44,930
+in that case, to do
+the multi-objective,
+
+946
+00:47:44,930 --> 00:47:47,630
+and then you're gonna have
+a bunch of solutions that
+
+947
+00:47:47,630 --> 00:47:50,750
+are all non-dominated, right?
+
+948
+00:47:50,750 --> 00:47:53,150
+And then it's a human
+decision making process
+
+949
+00:47:53,150 --> 00:47:56,185
+to pick among those.
+
+950
+00:47:56,185 --> 00:47:58,090
+Any other questions or comments?
+
+951
+00:47:58,090 --> 00:47:59,500
+What about at EPFL?
+
+952
+00:47:59,500 --> 00:48:03,360
+MDO, anybody have
+experience with this before,
+
+953
+00:48:03,360 --> 00:48:05,660
+multidisciplinary
+design optimization?
+
+954
+00:48:09,532 --> 00:48:11,020
+AUDIENCE: OK, no one, again.
+
+955
+00:48:11,020 --> 00:48:13,900
+OLIVIER DE WECK: OK,
+that's all right.
+
+956
+00:48:13,900 --> 00:48:17,620
+So just to tell you, this is
+really a big deal in practice.
+
+957
+00:48:17,620 --> 00:48:20,500
+So you know, the structural
+optimization has been around,
+
+958
+00:48:20,500 --> 00:48:24,430
+that's pretty standard
+practice, and you know,
+
+959
+00:48:24,430 --> 00:48:26,800
+optimizing control systems.
+
+960
+00:48:26,800 --> 00:48:31,150
+So we've optimized individual
+subsystems for a long time now,
+
+961
+00:48:31,150 --> 00:48:34,690
+at least two or three decades,
+but optimizing at the system
+
+962
+00:48:34,690 --> 00:48:36,620
+level is relatively new.
+
+963
+00:48:36,620 --> 00:48:39,670
+And I think the best companies,
+the best organizations that
+
+964
+00:48:39,670 --> 00:48:43,150
+are out there, they're really
+investing in this technology,
+
+965
+00:48:43,150 --> 00:48:44,810
+and they're quite good at it.
+
+966
+00:48:44,810 --> 00:48:47,110
+And that's where you can
+really distinguish yourself
+
+967
+00:48:47,110 --> 00:48:49,620
+from the competition.
+
+968
+00:48:49,620 --> 00:48:53,200
+So let's talk about
+concurrent design facilities.
+
+969
+00:48:53,200 --> 00:48:57,850
+And so I'm actually going to
+use some material here from EPFL
+
+970
+00:48:57,850 --> 00:49:00,490
+because they have
+a very nice CDF,
+
+971
+00:49:00,490 --> 00:49:03,910
+and I want to give
+credit here to Dr. Anton
+
+972
+00:49:03,910 --> 00:49:09,670
+Ivanov at the Swiss Space Center
+for some of this material.
+
+973
+00:49:09,670 --> 00:49:13,380
+And actually one of the papers
+is also related to this.
+
+974
+00:49:13,380 --> 00:49:15,310
+Anton used to be at JPL.
+
+975
+00:49:15,310 --> 00:49:21,400
+He worked at JPL for close to
+a decade before going to EPFL.
+
+976
+00:49:21,400 --> 00:49:24,940
+So what is a CDF, a
+concurrent design facility?
+
+977
+00:49:24,940 --> 00:49:27,010
+It's essentially an
+environment where
+
+978
+00:49:27,010 --> 00:49:28,600
+engineers of
+different disciplines
+
+979
+00:49:28,600 --> 00:49:30,730
+come together to
+perform, you know,
+
+980
+00:49:30,730 --> 00:49:33,130
+a system engineering
+study for a project.
+
+981
+00:49:33,130 --> 00:49:35,740
+Key elements that you need
+is the team, the process,
+
+982
+00:49:35,740 --> 00:49:37,510
+the physical environment,
+which includes
+
+983
+00:49:37,510 --> 00:49:40,690
+the A/V and the software,
+and then also some way
+
+984
+00:49:40,690 --> 00:49:42,970
+to do knowledge
+management, meaning
+
+985
+00:49:42,970 --> 00:49:48,730
+capturing the results of prior
+studies and ongoing studies.
+
+986
+00:49:48,730 --> 00:49:52,930
+And I'll show you
+some examples of CDFs.
+
+987
+00:49:52,930 --> 00:49:54,620
+We also do this in academia.
+
+988
+00:49:54,620 --> 00:49:56,890
+There's challenges for
+doing this in academia,
+
+989
+00:49:56,890 --> 00:49:59,530
+a short learning curve, you
+know, synchronizing this
+
+990
+00:49:59,530 --> 00:50:01,390
+with the academic
+schedule, and then
+
+991
+00:50:01,390 --> 00:50:06,560
+a lot of turnover, of course, as
+students graduate and so forth.
+
+992
+00:50:06,560 --> 00:50:08,230
+So there's challenges.
+
+993
+00:50:08,230 --> 00:50:12,790
+And in practice, what we
+essentially have is, in a CDF,
+
+994
+00:50:12,790 --> 00:50:18,050
+we have a set of models that
+are linked to each other.
+
+995
+00:50:18,050 --> 00:50:20,200
+And these models can
+be, for example, here's
+
+996
+00:50:20,200 --> 00:50:23,310
+some Simulink models shown.
+
+997
+00:50:23,310 --> 00:50:27,520
+Here, there is
+some Excel models.
+
+998
+00:50:27,520 --> 00:50:29,140
+You can have CAD.
+
+999
+00:50:29,140 --> 00:50:31,750
+And one of the tricks is, you
+know, to link this together
+
+1000
+00:50:31,750 --> 00:50:35,230
+in a way that you can quickly
+execute different designs
+
+1001
+00:50:35,230 --> 00:50:38,870
+and look at the
+results from that.
+
+1002
+00:50:38,870 --> 00:50:43,120
+So in industrial settings,
+probably the most famous CDF
+
+1003
+00:50:43,120 --> 00:50:46,540
+is the one at JPL, at the
+Jet Propulsion Laboratory,
+
+1004
+00:50:46,540 --> 00:50:52,600
+called Team X. Team X has been
+around for about 20 years,
+
+1005
+00:50:52,600 --> 00:50:58,900
+and they just had an anniversary
+where they celebrated
+
+1006
+00:50:58,900 --> 00:51:05,560
+their 1000th study that was
+done at Team X. A typical Team X
+
+1007
+00:51:05,560 --> 00:51:07,780
+study is about a week.
+
+1008
+00:51:07,780 --> 00:51:10,570
+So you do a little
+bit of preparation,
+
+1009
+00:51:10,570 --> 00:51:14,110
+but people work together in
+the facility for about a week,
+
+1010
+00:51:14,110 --> 00:51:16,300
+and at the end of
+the week, you have
+
+1011
+00:51:16,300 --> 00:51:21,970
+basically a conceptual design
+pretty well worked out.
+
+1012
+00:51:21,970 --> 00:51:23,870
+And the results have
+been impressive.
+
+1013
+00:51:23,870 --> 00:51:26,470
+So studies have shown
+that the cost estimates
+
+1014
+00:51:26,470 --> 00:51:30,550
+that Team X came up with were
+within 10% of final mission
+
+1015
+00:51:30,550 --> 00:51:34,540
+costs, for those missions that
+were actually built and flown.
+
+1016
+00:51:34,540 --> 00:51:38,710
+So of the 1,000 studies that
+Team X did, a handful of them
+
+1017
+00:51:38,710 --> 00:51:40,820
+were actual flight missions.
+
+1018
+00:51:40,820 --> 00:51:46,960
+But every proposal
+that is written
+
+1019
+00:51:46,960 --> 00:51:49,480
+starts now as a Team X study.
+
+1020
+00:51:49,480 --> 00:51:52,120
+So it's really a big deal.
+
+1021
+00:51:52,120 --> 00:51:57,310
+The European Space Agency
+ESTEC has a similar facility
+
+1022
+00:51:57,310 --> 00:52:00,360
+in Noordwijk in the Netherlands.
+
+1023
+00:52:00,360 --> 00:52:04,020
+As well, all the ESA projects
+are going through their CDF.
+
+1024
+00:52:04,020 --> 00:52:06,100
+So one of these is
+[INAUDIBLE] which
+
+1025
+00:52:06,100 --> 00:52:09,430
+is a space-based observatory.
+
+1026
+00:52:09,430 --> 00:52:11,350
+EPFL is involved
+in that project.
+
+1027
+00:52:11,350 --> 00:52:15,290
+That went through
+the CDF as well.
+
+1028
+00:52:15,290 --> 00:52:19,420
+Most NASA centers and then
+commercial applications
+
+1029
+00:52:19,420 --> 00:52:21,730
+in medical devices,
+painting, shipbuilding.
+
+1030
+00:52:21,730 --> 00:52:23,740
+And like I mentioned
+in my introduction,
+
+1031
+00:52:23,740 --> 00:52:26,350
+even consumer packaged
+good companies
+
+1032
+00:52:26,350 --> 00:52:29,920
+are now building their
+version of a CDF,
+
+1033
+00:52:29,920 --> 00:52:33,550
+such that they can, you know,
+very quickly, within a couple
+
+1034
+00:52:33,550 --> 00:52:38,590
+weeks, come up with a new
+proposal for a product and all
+
+1035
+00:52:38,590 --> 00:52:41,140
+the major aspects, you
+know, the underlying physics
+
+1036
+00:52:41,140 --> 00:52:45,650
+and chemistry, the packaging,
+the business case, everything
+
+1037
+00:52:45,650 --> 00:52:48,490
+is considered at the same time.
+
+1038
+00:52:48,490 --> 00:52:49,630
+Yes?
+
+1039
+00:52:49,630 --> 00:52:51,532
+AUDIENCE: I was wondering why--
+
+1040
+00:52:51,532 --> 00:52:55,550
+what makes the cost estimate
+so accurate with this method?
+
+1041
+00:52:55,550 --> 00:52:58,160
+OLIVIER DE WECK: So there
+are three major ways
+
+1042
+00:52:58,160 --> 00:52:59,840
+of doing-- oh,
+Veronica should answer
+
+1043
+00:52:59,840 --> 00:53:03,500
+that question, since
+she's launching on cost
+
+1044
+00:53:03,500 --> 00:53:05,810
+modeling for her research.
+
+1045
+00:53:05,810 --> 00:53:08,346
+There are three major
+cost estimation methods.
+
+1046
+00:53:08,346 --> 00:53:10,970
+One is bottom up, you know, you
+have the product decomposition,
+
+1047
+00:53:10,970 --> 00:53:13,100
+and you add up all the costs.
+
+1048
+00:53:13,100 --> 00:53:16,100
+One is called
+costing by analogy,
+
+1049
+00:53:16,100 --> 00:53:18,980
+where you look at a prior
+mission or a prior product
+
+1050
+00:53:18,980 --> 00:53:20,930
+and then you look at the deltas.
+
+1051
+00:53:20,930 --> 00:53:23,960
+And then the third one is
+based on so-called CERs,
+
+1052
+00:53:23,960 --> 00:53:26,000
+cost estimation relationships.
+
+1053
+00:53:26,000 --> 00:53:27,650
+It's a parametric method.
+
+1054
+00:53:27,650 --> 00:53:29,570
+You can also blend these.
+
+1055
+00:53:29,570 --> 00:53:32,930
+And you know, I think one of
+the reasons why it's accurate
+
+1056
+00:53:32,930 --> 00:53:34,130
+is because--
+
+1057
+00:53:34,130 --> 00:53:36,880
+there are two reasons
+why, I would say.
+
+1058
+00:53:36,880 --> 00:53:39,410
+So you always have a cost share.
+
+1059
+00:53:39,410 --> 00:53:41,390
+One of the subsystems
+is costing.
+
+1060
+00:53:41,390 --> 00:53:44,440
+So you have really people who
+been doing this for a while.
+
+1061
+00:53:44,440 --> 00:53:47,660
+They know these
+models, and so there's
+
+1062
+00:53:47,660 --> 00:53:50,390
+some legacy information.
+
+1063
+00:53:50,390 --> 00:53:55,070
+And the more missions we fly,
+the more products we make,
+
+1064
+00:53:55,070 --> 00:53:58,880
+the more robust, essentially,
+these cost estimates become.
+
+1065
+00:53:58,880 --> 00:54:03,650
+And then the second, I think,
+is because people that typically
+
+1066
+00:54:03,650 --> 00:54:07,430
+work in a CDF,
+they're non-advocates,
+
+1067
+00:54:07,430 --> 00:54:09,950
+meaning it's kind
+of neutral ground.
+
+1068
+00:54:09,950 --> 00:54:12,140
+So rather than pushing
+a particular idea
+
+1069
+00:54:12,140 --> 00:54:14,660
+or trying to be
+overly optimistic,
+
+1070
+00:54:14,660 --> 00:54:18,290
+you know, usually in a
+CDF, the calculations
+
+1071
+00:54:18,290 --> 00:54:21,470
+that are done are
+pretty non-biased,
+
+1072
+00:54:21,470 --> 00:54:23,760
+and that's not always the case.
+
+1073
+00:54:23,760 --> 00:54:27,152
+So that's one of the advantages
+of the CDF is you're getting--
+
+1074
+00:54:27,152 --> 00:54:29,360
+you know, people are trying
+to say, but really, let's
+
+1075
+00:54:29,360 --> 00:54:30,590
+make it look a little better.
+
+1076
+00:54:30,590 --> 00:54:34,170
+No, no, we can't do this,
+because the model says,
+
+1077
+00:54:34,170 --> 00:54:38,510
+you know, it is gonna cost $280
+million to do this satellite.
+
+1078
+00:54:38,510 --> 00:54:41,910
+And that's based on, you
+know, within prior models,
+
+1079
+00:54:41,910 --> 00:54:43,670
+and if you overlay
+different models,
+
+1080
+00:54:43,670 --> 00:54:46,550
+you know, with some
+error or confidence.
+
+1081
+00:54:46,550 --> 00:54:48,360
+That's the right answer.
+
+1082
+00:54:48,360 --> 00:54:49,490
+So it's these two reasons.
+
+1083
+00:54:49,490 --> 00:54:54,470
+There's experience, there's
+data, and non-advocacy, really
+
+1084
+00:54:54,470 --> 00:54:58,010
+taking a kind of neutral,
+unbiased position.
+
+1085
+00:54:58,010 --> 00:55:01,430
+So benefits are, you know,
+improvements of quality,
+
+1086
+00:55:01,430 --> 00:55:04,970
+quick turnaround for ideas,
+better cost estimates,
+
+1087
+00:55:04,970 --> 00:55:09,720
+and then increased creativity
+and productivity in a company.
+
+1088
+00:55:09,720 --> 00:55:11,730
+So let me give you a
+couple examples here.
+
+1089
+00:55:11,730 --> 00:55:14,000
+This is a CubeSat.
+
+1090
+00:55:14,000 --> 00:55:18,530
+So this is the ability to
+design quickly new CubeSats.
+
+1091
+00:55:18,530 --> 00:55:20,030
+This picture here
+I'm showing you
+
+1092
+00:55:20,030 --> 00:55:23,510
+is the Swiss Cube that was
+launched in 2009, still
+
+1093
+00:55:23,510 --> 00:55:24,230
+operating.
+
+1094
+00:55:24,230 --> 00:55:26,750
+I think it's the longest
+operating, continuously
+
+1095
+00:55:26,750 --> 00:55:28,850
+operating CubeSat so far.
+
+1096
+00:55:28,850 --> 00:55:32,060
+There's like over six years
+of operational data now.
+
+1097
+00:55:32,060 --> 00:55:34,520
+And so you know, for the
+next generation, which
+
+1098
+00:55:34,520 --> 00:55:39,821
+is shown here, how would you do
+a Cubesat in such a facility?
+
+1099
+00:55:39,821 --> 00:55:40,820
+And there's three steps.
+
+1100
+00:55:40,820 --> 00:55:42,890
+You define your
+decomposition level.
+
+1101
+00:55:42,890 --> 00:55:45,840
+So you have your system
+level, your subsystem level,
+
+1102
+00:55:45,840 --> 00:55:48,410
+and then at the lowest
+level it's called equipment.
+
+1103
+00:55:48,410 --> 00:55:50,960
+These are the actual components.
+
+1104
+00:55:50,960 --> 00:55:53,660
+And you have your product
+decomposition here,
+
+1105
+00:55:53,660 --> 00:55:55,730
+and then for each
+of these components,
+
+1106
+00:55:55,730 --> 00:55:58,670
+you have different sheets
+that give you either component
+
+1107
+00:55:58,670 --> 00:56:04,220
+choices or give you different
+parameters like mass power
+
+1108
+00:56:04,220 --> 00:56:06,680
+with margins that allow
+you to then choose
+
+1109
+00:56:06,680 --> 00:56:11,490
+from this like a menu and pull
+together your overall design.
+
+1110
+00:56:11,490 --> 00:56:13,457
+So that's a Cubesat example.
+
+1111
+00:56:13,457 --> 00:56:15,040
+But I want to talk
+to you a little bit
+
+1112
+00:56:15,040 --> 00:56:19,250
+in more detail through a design
+of a suborbital space plane
+
+1113
+00:56:19,250 --> 00:56:22,850
+that was done in
+that CDF, and this
+
+1114
+00:56:22,850 --> 00:56:26,360
+was a project known as K1000.
+
+1115
+00:56:26,360 --> 00:56:30,240
+So some of you may have heard
+of the Hermes, the Hermes space
+
+1116
+00:56:30,240 --> 00:56:31,100
+plane.
+
+1117
+00:56:31,100 --> 00:56:35,240
+This was a project that the
+European Space Agency had
+
+1118
+00:56:35,240 --> 00:56:39,650
+starting even in the
+'80s, and it wasn't built,
+
+1119
+00:56:39,650 --> 00:56:41,780
+but there was a lot
+of studies done.
+
+1120
+00:56:41,780 --> 00:56:44,310
+And this is essentially
+a Hermes-like vehicle
+
+1121
+00:56:44,310 --> 00:56:48,060
+but for space tourism,
+that's the basic application.
+
+1122
+00:56:48,060 --> 00:56:51,800
+And so you know, how would
+you design a space tourism
+
+1123
+00:56:51,800 --> 00:56:53,690
+vehicle in a CDF?
+
+1124
+00:56:53,690 --> 00:56:56,150
+Well, you have to start
+with requirements, right?
+
+1125
+00:56:56,150 --> 00:56:59,581
+Without requirements, you're
+just-- it's like, you know,
+
+1126
+00:56:59,581 --> 00:57:00,080
+setting--
+
+1127
+00:57:00,080 --> 00:57:02,420
+my analogy for designing
+without requirements
+
+1128
+00:57:02,420 --> 00:57:06,800
+is like taking your ship and
+going out to sea without a map,
+
+1129
+00:57:06,800 --> 00:57:10,310
+without a chart, with no
+destination port in mind.
+
+1130
+00:57:10,310 --> 00:57:12,990
+You're just drifting
+in the ocean.
+
+1131
+00:57:12,990 --> 00:57:14,810
+You've got to have requirements.
+
+1132
+00:57:14,810 --> 00:57:17,150
+So here are the high
+level requirements
+
+1133
+00:57:17,150 --> 00:57:18,980
+for this particular vehicle.
+
+1134
+00:57:18,980 --> 00:57:20,540
+Level one
+requirements-- you have
+
+1135
+00:57:20,540 --> 00:57:25,280
+to reach an altitude of at least
+100 kilometers over sea level.
+
+1136
+00:57:25,280 --> 00:57:26,930
+Why is that?
+
+1137
+00:57:26,930 --> 00:57:29,270
+Where does the 100
+kilometers come from?
+
+1138
+00:57:29,270 --> 00:57:34,000
+Why is it not 80 or 90 or 150?
+
+1139
+00:57:34,000 --> 00:57:36,050
+AUDIENCE: That's where
+space is defined.
+
+1140
+00:57:36,050 --> 00:57:38,600
+OLIVIER DE WECK: Right,
+and what happens to people
+
+1141
+00:57:38,600 --> 00:57:41,032
+who go above 100 kilometers?
+
+1142
+00:57:41,032 --> 00:57:42,740
+AUDIENCE: They get
+their astronaut wings.
+
+1143
+00:57:42,740 --> 00:57:45,050
+OLIVIER DE WECK:
+They get their--
+
+1144
+00:57:45,050 --> 00:57:47,450
+you have gone to
+space, and like,
+
+1145
+00:57:47,450 --> 00:57:49,490
+you know, you can
+claim that you've gone
+
+1146
+00:57:49,490 --> 00:57:52,610
+to space if you go above 100.
+
+1147
+00:57:52,610 --> 00:57:54,770
+If you don't, if you are
+at 80 or 90 you don't.
+
+1148
+00:57:54,770 --> 00:57:57,080
+That's kind of
+internationally accepted.
+
+1149
+00:57:57,080 --> 00:58:01,580
+So that's really where that
+requirement comes from.
+
+1150
+00:58:01,580 --> 00:58:04,640
+The second one is
+a zero g phase.
+
+1151
+00:58:04,640 --> 00:58:06,920
+You should experience
+weightlessness
+
+1152
+00:58:06,920 --> 00:58:09,480
+for at least several minutes.
+
+1153
+00:58:09,480 --> 00:58:12,430
+Who's done a parabolic
+flight before here?
+
+1154
+00:58:12,430 --> 00:58:15,100
+The zero g, you know,
+the Vomit Comet?
+
+1155
+00:58:15,100 --> 00:58:16,680
+Anybody?
+
+1156
+00:58:16,680 --> 00:58:19,100
+Wow, we have to get
+you guys out there.
+
+1157
+00:58:19,100 --> 00:58:21,630
+At EPFL, are you still with us?
+
+1158
+00:58:24,920 --> 00:58:27,230
+AUDIENCE: We are.
+
+1159
+00:58:27,230 --> 00:58:29,690
+OLIVIER DE WECK: Has anybody
+done parabolic flights?
+
+1160
+00:58:29,690 --> 00:58:32,960
+I know there's a flight campaign
+coming up in Switzerland
+
+1161
+00:58:32,960 --> 00:58:34,580
+later this year?
+
+1162
+00:58:34,580 --> 00:58:36,780
+AUDIENCE: Yeah, it will
+be next year, I guess,
+
+1163
+00:58:36,780 --> 00:58:39,710
+but unfortunately, no one
+has done this right now here.
+
+1164
+00:58:39,710 --> 00:58:41,960
+OLIVIER DE WECK: All right,
+guys, we have to fix this.
+
+1165
+00:58:41,960 --> 00:58:43,070
+This is unacceptable.
+
+1166
+00:58:43,070 --> 00:58:46,500
+I mean, we have to work on this.
+
+1167
+00:58:46,500 --> 00:58:50,060
+So it's very cool to do
+these parabolic flights,
+
+1168
+00:58:50,060 --> 00:58:52,550
+but you only get about
+20 seconds, right?
+
+1169
+00:58:52,550 --> 00:58:54,590
+20 seconds at the top.
+
+1170
+00:58:54,590 --> 00:58:57,560
+It's like riding a big
+roller coaster, basically.
+
+1171
+00:58:57,560 --> 00:59:00,320
+And then you go down, and
+then you suffer, you know,
+
+1172
+00:59:00,320 --> 00:59:02,880
+1.7 g's or whatever.
+
+1173
+00:59:02,880 --> 00:59:04,220
+Then you come back up.
+
+1174
+00:59:04,220 --> 00:59:05,540
+But we want several minutes.
+
+1175
+00:59:08,720 --> 00:59:12,160
+And then the next requirement
+is that the passengers
+
+1176
+00:59:12,160 --> 00:59:15,710
+should carry-- there should
+be six passengers carried
+
+1177
+00:59:15,710 --> 00:59:16,940
+on this vehicle.
+
+1178
+00:59:16,940 --> 00:59:19,520
+Those are the top
+level one requirements.
+
+1179
+00:59:19,520 --> 00:59:23,270
+Lower level-- level two
+requirements-- safety.
+
+1180
+00:59:23,270 --> 00:59:28,040
+Don't exceed six g,
+positive six g's.
+
+1181
+00:59:28,040 --> 00:59:31,140
+The vehicle must be
+controllable at all times.
+
+1182
+00:59:31,140 --> 00:59:33,180
+So when you're out
+of the atmosphere,
+
+1183
+00:59:33,180 --> 00:59:35,180
+you have to be able to
+control the vehicle, that
+
+1184
+00:59:35,180 --> 00:59:37,490
+has certain implications.
+
+1185
+00:59:37,490 --> 00:59:39,140
+The customer
+experience-- you should
+
+1186
+00:59:39,140 --> 00:59:42,550
+be able to see the Earth's
+curvature and atmosphere,
+
+1187
+00:59:42,550 --> 00:59:46,010
+that thin layer, at all times.
+
+1188
+00:59:46,010 --> 00:59:48,680
+The spacecraft impact
+on the environment
+
+1189
+00:59:48,680 --> 00:59:50,540
+should be as small as possible.
+
+1190
+00:59:50,540 --> 00:59:53,210
+And then the mass budget,
+the spacecraft mass
+
+1191
+00:59:53,210 --> 00:59:57,050
+should not exceed 11.6
+tons with propellants.
+
+1192
+00:59:57,050 --> 00:59:59,060
+Where do you think
+that comes from?
+
+1193
+00:59:59,060 --> 01:00:01,250
+What kind of a
+requirement is that?
+
+1194
+01:00:01,250 --> 01:00:02,970
+What flavor of
+requirement is that?
+
+1195
+01:00:02,970 --> 01:00:03,470
+Yeah?
+
+1196
+01:00:03,470 --> 01:00:05,554
+AUDIENCE: Transporting it
+for proper [INAUDIBLE]..
+
+1197
+01:00:05,554 --> 01:00:07,220
+OLIVIER DE WECK:
+Right, so in this case,
+
+1198
+01:00:07,220 --> 01:00:09,100
+it's actually a
+piggyback, right?
+
+1199
+01:00:09,100 --> 01:00:11,890
+You either have
+a vertical launch
+
+1200
+01:00:11,890 --> 01:00:15,270
+or you have a first stage,
+an airplane from which you
+
+1201
+01:00:15,270 --> 01:00:16,180
+are dropped right?
+
+1202
+01:00:16,180 --> 01:00:18,980
+So that's sort of an
+interface requirement.
+
+1203
+01:00:18,980 --> 01:00:21,400
+OK, so once you know
+your requirements,
+
+1204
+01:00:21,400 --> 01:00:23,950
+you can really start
+developing your models.
+
+1205
+01:00:23,950 --> 01:00:31,880
+So here's a model of essentially
+the kinematics of the vehicle.
+
+1206
+01:00:31,880 --> 01:00:34,090
+So you have your environment,
+your atmospheric model,
+
+1207
+01:00:34,090 --> 01:00:38,850
+atmospheric density, pressure,
+mach number, speed of sound,
+
+1208
+01:00:38,850 --> 01:00:41,530
+a gravity model.
+
+1209
+01:00:41,530 --> 01:00:45,580
+Then computing the forces and
+torques acting on the vehicle
+
+1210
+01:00:45,580 --> 01:00:50,170
+itself, looking at the
+derivatives, integrating that.
+
+1211
+01:00:50,170 --> 01:00:51,730
+This is essentially
+the equations
+
+1212
+01:00:51,730 --> 01:00:54,910
+of motion of a vehicle
+in its environment
+
+1213
+01:00:54,910 --> 01:00:57,160
+that it's operating
+in, and then updating
+
+1214
+01:00:57,160 --> 01:01:01,060
+that with a certain
+time step, delta T.
+
+1215
+01:01:01,060 --> 01:01:03,250
+So you can zoom in
+on one of these,
+
+1216
+01:01:03,250 --> 01:01:08,400
+for example, this force model,
+computation of the forces.
+
+1217
+01:01:08,400 --> 01:01:09,760
+And there's two frames.
+
+1218
+01:01:09,760 --> 01:01:11,170
+There's the Earth
+reference frame
+
+1219
+01:01:11,170 --> 01:01:12,910
+and, then there's the
+body centric frame
+
+1220
+01:01:12,910 --> 01:01:14,680
+of the vehicle itself.
+
+1221
+01:01:14,680 --> 01:01:19,330
+So you have, in this case,
+the aerodynamic coefficients.
+
+1222
+01:01:19,330 --> 01:01:22,690
+You have the forces, lift,
+drag, pitching moment,
+
+1223
+01:01:22,690 --> 01:01:25,270
+and then you have the actuation.
+
+1224
+01:01:25,270 --> 01:01:28,540
+This is assumed, you know, the
+pilots are here in control.
+
+1225
+01:01:28,540 --> 01:01:31,690
+The rocket engine itself,
+secondary propulsion,
+
+1226
+01:01:31,690 --> 01:01:34,810
+the rudders, and then
+attitude thrusters.
+
+1227
+01:01:34,810 --> 01:01:37,675
+You need those especially--
+
+1228
+01:01:37,675 --> 01:01:40,480
+you know, once you're out of
+the atmosphere, the rudders--
+
+1229
+01:01:40,480 --> 01:01:43,750
+the aerodynamic surfaces
+are no longer effective.
+
+1230
+01:01:43,750 --> 01:01:45,550
+And we knew this in the '60s.
+
+1231
+01:01:45,550 --> 01:01:48,670
+Vehicles-- like the
+X15 is very famous.
+
+1232
+01:01:48,670 --> 01:01:50,500
+Well, it had thrusters
+that you could
+
+1233
+01:01:50,500 --> 01:01:54,620
+you could actuate once
+you're out of the atmosphere.
+
+1234
+01:01:54,620 --> 01:01:56,620
+So you know, you can go
+pretty detailed in this.
+
+1235
+01:01:59,200 --> 01:02:02,920
+You would then design the
+vehicle in a particular way,
+
+1236
+01:02:02,920 --> 01:02:08,560
+you know, particular engine,
+wing dimensions, aspect ratio,
+
+1237
+01:02:08,560 --> 01:02:11,920
+a particular flight
+profile, and then
+
+1238
+01:02:11,920 --> 01:02:15,130
+that would be a typical result
+that you would get in a CDF.
+
+1239
+01:02:15,130 --> 01:02:16,990
+There's two curves shown here.
+
+1240
+01:02:16,990 --> 01:02:21,050
+The blue curve is essentially
+altitude and kilometers.
+
+1241
+01:02:21,050 --> 01:02:23,320
+So you see there's
+the 100 kilometers.
+
+1242
+01:02:23,320 --> 01:02:24,760
+We need to get
+above this, right?
+
+1243
+01:02:24,760 --> 01:02:26,540
+This was our requirement.
+
+1244
+01:02:26,540 --> 01:02:27,820
+So we go above 100.
+
+1245
+01:02:27,820 --> 01:02:28,390
+That's good.
+
+1246
+01:02:28,390 --> 01:02:29,750
+We satisfy that requirement.
+
+1247
+01:02:29,750 --> 01:02:32,560
+So looks like a
+parabola, and then we
+
+1248
+01:02:32,560 --> 01:02:35,860
+have a-- we glide here,
+essentially, to the ground.
+
+1249
+01:02:35,860 --> 01:02:40,810
+The whole mission takes about
+900 seconds, 15 minutes.
+
+1250
+01:02:40,810 --> 01:02:44,800
+And then the yellow curve here
+is your load factor, your NZ,
+
+1251
+01:02:44,800 --> 01:02:47,030
+your vertical load factor.
+
+1252
+01:02:47,030 --> 01:02:50,500
+And you can see that's a
+little noisier as a curve.
+
+1253
+01:02:50,500 --> 01:02:55,990
+So we have higher acceleration
+as we accelerate to altitude.
+
+1254
+01:02:55,990 --> 01:02:59,650
+And you can see that
+roughly here, roughly
+
+1255
+01:02:59,650 --> 01:03:04,770
+in the middle of the parabola,
+the load factor starts to--
+
+1256
+01:03:04,770 --> 01:03:06,160
+you're basically in free fall.
+
+1257
+01:03:06,160 --> 01:03:10,840
+You're basically ballistic,
+and the peak acceleration
+
+1258
+01:03:10,840 --> 01:03:16,210
+is about 4.3 g's here, so
+we satisfy that requirement.
+
+1259
+01:03:16,210 --> 01:03:20,050
+And the whole reason we're doing
+it is for this period here,
+
+1260
+01:03:20,050 --> 01:03:22,360
+that zero g experience.
+
+1261
+01:03:22,360 --> 01:03:26,410
+So when the load factor
+goes to zero, or near zero,
+
+1262
+01:03:26,410 --> 01:03:28,130
+that's when you
+get weightlessness.
+
+1263
+01:03:28,130 --> 01:03:31,240
+And it turns out for this
+particular flight profile,
+
+1264
+01:03:31,240 --> 01:03:36,910
+we would experience 184
+seconds, about three minutes
+
+1265
+01:03:36,910 --> 01:03:40,380
+of weightlessness.
+
+1266
+01:03:40,380 --> 01:03:43,110
+This is pretty similar
+to the flight profile
+
+1267
+01:03:43,110 --> 01:03:47,440
+that Virgin Galactic is
+pursuing, by the way.
+
+1268
+01:03:47,440 --> 01:03:54,100
+So you know, looking at
+this result, you would say,
+
+1269
+01:03:54,100 --> 01:03:57,480
+well, I don't know about
+the mass here, but from,
+
+1270
+01:03:57,480 --> 01:04:00,750
+you know, reaching
+100 kilometers keeping
+
+1271
+01:04:00,750 --> 01:04:07,180
+accelerations below six g, this
+looks like a feasible profile.
+
+1272
+01:04:07,180 --> 01:04:10,090
+Of course, the other
+thing that we care about
+
+1273
+01:04:10,090 --> 01:04:13,600
+is the view, since this
+is for space tourism.
+
+1274
+01:04:13,600 --> 01:04:17,920
+We want to make
+sure that, you know,
+
+1275
+01:04:17,920 --> 01:04:20,590
+that the experience
+is great, not just
+
+1276
+01:04:20,590 --> 01:04:23,230
+from an experiencing
+weightlessness, which
+
+1277
+01:04:23,230 --> 01:04:26,950
+you can do in a closed can but
+you actually see something.
+
+1278
+01:04:26,950 --> 01:04:31,480
+So this was essentially
+coupled with a virtual reality
+
+1279
+01:04:31,480 --> 01:04:32,980
+visualization.
+
+1280
+01:04:32,980 --> 01:04:35,170
+So you can see, you
+know, the landing here.
+
+1281
+01:04:38,200 --> 01:04:40,000
+You can see these
+three views here.
+
+1282
+01:04:40,000 --> 01:04:42,430
+And you can see
+the vehicle itself.
+
+1283
+01:04:42,430 --> 01:04:44,710
+So the pilots are up
+front, and then here
+
+1284
+01:04:44,710 --> 01:04:46,660
+is our six passengers.
+
+1285
+01:04:46,660 --> 01:04:51,034
+Every one of the passengers
+gets their own window.
+
+1286
+01:04:51,034 --> 01:04:52,450
+So this is the
+view that you would
+
+1287
+01:04:52,450 --> 01:04:55,910
+get from the front window.
+
+1288
+01:04:55,910 --> 01:04:58,150
+This is the view from
+the middle window.
+
+1289
+01:04:58,150 --> 01:05:00,970
+And then this is the view
+from the back window,
+
+1290
+01:05:00,970 --> 01:05:04,030
+from that last window here,
+which is closer to the back,
+
+1291
+01:05:04,030 --> 01:05:05,570
+to the engines.
+
+1292
+01:05:05,570 --> 01:05:09,330
+So what would you, looking
+at these pictures-- you know,
+
+1293
+01:05:09,330 --> 01:05:13,740
+this comes directly out of
+the simulation and the CDF--
+
+1294
+01:05:13,740 --> 01:05:15,630
+what would you say
+looking at this?
+
+1295
+01:05:18,190 --> 01:05:19,240
+Anything you notice?
+
+1296
+01:05:19,240 --> 01:05:21,580
+EPFL anything you guys notice?
+
+1297
+01:05:21,580 --> 01:05:24,460
+Look at the view from
+the front, the middle,
+
+1298
+01:05:24,460 --> 01:05:25,570
+and the back window.
+
+1299
+01:05:28,755 --> 01:05:30,380
+AUDIENCE: From the
+front, looks better.
+
+1300
+01:05:30,380 --> 01:05:32,650
+I guess it will be
+more expensive, again,
+
+1301
+01:05:32,650 --> 01:05:34,360
+for the customer.
+
+1302
+01:05:34,360 --> 01:05:37,920
+OLIVIER DE WECK: Yeah, so that's
+exactly what I was asking.
+
+1303
+01:05:37,920 --> 01:05:42,790
+So it looks like either you
+need to redesign the vehicle so
+
+1304
+01:05:42,790 --> 01:05:46,330
+that the view is the same, more
+or less, from every window,
+
+1305
+01:05:46,330 --> 01:05:49,450
+or you need to start
+charging differential prices.
+
+1306
+01:05:49,450 --> 01:05:54,310
+Because clearly,
+from the back window,
+
+1307
+01:05:54,310 --> 01:05:59,167
+half your view is obstructed
+by the wing structure, right?
+
+1308
+01:05:59,167 --> 01:06:00,250
+Would you agree with that?
+
+1309
+01:06:03,610 --> 01:06:06,430
+Would you charge different
+ticket prices for this ride,
+
+1310
+01:06:06,430 --> 01:06:08,170
+depending on which seat you get?
+
+1311
+01:06:11,770 --> 01:06:14,110
+AUDIENCE: I guess
+that's offer and demand?
+
+1312
+01:06:14,110 --> 01:06:16,030
+OLIVIER DE WECK:
+Supply and demand, yes.
+
+1313
+01:06:16,030 --> 01:06:17,260
+That's right.
+
+1314
+01:06:17,260 --> 01:06:18,150
+Go ahead.
+
+1315
+01:06:18,150 --> 01:06:22,240
+AUDIENCE: It could also merit
+a change in flight plan.
+
+1316
+01:06:22,240 --> 01:06:24,820
+If your structure blocks
+the downward view,
+
+1317
+01:06:24,820 --> 01:06:27,160
+you might want to
+consider flipping over
+
+1318
+01:06:27,160 --> 01:06:31,030
+if like the Earth is what
+you're trying to see from above.
+
+1319
+01:06:31,030 --> 01:06:34,390
+So it may have broader
+implications for the mission.
+
+1320
+01:06:34,390 --> 01:06:37,150
+OLIVIER DE WECK: OK,
+so the point here,
+
+1321
+01:06:37,150 --> 01:06:41,830
+is there a way to operationally
+improve the experience,
+
+1322
+01:06:41,830 --> 01:06:43,670
+keeping the vehicle
+design the same?
+
+1323
+01:06:43,670 --> 01:06:45,670
+Absolutely, but
+what that means is,
+
+1324
+01:06:45,670 --> 01:06:47,650
+you would have to
+put the operation--
+
+1325
+01:06:47,650 --> 01:06:50,440
+so the orientation
+of the vehicle,
+
+1326
+01:06:50,440 --> 01:06:53,620
+you'd have to put that
+into your design vector
+
+1327
+01:06:53,620 --> 01:06:55,610
+if you want to change it.
+
+1328
+01:06:55,610 --> 01:06:57,310
+OK, so I don't know.
+
+1329
+01:06:57,310 --> 01:06:59,000
+I think this is pretty cool.
+
+1330
+01:06:59,000 --> 01:07:03,610
+So you can actually do a lot in
+this kind of CDF type setting.
+
+1331
+01:07:03,610 --> 01:07:08,620
+And by the way, of the things
+that spun out of this project
+
+1332
+01:07:08,620 --> 01:07:11,860
+is this company called S3.
+
+1333
+01:07:11,860 --> 01:07:15,070
+Their headquarters in
+Payerne in Switzerland.
+
+1334
+01:07:15,070 --> 01:07:17,350
+This is actually-- I did a
+lot of my military service
+
+1335
+01:07:17,350 --> 01:07:18,730
+at that airport.
+
+1336
+01:07:18,730 --> 01:07:20,680
+Their goal is not
+space tourism, you
+
+1337
+01:07:20,680 --> 01:07:22,630
+see there's no windows
+on this vehicle,
+
+1338
+01:07:22,630 --> 01:07:25,720
+but deployment of small
+satellites, custom
+
+1339
+01:07:25,720 --> 01:07:29,280
+deployment for small satellites
+with a reusable vehicle.
+
+1340
+01:07:29,280 --> 01:07:34,900
+So you know, I think it's
+a very interesting concept,
+
+1341
+01:07:34,900 --> 01:07:37,330
+but the question is,
+is it feasible, right?
+
+1342
+01:07:37,330 --> 01:07:42,280
+Is it feasible-- the
+aerodynamics, the economics,
+
+1343
+01:07:42,280 --> 01:07:44,100
+structurally, engine reuse?
+
+1344
+01:07:44,100 --> 01:07:45,030
+There's a lot of--
+
+1345
+01:07:45,030 --> 01:07:48,100
+this is a great
+picture, but you know,
+
+1346
+01:07:48,100 --> 01:07:49,490
+the devil is in the details.
+
+1347
+01:07:49,490 --> 01:07:53,230
+So really working out the
+details of such a design,
+
+1348
+01:07:53,230 --> 01:07:58,720
+that's what a CDF is for,
+and you can really go deep.
+
+1349
+01:07:58,720 --> 01:08:01,260
+OK so any questions about this?
+
+1350
+01:08:01,260 --> 01:08:05,380
+I'd like to do a little
+partner exercise here.
+
+1351
+01:08:05,380 --> 01:08:06,700
+Any questions?
+
+1352
+01:08:06,700 --> 01:08:12,910
+So let's do a partner
+exercise, and the question is,
+
+1353
+01:08:12,910 --> 01:08:16,090
+what are your experiences with
+concurrent design facilities
+
+1354
+01:08:16,090 --> 01:08:17,750
+so far?
+
+1355
+01:08:17,750 --> 01:08:21,279
+Whether you've done an
+internship at ESA or JPL,
+
+1356
+01:08:21,279 --> 01:08:24,729
+or some other place that
+has a facility like this,
+
+1357
+01:08:24,729 --> 01:08:28,840
+or even if you
+haven't been there,
+
+1358
+01:08:28,840 --> 01:08:32,560
+kind of speculate and discuss
+what it would be like.
+
+1359
+01:08:32,560 --> 01:08:35,920
+Maybe, you know, what would
+be your favorite chair?
+
+1360
+01:08:35,920 --> 01:08:42,609
+Would you pick propulsion or
+costing or flight trajectory?
+
+1361
+01:08:42,609 --> 01:08:46,250
+You know, just sort of speculate
+and discuss with your partner,
+
+1362
+01:08:46,250 --> 01:08:49,210
+so for which project or
+application did you use it?
+
+1363
+01:08:49,210 --> 01:08:49,960
+What went well?
+
+1364
+01:08:49,960 --> 01:08:51,010
+What did not?
+
+1365
+01:08:51,010 --> 01:08:52,120
+What could be improved?
+
+1366
+01:08:52,120 --> 01:08:54,700
+And again, if you don't
+have much experiences,
+
+1367
+01:08:54,700 --> 01:08:57,799
+just think ahead what
+it would be like.
+
+1368
+01:08:57,799 --> 01:08:59,590
+What would you like to
+get out of it if you
+
+1369
+01:08:59,590 --> 01:09:02,460
+have no experience in it?
+
+1370
+01:09:02,460 --> 01:09:06,100
+AUDIENCE: So there is at ESA,
+a concurrent design facility,
+
+1371
+01:09:06,100 --> 01:09:12,250
+and I was talking with Katya
+that maybe also United Nations
+
+1372
+01:09:12,250 --> 01:09:16,250
+can be considered, like,
+the facilities there
+
+1373
+01:09:16,250 --> 01:09:20,120
+can be considered a
+concurrent design facility.
+
+1374
+01:09:20,120 --> 01:09:22,510
+I don't know if it
+worked, this approach.
+
+1375
+01:09:22,510 --> 01:09:24,490
+OLIVIER DE WECK: Do
+you mean in Geneva,
+
+1376
+01:09:24,490 --> 01:09:28,066
+United Nations in Geneva
+or London or New York,
+
+1377
+01:09:28,066 --> 01:09:29,149
+or do you mean in general?
+
+1378
+01:09:29,149 --> 01:09:29,950
+AUDIENCE: Exactly.
+
+1379
+01:09:29,950 --> 01:09:31,569
+OLIVIER DE WECK:
+But do they actually
+
+1380
+01:09:31,569 --> 01:09:35,859
+have a physical facility
+with models and screens,
+
+1381
+01:09:35,859 --> 01:09:39,590
+or are you saying this
+more metaphorically?
+
+1382
+01:09:39,590 --> 01:09:40,840
+AUDIENCE: Metaphorically more.
+
+1383
+01:09:40,840 --> 01:09:43,130
+OLIVIER DE WECK:
+OK, but you know I--
+
+1384
+01:09:43,130 --> 01:09:43,999
+go ahead.
+
+1385
+01:09:43,999 --> 01:09:44,630
+Go ahead.
+
+1386
+01:09:44,630 --> 01:09:48,220
+AUDIENCE: Yeah, we're referring
+to the layout, to the site,
+
+1387
+01:09:48,220 --> 01:09:49,870
+we're looking at the
+ESA layout, where
+
+1388
+01:09:49,870 --> 01:09:52,665
+you have one big room, where
+you have all the people coming
+
+1389
+01:09:52,665 --> 01:09:54,790
+together, all the different
+models coming together.
+
+1390
+01:09:54,790 --> 01:09:56,050
+So that's like all
+the different experts.
+
+1391
+01:09:56,050 --> 01:09:58,530
+Then you have subrooms for
+different project rooms,
+
+1392
+01:09:58,530 --> 01:10:00,680
+and then you have, like,
+a big conference room.
+
+1393
+01:10:00,680 --> 01:10:05,470
+That's kind of the structure of
+the layout of the facilities.
+
+1394
+01:10:05,470 --> 01:10:08,320
+OLIVIER DE WECK: But you know,
+maybe a place like the UN
+
+1395
+01:10:08,320 --> 01:10:12,430
+could really benefit when they
+deal with a refugee crisis
+
+1396
+01:10:12,430 --> 01:10:15,850
+or with, you know, climate
+change negotiations.
+
+1397
+01:10:15,850 --> 01:10:17,410
+I like this idea.
+
+1398
+01:10:17,410 --> 01:10:18,610
+Great suggestion.
+
+1399
+01:10:18,610 --> 01:10:19,960
+What about here at MIT?
+
+1400
+01:10:19,960 --> 01:10:21,370
+Any experiences, thoughts?
+
+1401
+01:10:21,370 --> 01:10:22,730
+Yeah, please go ahead.
+
+1402
+01:10:22,730 --> 01:10:26,730
+AUDIENCE: Yeah, AFRL, we have
+a rapid innovation officer.
+
+1403
+01:10:26,730 --> 01:10:30,880
+He's like a general equivalent
+as a civilian, a LOC BOS,
+
+1404
+01:10:30,880 --> 01:10:36,070
+and he basically is tasked with
+breaking all the rules in AFRL.
+
+1405
+01:10:36,070 --> 01:10:39,460
+Whereas most projects
+take years to complete,
+
+1406
+01:10:39,460 --> 01:10:42,880
+he fields questions from
+the field, from the theater,
+
+1407
+01:10:42,880 --> 01:10:46,010
+from war fighters, and
+they have an urgent need.
+
+1408
+01:10:46,010 --> 01:10:49,550
+And he gets them a solution
+in under 12 months.
+
+1409
+01:10:49,550 --> 01:10:54,610
+So he pulls in all these
+experts from industry, academia,
+
+1410
+01:10:54,610 --> 01:10:55,750
+wherever.
+
+1411
+01:10:55,750 --> 01:10:58,150
+He'll lock them in
+a room, and they
+
+1412
+01:10:58,150 --> 01:11:00,370
+don't leave until they
+come up with a solution.
+
+1413
+01:11:00,370 --> 01:11:03,460
+And he has the money
+and the influence,
+
+1414
+01:11:03,460 --> 01:11:05,699
+the backing by the AFRL
+Commander to get it done.
+
+1415
+01:11:05,699 --> 01:11:07,240
+OLIVIER DE WECK:
+And what does that--
+
+1416
+01:11:07,240 --> 01:11:09,040
+I mean, if you
+can share, roughly
+
+1417
+01:11:09,040 --> 01:11:11,470
+what does that facility
+look like roughly?
+
+1418
+01:11:11,470 --> 01:11:15,520
+Does it have, like, models
+and computers and screens?
+
+1419
+01:11:15,520 --> 01:11:19,050
+AUDIENCE: Just white walls,
+like, whiteboard walls,
+
+1420
+01:11:19,050 --> 01:11:22,112
+and they will just be covered
+with everybody's ideas
+
+1421
+01:11:22,112 --> 01:11:23,320
+by the time they leave there.
+
+1422
+01:11:23,320 --> 01:11:24,445
+OLIVIER DE WECK: Oh, I see.
+
+1423
+01:11:24,445 --> 01:11:27,170
+So it's not as much
+computationally supported.
+
+1424
+01:11:27,170 --> 01:11:28,405
+It's more of a human process.
+
+1425
+01:11:28,405 --> 01:11:29,220
+AUDIENCE: That's right.
+
+1426
+01:11:29,220 --> 01:11:29,860
+OLIVIER DE WECK: Cool.
+
+1427
+01:11:29,860 --> 01:11:30,310
+OK.
+
+1428
+01:11:30,310 --> 01:11:30,810
+Great.
+
+1429
+01:11:30,810 --> 01:11:34,150
+Interesting.
+
+1430
+01:11:34,150 --> 01:11:35,980
+Any other experiences?
+
+1431
+01:11:35,980 --> 01:11:39,250
+Anybody been at JPL or
+seen a commercial facility
+
+1432
+01:11:39,250 --> 01:11:42,340
+in a commercial company
+that does this kind of work?
+
+1433
+01:11:42,340 --> 01:11:43,782
+Please, go ahead, Justice.
+
+1434
+01:11:46,490 --> 01:11:48,327
+AUDIENCE: Well it's
+less of a commercial--
+
+1435
+01:11:48,327 --> 01:11:50,910
+I was interning at the Aerospace
+Corporation this past summer,
+
+1436
+01:11:50,910 --> 01:11:53,240
+and I was working in their
+concurrent design center.
+
+1437
+01:11:53,240 --> 01:11:58,970
+And it uses a similar layout
+as JPL's Team X's design, where
+
+1438
+01:11:58,970 --> 01:12:01,010
+it's basically using models.
+
+1439
+01:12:01,010 --> 01:12:04,205
+That they have, like, a group
+of engineers who sit at desks,
+
+1440
+01:12:04,205 --> 01:12:06,080
+and there's multiple
+engineers per subsystem,
+
+1441
+01:12:06,080 --> 01:12:07,430
+and they just discuss.
+
+1442
+01:12:07,430 --> 01:12:09,620
+They're given a
+mission objective,
+
+1443
+01:12:09,620 --> 01:12:12,990
+and they discuss how they can
+best design the system based
+
+1444
+01:12:12,990 --> 01:12:13,490
+on that.
+
+1445
+01:12:13,490 --> 01:12:15,870
+And they model it and
+optimize it in the subsystem,
+
+1446
+01:12:15,870 --> 01:12:18,635
+and then they feed it back
+to a systems level design.
+
+1447
+01:12:18,635 --> 01:12:20,510
+OLIVIER DE WECK: Did
+you participate in that?
+
+1448
+01:12:20,510 --> 01:12:21,230
+AUDIENCE: Yes.
+
+1449
+01:12:21,230 --> 01:12:24,410
+OLIVIER DE WECK: So what
+did you think of it?
+
+1450
+01:12:24,410 --> 01:12:26,000
+AUDIENCE: A lot--
+it's a lot to take
+
+1451
+01:12:26,000 --> 01:12:28,100
+in at first just
+trying to understand
+
+1452
+01:12:28,100 --> 01:12:29,480
+how each of the models work.
+
+1453
+01:12:29,480 --> 01:12:33,280
+You're not necessarily
+supposed to work on each model,
+
+1454
+01:12:33,280 --> 01:12:35,330
+but as an intern, they
+wanted me to kind of see
+
+1455
+01:12:35,330 --> 01:12:39,602
+what each of the models would
+do and not necessarily exactly
+
+1456
+01:12:39,602 --> 01:12:41,810
+how the optimization techniques
+work because I didn't
+
+1457
+01:12:41,810 --> 01:12:44,030
+necessarily understand
+it, but just more
+
+1458
+01:12:44,030 --> 01:12:47,960
+of have an idea of how it
+actually works as a whole.
+
+1459
+01:12:47,960 --> 01:12:49,490
+OLIVIER DE WECK: OK, good.
+
+1460
+01:12:49,490 --> 01:12:54,140
+Anybody else at EPFL want
+to share any experiences?
+
+1461
+01:12:58,410 --> 01:13:01,960
+AUDIENCE: Apparently not, but
+just a problem with the sound.
+
+1462
+01:13:01,960 --> 01:13:05,640
+We didn't hear anything on what
+the guy before just told us.
+
+1463
+01:13:05,640 --> 01:13:09,000
+OLIVIER DE WECK: OK, Justice,
+did you push the mic button?
+
+1464
+01:13:09,000 --> 01:13:11,260
+OK, yeah, so
+basically, he worked--
+
+1465
+01:13:11,260 --> 01:13:12,760
+let me try to summarize.
+
+1466
+01:13:12,760 --> 01:13:14,710
+He worked at the
+Aerospace Corporation.
+
+1467
+01:13:14,710 --> 01:13:16,900
+He interned at the
+Airspace Corporation.
+
+1468
+01:13:16,900 --> 01:13:19,240
+Was it in Virginia
+or California?
+
+1469
+01:13:19,240 --> 01:13:21,280
+California, in California.
+
+1470
+01:13:21,280 --> 01:13:24,580
+And Aerospace Corporation
+is like a think tank,
+
+1471
+01:13:24,580 --> 01:13:28,900
+and it was a very similar set
+up with different subsystem
+
+1472
+01:13:28,900 --> 01:13:30,910
+experts, different models.
+
+1473
+01:13:30,910 --> 01:13:33,670
+And Justice was saying
+one of the big challenges
+
+1474
+01:13:33,670 --> 01:13:36,610
+is so much information,
+taking it all in
+
+1475
+01:13:36,610 --> 01:13:40,280
+and understanding all the models
+and coupling, and so forth.
+
+1476
+01:13:40,280 --> 01:13:41,860
+So and I agree.
+
+1477
+01:13:41,860 --> 01:13:42,700
+It takes a while.
+
+1478
+01:13:42,700 --> 01:13:44,770
+If you haven't been working
+in this environment,
+
+1479
+01:13:44,770 --> 01:13:47,540
+it takes a while to
+really get used to it.
+
+1480
+01:13:47,540 --> 01:13:52,180
+So the last thing I'll
+say here is that--
+
+1481
+01:13:52,180 --> 01:13:53,090
+well, two things.
+
+1482
+01:13:53,090 --> 01:13:55,390
+One is-- and they're
+linked-- one is
+
+1483
+01:13:55,390 --> 01:13:59,230
+that these CDFs are not cheap.
+
+1484
+01:13:59,230 --> 01:14:02,380
+If you really want a
+high-functioning CDF,
+
+1485
+01:14:02,380 --> 01:14:05,260
+you have to have people
+that are dedicated to this.
+
+1486
+01:14:05,260 --> 01:14:08,230
+You know, the software
+licenses expire.
+
+1487
+01:14:08,230 --> 01:14:10,420
+The technology gets old.
+
+1488
+01:14:10,420 --> 01:14:12,250
+You need to not
+just use it, but you
+
+1489
+01:14:12,250 --> 01:14:16,480
+need to constantly refresh
+a CDF, keep it up to date,
+
+1490
+01:14:16,480 --> 01:14:19,250
+and it just doesn't
+happen automatically.
+
+1491
+01:14:19,250 --> 01:14:21,760
+You've got to have
+budget for that.
+
+1492
+01:14:21,760 --> 01:14:24,310
+You have to have people who
+are dedicated to updating
+
+1493
+01:14:24,310 --> 01:14:28,280
+the models, updating the
+facility, and so forth.
+
+1494
+01:14:28,280 --> 01:14:31,120
+So it's definitely
+something that
+
+1495
+01:14:31,120 --> 01:14:34,900
+needs to be invested
+in on a regular basis.
+
+1496
+01:14:34,900 --> 01:14:39,310
+So what happened to us
+here at MIT in air astro,
+
+1497
+01:14:39,310 --> 01:14:41,650
+actually, when I
+was sitting where
+
+1498
+01:14:41,650 --> 01:14:44,170
+you are sitting
+as a grad student,
+
+1499
+01:14:44,170 --> 01:14:47,320
+we created a CDF
+in the mid '90s.
+
+1500
+01:14:47,320 --> 01:14:50,770
+And you know, it was
+just like the one at JPL.
+
+1501
+01:14:50,770 --> 01:14:55,840
+We had desktops, you know, with
+labels-- thermal, propulsion.
+
+1502
+01:14:55,840 --> 01:14:59,870
+And we used it quite
+actively for maybe five, six,
+
+1503
+01:14:59,870 --> 01:15:04,030
+seven years, but we didn't put
+the budget into it every year.
+
+1504
+01:15:04,030 --> 01:15:06,610
+We didn't have a dedicated
+person who was really.
+
+1505
+01:15:06,610 --> 01:15:07,840
+looking after it.
+
+1506
+01:15:07,840 --> 01:15:13,240
+So what happened to our CDF
+is that entropy took over,
+
+1507
+01:15:13,240 --> 01:15:15,490
+and it sort of got
+more and more dated.
+
+1508
+01:15:15,490 --> 01:15:17,530
+And when you go and
+look in this room now,
+
+1509
+01:15:17,530 --> 01:15:20,330
+it kind of looks like a
+regular conference room.
+
+1510
+01:15:20,330 --> 01:15:22,810
+So all the desktops
+that we had are gone.
+
+1511
+01:15:22,810 --> 01:15:25,180
+I guess they'd be
+pretty old by now.
+
+1512
+01:15:25,180 --> 01:15:31,360
+And there has been a pretty
+strong debate among the faculty
+
+1513
+01:15:31,360 --> 01:15:32,960
+whether actually we need this.
+
+1514
+01:15:32,960 --> 01:15:34,690
+Should we recreate one?
+
+1515
+01:15:34,690 --> 01:15:36,880
+And the argument
+goes as follows,
+
+1516
+01:15:36,880 --> 01:15:43,010
+the proponents say that a CDF
+is really something special.
+
+1517
+01:15:43,010 --> 01:15:47,510
+When you enter in the CDF, you
+know this is a special place.
+
+1518
+01:15:47,510 --> 01:15:49,960
+This is a facility that's
+designed specifically
+
+1519
+01:15:49,960 --> 01:15:52,630
+for doing rapid studies.
+
+1520
+01:15:52,630 --> 01:15:55,000
+All the information
+you need is there.
+
+1521
+01:15:55,000 --> 01:15:58,630
+The walls are plastered
+with reference information.
+
+1522
+01:15:58,630 --> 01:16:02,170
+You know, really,
+that's what it's for.
+
+1523
+01:16:02,170 --> 01:16:08,030
+The counter argument is that
+this is no longer the mid-'90s.
+
+1524
+01:16:08,030 --> 01:16:11,020
+Now, everybody has laptops.
+
+1525
+01:16:11,020 --> 01:16:13,330
+Everybody does mobile computing.
+
+1526
+01:16:13,330 --> 01:16:16,840
+All the models and data
+should be on the cloud,
+
+1527
+01:16:16,840 --> 01:16:20,170
+not sitting anymore in a
+dedicated server facility,
+
+1528
+01:16:20,170 --> 01:16:21,580
+but it's sitting on the cloud.
+
+1529
+01:16:21,580 --> 01:16:24,760
+And therefore, you
+know, physically,
+
+1530
+01:16:24,760 --> 01:16:27,820
+a facility that's dedicated
+is no longer needed.
+
+1531
+01:16:27,820 --> 01:16:30,670
+What you do is you
+get together in a more
+
+1532
+01:16:30,670 --> 01:16:33,280
+kind of flexible ad hoc way.
+
+1533
+01:16:33,280 --> 01:16:35,080
+Everybody brings their laptops.
+
+1534
+01:16:35,080 --> 01:16:37,600
+You have the big white
+walls, like you said.
+
+1535
+01:16:37,600 --> 01:16:41,740
+And you can just create
+a CDF on the fly, right?
+
+1536
+01:16:41,740 --> 01:16:43,900
+Everybody brings their
+computing resources.
+
+1537
+01:16:43,900 --> 01:16:47,200
+Stuff is on the cloud.
+
+1538
+01:16:47,200 --> 01:16:50,380
+And then you get a lot done,
+and then you disband again.
+
+1539
+01:16:50,380 --> 01:16:53,020
+You clean the white
+boards and you're done.
+
+1540
+01:16:53,020 --> 01:16:56,740
+Therefore, no longer
+needed a dedicated CDF.
+
+1541
+01:16:56,740 --> 01:17:04,410
+Those are the two countervailing
+opinions right now.
+
+1542
+01:17:04,410 --> 01:17:09,570
+My view is, I think a CDF
+still has value today.
+
+1543
+01:17:09,570 --> 01:17:14,650
+I think it is valuable
+as a dedicated facility,
+
+1544
+01:17:14,650 --> 01:17:16,030
+but it needs to be updated.
+
+1545
+01:17:16,030 --> 01:17:18,570
+So yes, the models
+should be on the cloud.
+
+1546
+01:17:18,570 --> 01:17:20,760
+Yes, you can bring your
+laptops, but it is still
+
+1547
+01:17:20,760 --> 01:17:23,940
+valuable to have dedicated
+computing resources, again.
+
+1548
+01:17:23,940 --> 01:17:30,250
+So I now think a hybrid model
+is actually the right way to go.
+
+1549
+01:17:30,250 --> 01:17:33,940
+So we'll see where it goes, but
+it's a pretty active debate.
+
+1550
+01:17:33,940 --> 01:17:35,820
+There have also been,
+you know, theses
+
+1551
+01:17:35,820 --> 01:17:39,880
+written on CDFs, comparing
+different CDFs and so forth.
+
+1552
+01:17:39,880 --> 01:17:45,840
+So take a look at the Anton
+Ivanov paper in the reading
+
+1553
+01:17:45,840 --> 01:17:47,730
+and just think about this.
+
+1554
+01:17:47,730 --> 01:17:51,210
+I think this is a
+big deal, and it's
+
+1555
+01:17:51,210 --> 01:17:53,910
+going to be even more important
+than the future, whether you're
+
+1556
+01:17:53,910 --> 01:17:57,390
+doing space missions,
+aeronautics,
+
+1557
+01:17:57,390 --> 01:17:59,550
+whether you're designing
+commercial products,
+
+1558
+01:17:59,550 --> 01:18:03,420
+you know, or in the
+military, these facilities
+
+1559
+01:18:03,420 --> 01:18:06,030
+that allow you to make these
+design decisions in a very
+
+1560
+01:18:06,030 --> 01:18:09,420
+interactive, very
+quick way are gonna
+
+1561
+01:18:09,420 --> 01:18:11,130
+be more and more
+important in the future,
+
+1562
+01:18:11,130 --> 01:18:15,205
+and this is a big part
+of system engineering.
+
+1563
+01:18:15,205 --> 01:18:19,700
+Any final thoughts on
+this before we move on?
+
+1564
+01:18:19,700 --> 01:18:26,400
+OK, so here some lessons
+learned from the EPFL CDF.
+
+1565
+01:18:26,400 --> 01:18:29,970
+So this is particularly in
+the university environment,
+
+1566
+01:18:29,970 --> 01:18:33,960
+so you know, giving access
+to a wide body of students.
+
+1567
+01:18:33,960 --> 01:18:36,810
+You need to adapt this to
+the university's schedule,
+
+1568
+01:18:36,810 --> 01:18:43,410
+the learning curves, the analogy
+of a smoke-filled room or war
+
+1569
+01:18:43,410 --> 01:18:46,080
+room, optimal team size.
+
+1570
+01:18:46,080 --> 01:18:49,680
+You know a CDF with 50 people
+on it is not as effective as one
+
+1571
+01:18:49,680 --> 01:18:52,800
+with, you know, seven
+plus or minus two.
+
+1572
+01:18:52,800 --> 01:18:54,660
+And then distributed CDFs--
+
+1573
+01:18:54,660 --> 01:18:56,860
+they don't typically
+work as well.
+
+1574
+01:18:56,860 --> 01:19:00,780
+So I almost wore my--
+
+1575
+01:19:00,780 --> 01:19:03,720
+I have a shirt that's
+almost the same.
+
+1576
+01:19:03,720 --> 01:19:07,390
+Anybody know who this is
+or where this is from?
+
+1577
+01:19:07,390 --> 01:19:10,090
+This is Sheldon Cooper
+in the Big Bang Theory,
+
+1578
+01:19:10,090 --> 01:19:12,310
+his virtual reality presence.
+
+1579
+01:19:12,310 --> 01:19:18,100
+So the point here is that
+virtual reality is OK.
+
+1580
+01:19:18,100 --> 01:19:23,380
+So you can imagine a CDF where
+half the people are in the room
+
+1581
+01:19:23,380 --> 01:19:26,290
+and half the people are
+dialing in remotely,
+
+1582
+01:19:26,290 --> 01:19:30,720
+but it's never quite as good as
+everybody is there physically.
+
+1583
+01:19:30,720 --> 01:19:34,140
+So human interaction
+is critical.
+
+1584
+01:19:34,140 --> 01:19:39,380
+OK, the last thing I want to
+talk about today is the CDR.
+
+1585
+01:19:39,380 --> 01:19:41,240
+This is a big, big milestone.
+
+1586
+01:19:41,240 --> 01:19:42,860
+This is a very big deal.
+
+1587
+01:19:42,860 --> 01:19:46,520
+The critical design review,
+the main purpose of it
+
+1588
+01:19:46,520 --> 01:19:50,720
+is to approve the final
+design in all its glory,
+
+1589
+01:19:50,720 --> 01:19:52,530
+in all its details.
+
+1590
+01:19:52,530 --> 01:19:56,240
+So generally, the
+way we talk about it
+
+1591
+01:19:56,240 --> 01:20:00,470
+is, if you pass the CDR, you've
+got the green light to quote,
+
+1592
+01:20:00,470 --> 01:20:02,210
+end quote, cut metal.
+
+1593
+01:20:02,210 --> 01:20:06,750
+Of course, you know, our systems
+have software and hardware.
+
+1594
+01:20:06,750 --> 01:20:10,520
+So the cut metal is
+essentially a euphemism
+
+1595
+01:20:10,520 --> 01:20:14,420
+for you can go ahead and
+manufacture the system now.
+
+1596
+01:20:14,420 --> 01:20:17,450
+CDRs are typically
+the biggest review.
+
+1597
+01:20:17,450 --> 01:20:22,400
+The largest number of people
+you will have at the CDR.
+
+1598
+01:20:22,400 --> 01:20:26,260
+You know, if you had
+10 people at the SRR
+
+1599
+01:20:26,260 --> 01:20:28,850
+and 20 people at the
+PDR, you're gonna
+
+1600
+01:20:28,850 --> 01:20:31,790
+have 50 or 100
+people at the CDR.
+
+1601
+01:20:31,790 --> 01:20:35,480
+Because any question that
+comes up on any of the parts--
+
+1602
+01:20:35,480 --> 01:20:37,460
+say, is this really right?
+
+1603
+01:20:37,460 --> 01:20:40,490
+Well, what could be the
+impact of this detail
+
+1604
+01:20:40,490 --> 01:20:41,990
+on the rest of the systems?
+
+1605
+01:20:41,990 --> 01:20:45,070
+Somebody should be there
+who designed that part
+
+1606
+01:20:45,070 --> 01:20:48,290
+or who can answer the
+question at least.
+
+1607
+01:20:48,290 --> 01:20:51,620
+And CDRs are typically
+longer than one day.
+
+1608
+01:20:51,620 --> 01:20:53,810
+In fact, for a
+big project, a CDR
+
+1609
+01:20:53,810 --> 01:20:56,300
+can be a whole week of reviews.
+
+1610
+01:20:56,300 --> 01:20:58,850
+So people get really tired.
+
+1611
+01:20:58,850 --> 01:21:01,880
+Big CDRs are very,
+very detailed.
+
+1612
+01:21:01,880 --> 01:21:05,660
+You really have to drink lots
+of coffee and stay awake.
+
+1613
+01:21:05,660 --> 01:21:09,140
+So here's the description
+of what a CDR is.
+
+1614
+01:21:09,140 --> 01:21:13,670
+One of the guidelines is
+that approximately 90%
+
+1615
+01:21:13,670 --> 01:21:16,640
+of the engineering drawings
+are approved and released.
+
+1616
+01:21:16,640 --> 01:21:21,860
+So it's OK to have a CDR if
+you have not 100% of everything
+
+1617
+01:21:21,860 --> 01:21:25,880
+done, but you need to have
+at least 90% complete.
+
+1618
+01:21:25,880 --> 01:21:29,870
+You can't do a CDR, with, you
+know, half the drawings done.
+
+1619
+01:21:29,870 --> 01:21:34,070
+And it happens at the end
+of phase C, the final design
+
+1620
+01:21:34,070 --> 01:21:35,840
+phase C.
+
+1621
+01:21:35,840 --> 01:21:41,450
+For very large projects,
+you can have sub CDRs.
+
+1622
+01:21:41,450 --> 01:21:44,450
+You'll have a system
+level CDR, and then you
+
+1623
+01:21:44,450 --> 01:21:47,810
+can have sub CDRs for
+every major subsystem
+
+1624
+01:21:47,810 --> 01:21:49,760
+in your project.
+
+1625
+01:21:49,760 --> 01:21:52,100
+So an example, I
+put a link here.
+
+1626
+01:21:52,100 --> 01:21:58,640
+This is from late 2014, the
+CDR for the James Webb Space
+
+1627
+01:21:58,640 --> 01:22:00,710
+Telescope that I
+mentioned earlier.
+
+1628
+01:22:00,710 --> 01:22:03,440
+They passed the last
+major element level
+
+1629
+01:22:03,440 --> 01:22:08,220
+critical design review,
+which was a big deal.
+
+1630
+01:22:08,220 --> 01:22:11,090
+So launch is planned for 2018.
+
+1631
+01:22:11,090 --> 01:22:14,420
+But for big projects,
+what I'm trying to say is,
+
+1632
+01:22:14,420 --> 01:22:16,350
+there may be more
+than one CDR. There
+
+1633
+01:22:16,350 --> 01:22:19,520
+may be the master CDR
+for the whole thing
+
+1634
+01:22:19,520 --> 01:22:22,670
+and then sub CDRs for
+different subsystems.
+
+1635
+01:22:22,670 --> 01:22:25,860
+Now, if you don't-- well, let me
+get to this on the next chart.
+
+1636
+01:22:25,860 --> 01:22:27,450
+Yeah, go ahead.
+
+1637
+01:22:27,450 --> 01:22:30,900
+AUDIENCE: Are the, like, CDR
+slides for NASA projects,
+
+1638
+01:22:30,900 --> 01:22:34,950
+are those available
+anywhere as a public entity
+
+1639
+01:22:34,950 --> 01:22:38,199
+and can you get access
+to any of that stuff?
+
+1640
+01:22:38,199 --> 01:22:39,365
+OLIVIER DE WECK: It depends.
+
+1641
+01:22:42,870 --> 01:22:46,440
+Not always, because especially
+if commercial companies,
+
+1642
+01:22:46,440 --> 01:22:50,550
+like, you know, Lockheed-Martin
+or somebody is doing, like,
+
+1643
+01:22:50,550 --> 01:22:53,550
+the spacecraft bus, they
+would consider those details
+
+1644
+01:22:53,550 --> 01:22:55,330
+proprietary.
+
+1645
+01:22:55,330 --> 01:22:58,770
+So in general, I would say no.
+
+1646
+01:22:58,770 --> 01:23:04,080
+But for CanSat, actually, you've
+probably already found them.
+
+1647
+01:23:04,080 --> 01:23:07,080
+For CanSat, you can
+actually find a lot of this.
+
+1648
+01:23:07,080 --> 01:23:10,870
+So prior PDRs and
+CDRs, you can see that.
+
+1649
+01:23:10,870 --> 01:23:12,820
+I encourage you not
+to look too much.
+
+1650
+01:23:12,820 --> 01:23:15,236
+You know, you kind of want to
+come up with your own thing.
+
+1651
+01:23:15,236 --> 01:23:18,030
+But you know, for
+projects that don't
+
+1652
+01:23:18,030 --> 01:23:21,090
+have a commercial interest
+or proprietary technology,
+
+1653
+01:23:21,090 --> 01:23:23,610
+it's often available.
+
+1654
+01:23:23,610 --> 01:23:28,610
+So to show you just-- this is
+a table from the Handbook, page
+
+1655
+01:23:28,610 --> 01:23:30,710
+178.
+
+1656
+01:23:30,710 --> 01:23:35,480
+This is the entrance criteria
+and the exit criteria for CDR.
+
+1657
+01:23:35,480 --> 01:23:39,560
+So entrance criteria means what
+do you have to have in order
+
+1658
+01:23:39,560 --> 01:23:43,610
+to be allowed to go
+forward with a CDR?
+
+1659
+01:23:43,610 --> 01:23:45,380
+And it's mainly three things--
+
+1660
+01:23:45,380 --> 01:23:49,100
+successful completion of
+the PDR, and responses
+
+1661
+01:23:49,100 --> 01:23:52,550
+made to all the
+PDR RFAs and RIDs.
+
+1662
+01:23:52,550 --> 01:23:56,960
+RFAs and RIDs are essentially
+deficiencies, open items
+
+1663
+01:23:56,960 --> 01:23:58,250
+that came up in the PDR.
+
+1664
+01:23:58,250 --> 01:24:00,170
+So you have to close them out.
+
+1665
+01:24:00,170 --> 01:24:02,570
+A CDR agenda, and
+then number three
+
+1666
+01:24:02,570 --> 01:24:05,450
+is all the technical
+work packages.
+
+1667
+01:24:05,450 --> 01:24:07,970
+And so you see, it's
+a huge list here--
+
+1668
+01:24:07,970 --> 01:24:11,010
+baseline documents,
+specification, fabrication,
+
+1669
+01:24:11,010 --> 01:24:14,450
+assembly and integration,
+technical data package,
+
+1670
+01:24:14,450 --> 01:24:18,020
+acceptance criteria,
+verification and validation
+
+1671
+01:24:18,020 --> 01:24:21,740
+plan, launch site selection,
+and operations plan--
+
+1672
+01:24:21,740 --> 01:24:24,140
+super, super, super detailed.
+
+1673
+01:24:24,140 --> 01:24:26,240
+This is a lot of information.
+
+1674
+01:24:26,240 --> 01:24:30,320
+And at the CDR, you're
+gonna go through all this.
+
+1675
+01:24:30,320 --> 01:24:34,650
+So you can imagine
+what that means.
+
+1676
+01:24:34,650 --> 01:24:36,890
+And then success
+criteria, on the right,
+
+1677
+01:24:36,890 --> 01:24:42,380
+is, you know, in order to
+successfully pass the CDR,
+
+1678
+01:24:42,380 --> 01:24:47,270
+these are all the things that
+you have to basically have.
+
+1679
+01:24:47,270 --> 01:24:49,970
+You have to have approval
+for all these things.
+
+1680
+01:24:49,970 --> 01:24:54,740
+Now in reality, just
+like a PDR, at a CDR,
+
+1681
+01:24:54,740 --> 01:24:56,480
+things will come
+up that you missed
+
+1682
+01:24:56,480 --> 01:24:58,640
+or that people have
+concerns about.
+
+1683
+01:24:58,640 --> 01:25:02,270
+And so you will make
+a list of those,
+
+1684
+01:25:02,270 --> 01:25:04,790
+and then you have to address
+these action items coming out
+
+1685
+01:25:04,790 --> 01:25:08,570
+of a CDR. If those action
+items are serious--
+
+1686
+01:25:08,570 --> 01:25:13,250
+if they're really serious, you
+could fail the CDR and say,
+
+1687
+01:25:13,250 --> 01:25:15,200
+you know, this is
+not gonna work.
+
+1688
+01:25:17,870 --> 01:25:19,610
+We should not proceed.
+
+1689
+01:25:19,610 --> 01:25:20,720
+And they send you back.
+
+1690
+01:25:20,720 --> 01:25:22,490
+Or they cancel the project.
+
+1691
+01:25:22,490 --> 01:25:24,620
+That's happened also.
+
+1692
+01:25:24,620 --> 01:25:28,370
+More likely, is that they'll
+ask you to do a so-called delta
+
+1693
+01:25:28,370 --> 01:25:31,250
+CDR. So they'll
+have you, you know,
+
+1694
+01:25:31,250 --> 01:25:33,290
+it's like retaking
+an exam or something.
+
+1695
+01:25:33,290 --> 01:25:35,840
+They'll have you
+come back, and you'll
+
+1696
+01:25:35,840 --> 01:25:41,150
+have to do a CDR again but
+only on the delta, the portion
+
+1697
+01:25:41,150 --> 01:25:43,730
+that raised concerns
+at the main CDR.
+
+1698
+01:25:43,730 --> 01:25:45,800
+You don't have to
+do everything again.
+
+1699
+01:25:45,800 --> 01:25:47,570
+That's called a delta CDR.
+
+1700
+01:25:47,570 --> 01:25:50,990
+OK, any questions about CDR?
+
+1701
+01:25:50,990 --> 01:25:53,400
+This is really the--
+this is the big one.
+
+1702
+01:25:53,400 --> 01:25:54,980
+This is the big milestone.
+
+1703
+01:25:54,980 --> 01:25:58,490
+And obviously, you know, the
+concept or the architecture
+
+1704
+01:25:58,490 --> 01:26:02,640
+you chose at the PDR turns
+out not to be a good one,
+
+1705
+01:26:02,640 --> 01:26:06,800
+it's very difficult to make
+changes to that here, right?
+
+1706
+01:26:06,800 --> 01:26:10,040
+You're kind of locked in to
+whatever design or architecture
+
+1707
+01:26:10,040 --> 01:26:11,180
+you chose at PDR.
+
+1708
+01:26:11,180 --> 01:26:14,004
+That's why PDR is also
+so important, even
+
+1709
+01:26:14,004 --> 01:26:15,170
+though you have less detail.
+
+1710
+01:26:15,170 --> 01:26:17,071
+Yeah, Sam, go ahead.
+
+1711
+01:26:17,071 --> 01:26:19,070
+AUDIENCE: Do you have to
+have contracts in place
+
+1712
+01:26:19,070 --> 01:26:22,267
+already for the, like,
+manufacturing and operations?
+
+1713
+01:26:22,267 --> 01:26:23,600
+OLIVIER DE WECK: Oh, absolutely.
+
+1714
+01:26:23,600 --> 01:26:27,500
+I mean, basically green
+light CDR, the next day,
+
+1715
+01:26:27,500 --> 01:26:28,760
+you start manufacturing.
+
+1716
+01:26:28,760 --> 01:26:31,775
+So you know, every portion,
+all the components,
+
+1717
+01:26:31,775 --> 01:26:34,040
+all the manufacturing,
+all of that
+
+1718
+01:26:34,040 --> 01:26:38,750
+has been bid,
+selected, contracted.
+
+1719
+01:26:38,750 --> 01:26:43,590
+Everything's in place
+contractually, absolutely.
+
+1720
+01:26:43,590 --> 01:26:46,830
+OK, any questions
+at EPFL about CDR?
+
+1721
+01:26:46,830 --> 01:26:49,710
+Who has actually gone
+through a CDR on your end?
+
+1722
+01:26:49,710 --> 01:26:53,460
+Has anybody done a CDR
+for any of the projects?
+
+1723
+01:26:53,460 --> 01:26:55,970
+OK, go ahead.
+
+1724
+01:26:55,970 --> 01:26:57,330
+What was it like?
+
+1725
+01:26:57,330 --> 01:27:01,950
+AUDIENCE: I did also a CDR
+because I had the PDR last time
+
+1726
+01:27:01,950 --> 01:27:04,290
+at the [INAUDIBLE] program.
+
+1727
+01:27:04,290 --> 01:27:06,030
+And one comment I want to make.
+
+1728
+01:27:06,030 --> 01:27:11,670
+So the teams were allowed to
+fail the PDR and still fly.
+
+1729
+01:27:11,670 --> 01:27:16,510
+If they failed the CDR,
+then they didn't fly at all.
+
+1730
+01:27:16,510 --> 01:27:19,452
+So it was very
+strict and demanding
+
+1731
+01:27:19,452 --> 01:27:20,910
+OLIVIER DE WECK:
+Yeah, so would you
+
+1732
+01:27:20,910 --> 01:27:25,050
+say that the CDR is more
+strict than the PDR?
+
+1733
+01:27:25,050 --> 01:27:27,090
+AUDIENCE: The CDR
+is more strict.
+
+1734
+01:27:27,090 --> 01:27:28,740
+OLIVIER DE WECK: Yes, I agree.
+
+1735
+01:27:28,740 --> 01:27:29,430
+I agree.
+
+1736
+01:27:29,430 --> 01:27:30,740
+Definitely.
+
+1737
+01:27:30,740 --> 01:27:32,810
+OK, anybody else?
+
+1738
+01:27:35,640 --> 01:27:40,902
+Are any of you working in
+systems other than aerospace,
+
+1739
+01:27:40,902 --> 01:27:44,170
+like, I don't know, medical
+devices or you know,
+
+1740
+01:27:44,170 --> 01:27:45,670
+scientific instruments?
+
+1741
+01:27:50,580 --> 01:27:53,160
+So the reason I bring
+this up is because you
+
+1742
+01:27:53,160 --> 01:28:00,600
+know, medical devices have to
+be approved by, here in the US,
+
+1743
+01:28:00,600 --> 01:28:03,542
+it's the FDA, the Food
+and Drug Administration,
+
+1744
+01:28:03,542 --> 01:28:05,625
+and then in Europe, there
+is equivalent, you know,
+
+1745
+01:28:05,625 --> 01:28:07,170
+European level thing.
+
+1746
+01:28:07,170 --> 01:28:08,850
+It's very, very detailed.
+
+1747
+01:28:08,850 --> 01:28:10,330
+It's really not that different.
+
+1748
+01:28:10,330 --> 01:28:13,020
+So presenting your
+medical device design
+
+1749
+01:28:13,020 --> 01:28:14,580
+to a panel of experts--
+
+1750
+01:28:14,580 --> 01:28:23,410
+doctors, you know, people in
+medical safety, regulators--
+
+1751
+01:28:23,410 --> 01:28:26,921
+it is like a CDR. You basically
+are going through a CDR
+
+1752
+01:28:26,921 --> 01:28:29,170
+when you're trying to get
+your medical device approved
+
+1753
+01:28:29,170 --> 01:28:30,430
+for sale and use.
+
+1754
+01:28:30,430 --> 01:28:35,350
+So it's not often called a CDR,
+but it effectively is a CDR.
+
+1755
+01:28:35,350 --> 01:28:39,280
+So this is, especially
+in industries
+
+1756
+01:28:39,280 --> 01:28:43,600
+where there's a lot of
+money at stake and people,
+
+1757
+01:28:43,600 --> 01:28:47,830
+you know, safety, people's
+health is at stake,
+
+1758
+01:28:47,830 --> 01:28:50,560
+this is common practice.
+
+1759
+01:28:50,560 --> 01:28:52,570
+OK, so let me summarize here.
+
+1760
+01:28:52,570 --> 01:28:55,770
+So this is the detailed
+design phase we discussed.
+
+1761
+01:28:55,770 --> 01:28:57,790
+It's very important.
+
+1762
+01:28:57,790 --> 01:29:00,250
+Basically, you take
+your PDR level design
+
+1763
+01:29:00,250 --> 01:29:04,180
+and you go define all the
+details in full maturity.
+
+1764
+01:29:04,180 --> 01:29:06,760
+You create design
+documents and models.
+
+1765
+01:29:06,760 --> 01:29:10,510
+And you know, as we
+talked about last time,
+
+1766
+01:29:10,510 --> 01:29:12,250
+we're sort of in
+this transition phase
+
+1767
+01:29:12,250 --> 01:29:15,130
+of producing documents
+versus producing models.
+
+1768
+01:29:15,130 --> 01:29:18,220
+Typically, we have both now.
+
+1769
+01:29:18,220 --> 01:29:21,520
+Examples would be detailed
+bill of materials,
+
+1770
+01:29:21,520 --> 01:29:25,120
+computer-aided design files--
+we'll talk about CAD next week,
+
+1771
+01:29:25,120 --> 01:29:26,590
+computer-aided design--
+
+1772
+01:29:26,590 --> 01:29:28,660
+software and control
+system definition,
+
+1773
+01:29:28,660 --> 01:29:32,420
+user interfaces, et cetera,
+et cetera, et cetera.
+
+1774
+01:29:32,420 --> 01:29:36,326
+Multidisciplinary
+design optimization
+
+1775
+01:29:36,326 --> 01:29:40,360
+is a very powerful
+concept to optimize
+
+1776
+01:29:40,360 --> 01:29:42,680
+at the system and
+the subsystem level
+
+1777
+01:29:42,680 --> 01:29:45,730
+and trade off between
+disciplines and objectives.
+
+1778
+01:29:45,730 --> 01:29:49,040
+The CDFs are the concurrent
+design facilities,
+
+1779
+01:29:49,040 --> 01:29:52,880
+and they've now become standard
+practice both in aerospace
+
+1780
+01:29:52,880 --> 01:29:55,880
+and product design companies.
+
+1781
+01:29:55,880 --> 01:29:59,720
+If you have not had the
+chance to experience and work
+
+1782
+01:29:59,720 --> 01:30:03,200
+in a CDF, I really
+encourage you to do this.
+
+1783
+01:30:03,200 --> 01:30:05,750
+I think it's a
+life-changing experience.
+
+1784
+01:30:05,750 --> 01:30:10,100
+It really-- it's not easy,
+because like, you know, Justice
+
+1785
+01:30:10,100 --> 01:30:12,740
+said, there's a lot of
+information to absorb.
+
+1786
+01:30:12,740 --> 01:30:16,040
+But once you've done
+this and experienced it,
+
+1787
+01:30:16,040 --> 01:30:19,260
+you realize if you
+don't have a CDF,
+
+1788
+01:30:19,260 --> 01:30:23,750
+if you don't design products
+this way, you really should.
+
+1789
+01:30:23,750 --> 01:30:26,150
+And then CDR is
+the big milestone,
+
+1790
+01:30:26,150 --> 01:30:30,520
+the last gate before, quote,
+end quote, cutting metal.

@@ -1,0 +1,20 @@
+{
+  "course_title":"Fundamentals of Systems Engineering",
+  "course_description":"General introduction to systems engineering using both the classical V-model and the new _Meta_ approach. Topics include stakeholder analysis, requirements definition, system architecture and concept generation, trade-space exploration and concept selection, design definition and optimization, system integration and interface management, system safety, verification and validation, and commissioning and operations. Discusses the trade-offs between performance, lifecycle cost and system operability. Readings based on systems engineering standards and papers. Students apply the concepts of systems engineering to a cyber-electro-mechanical system, which is subsequently entered into a design competition.\n\nStudents will prepare a PDR (Preliminary Design Review)-level design intended for the _Cansat Competition_.This year's class will be taught in the form of a Small-Private-Online-Course (SPOC) and offered simultaneously to students at MIT under number 16.842 and Ecole Polytechnique Fédérale de Lausanne (EPFL) as ENG-421.\n",
+  "site_uid":"c65d9dbe-1b1e-4654-81de-bda2a9b2b246",
+  "legacy_uid":"3b33804a-facf-eb52-fc52-f88ec38fbe8e","instructors": [{
+    "first_name":"Olivier",
+    "last_name":"de Weck",
+    "middle_initial":"",
+    "salutation":"Prof.",
+    "title":"Prof. Olivier de Weck"}],"department_numbers":["16"],
+  "learning_resource_types":["Lecture Notes","Design Assignments","Written Assignments","Lecture Videos","Instructor Insights"],
+  "topics":[["Engineering","Aerospace Engineering"],["Engineering","Systems Engineering"]],
+  "primary_course_number":"16.842",
+  "extra_course_numbers":"",
+  "term":"Fall",
+  "year":"2015",
+  "level":["Graduate"],
+  "image_src":"./static_resources/726dfc67e86050ec2c1f83c5c248961d_16-842f15.gif",
+  "course_image_metadata":{"content_type":"resource","description":"This \"V-Model\" diagram summarizes the overall structure of this course. Image courtesy of Olivier de Weck.","draft":false,"file":"/courses/16-842-fundamentals-of-systems-engineering-fall-2015/726dfc67e86050ec2c1f83c5c248961d_16-842f15.gif","file_type":"image/jpeg","image_metadata":{"caption":"This \"V-Model\" diagram summarizes the overall structure of this course. (Image courtesy of Olivier de Weck.)","credit":"Image courtesy of Olivier de Weck.","image-alt":"A flow diagram of the \"V Model\""},"iscjklanguage":false,"learning_resource_types":[],"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/","ocw_type":"OCWImage","resourcetype":"Image","title":"16-842f15.jpg","uid":"726dfc67-e860-50ec-2c1f-83c5c248961d"}}
+
